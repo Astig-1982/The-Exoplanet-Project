@@ -20,11 +20,17 @@ def exoplanets_display():
     return render_template('exoplanets.html', exoplanets=mongo.db.exoplanets.find())
 
 
-@app.route('/')
 @app.route('/rocky_planets')
 def rocky_planets():
     rocky_planets=mongo.db.exoplanets.find({'type': 'rocky'})
     return render_template('rocky_planets.html', rocky_planets=rocky_planets)
+
+
+@app.route('/')
+@app.route('/gas_giants_planets')
+def gas_giants_planets():
+    gas_giants_planets=mongo.db.exoplanets.find({'type': 'gas'})
+    return render_template('gas_giants_planets.html', gas_giants_planets=gas_giants_planets)
 
 
 if __name__ == '__main__':
