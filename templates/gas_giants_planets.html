@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for gas_giant in gas_giants_planets %}
+    {{ gas_giant.planet_name }}
+    {{ gas_giant.discovery_date }}
+    {{ gas_giant.distance_from_earth}}
+    {{ gas_giant.type}}
+    {{ gas_giant.star_system}}
+    {{ gas_giant.mass}}
+    {{ gas_giant.thoughts}}
+{% endfor %}
+{% endblock %}
