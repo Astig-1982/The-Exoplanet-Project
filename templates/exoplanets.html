@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
+   <div>
+   <a href="{{ url_for('rocky_planets') }}">Rocky Planets</a>
+   <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
+   </div>
     {% for exoplanet in exoplanets %}
        {{exoplanet.planet_name}}
        {{exoplanet.discovery_date}}
