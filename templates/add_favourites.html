@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% for favourite_exoplanet in favourite_exoplanets %}
+    {{ favourite_exoplanet.planet_name }}
+    {{ favourite_exoplanet.discovery_date }}
+    {{ favourite_exoplanet.distance_from_earth}}
+    {{ favourite_exoplanet.type}}
+    {{ favourite_exoplanet.star_system}}
+    {{ favourite_exoplanet.mass}}
+    {{ favourite_exoplanet.thoughts}}
+{% endfor %}
+{% endblock %}
