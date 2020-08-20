@@ -5,12 +5,14 @@
    <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
    </div>
     {% for exoplanet in exoplanets %}
-       {{exoplanet.planet_name}}
-       {{exoplanet.discovery_date}}
-       {{exoplanet.distance_from_earth}}
-       {{exoplanet.type}}
-       {{exoplanet.star_system}}
-       {{exoplanet.mass}}
-       {{exoplanet.thoughts}}
+        <div>{{exoplanet.planet_name}}<br>
+             {{exoplanet.discovery_date}}<br>
+             {{exoplanet.distance_from_earth}}<br>
+             {{exoplanet.type}}<br>
+             {{exoplanet.star_system}}<br>
+             {{exoplanet.mass}}<br>
+             {{exoplanet.thoughts}}<br>
+        <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
+        </div>
     {% endfor %}
 {% endblock %}
