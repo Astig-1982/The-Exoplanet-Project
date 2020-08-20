@@ -14,10 +14,17 @@ app.config["MONGO_URI"] = 'mongodb+srv://as_cluster_2020:hello_task_boulevard@my
 mongo = PyMongo(app)
 
 
-@app.route('/')
+
 @app.route('/exoplanets_display')
 def exoplanets_display():
     return render_template('exoplanets.html', exoplanets=mongo.db.exoplanets.find())
+
+
+@app.route('/')
+@app.route('/rocky_planets')
+def rocky_planets():
+    rocky_planets=mongo.db.exoplanets.find({'type': 'rocky'})
+    return render_template('rocky_planets.html', rocky_planets=rocky_planets)
 
 
 if __name__ == '__main__':
