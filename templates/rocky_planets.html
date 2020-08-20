@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for rocky_planet in rocky_planets %}
+    {{ rocky_planet.planet_name }}
+    {{ rocky_planet.discovery_date }}
+    {{ rocky_planet.distance_from_earth}}
+    {{ rocky_planet.type}}
+    {{ rocky_planet.star_system}}
+    {{ rocky_planet.mass}}
+    {{ rocky_planet.thoughts}}
+{% endfor %}
+{% endblock %}
