@@ -3,6 +3,7 @@
    <div>
    <a href="{{ url_for('rocky_planets') }}">Rocky Planets</a>
    <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
+   <a href="{{ url_for('favourite_list') }}">Favourites List</a>
    </div>
     {% for exoplanet in exoplanets %}
         <div>{{exoplanet.planet_name}}<br>
@@ -12,7 +13,7 @@
              {{exoplanet.star_system}}<br>
              {{exoplanet.mass}}<br>
              {{exoplanet.thoughts}}<br>
-        <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
+             <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
         </div>
     {% endfor %}
 {% endblock %}
