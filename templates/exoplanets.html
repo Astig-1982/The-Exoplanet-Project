@@ -3,12 +3,12 @@
    <div>
    <a href="{{ url_for('rocky_planets') }}">Rocky Planets</a>
    <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
-   <a href="{{ url_for('favourite_list') }}">Favourites List</a>
    </div>
    <div class="container">
     <div class="row">
     {% for exoplanet in exoplanets %}
-        <div class="col-3">{{exoplanet.planet_name}}<br>
+        <div class="col-3">
+             {{exoplanet.planet_name}}<br>
              {{exoplanet.discovery_date}}<br>
              {{exoplanet.distance_from_earth}}<br>
              {{exoplanet.type}}<br>
