@@ -14,6 +14,7 @@
              {{exoplanet.mass}}<br>
              {{exoplanet.thoughts}}<br>
              <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
+             <a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}">Details</a>
         </div>
     {% endfor %}
 {% endblock %}
