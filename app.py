@@ -61,7 +61,19 @@ def delete_favourite(exoplanet_id):
 def detailed_exoplanet(exoplanet_id):
     detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
     return render_template('detailed_exoplanet.html', detailed_exoplanet=detailed_exoplanet)
-    
+
+
+@app.route('/favourite_rocky_planets')
+def favourite_rocky_planets():
+    rocky_planets=mongo.db.favourites.find({'type': 'rocky'})
+    return render_template('favourite_rocky_planets.html', rocky_planets=rocky_planets)
+
+
+@app.route('/favourite_gas_giants')
+def favourite_gas_giants():
+    gas_giants_planets=mongo.db.favourites.find({'type': 'gas'})
+    return render_template('favourite_gas_giants.html', gas_giants_planets=gas_giants_planets)
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
