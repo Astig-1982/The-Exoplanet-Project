@@ -49,8 +49,13 @@ def favourite_list():
 def delete_favourite(exoplanet_id):
     mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
     return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
-    
 
+
+@app.route('/detailed_exoplanet/<exoplanet_id>')
+def detailed_exoplanet(exoplanet_id):
+    detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
+    return render_template('detailed_exoplanet.html', detailed_exoplanet=detailed_exoplanet)
+    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
