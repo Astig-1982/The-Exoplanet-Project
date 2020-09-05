@@ -3,13 +3,19 @@
 <div>
   <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
+<div class="container">
+<div class="row">
 {% for rocky_planet in rocky_planets %}
-    {{ rocky_planet.planet_name }}
-    {{ rocky_planet.discovery_date }}
-    {{ rocky_planet.distance_from_earth}}
-    {{ rocky_planet.type}}
-    {{ rocky_planet.star_system}}
-    {{ rocky_planet.mass}}
-    {{ rocky_planet.thoughts}}
+    <div class="col-3">
+    {{ rocky_planet.planet_name }}<br>
+    {{ rocky_planet.discovery_date }}<br>
+    {{ rocky_planet.distance_from_earth}}<br>
+    {{ rocky_planet.type}}<br>
+    {{ rocky_planet.star_system}}<br>
+    {{ rocky_planet.mass}}<br>
+    {{ rocky_planet.thoughts}}<br>
+    </div>
 {% endfor %}
+</div>
+</div>
 {% endblock %}
