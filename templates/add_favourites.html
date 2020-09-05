@@ -3,6 +3,8 @@
 <div>
   <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
+<a href="{{ url_for('favourite_rocky_planets') }}">Rocky Planets</a>
+<a href="{{ url_for('favourite_gas_giants') }}">Gas Giants</a>
 <div class="container"> 
 <div class="row">
   {% for favourite_exoplanet in favourite_exoplanets %}
