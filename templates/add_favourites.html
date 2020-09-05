@@ -3,7 +3,10 @@
 <div>
   <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
+<div class="container"> 
+<div class="row">
   {% for favourite_exoplanet in favourite_exoplanets %}
+  <div class="col-3">
     {{ favourite_exoplanet.planet_name }}<br>
     {{ favourite_exoplanet.discovery_date }}<br>
     {{ favourite_exoplanet.distance_from_earth}}<br>
@@ -12,5 +15,8 @@
     {{ favourite_exoplanet.mass}}<br>
     {{ favourite_exoplanet.thoughts}}
     <a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}">Delete From Favourites</a><br>
+  </div>
 {% endfor %}
+</div>
+</div>
 {% endblock %}
