@@ -15,6 +15,12 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
+@app.route('/base')
+def base():
+    return render_template('base.html')
+
+
+
 @app.route('/exoplanets_display')
 def exoplanets_display():
     return render_template('exoplanets.html', exoplanets=mongo.db.exoplanets.find())
