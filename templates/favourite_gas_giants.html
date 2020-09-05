@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+  <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
+</div>
+<div class="container">
+<div class="row">
+{% for gas_giant in gas_giants_planets %}
+    <div class="col-3">
+    {{ gas_giant.planet_name }}<br>
+    {{ gas_giant.discovery_date }}<br>
+    {{ gas_giant.distance_from_earth}}<br>
+    {{ gas_giant.type}}<br>
+    {{ gas_giant.star_system}}<br>
+    {{ gas_giant.mass}}<br>
+    {{ gas_giant.thoughts}}<br>
+    </div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}
