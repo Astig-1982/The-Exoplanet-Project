@@ -3,6 +3,9 @@
 <div>
   <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
+<div class="container">
+<div class="row">
+<div class="col-12">
   {{ detailed_exoplanet.planet_name }}<br>
   {{ detailed_exoplanet.discovery_date }}<br>
   {{ detailed_exoplanet.distance_from_earth }}<br>                                       
@@ -10,4 +13,7 @@
   {{ detailed_exoplanet.star_system }}<br>
   {{ detailed_exoplanet.mass }}<br>
   {{ detailed_exoplanet.thoughts }}
+</div>
+</div>
+</div>
 {% endblock %}
