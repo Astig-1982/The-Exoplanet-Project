@@ -1,25 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
 <div>
-  <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
+	<a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
 <a href="{{ url_for('favourite_rocky_planets') }}">Rocky Planets</a>
 <a href="{{ url_for('favourite_gas_giants') }}">Gas Giants</a>
-<div class="container"> 
-<div class="row">
-  {% for favourite_exoplanet in favourite_exoplanets %}
-  <div class="col-3">
-    {{ favourite_exoplanet.planet_name }}<br>
-    {{ favourite_exoplanet.discovery_date }}<br>
-    {{ favourite_exoplanet.distance_from_earth}}<br>
-    {{ favourite_exoplanet.type}}<br>
-    {{ favourite_exoplanet.star_system}}<br>
-    {{ favourite_exoplanet.mass}}<br>
-    {{ favourite_exoplanet.thoughts}}
-    <a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}">Delete From Favourites</a><br>
-    <a href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}">Calculate Weight</a>
-  </div>
-{% endfor %}
-</div>
+<div class="container">
+	<div class="row">
+		{% for favourite_exoplanet in favourite_exoplanets %}
+		<div class="col-3">
+			{{ favourite_exoplanet.planet_name }}<br>
+            {{ favourite_exoplanet.discovery_date }}<br>
+            {{ favourite_exoplanet.distance_from_earth}}<br>
+            {{ favourite_exoplanet.type}}<br>
+            {{ favourite_exoplanet.star_system}}<br>
+            {{ favourite_exoplanet.mass}}<br>
+            {{ favourite_exoplanet.thoughts}}
+			<a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}">Delete From
+				Favourites</a><br>
+			<a href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}">Calculate Weight</a>
+		</div>
+		{% endfor %}
+	</div>
 </div>
 {% endblock %}
