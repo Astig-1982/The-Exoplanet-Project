@@ -75,6 +75,11 @@ def favourite_gas_giants():
     return render_template('favourite_gas_giants.html', gas_giants_planets=gas_giants_planets)
 
 
+@app.route('/add_exoplanet')
+def add_exoplanet():
+    return render_template('add_exoplanet.html')  
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
