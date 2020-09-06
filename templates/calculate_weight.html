@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 {{ exoplanet.planet_name }}
+<div class="container">
+<div class="row">
+<div class="col-12">
 <form action="{{ url_for('calculate', exoplanet_mass=exoplanet.mass) }}" method="POST">
   <div class="form-group">
     <label for="your_weight">Your Weight</label>
@@ -8,4 +11,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+</div>
+</div>
 {% endblock %}
