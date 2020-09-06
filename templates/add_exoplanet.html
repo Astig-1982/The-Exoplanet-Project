@@ -1,43 +1,43 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-<div class="row">
-<div class="col-12">
-<form action="{{ url_for('insert_exoplanet') }}" method="POST">
-	<div class="form-group">
-		<label for="planet_name">Exoplanet Name</label>
-		<input name="planet_name" type="text" class="form-control" id="planet_name">
-  </div>
-		<div class="form-group">
-			<label for="discovery_date">Discovery Date</label>
-			<input name="discovery_date" type="text" class="form-control" id="discovery_date">
-  </div>
-			<div class="form-group">
-				<label for="distance_from_earth">Distance From Earth</label>
-				<input name="distance_from_earth" type="text" class="form-control" id="distance_from_earth">
-  </div>
+	<div class="row">
+		<div class="col-12">
+			<form action="{{ url_for('insert_exoplanet') }}" method="POST">
 				<div class="form-group">
-					<label for="exampleFormControlSelect1">Type</label>
-					<select name="type" class="form-control" id="exampleFormControlSelect1">
+					<label for="planet_name">Exoplanet Name</label>
+					<input name="planet_name" type="text" class="form-control" id="planet_name">
+  </div>
+					<div class="form-group">
+						<label for="discovery_date">Discovery Date</label>
+						<input name="discovery_date" type="text" class="form-control" id="discovery_date">
+  </div>
+						<div class="form-group">
+							<label for="distance_from_earth">Distance From Earth</label>
+							<input name="distance_from_earth" type="text" class="form-control" id="distance_from_earth">
+  </div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect1">Type</label>
+								<select name="type" class="form-control" id="exampleFormControlSelect1">
       <option value="rocky">rocky</option>
       <option value="gas">gas</option>
     </select>
-				</div>
-				<div class="form-group">
-					<label for="star_system">Star System</label>
-					<input name="star_system" type="text" class="form-control" id="star_system">
+							</div>
+							<div class="form-group">
+								<label for="star_system">Star System</label>
+								<input name="star_system" type="text" class="form-control" id="star_system">
   </div>
-					<div class="form-group">
-						<label for="mass">Mass</label>
-						<input name="mass" type="text" class="form-control" id="mass">
+								<div class="form-group">
+									<label for="mass">Mass</label>
+									<input name="mass" type="text" class="form-control" id="mass">
   </div>
-						<div class="form-group">
-							<label for="thoughts">Thoughts</label>
-							<input name="thoughts" type="text" class="form-control" id="thoughts">
+									<div class="form-group">
+										<label for="thoughts">Thoughts</label>
+										<input name="thoughts" type="text" class="form-control" id="thoughts">
   </div>
-							<button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-</div>
+										<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
 </div>
 {% endblock %}
