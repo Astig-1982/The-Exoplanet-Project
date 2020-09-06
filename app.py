@@ -94,6 +94,19 @@ def insert_exoplanet():
     return redirect(url_for('favourite_list'))
 
 
+@app.route('/calculate_weight/<exoplanet_id>')
+def calculate_weight(exoplanet_id):
+    exoplanet=mongo.db.favourites.find_one({"_id": ObjectId(exoplanet_id)})
+    return render_template('calculate_weight.html', exoplanet=exoplanet)
+
+
+@app.route('/calculate/<exoplanet_mass>', methods=['POST'])
+def calculate(exoplanet_mass):
+    exoplanet_weight=int(request.form.get('your_weight'))
+    your_weightExoplanet = exoplanet_weight * int(exoplanet_mass)
+    return render_template('exoplanet_weight.html', your_weightExoplanet=your_weightExoplanet)
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
