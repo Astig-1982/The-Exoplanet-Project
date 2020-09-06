@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<form action="" method="POST">
+<form action="{{ url_for('insert_exoplanet') }}" method="POST">
   <div class="form-group">
     <label for="planet_name">Exoplanet Name</label>
     <input name="planet_name" type="text" class="form-control" id="planet_name">
@@ -14,8 +14,11 @@
     <input name="distance_from_earth" type="text" class="form-control" id="distance_from_earth">
   </div>
   <div class="form-group">
-    <label for="type">Type</label>
-    <input name="type" type="text" class="form-control" id="type">
+    <label for="exampleFormControlSelect1">Type</label>
+    <select name="type" class="form-control" id="exampleFormControlSelect1">
+      <option value="rocky">rocky</option>
+      <option value="gas">gas</option>
+    </select>
   </div>
   <div class="form-group">
     <label for="star_system">Star System</label>
