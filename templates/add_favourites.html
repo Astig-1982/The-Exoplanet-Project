@@ -17,6 +17,7 @@
     {{ favourite_exoplanet.mass}}<br>
     {{ favourite_exoplanet.thoughts}}
     <a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}">Delete From Favourites</a><br>
+    <a href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}">Calculate Weight</a>
   </div>
 {% endfor %}
 </div>
