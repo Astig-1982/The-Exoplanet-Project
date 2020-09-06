@@ -83,7 +83,14 @@ def add_exoplanet():
 @app.route('/insert_exoplanet', methods=['POST'])
 def insert_exoplanet():
     favourites=mongo.db.favourites
-    favourites.insert_one(request.form.to_dict())
+    new_planet={'planet_name': request.form.get('planet_name'),
+                'discovery_date': request.form.get('discovery_date'),
+                'distance_from_earth': request.form.get('distance_from_earth'),
+                'type': request.form.get('type'),
+                'star_system': request.form.get('star_system'),
+                'mass': request.form.get('mass'),
+                'thoughts': request.form.get('thoughts')}
+    favourites.insert_one(new_planet)
     return redirect(url_for('favourite_list'))
 
 
