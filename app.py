@@ -103,7 +103,7 @@ def calculate_weight(exoplanet_id):
 @app.route('/calculate/<exoplanet_mass>', methods=['POST'])
 def calculate(exoplanet_mass):
     exoplanet_weight=int(request.form.get('your_weight'))
-    your_weightExoplanet = exoplanet_weight * int(exoplanet_mass)
+    your_weightExoplanet = exoplanet_weight * float(exoplanet_mass)
     return render_template('exoplanet_weight.html', your_weightExoplanet=your_weightExoplanet)
 
 
