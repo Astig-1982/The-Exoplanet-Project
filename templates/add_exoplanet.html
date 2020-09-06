@@ -1,18 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
-<form>
+<form action="" method="POST">
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <label for="planet_name">Exoplanet Name</label>
+    <input name="planet_name" type="text" class="form-control" id="planet_name">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="discovery_date">Discovery Date</label>
+    <input name="discovery_date" type="text" class="form-control" id="discovery_date">
   </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  <div class="form-group">
+    <label for="distance_from_earth">Distance From Earth</label>
+    <input name="distance_from_earth" type="text" class="form-control" id="distance_from_earth">
+  </div>
+  <div class="form-group">
+    <label for="type">Type</label>
+    <input name="type" type="text" class="form-control" id="type">
+  </div>
+  <div class="form-group">
+    <label for="star_system">Star System</label>
+    <input name="star_system" type="text" class="form-control" id="star_system">
+  </div>
+  <div class="form-group">
+    <label for="mass">Mass</label>
+    <input name="mass" type="text" class="form-control" id="mass">
+  </div>
+  <div class="form-group">
+    <label for="thoughts">Thoughts</label>
+    <input name="thoughts" type="text" class="form-control" id="thoughts">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
