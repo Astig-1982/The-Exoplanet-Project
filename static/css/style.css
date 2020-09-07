@@ -4,6 +4,15 @@ body {
     font-size: 16px;
 }
 
+#nav {
+    position: fixed;
+}
+
+#home {
+    background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F765877054%2F960x0.jpg%3Ffit%3Dscale);
+    height: 100vh;
+}
+
 #title_container {
     text-align: center;
     margin-top: 16%;
