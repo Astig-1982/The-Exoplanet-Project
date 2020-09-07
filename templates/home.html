@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container-fluid">
+<div id="home" class="container-fluid">
 	<div class="row">
 		<div id="title_container" class="col-12">
 			<h1 id="title">other worlds</h1>
 			<h2>brief guide to exoplanets</h2>
-			<a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
+			<a id="main_button" href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 		</div>
 	</div>
 </div>
