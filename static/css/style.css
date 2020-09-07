@@ -6,16 +6,31 @@ body {
 
 #nav {
     position: fixed;
+    z-index: 2;
+}
+
+@keyframes photo-zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
 }
 
 #home {
-    background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F765877054%2F960x0.jpg%3Ffit%3Dscale);
-    height: 100vh;
+    background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2019/4-space.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;animation-name: photo-zoom;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
 }
 
 #title_container {
     text-align: center;
-    margin-top: 16%;
+    margin-top: 20%;
+    color: #ffffff;
 }
 
 #main_button {
