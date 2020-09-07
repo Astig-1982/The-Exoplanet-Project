@@ -19,10 +19,11 @@ body {
 }
 
 #home {
-    background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2019/4-space.jpg);
+    background-image: url(../images/outerspace.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;animation-name: photo-zoom;
+    height: 100vh;
+    animation-name: photo-zoom;
 	animation-duration: 5s;
 	animation-fill-mode: forwards;
 }
