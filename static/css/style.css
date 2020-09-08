@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    background-color: #1e2761;
+    color: #e5e5dc;
 }
 
 #nav {
@@ -53,8 +55,9 @@ body {
 }
 
 .exoplanets_holder {
-    border: 1px solid green;
+    border: 1px solid #1d1e1f;
     margin-bottom: 2rem;
+    background-color: #408ec6;
 }
 
 .separator {
@@ -63,6 +66,16 @@ body {
 
 .exoplanet_properties {
     padding-left: .5rem;
+}
+
+.exoplanets_display_buttons {
+    background-color: #7a2048;
+    color: #e5e5dc;
+    font-size: 84%;
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: .3rem;
 }
 
 
