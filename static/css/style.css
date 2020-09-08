@@ -27,6 +27,7 @@ body {
     animation-name: photo-zoom;
 	animation-duration: 5s;
 	animation-fill-mode: forwards;
+    overflow: hidden;
 }
 
 #title_container {
@@ -41,6 +42,19 @@ body {
 
 #detailed {
     text-align: center;
+}
+
+#exoplanets_container {
+    margin-top: 5rem;
+}
+
+#exoplanets_title {
+    text-align: center;
+}
+
+.exoplanets_holder {
+    border: 1px solid green;
+    margin-bottom: 2rem;
 }
 
 
