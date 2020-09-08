@@ -16,13 +16,13 @@
         <div class="col-4">
        <div class="exoplanets_holder">
              <img src="{{exoplanet.exoplanet_image}}" width="100%" height="70%" alt=""><br>
-             {{exoplanet.planet_name}}<br>
-             {{exoplanet.discovery_date}}<br>
-             {{exoplanet.distance_from_earth}}<br>
-             {{exoplanet.type}}<br>
-             {{exoplanet.star_system}}<br>
-             {{exoplanet.mass}}<br>
-             {{exoplanet.thoughts}}<br>
+             <p>name: {{exoplanet.planet_name}}</p>
+             <p>discovery date: {{exoplanet.discovery_date}}</p>
+             <p>distance from earth: {{exoplanet.distance_from_earth}} light years</p>
+             <p>type: {{exoplanet.type}}</p>
+             <p>start system: {{exoplanet.star_system}}</p>
+             <p>mass: {{exoplanet.mass}} earth masses</p>
+             <p>your thoughts: {{exoplanet.thoughts}}<br>
              <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
              <a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}">Details</a>
        </div>
