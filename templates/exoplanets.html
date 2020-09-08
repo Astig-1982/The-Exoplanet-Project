@@ -22,9 +22,9 @@
              <p class="exoplanet_properties">type: {{exoplanet.type}}</p><hr class="separator">
              <p class="exoplanet_properties">start system: {{exoplanet.star_system}}</p><hr class="separator">
              <p class="exoplanet_properties">mass: {{exoplanet.mass}} earth masses</p><hr class="separator">
-             <p class="exoplanet_properties">your thoughts: {{exoplanet.thoughts}}<br><hr class="separator">
-             <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
-             <a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}">Details</a>
+             <p class="exoplanet_properties">your thoughts: {{exoplanet.thoughts}}</p><hr class="separator">
+             <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}"><button class="exoplanets_display_buttons">Add To Favourites</button></a>
+             <a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}"><button class="exoplanets_display_buttons">Details</button></a>
        </div>
         </div>
         <hr>
