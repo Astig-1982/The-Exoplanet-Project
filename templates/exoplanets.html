@@ -5,10 +5,16 @@
    <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
    <a href="{{ url_for('add_exoplanet') }}">Add Exoplanet</a>
    </div>
-   <div class="container">
+   <div id="exoplanets_container" class="container">
+   <div id="exoplanets_title" class="row">
+   <div class="col-12">
+   <h1>exoplanets</h1>
+   </div>
+   </div>
     <div class="row">
     {% for exoplanet in exoplanets %}
-        <div class="col-3">
+        <div class="col-4">
+       <div id="exoplanets_holder">
              {{exoplanet.planet_name}}<br>
              {{exoplanet.discovery_date}}<br>
              {{exoplanet.distance_from_earth}}<br>
@@ -18,6 +24,7 @@
              {{exoplanet.thoughts}}<br>
              <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}">Add To Favourites</a>
              <a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}">Details</a>
+       </div>
         </div>
         <hr>
     {% endfor %}
