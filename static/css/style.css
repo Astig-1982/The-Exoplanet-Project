@@ -89,13 +89,25 @@ body {
 }
 
 #message {
-    border: 1px solid #7a2048;
+    background-color: #7a2048;
+    border: 2px solid #408ec6;
     width: 45rem;
     height: 5rem;
     color: #e5e5dc;
     padding-top: 1.5rem;
     margin: auto;
     text-align: center;
+}
+
+.action_buttons {
+    background-color: #7a2048;
+    color: #e5e5dc;
+    font-size: 84%;
+    width: 10rem;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: .4rem;
+    margin: 0 1rem;
 }
 
 /* detailed_exoplanet page starts here */
