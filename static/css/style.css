@@ -47,12 +47,10 @@ body {
     text-align: center;
 }
 
-#exoplanets_container {
-    margin-top: 5rem;
-}
+/* exoplanets.html section starts here */
 
-#exoplanets_title {
-    text-align: center;
+#exoplanets_container {
+   margin-top: 5rem;
 }
 
 .exoplanets_holder {
@@ -82,6 +80,22 @@ body {
 .centered_buttons {
     text-align: center;
     height: 2.8rem;
+}
+
+/* already_favourite messsage page starts here */
+
+#message_container {
+    margin-top: 20%;
+}
+
+#message {
+    border: 1px solid #7a2048;
+    width: 45rem;
+    height: 5rem;
+    color: #e5e5dc;
+    padding-top: 1.5rem;
+    margin: auto;
+    text-align: center;
 }
 
 /* detailed_exoplanet page starts here */
