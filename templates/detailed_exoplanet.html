@@ -3,9 +3,15 @@
 <div>
   <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
-<div class="container">
+<div id="detailed_exoplanet_container" class="container">
 <div class="row">
+<div id="detailed_exoplanet_title" class="col-12">
+<h1>{{ detailed_exoplanet.planet_name }}</h1>
+</div>
+</div>
+<div id="exoplanet_display" class="row">
 <div id="detailed" class="col-12">
+  <img src="{{ detailed_exoplanet.exoplanet_image }}" width="50%" height="60%" alt=""><br>
   {{ detailed_exoplanet.planet_name }}<br>
   {{ detailed_exoplanet.discovery_date }}<br>
   {{ detailed_exoplanet.distance_from_earth }}<br>                                       

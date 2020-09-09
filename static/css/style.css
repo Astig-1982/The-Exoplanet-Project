@@ -83,6 +83,20 @@ body {
     height: 2.8rem;
 }
 
+/* detailed_exoplanet page starts here */
+
+#detailed_exoplanet_container {
+    margin-top: 5rem;
+}
+
+#detailed_exoplanet_title {
+    text-align: center;
+}
+
+#exoplanet_display {
+    margin-top: 2rem;
+}
+
 
 
 
