@@ -1,14 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-   <div>
-   <a href="{{ url_for('rocky_planets') }}">Rocky Planets</a>
-   <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
-   <a href="{{ url_for('add_exoplanet') }}">Add Exoplanet</a>
-   </div>
-   <div id="exoplanets_container" class="container">
+   <div id="message_container" class="container">
    <div id="exoplanets_title" class="row">
    <div class="col-12">
+   <div id="message">
    <p>you have already added {{ favourite.planet_name }} to your favourites list.</p>
+   </div>
              </div>
        </div>
         </div>
