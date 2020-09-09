@@ -17,12 +17,8 @@
        <div class="exoplanets_holder">
              <img src="{{exoplanet.exoplanet_image}}" width="100%" height="70%" alt=""><br>
              <p class="exoplanet_properties">name: {{exoplanet.planet_name}}</p><hr class="separator">
-             <p class="exoplanet_properties">discovery date: {{exoplanet.discovery_date}}</p><hr class="separator">
-             <p class="exoplanet_properties">distance from earth: {{exoplanet.distance_from_earth}} light years</p><hr class="separator">
              <p class="exoplanet_properties">type: {{exoplanet.type}}</p><hr class="separator">
              <p class="exoplanet_properties">start system: {{exoplanet.star_system}}</p><hr class="separator">
-             <p class="exoplanet_properties">mass: {{exoplanet.mass}} earth masses</p><hr class="separator">
-             <p class="exoplanet_properties">your thoughts: {{exoplanet.thoughts}}</p><hr class="separator">
              <div class="centered_buttons">
              <a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}" id="margin-left"><button class="exoplanets_display_buttons">Add To Favourites</button></a>
              <a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}" id="float_right"><button class="exoplanets_display_buttons">Details</button></a>
