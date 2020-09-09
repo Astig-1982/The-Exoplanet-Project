@@ -47,8 +47,15 @@ def gas_giants_planets():
 @app.route('/add_favourites/<exoplanet_id>')
 def add_favourites(exoplanet_id):
     favourite=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
-    mongo.db.favourites.insert(favourite)
-    return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
+    if favourite:
+        return render_template('already_favourite.html')
+    else:
+        mongo.db.favourites.insert(favourite)
+        return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
+        
+
+    
+    
 
 
 @app.route('/favourite_list')
