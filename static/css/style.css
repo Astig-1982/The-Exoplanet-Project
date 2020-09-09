@@ -97,6 +97,13 @@ body {
     margin-top: 2rem;
 }
 
+#properties_container {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid #408ec6;
+}
+
 
 
 
