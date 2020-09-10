@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Roboto+Slab:wght@800&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
     background-color: #1e2761;
     color: #e5e5dc;
+    font-family: 'Kufam', sans-serif;
 }
 
 #nav {
@@ -37,6 +40,7 @@ body {
     text-align: center;
     margin-top: 20%;
     color: #ffffff;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 #main_button {
