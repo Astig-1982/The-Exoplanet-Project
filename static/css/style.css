@@ -19,6 +19,7 @@ body {
 .buttons {
     font-family: 'Roboto Slab', sans-serif;
     background-color: #7a2048;
+    text-transform: capitalize;
 }
 
 /* home page starts here */
@@ -103,7 +104,6 @@ body {
     width: 8rem;
     height: 2rem;
     text-align: center;
-    padding-top: .3rem;
 }
 
 .centered_buttons {
