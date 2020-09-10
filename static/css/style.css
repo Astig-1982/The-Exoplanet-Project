@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Roboto+Slab:wght@400;800&display=swap');
 
 body {
     margin: 0;
@@ -14,6 +14,10 @@ body {
     top: 0;
     z-index: 2;
     width: 100vw;
+}
+
+.buttons {
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 /* home page starts here */
@@ -43,6 +47,7 @@ body {
     margin-top: 20%;
     color: #ffffff;
     font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
 }
 
 #title {
