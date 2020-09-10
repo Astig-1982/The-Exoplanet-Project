@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     background-color: #1e2761;
     color: #e5e5dc;
-    font-family: 'Kufam', sans-serif;
+    font-family: 'Kufam', cursive;
 }
 
 #nav {
@@ -15,6 +15,8 @@ body {
     z-index: 2;
     width: 100vw;
 }
+
+/* home page starts here */
 
 @keyframes photo-zoom {
 	from {
@@ -43,9 +45,26 @@ body {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-#main_button {
-    margin-top: 10%;
+#title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 3rem;
 }
+
+#sub_title {
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+    margin-top: 2rem;
+}
+
+#home_action_button {
+    margin-top: 1.7rem;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    padding-top: 0;
+}
+
 
 #detailed {
     text-align: center;
