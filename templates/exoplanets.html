@@ -3,12 +3,17 @@
    <div>
    <a href="{{ url_for('rocky_planets') }}">Rocky Planets</a>
    <a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
-   <a href="{{ url_for('add_exoplanet') }}">Add Exoplanet</a>
    </div>
    <div id="exoplanets_container" class="container">
    <div class="row">
-   <div style="text-align:center" class="col-12">
+   <div style="text-align:center" class="col-4">
+   <a href="{{ url_for('rocky_planets') }}"><button class="buttons">Rocky Planets</button></a>
+   </div>
+   <div style="text-align:center" class="col-4">
    <h1 id="title_exoplanet_page">exoplanets</h1>
+   </div>
+   <div style="text-align:center" class="col-4">
+   <a href="{{ url_for('gas_giants_planets') }}"><button class="buttons">Gas Giants</button></a>
    </div>
    </div>
     <div class="row">
