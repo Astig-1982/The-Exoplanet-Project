@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Roboto+Slab:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Roboto+Slab:wght@400;700;800&display=swap');
 
 body {
     margin: 0;
@@ -14,6 +14,13 @@ body {
     top: 0;
     z-index: 2;
     width: 100vw;
+}
+
+#navbar_title {
+    font-family: 'Roboto Slab', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 6px;
+    font-weight: 700;
 }
 
 .buttons {
