@@ -3,19 +3,29 @@
 <div>
   <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
-<div class="container">
+<div style="margin-top:5rem" class="container">
 <div class="row">
-{% for rocky_planet in rocky_planets %}
-    <div class="col-3">
-    {{ rocky_planet.planet_name }}<br>
-    {{ rocky_planet.discovery_date }}<br>
-    {{ rocky_planet.distance_from_earth}}<br>
-    {{ rocky_planet.type}}<br>
-    {{ rocky_planet.star_system}}<br>
-    {{ rocky_planet.mass}}<br>
-    {{ rocky_planet.thoughts}}<br>
-    </div>
-{% endfor %}
-</div>
+		{% for rocky_planet in rocky_planets %}
+		<div class="col-4">
+			<div class="exoplanets_holder">
+				<img src="{{rocky_planet.exoplanet_image}}" width="100%" height="70%" alt=""><br>
+				<p id="exoplanet_name" class="exoplanet_properties"><strong>{{rocky_planet.planet_name}}</strong></p>
+				<hr class="separator">
+				<p class="exoplanet_properties"><strong>Type:</strong> {{rocky_planet.type}}</p>
+				<hr class="separator">
+				<p class="exoplanet_properties"><strong>Star System:</strong> {{rocky_planet.star_system}}</p>
+				<hr class="separator">
+				<div class="centered_buttons">
+					<a href="{{ url_for('add_favourites', exoplanet_id=rocky_planet._id)}}"
+						id="margin-left"><button class="exoplanets_display_buttons buttons">Add Favourites</button></a>
+					<a href="{{ url_for('detailed_exoplanet', exoplanet_id=rocky_planet._id) }}"
+						id="float_right"><button class="exoplanets_display_buttons buttons">Details</button></a>
+				</div>
+			</div>
+		</div>
+
+		{% endfor %}
+	</div>
+
 </div>
 {% endblock %}
