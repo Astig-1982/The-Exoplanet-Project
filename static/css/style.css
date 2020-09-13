@@ -27,6 +27,10 @@ body {
     text-align: center;
 }
 
+.top_buttons {
+    font-size: 105%;
+}
+
 .main-action {
     margin-top: 2rem;
 }
