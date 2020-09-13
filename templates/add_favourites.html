@@ -17,20 +17,21 @@
 		</div>
 	</div>
 	<div class="row">
-		{% for favourite_exoplanet in favourite_exoplanets %}
-		<div class="col-4">
-			{{ favourite_exoplanet.planet_name }}<br>
-            {{ favourite_exoplanet.discovery_date }}<br>
-            {{ favourite_exoplanet.distance_from_earth}}<br>
-            {{ favourite_exoplanet.type}}<br>
-            {{ favourite_exoplanet.star_system}}<br>
-            {{ favourite_exoplanet.mass}}<br>
-            {{ favourite_exoplanet.thoughts}}
-			<a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}">Delete From
-				Favourites</a><br>
-			<a href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}">Calculate Weight</a>
-		</div>
-		{% endfor %}
-	</div>
+    {% for favourite_exoplanet in favourite_exoplanets %}
+        <div class="col-4">
+       <div class="exoplanets_holder">
+             <img src="{{favourite_exoplanet.exoplanet_image}}" width="100%" height="70%" alt=""><br>
+             <p id="exoplanet_name" class="exoplanet_properties"><strong>{{favourite_exoplanet.planet_name}}</strong></p><hr class="separator">
+             <p class="exoplanet_properties"><strong>Type:</strong> {{favourite_exoplanet.type}}</p><hr class="separator">
+             <p class="exoplanet_properties"><strong>Star System:</strong> {{favourite_exoplanet.star_system}}</p><hr class="separator">
+             <div class="centered_buttons">
+             <a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}" id="margin-left"><button class="exoplanets_display_buttons buttons">Delete</button></a>
+             <a href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}" id="float_right"><button class="exoplanets_display_buttons buttons">Calculate Weight</button></a>
+             </div>
+       </div>
+        </div>
+      
+    {% endfor %}
+    </div>
 </div>
 {% endblock %}
