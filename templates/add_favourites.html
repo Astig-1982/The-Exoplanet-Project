@@ -1,14 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
-	<a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
-</div>
-<a href="{{ url_for('favourite_rocky_planets') }}">Rocky Planets</a>
-<a href="{{ url_for('favourite_gas_giants') }}">Gas Giants</a>
-<div class="container">
+<div style="margin-top:5rem" class="container">
+	<div class="row">
+		<div class="col-6">
+			<a href="{{ url_for('exoplanets_display') }}"><button class="buttons">Exoplanets</button></a>
+		</div>
+		<div class="col-3">
+			<a href="{{ url_for('favourite_rocky_planets') }}">
+				<button class="buttons">Rocky Planets</button>
+			</a>
+		</div>
+		<div class="col-3">
+			<a href="{{ url_for('favourite_gas_giants') }}">
+				<button class="buttons">Gas Giants</button>
+			</a>
+		</div>
+	</div>
 	<div class="row">
 		{% for favourite_exoplanet in favourite_exoplanets %}
-		<div class="col-3">
+		<div class="col-4">
 			{{ favourite_exoplanet.planet_name }}<br>
             {{ favourite_exoplanet.discovery_date }}<br>
             {{ favourite_exoplanet.distance_from_earth}}<br>
