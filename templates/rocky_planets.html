@@ -1,10 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
 <div>
-  <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
+	<a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
 <div style="margin-top:5rem" class="container">
-<div class="row">
+	<div class="row">
+		<div style="text-align:center" class="col-12">
+			<h1 class="title_exoplanet_page">rocky exoplanets</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('exoplanets_display') }}"><button class="buttons">Exoplanets</button></a>
+		</div>
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('gas_giants_planets') }}">
+				<button class="buttons">Gas Giants</button>
+			</a>
+		</div>
+	</div>
+	<div class="row">
 		{% for rocky_planet in rocky_planets %}
 		<div class="col-4">
 			<div class="exoplanets_holder">
