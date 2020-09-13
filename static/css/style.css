@@ -22,6 +22,10 @@ body {
     text-transform: capitalize;
 }
 
+.main_action_buttons {
+    text-align: center;
+}
+
 /* home page starts here */
 
 @keyframes photo-zoom {
@@ -84,7 +88,7 @@ body {
    margin-top: 5rem;
 }
 
-#title_exoplanet_page {
+.title_exoplanet_page {
     letter-spacing: .5rem;
     text-transform: uppercase;
     font-family: 'Roboto Slab', sans-serif;
@@ -92,7 +96,7 @@ body {
 
 .exoplanets_holder {
     border: 1px solid #1d1e1f;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     background-color: #408ec6;
 }
 
