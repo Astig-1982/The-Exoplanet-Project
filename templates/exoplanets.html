@@ -8,10 +8,12 @@
 	</div>
 	<div class="row">
 		<div class="col-6 main_action_buttons">
-			<a href="{{ url_for('rocky_planets') }}"><button class="buttons">Rocky Planets</button></a>
+			<a
+				href="{{ url_for('rocky_planets') }}"><button style="font-size:100%" class="exoplanets_display_buttons buttons">rocky worlds</button></a>
 		</div>
 		<div class="col-6 main_action_buttons">
-			<a href="{{ url_for('gas_giants_planets') }}"><button class="buttons">Gas Giants</button></a>
+			<a
+				href="{{ url_for('gas_giants_planets') }}"><button style="font-size:100%" class="exoplanets_display_buttons buttons">gas giants</button></a>
 		</div>
 	</div>
 	<div class="row">
@@ -33,7 +35,6 @@
 				</div>
 			</div>
 		</div>
-
 		{% endfor %}
 	</div>
 </div>
