@@ -20,6 +20,7 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     background-color: #7a2048;
     text-transform: capitalize;
+    color: #e5e5dc;
 }
 
 .main_action_buttons {
@@ -83,10 +84,6 @@ body {
 }
 
 /* exoplanets.html section starts here */
-
-#exoplanets_container {
-   margin-top: 5rem;
-}
 
 .title_exoplanet_page {
     letter-spacing: .5rem;
