@@ -7,11 +7,15 @@
 		</div>
 	</div>
 	<div class="row main-action">
-		<div class="col-6 main_action_buttons">
+		<div class="col-4 main_action_buttons">
 			<a
 				href="{{ url_for('rocky_planets') }}"><button style="font-size:100%" class="exoplanets_display_buttons buttons">rocky worlds</button></a>
 		</div>
-		<div class="col-6 main_action_buttons">
+        <div class="col-4 main_action_buttons">
+			<a
+				href="{{ url_for('favourite_list') }}"><button style="font-size:100%" class="exoplanets_display_buttons buttons">favourites</button></a>
+		</div>
+		<div class="col-4 main_action_buttons">
 			<a
 				href="{{ url_for('gas_giants_planets') }}"><button style="font-size:100%" class="exoplanets_display_buttons buttons">gas giants</button></a>
 		</div>
