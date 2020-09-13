@@ -1,21 +1,46 @@
 {% extends 'base.html' %}
 {% block content %}
 <div>
-  <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
+	<a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
 </div>
-<div class="container">
-<div class="row">
-{% for gas_giant in gas_giants_planets %}
-    <div class="col-3">
-    {{ gas_giant.planet_name }}<br>
-    {{ gas_giant.discovery_date }}<br>
-    {{ gas_giant.distance_from_earth}}<br>
-    {{ gas_giant.type}}<br>
-    {{ gas_giant.star_system}}<br>
-    {{ gas_giant.mass}}<br>
-    {{ gas_giant.thoughts}}<br>
-    </div>
-{% endfor %}
-</div>
+<div style="margin-top:5rem" class="container">
+	<div class="row">
+		<div style="text-align:center" class="col-12">
+			<h1 class="title_exoplanet_page">gas giants</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('exoplanets_display') }}"><button class="buttons">Exoplanets</button></a>
+		</div>
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('rocky_planets') }}">
+				<button class="buttons">rocky exoplanets</button>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		{% for gas_giant in gas_giants_planets %}
+		<div class="col-4">
+			<div class="exoplanets_holder">
+				<img src="{{gas_giant.exoplanet_image}}" width="100%" height="70%" alt=""><br>
+				<p id="exoplanet_name" class="exoplanet_properties"><strong>{{gas_giant.planet_name}}</strong></p>
+				<hr class="separator">
+				<p class="exoplanet_properties"><strong>Type:</strong> {{gas_giant.type}}</p>
+				<hr class="separator">
+				<p class="exoplanet_properties"><strong>Star System:</strong> {{gas_giant.star_system}}</p>
+				<hr class="separator">
+				<div class="centered_buttons">
+					<a href="{{ url_for('add_favourites', exoplanet_id=gas_giant._id)}}"
+						id="margin-left"><button class="exoplanets_display_buttons buttons">Add Favourites</button></a>
+					<a href="{{ url_for('detailed_exoplanet', exoplanet_id=gas_giant._id) }}"
+						id="float_right"><button class="exoplanets_display_buttons buttons">Details</button></a>
+				</div>
+			</div>
+		</div>
+
+		{% endfor %}
+	</div>
+
 </div>
 {% endblock %}
