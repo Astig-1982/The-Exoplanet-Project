@@ -1,18 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
-	<a href="{{ url_for('rocky_planets') }}">Rocky Planets</a>
-	<a href="{{ url_for('gas_giants_planets') }}">Gas Giants</a>
-</div>
 <div style="margin-top:5rem" class="container">
 	<div class="row">
-		<div class="col-4 main_action_buttons">
-			<a href="{{ url_for('rocky_planets') }}"><button class="buttons">Rocky Planets</button></a>
-		</div>
-		<div class="col-4 main_action_buttons">
+		<div style="text-align:center" class="col-12">
 			<h1 class="title_exoplanet_page">exoplanets</h1>
 		</div>
-		<div class="col-4 main_action_buttons">
+	</div>
+	<div class="row">
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('rocky_planets') }}"><button class="buttons">Rocky Planets</button></a>
+		</div>
+		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('gas_giants_planets') }}"><button class="buttons">Gas Giants</button></a>
 		</div>
 	</div>
