@@ -8,11 +8,12 @@
 	</div>
 	<div class="row">
 		<div class="col-6 main_action_buttons">
-			<a href="{{ url_for('exoplanets_display') }}"><button class="buttons">Main List</button></a>
+			<a
+				href="{{ url_for('exoplanets_display') }}"><button style="font-size:100%" class="exoplanets_display_buttons buttons">main list</button></a>
 		</div>
 		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('rocky_planets') }}">
-				<button class="buttons">rocky exoplanets</button>
+				<button style="font-size:100%" class="exoplanets_display_buttons buttons">rocky worlds</button>
 			</a>
 		</div>
 	</div>
@@ -35,9 +36,7 @@
 				</div>
 			</div>
 		</div>
-
 		{% endfor %}
 	</div>
-
 </div>
 {% endblock %}
