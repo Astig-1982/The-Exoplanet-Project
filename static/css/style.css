@@ -27,6 +27,10 @@ body {
     text-align: center;
 }
 
+.main-action {
+    margin-top: 2rem;
+}
+
 /* home page starts here */
 
 @keyframes photo-zoom {
@@ -171,6 +175,12 @@ body {
     height: 100%;
     margin: auto;
     border: 1px solid #408ec6;
+}
+
+/* favourites list page starts here */
+
+.favourites_main_buttons {
+    width: 13.5rem;
 }
 
 
