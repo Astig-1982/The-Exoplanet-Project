@@ -100,6 +100,25 @@ body {
 
 /* exoplanets.html section starts here */
 
+.image_holder {
+    overflow: hidden;
+}
+
+@keyframes image-zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+.zoom_image:hover {
+    animation-name: image-zoom;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
 .title_exoplanet_page {
     letter-spacing: .5rem;
     text-transform: uppercase;
