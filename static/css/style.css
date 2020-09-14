@@ -25,6 +25,11 @@ body {
     color: #e5e5dc;
 }
 
+.nav_anchors:hover {
+    color:  #e5e5dc;
+    opacity: .6;
+}
+
 #navbar_title {
     font-family: 'Roboto Slab', sans-serif;
     padding-top: 0px;
