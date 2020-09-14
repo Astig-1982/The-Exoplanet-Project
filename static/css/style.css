@@ -168,7 +168,7 @@ body {
     margin-top: 20%;
 }
 
-#message {
+.message {
     background-color: #7a2048;
     border: 2.5px solid #408ec6;
     width: 45rem;
@@ -186,6 +186,14 @@ body {
     width: 10rem;
     height: 2.5rem;
     margin: 0 1rem;
+}
+
+/* not_added.html page starts here */
+
+#not_added_message {
+    height: 6rem;
+    text-transform: none;
+    font-size: 110%;
 }
 
 /* detailed_exoplanet page starts here */
@@ -227,6 +235,8 @@ body {
 .favourites_main_buttons {
     width: 13.5rem;
 }
+
+
 
 
 
