@@ -105,11 +105,12 @@ def insert_exoplanet():
 
 @app.route('/calculate_weight/<exoplanet_id>')
 def calculate_weight(exoplanet_id):
+    detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
     exoplanet=mongo.db.favourites.find_one({"_id": ObjectId(exoplanet_id)})
     if exoplanet:
         return render_template('calculate_weight.html', exoplanet=exoplanet)
     else:
-        return render_template('not_added.html', exoplanet=exoplanet)
+        return render_template('not_added.html', detailed_exoplanet=detailed_exoplanet)
 
 
 @app.route('/calculate/<exoplanet_mass>/<exoplanet_name>', methods=['POST'])
