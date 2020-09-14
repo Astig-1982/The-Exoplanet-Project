@@ -44,6 +44,10 @@ body {
 
 /* home page starts here */
 
+#home_container {
+    overflow: hidden;
+}
+
 @keyframes photo-zoom {
 	from {
 		transform: scale(1);
