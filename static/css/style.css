@@ -37,6 +37,10 @@ body {
     font-weight: 700;
 }
 
+#navbar_title:hover {
+    opacity: 1;
+}
+
 .buttons {
     font-family: 'Roboto Slab', sans-serif;
     background-color: #7a2048;
