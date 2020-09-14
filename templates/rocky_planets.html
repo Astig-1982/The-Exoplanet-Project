@@ -21,7 +21,9 @@
 		{% for rocky_planet in rocky_planets %}
 		<div class="col-4">
 			<div class="exoplanets_holder">
-				<img src="{{rocky_planet.exoplanet_image}}" width="100%" height="70%" alt=""><br>
+				<div class="image_holder">
+					<img class="zoom_image" src="{{ rocky_planet.exoplanet_image }}" width="100%" height="70%" alt="">
+                </div>
 				<p id="exoplanet_name" class="exoplanet_properties"><strong>{{rocky_planet.planet_name}}</strong></p>
 				<hr class="separator">
 				<p class="exoplanet_properties"><strong>Type:</strong> {{rocky_planet.type}}</p>
