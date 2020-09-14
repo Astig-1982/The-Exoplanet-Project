@@ -15,10 +15,8 @@ body {
     z-index: 2;
     width: 100vw;
     height: 4rem;
-    background-color: #111212;
+    background-color: rgba(17, 18, 18, .6);
     color: #e5e5dc;
-}
-
 .nav_anchors {
     color: #e5e5dc;
 }
