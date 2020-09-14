@@ -14,12 +14,12 @@ app.config["MONGO_URI"] = 'mongodb+srv://as_cluster_2020:hello_task_boulevard@my
 mongo = PyMongo(app)
 
 
-@app.route('/')
 @app.route('/base')
 def base():
     return render_template('base.html')
 
 
+@app.route('/')
 @app.route('/home')
 def home():
     return render_template('home.html')
