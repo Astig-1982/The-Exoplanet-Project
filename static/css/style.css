@@ -147,23 +147,21 @@ body {
 
 #message {
     background-color: #7a2048;
-    border: 2px solid #408ec6;
+    border: 2.5px solid #408ec6;
     width: 45rem;
     height: 5rem;
     color: #e5e5dc;
     padding-top: 1.5rem;
     margin: auto;
-    text-align: center;
+    text-transform: capitalize;
+    font-size: 120%;
+    letter-spacing: .1rem;
 }
 
 .action_buttons {
-    background-color: #7a2048;
-    color: #e5e5dc;
-    font-size: 84%;
+    font-size: 110%;
     width: 10rem;
     height: 2.5rem;
-    text-align: center;
-    padding-top: .4rem;
     margin: 0 1rem;
 }
 
