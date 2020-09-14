@@ -105,6 +105,7 @@ body {
 /* exoplanets.html page starts here */
 
 .image_holder {
+    height: 15rem;
     overflow: hidden;
 }
 
@@ -212,6 +213,7 @@ body {
 
 .detailed {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     border: 1px solid #1d1e1f;
 }
