@@ -4,7 +4,7 @@
 	<div id="exoplanets_title" class="row">
 		<div class="col-12">
 			<div style="text-align:center">
-				<p id="message">this planet needs to be added to favourites.</p>
+				<p id="message">{{ detailed_exoplanet.planet_name }} is not added to your favourites list. please add it to your favourites and then calculate your weight.</p>
                 <div style="margin-top: 4rem;">
                 <a href="{{ url_for('exoplanets_display') }}"><button class="action_buttons buttons">back</button></a>
                 <a href="{{ url_for('favourite_list') }}"><button class="action_buttons buttons">favourites</button></a>
