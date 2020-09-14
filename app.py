@@ -39,7 +39,7 @@ def rocky_planets():
 
 @app.route('/gas_giants_planets')
 def gas_giants_planets():
-    gas_giants_planets=mongo.db.exoplanets.find({'type': 'gas'})
+    gas_giants_planets=mongo.db.exoplanets.find({'type': 'gas giant'})
     return render_template('gas_giants_planets.html', gas_giants_planets=gas_giants_planets)
 
 
@@ -80,7 +80,7 @@ def favourite_rocky_planets():
 
 @app.route('/favourite_gas_giants')
 def favourite_gas_giants():
-    gas_giants_planets=mongo.db.favourites.find({'type': 'gas'})
+    gas_giants_planets=mongo.db.favourites.find({'type': 'gas giant'})
     return render_template('favourite_gas_giants.html', gas_giants_planets=gas_giants_planets)
 
 
