@@ -209,9 +209,15 @@ body {
 }
 
 .properties_container {
-    
     text-align: center;
-    
+}
+
+#detailed_properties {
+    background-color: #408ec6; 
+}
+
+.detailed_separator {
+    margin: 2rem;
 }
 
 /* favourites list page starts here */
