@@ -202,11 +202,16 @@ body {
     margin-top: 2rem;
 }
 
-.properties_container {
-    width: 50%;
-    height: 100%;
-    text-align: center;
+.detailed {
+    width: 80%;
+    margin: 0 auto;
     border: 1px solid #1d1e1f;
+}
+
+.properties_container {
+    
+    text-align: center;
+    
 }
 
 /* favourites list page starts here */
