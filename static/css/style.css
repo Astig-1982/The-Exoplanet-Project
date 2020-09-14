@@ -213,7 +213,9 @@ body {
 }
 
 #detailed_properties {
-    background-color: #408ec6; 
+    background-color: #408ec6;
+    font-size: 135%;
+    letter-spacing: .2rem; 
 }
 
 .detailed_separator {
