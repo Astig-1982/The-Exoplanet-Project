@@ -15,17 +15,22 @@
   </div>
   </div>
 <div class="row">
-<div class="col-12">
-<div id="properties_container">
-  {{ detailed_exoplanet.planet_name }}<br>
-  {{ detailed_exoplanet.discovery_date }}<br>
-  {{ detailed_exoplanet.distance_from_earth }}<br>                                       
-  {{ detailed_exoplanet.type }}<br>
-  {{ detailed_exoplanet.star_system }}<br>
-  {{ detailed_exoplanet.mass }}<br>
-  {{ detailed_exoplanet.thoughts }}<br>
+<div class="col-6 properties_container">
+
+  <p>Name: {{ detailed_exoplanet.planet_name }}</p>
+  <p>Discovery date: {{ detailed_exoplanet.discovery_date }}</p>
+  <p>Distance From Earth: {{ detailed_exoplanet.distance_from_earth }} light years</p>
+
 </div>
+<div class="col-6 properties_container"> 
+                                     
+  <p>Type: {{ detailed_exoplanet.type }}</p>
+  <p>Star System: {{ detailed_exoplanet.star_system }}</p>
+  <p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
+
 </div>
+
+
 </div>
 </div>
 {% endblock %}
