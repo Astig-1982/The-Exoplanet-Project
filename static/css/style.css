@@ -102,7 +102,7 @@ body {
     text-align: center;
 }
 
-/* exoplanets.html section starts here */
+/* exoplanets.html page starts here */
 
 .image_holder {
     overflow: hidden;
@@ -202,11 +202,11 @@ body {
     margin-top: 2rem;
 }
 
-#properties_container {
+.properties_container {
     width: 50%;
     height: 100%;
-    margin: auto;
-    border: 1px solid #408ec6;
+    text-align: center;
+    border: 1px solid #1d1e1f;
 }
 
 /* favourites list page starts here */
