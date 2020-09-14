@@ -171,7 +171,7 @@ body {
 .message {
     background-color: #7a2048;
     border: 2.5px solid #408ec6;
-    width: 45rem;
+    width: 51.5rem;
     height: 5rem;
     color: #e5e5dc;
     padding-top: 1.5rem;
@@ -191,9 +191,9 @@ body {
 /* not_added.html page starts here */
 
 #not_added_message {
-    height: 6rem;
+    height: 7.5rem;
     text-transform: none;
-    font-size: 110%;
+    
 }
 
 /* detailed_exoplanet page starts here */
