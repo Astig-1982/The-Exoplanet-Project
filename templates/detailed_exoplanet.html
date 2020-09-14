@@ -1,36 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
-  <a href="{{ url_for('exoplanets_display') }}">Exoplanets</a>
-</div>
 <div id="detailed_exoplanet_container" class="container">
-<div class="row">
-<div id="detailed_exoplanet_title" class="col-12">
-<h1>{{ detailed_exoplanet.planet_name }}</h1>
-</div>
-</div>
-<div id="exoplanet_display" class="row">
-<div id="detailed" class="col-12">
-  <img src="{{ detailed_exoplanet.exoplanet_image }}" width="50%" height="100%" alt=""><br>
-  </div>
-  </div>
-<div class="row">
-<div class="col-6 properties_container">
-
-  <p>Name: {{ detailed_exoplanet.planet_name }}</p>
-  <p>Discovery date: {{ detailed_exoplanet.discovery_date }}</p>
-  <p>Distance From Earth: {{ detailed_exoplanet.distance_from_earth }} light years</p>
-
-</div>
-<div class="col-6 properties_container"> 
-                                     
-  <p>Type: {{ detailed_exoplanet.type }}</p>
-  <p>Star System: {{ detailed_exoplanet.star_system }}</p>
-  <p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
-
-</div>
-
-
-</div>
-</div>
-{% endblock %}
+	<div class="row">
+		<div id="detailed_exoplanet_title" class="col-12">
+			<h1>{{ detailed_exoplanet.planet_name }}</h1>
+		</div>
+	</div>
+	<div id="exoplanet_display" class="row">
+		<div class="col-12">
+			<div class="detailed">
+				<img src="{{ detailed_exoplanet.exoplanet_image }}" width="100%" height="100%" alt="">
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:2rem" class="row">
+			<div class="col-12 properties_container">
+				<div class="detailed">
+					<p>Name: {{ detailed_exoplanet.planet_name }}</p>
+					<p>Discovery date: {{ detailed_exoplanet.discovery_date }}</p>
+					<p>Distance From Earth: {{ detailed_exoplanet.distance_from_earth }} light years</p>
+					<p>Type: {{ detailed_exoplanet.type }}</p>
+					<p>Star System: {{ detailed_exoplanet.star_system }}</p>
+					<p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
