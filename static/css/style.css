@@ -41,10 +41,6 @@ body {
     text-align: center;
 }
 
-.top_buttons {
-    font-size: 105%;
-}
-
 .main-action {
     margin-top: 2rem;
 }
@@ -163,6 +159,11 @@ body {
     width: 8rem;
     height: 2rem;
     text-align: center;
+}
+
+.top_buttons {
+    width: 13.5rem;
+    font-size: 105%;
 }
 
 .centered_buttons {
