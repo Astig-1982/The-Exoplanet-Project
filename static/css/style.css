@@ -259,7 +259,9 @@ body {
     text-align: center;
     font-size: 150%;
     letter-spacing: .1rem;
-    border: 2px solid #408ec6;
+    background-color:  #7a2048;
+    border: 5px solid #408ec6;
+    padding-top: 19px;
     margin: 0 auto;
 }
 
