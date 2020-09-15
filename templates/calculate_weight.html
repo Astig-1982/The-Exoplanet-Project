@@ -4,7 +4,7 @@
 <div style="margin-top:5rem" class="container">
 	<div class="row">
 		<div class="col-12">
-			<form action="{{ url_for('calculate', exoplanet_mass=exoplanet.mass, exoplanet_name=exoplanet.planet_name) }}" method="POST">
+			<form action="{{ url_for('calculate', exoplanet_mass=exoplanet.mass, exoplanet_name=exoplanet.planet_name, exoplanet_id=exoplanet._id) }}" method="POST">
 				<div class="form-group">
 					<label for="your_weight">Your Weight</label>
 					<input name="your_weight" type="text" class="form-control" id="your_weight">
