@@ -19,8 +19,6 @@ body {
     color: #e5e5dc;
 }
 
-
-
 .nav_anchors {
     color: #e5e5dc;
 }
@@ -71,6 +69,7 @@ body {
 	}
 }
 
+
 #home {
     background-image: url(../images/blue_universe.jpg);
     background-repeat: no-repeat;
@@ -81,6 +80,8 @@ body {
 	animation-fill-mode: forwards;
     overflow: hidden;
 }
+
+
 
 #title_container {
     text-align: center;
@@ -251,7 +252,16 @@ body {
     margin: 1.5rem 2rem;
 }
 
-/* favourites list page starts here */
+/* exoplanet_weight.html starts here */
+
+#weight_message {
+    width: 70%;
+    text-align: center;
+    font-size: 150%;
+    letter-spacing: .1rem;
+    border: 2px solid #408ec6;
+    margin: 0 auto;
+}
 
 
 
