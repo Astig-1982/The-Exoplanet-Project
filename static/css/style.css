@@ -69,7 +69,6 @@ body {
 	}
 }
 
-
 #home {
     background-image: url(../images/blue_universe.jpg);
     background-repeat: no-repeat;
@@ -254,6 +253,30 @@ body {
 
 /* exoplanet_weight.html starts here */
 
+@keyframes weight-zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.8);
+	}
+}
+
+#weight_message {
+    width: 30%;
+    text-align: center;
+    font-size: 100%;
+    background-color:  #7a2048;
+    border: 5px solid #408ec6;
+    padding-top: 19px;
+    margin: 0 auto;
+    animation-name: weight-zoom;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+/*
+
 #weight_message {
     width: 70%;
     text-align: center;
@@ -264,6 +287,8 @@ body {
     padding-top: 19px;
     margin: 0 auto;
 }
+
+*/
 
 
 
