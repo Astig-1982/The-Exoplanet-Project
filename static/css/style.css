@@ -265,7 +265,7 @@ body {
 #weight_message {
     width: 30%;
     text-align: center;
-    font-size: 100%;
+    font-size: 80%;
     background-color:  #7a2048;
     border: 5px solid #408ec6;
     padding-top: 19px;
@@ -273,6 +273,11 @@ body {
     animation-name: weight-zoom;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
+}
+
+.weight_buttons {
+    width: 10rem;
+    height: 2.6rem;
 }
 
 /*
