@@ -275,10 +275,17 @@ body {
 	animation-fill-mode: forwards;
 }
 
+#weight_buttons_container {
+    text-align: center;
+}
+
 .weight_buttons {
     width: 10rem;
     height: 2.6rem;
+    margin: 0 2.5%;
 }
+
+
 
 /*
 
