@@ -10,19 +10,18 @@
         </div>
 		</div>
 	</div>
-    <div style="margin-top:4rem" class="row">
-    <div id="again_button" class="col-3">
+    <div style="margin-top:5rem" class="row">
+    <div id="weight_buttons_container" class="col-12">
     <a
 				href="{{ url_for('calculate_weight', exoplanet_id=exoplanet_id) }}"><button class="weight_buttons buttons">again</button></a>
-    </div>
-    <div id="favourites_button" class="col-3">
+    
     <a
 				href="{{ url_for('favourite_list') }}"><button class="weight_buttons buttons">favourites</button></a>
-    </div>
-    <div id="exoplanet_button" class="col-3">
+    
+    
     <a
 				href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet_id) }}"><button class="weight_buttons buttons">details</button></a>
-    </div>
+    
     </div>
 </div>
 
