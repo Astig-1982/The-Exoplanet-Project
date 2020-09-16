@@ -46,6 +46,11 @@ body {
     color: #e5e5dc;
 }
 
+.buttons:hover {
+    background-color: #e5e5dc;
+    color: #7a2048;
+}
+
 .main_action_buttons {
     text-align: center;
 }
