@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
-    <title>Other Worlds</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+	<title>Other Worlds</title>
 </head>
+
 <body>
-<nav id="nav" class="navbar navbar-expand-lg">
-  <a id="navbar_title" class="navbar-brand nav_anchors" href="{{ url_for('home') }}">OTHER WORLDS</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<nav id="nav" class="navbar navbar-expand-lg">
+		<a id="navbar_title" class="navbar-brand nav_anchors" href="{{ url_for('home') }}">OTHER WORLDS</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link nav_anchors" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav_anchors" href="{{ url_for('exoplanets_display') }}">Main List</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav_anchors" href="{{ url_for('favourite_list') }}">Favourites List</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav_anchors" href="{{ url_for('add_exoplanet') }}">Add Exoplanet</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    {% block content %}
-    {% endblock %}
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link nav_anchors" href="{{ url_for('home') }}">Home
+						<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav_anchors" href="{{ url_for('exoplanets_display') }}">Main List</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav_anchors" href="{{ url_for('favourite_list') }}">Favourites List</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav_anchors" href="{{ url_for('add_exoplanet') }}">Add Exoplanet</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	{% block content %}
+	{% endblock %}
+	<div id="lower_base" class="container-fluid">
+		<div class="row">
+			<div id="social_icons_container" class="col-12">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-youtube-square"></i>
+				<i class="fab fa-twitter-square"></i>
+			</div>
+		</div>
+		<div class="row">
+			<div id="lower_text" class="col-12">
+				<p>OTHER WORLDS is a trademark of CosmosCorporation United Kingdom </p>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+            $("#favourite_button").click(function(){
+                $("#favourite_light").css("color", "green");
+            });
+        });
+	</script>
 </body>
+
 </html>
