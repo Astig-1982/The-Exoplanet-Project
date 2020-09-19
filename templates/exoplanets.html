@@ -31,11 +31,11 @@
 					<hr class="separator">
 					<p class="exoplanet_properties"><strong>Type:</strong> {{exoplanet.type}}</p>
 					<hr class="separator">
-					<p class="exoplanet_properties"><strong>Star System:</strong> {{exoplanet.star_system}}</p>
+					<p class="exoplanet_properties"><strong>Star System:</strong> {{exoplanet.star_system}} </p>
 					<hr class="separator">
 					<div class="centered_buttons">
 						<a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}"
-							id="margin-left"><button class="exoplanets_display_buttons buttons">Add Favourites</button></a>
+							id="margin-left"><button id="favourite_button" class="exoplanets_display_buttons buttons">Add Favourites</button></a>
 						<a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}"
 							id="float_right"><button class="exoplanets_display_buttons buttons">Details</button></a>
 					</div>
