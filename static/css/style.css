@@ -201,6 +201,7 @@ i {
 .top_buttons {
     width: 13.5rem;
     font-size: 105%;
+    height: 2rem;
 }
 
 .centered_buttons {
