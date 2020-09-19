@@ -32,6 +32,13 @@ def exoplanets_display():
     return render_template('exoplanets.html', exoplanets=exoplanets)
 
 
+@app.route('/size')
+def size():
+    exoplanets=mongo.db.exoplanets.find()
+    sized_exoplanets=sorted(exoplanets, key = lambda i: float(i['mass'])) 
+    return render_template('size.html', sized_exoplanets=sized_exoplanets)
+
+
 @app.route('/rocky_planets')
 def rocky_planets():
     rocky_planets=mongo.db.exoplanets.find({'type': 'rocky'})
