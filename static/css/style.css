@@ -39,6 +39,28 @@ body {
     opacity: 1;
 }
 
+#lower_base {
+    width: 100vw;
+    height: 5rem;
+    text-align: center;
+    opacity: .5;
+}
+
+#social_icons_container {
+    padding: .4rem 0 0 0;
+    font-size: 190%;
+}
+
+i {
+    margin: 0 2.6rem;
+}
+
+#lower_text {
+    font-size: 80%;
+    letter-spacing: .1rem;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
 .buttons {
     font-family: 'Roboto Slab', sans-serif;
     background-color: #7a2048;
