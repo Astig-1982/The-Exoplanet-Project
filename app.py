@@ -39,11 +39,25 @@ def small_to_large():
     return render_template('small_to_large.html', sized_exoplanets=sized_exoplanets)
 
 
+@app.route('/small_to_large_favourites')
+def small_to_large_favourites():
+    exoplanets=mongo.db.favourites.find()
+    sized_exoplanets=sorted(exoplanets, key = lambda i: float(i['mass'])) 
+    return render_template('small_to_large_favourites.html', sized_exoplanets=sized_exoplanets)
+
+
 @app.route('/large_to_small')
 def large_to_small():
     exoplanets=mongo.db.exoplanets.find()
     larged_sized=sorted(exoplanets, key = lambda i: float(i['mass']), reverse=True) 
     return render_template('large_to_small.html', larged_sized=larged_sized)
+
+
+@app.route('/large_to_small_favourites')
+def large_to_small_favourites():
+    exoplanets=mongo.db.favourites.find()
+    larged_sized=sorted(exoplanets, key = lambda i: float(i['mass']), reverse=True) 
+    return render_template('large_to_small_favourites.html', larged_sized=larged_sized)
 
  
 @app.route('/rocky_planets')
@@ -56,7 +70,6 @@ def rocky_planets():
 def gas_giants_planets():
     gas_giants_planets=mongo.db.exoplanets.find({'type': 'gas giant'})
     return render_template('gas_giants_planets.html', gas_giants_planets=gas_giants_planets)
-
 
 
 @app.route('/add_favourites/<exoplanet_id>')
