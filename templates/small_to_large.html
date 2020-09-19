@@ -17,12 +17,13 @@
 			<a href="{{ url_for('gas_giants_planets') }}"><button class="top_buttons buttons"> gas giants</button></a>
 		</div>
 		<div class="col-3 dropdown">
-			<button style="padding-top:.1rem" class="btn dropdown-toggle top_buttons buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<button style="padding-top:.1rem" class="dropdown-toggle top_buttons buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     sort by size
   </button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				<a class="dropdown-item" href="{{ url_for('small_to_large') }}">Small To Large</a>
 				<a class="dropdown-item" href="{{ url_for('large_to_small') }}">Large To Small</a>
+                <a class="dropdown-item" href="{{ url_for('exoplanets_display') }}">Default Display</a>
 			</div>
 		</div>
 	</div>
