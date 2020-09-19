@@ -32,13 +32,20 @@ def exoplanets_display():
     return render_template('exoplanets.html', exoplanets=exoplanets)
 
 
-@app.route('/size')
-def size():
+@app.route('/small_to_large')
+def small_to_large():
     exoplanets=mongo.db.exoplanets.find()
     sized_exoplanets=sorted(exoplanets, key = lambda i: float(i['mass'])) 
-    return render_template('size.html', sized_exoplanets=sized_exoplanets)
+    return render_template('small_to_large.html', sized_exoplanets=sized_exoplanets)
 
 
+@app.route('/large_to_small')
+def large_to_small():
+    exoplanets=mongo.db.exoplanets.find()
+    larged_sized=sorted(exoplanets, key = lambda i: float(i['mass']), reverse=True) 
+    return render_template('large_to_small.html', larged_sized=larged_sized)
+
+ 
 @app.route('/rocky_planets')
 def rocky_planets():
     rocky_planets=mongo.db.exoplanets.find({'type': 'rocky'})
