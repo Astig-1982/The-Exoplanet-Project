@@ -7,20 +7,29 @@
 </div>
 </div>
 	<div class="row main-action">
-		<div class="col-4 main_action_buttons">
+		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('favourite_rocky_planets') }}">
 				<button class="buttons top_buttons">favourites rocky worlds</button>
 			</a>
 		</div>
-        <div class="col-4 main_action_buttons">
+        <div class="col-3 main_action_buttons">
 			<a href="{{ url_for('exoplanets_display') }}">
             <button class="buttons top_buttons">main list</button>
             </a>
 		</div>
-		<div class="col-4 main_action_buttons">
+		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('favourite_gas_giants') }}">
 				<button class="buttons top_buttons">favourites gas giants</button>
 			</a>
+		</div>
+        <div class="col-3 dropdown">
+			<button style="padding-top:.1rem" class="btn dropdown-toggle top_buttons buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    sort by size
+  </button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="{{ url_for('small_to_large_favourites') }}">Small To Large</a>
+				<a class="dropdown-item" href="{{ url_for('large_to_small_favourites') }}">Large To Small</a>
+			</div>
 		</div>
 	</div>
 	<div class="row">
