@@ -28,7 +28,8 @@ def home():
 
 @app.route('/exoplanets_display')
 def exoplanets_display():
-    return render_template('exoplanets.html', exoplanets=mongo.db.exoplanets.find())
+    exoplanets=mongo.db.exoplanets.find()
+    return render_template('exoplanets.html', exoplanets=exoplanets)
 
 
 @app.route('/rocky_planets')
