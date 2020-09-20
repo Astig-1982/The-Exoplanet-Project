@@ -224,6 +224,22 @@ i {
     height: 2.8rem;
 }
 
+#add_exoplanet_message {
+    text-align: center;
+    border: 3px solid #408ec6;
+    background-color: #7a2048;
+    color: #e5e5dc;
+    width: 70%;
+    margin: auto;
+    font-size: 120%;
+    letter-spacing: .2rem;
+}
+
+#add_exoplanet_message p {
+    padding: 1.8rem;
+    margin-bottom: 0;
+}
+
 /* already_favourite messsage page starts here */
 
 #message_container {
