@@ -73,6 +73,24 @@ i {
     color: #7a2048;
 }
 
+.dropdown-menu {
+    width: 13.5rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 105%;
+    background-color: #e5e5dc;
+    color: #7a2048;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: #7a2048;
+}
+
+.dropdown-menu a:hover {
+    background-color: #7a2048;
+    color: #e5e5dc;
+}
+
 .main_action_buttons {
     text-align: center;
 }
@@ -107,8 +125,6 @@ i {
     overflow: hidden;
 }
 
-
-
 #title_container {
     text-align: center;
     margin-top: 20%;
@@ -137,7 +153,6 @@ i {
     padding-top: 0;
 }
 
-
 #detailed {
     text-align: center;
 }
@@ -149,19 +164,14 @@ i {
     overflow: hidden;
 }
 
-@keyframes image-zoom {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.2);
-	}
+.zoom_image {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .zoom_image:hover {
-    animation-name: image-zoom;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+    transform: scale(1.2);
 }
 
 .title_exoplanet_page {
