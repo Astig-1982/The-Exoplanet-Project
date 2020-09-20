@@ -125,9 +125,14 @@ i {
     overflow: hidden;
 }
 
+#title_area {
+    position: absolute;
+    bottom: 39%;
+    left: 30%;
+}
+
 #title_container {
     text-align: center;
-    margin-top: 20%;
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
     color: #e5e5dc;
