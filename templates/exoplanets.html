@@ -23,7 +23,7 @@
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				<a class="dropdown-item" href="{{ url_for('small_to_large') }}">Small To Large</a>
 				<a class="dropdown-item" href="{{ url_for('large_to_small') }}">Large To Small</a>
-                <a class="dropdown-item" href="{{ url_for('exoplanets_display') }}">Default Display</a>
+				<a class="dropdown-item" href="{{ url_for('exoplanets_display') }}">Default Display</a>
 			</div>
 		</div>
 	</div>
@@ -50,12 +50,13 @@
 			</div>
 			{% endfor %}
 		</div>
-        <div style="margin:2rem 0 2.5rem 0" class="row">
-        <div class="col-12">
-        <div id="add_exoplanet_message">
-        <p>Can't find your favourite exoplanet in the main list? Add any exoplanet to your Favourites List by simply entering its details <a href="{{ url_for('add_exoplanet') }}">here</a>.</p>
-        </div>
-        </div>
-        </div>
+		<div style="margin:2rem 0 2.5rem 0" class="row">
+			<div class="col-12">
+				<div id="add_exoplanet_message">
+					<p>Can't find your favourite exoplanet in the main list? Add any exoplanet to your Favourites List
+						by simply entering its details <a href="{{ url_for('add_exoplanet') }}">here</a>.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	{% endblock %}
