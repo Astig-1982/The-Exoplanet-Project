@@ -258,9 +258,19 @@ i {
 
 /* about.html page starts here */
 
+#quote {
+    margin-bottom: .1rem;
+    letter-spacing: .2rem;
+}
+
+#quote_author {
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
 #about_text_container {
     margin-top: 2rem;
-    margin-bottom: 2.2%;
+    margin-bottom: 8%;
 }
 
 #about_text {
