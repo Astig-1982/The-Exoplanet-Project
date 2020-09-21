@@ -256,6 +256,26 @@ i {
     opacity: .6;
 }
 
+/* about.html page starts here */
+
+#about_text_container {
+    margin-top: 2rem;
+    margin-bottom: 5%;
+}
+
+#about_text {
+    width: 80%;
+    border: 3px solid #408ec6;
+    background-color: #7a2048;
+    color: #e5e5dc;
+    margin: 0 auto;
+    font-size: 130%;
+}
+
+#about_text p {
+    padding: 1.5rem;
+}
+
 /* already_favourite messsage page starts here */
 
 #message_container {
@@ -287,7 +307,6 @@ i {
 #not_added_message {
     height: 7.5rem;
     text-transform: none;
-    
 }
 
 /* add_favourites.html page starts here */
