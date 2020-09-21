@@ -25,11 +25,15 @@ def home():
     return render_template('home.html')
 
 
-
 @app.route('/exoplanets_display')
 def exoplanets_display():
     exoplanets=mongo.db.exoplanets.find()
     return render_template('exoplanets.html', exoplanets=exoplanets)
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 @app.route('/small_to_large')
