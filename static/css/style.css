@@ -290,6 +290,25 @@ i {
     
 }
 
+/* add_favourites.html page starts here */
+
+#add_favourites_message {
+    width: 50%;
+    height: 10rem;
+    border: 2px solid #408ec6;
+    background-color: #7a2048;
+    color: #e5e5dc;
+    margin: 0 auto; 
+    margin-top: 5rem;
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#add_favourites_message p {
+    padding: 2rem 1rem;
+}
+
 /* detailed_exoplanet page starts here */
 
 #detailed_exoplanet_container {
@@ -380,23 +399,6 @@ i {
     height: 2.6rem;
     margin: 0 2.5%;
 }
-
-
-
-/*
-
-#weight_message {
-    width: 70%;
-    text-align: center;
-    font-size: 150%;
-    letter-spacing: .1rem;
-    background-color:  #7a2048;
-    border: 5px solid #408ec6;
-    padding-top: 19px;
-    margin: 0 auto;
-}
-
-*/
 
 
 
