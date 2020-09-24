@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container">
+<div style="margin-top:6rem" class="container">
 	<div class="row">
 		<div class="col-12">
+        <div id="form_container">
 			<form action="{{ url_for('insert_exoplanet') }}" method="POST">
 				<div class="form-group">
 					<label for="planet_name">Exoplanet Name</label>
@@ -35,8 +36,9 @@
 										<label for="thoughts">Thoughts</label>
 										<input name="thoughts" type="text" class="form-control" id="thoughts">
   </div>
-										<button type="submit" class="btn btn-primary">Submit</button>
+										<button id="add_button" type="submit" class="btn btn-primary buttons">add exoplanet</button>
 			</form>
+		</div>
 		</div>
 	</div>
 </div>
