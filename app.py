@@ -124,7 +124,12 @@ def add_exoplanet():
 @app.route('/insert_exoplanet', methods=['POST'])
 def insert_exoplanet():
     favourites=mongo.db.favourites
+    if request.form.get('type')=='rocky':
+        default_image='https://scitechdaily.com/images/Rocky-Exoplanet-Orbiting-Red-Dwarf-Star.jpg'
+    else:
+        default_image='https://earthsky.org/upl/2014/05/planet-GU-Psc-b.jpg'
     new_planet={'planet_name': request.form.get('planet_name'),
+                'exoplanet_image': default_image,
                 'discovery_date': request.form.get('discovery_date'),
                 'distance_from_earth': request.form.get('distance_from_earth'),
                 'type': request.form.get('type'),
