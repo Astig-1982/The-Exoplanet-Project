@@ -436,6 +436,14 @@ i {
     margin: 0 auto;
 }
 
+#form_container div {
+    margin-bottom: .5rem;
+}
+
+#add_button {
+    margin-top: 1.5rem;
+}
+
 
 
 
