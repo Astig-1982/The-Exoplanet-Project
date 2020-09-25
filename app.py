@@ -129,8 +129,10 @@ def insert_exoplanet():
     else:
         default_image='https://earthsky.org/upl/2014/05/planet-GU-Psc-b.jpg'
     mass=request.form.get('mass')
+    distance_from_earth=request.form.get('distance_from_earth')
     try:
         float(mass)
+        float(distance_from_earth)
     except:
         return render_template('wrong_data.html')
     else:
