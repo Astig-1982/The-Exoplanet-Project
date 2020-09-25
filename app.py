@@ -128,7 +128,13 @@ def insert_exoplanet():
         default_image='https://scitechdaily.com/images/Rocky-Exoplanet-Orbiting-Red-Dwarf-Star.jpg'
     else:
         default_image='https://earthsky.org/upl/2014/05/planet-GU-Psc-b.jpg'
-    new_planet={'planet_name': request.form.get('planet_name'),
+    mass=request.form.get('mass')
+    try:
+        float(mass)
+    except:
+        return render_template('wrong_data.html')
+    else:
+        new_planet={'planet_name': request.form.get('planet_name'),
                 'exoplanet_image': default_image,
                 'discovery_date': request.form.get('discovery_date'),
                 'distance_from_earth': request.form.get('distance_from_earth'),
@@ -136,8 +142,8 @@ def insert_exoplanet():
                 'star_system': request.form.get('star_system'),
                 'mass': request.form.get('mass'),
                 'thoughts': request.form.get('thoughts')}
-    favourites.insert_one(new_planet)
-    return redirect(url_for('favourite_list'))
+        favourites.insert_one(new_planet)
+        return redirect(url_for('favourite_list'))
 
 
 @app.route('/calculate_weight/<exoplanet_id>')
