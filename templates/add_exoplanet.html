@@ -6,7 +6,7 @@
 			<h1 class="title_exoplanet_page">add exoplanet</h1>
 		</div>
 	</div>
-    <div class="row main-action">
+	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
 		</div>
@@ -19,36 +19,94 @@
 			<div id="form_container">
 				<form action="{{ url_for('insert_exoplanet') }}" method="POST">
 					<div class="form-group">
-						<input name="planet_name" type="text" class="form-control input_planet" id="planet_name" placeholder="Exoplanet Name">
-  </div><hr class="separator">
+						<input name="planet_name" type="text" class="form-control input_planet" id="planet_name" placeholder="Exoplanet Name:">
+  </div>
+						<hr class="separator">
 						<div class="form-group">
-							<input name="discovery_date" type="text" class="form-control input_planet" id="discovery_date" placeholder="Discovery Date">
-  </div><hr class="separator">
+							<input name="discovery_date" type="text" class="form-control input_planet" id="discovery_date" placeholder="Discovery Date:">
+  </div>
+							<hr class="separator">
 							<div class="form-group">
-								<input name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth">
-  </div><hr class="separator">
+								<input name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth (Light Years):">
+  </div>
+								<hr class="separator">
 								<div class="form-group">
 									<select name="type" class="form-control input_planet" id="exampleFormControlSelect1" aria-placeholder="Type">
       <option value="rocky">rocky</option>
       <option value="gas">gas</option>
     </select>
-								</div><hr class="separator">
+								</div>
+								<hr class="separator">
 								<div class="form-group">
-									<input name="star_system" type="text" class="form-control input_planet" id="star_system" placeholder="Star System">
-  </div><hr class="separator">
+									<input name="star_system" type="text" class="form-control input_planet" id="star_system" placeholder="Star System:">
+  </div>
+									<hr class="separator">
 									<div class="form-group">
-										<input name="mass" type="text" class="form-control input_planet" id="mass" placeholder="Mass">
-  </div><hr style="margin-bottom:0" class="separator">
+										<input name="mass" type="text" class="form-control input_planet" id="mass" placeholder="Mass (Earth Mass):">
+  </div>
+										<hr style="margin-bottom:0" class="separator">
 
 										<button id="add_button" type="submit" class="btn btn-primary buttons">add exoplanet</button>
 				</form>
 			</div>
 		</div>
-        <div class="col-6">
-        <div>
-        <p>guide to insert exoplanet</p>
-        </div>
-        </div>
+		<div id="guide-container" class="col-6">
+			<div id="guide">
+            <p>guide to insert exoplanet</p>
+				<div class="accordion" id="accordionExample">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button class="guide_text btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          general
+        </button>
+							</h2>
+						</div>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="guide_text btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          inserting the mass
+        </button>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								inserttin pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								<button class=" guide_text btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          planet's image
+        </button>
+							</h2>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 {% endblock %}
