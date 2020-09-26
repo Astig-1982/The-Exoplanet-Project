@@ -434,10 +434,36 @@ i {
 #form_container {
     width: 30rem;
     margin: 0 auto;
+    border: 1px solid #1d1e1f;
+    background-color: #408ec6;
 }
 
 #form_container div {
     margin-bottom: .5rem;
+}
+
+.input_planet {
+    background-color: #408ec6;
+    color: #e5e5dc;
+    border: 0;
+}
+
+.input_planet:focus {
+    background-color: #408ec6;
+    color: #e5e5dc;
+}
+
+.input_planet::placeholder {
+    color: #e5e5dc; 
+    text-align: center;
+}
+
+.type_input {
+    color: #e5e5dc!important;
+}
+
+#planet_name {
+    margin-top: .7rem;
 }
 
 #add_button {
@@ -445,6 +471,10 @@ i {
     width: 30rem;
     height: 3.6rem;
 }
+
+
+
+
 
 
 
