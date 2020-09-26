@@ -39,20 +39,23 @@ body {
     opacity: 1;
 }
 
-#lower_base {
-    width: 100vw;
-    height: 5rem;
+#icons_container {
+    width: 4%;
     text-align: center;
     opacity: .5;
-}
-
-#social_icons_container {
-    padding: .4rem 0 0 0;
+    position: fixed;
+    top: 41%;
+    left: 0;
     font-size: 190%;
+    padding: .4rem 0 0 0;
 }
 
-i {
-    margin: 0 2.6rem;
+#lower_base i {
+    margin-bottom: 1.4rem;
+}
+
+#lower_base i:hover {
+    opacity: .6;
 }
 
 #lower_text {
@@ -489,7 +492,7 @@ select {
     background-color: #7a2048;
     color: #e5e5dc;
     border: 5px solid #408ec6;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding-top: 3.5%;
     box-sizing: border-box;
     text-align: center;
@@ -506,6 +509,7 @@ select {
     background-color: #408ec6;
     color: #e5e5dc;
     border-radius: 0; 
+    margin: 1rem;
 }
 
 .guide_text {
@@ -518,6 +522,18 @@ select {
     text-decoration: none;
     color: #e5e5dc;
     opacity: .6;
+}
+
+#exoplanets_link {
+    text-align: center;
+    margin-top: 24%;
+}
+
+#exoplanets_anchor {
+    font-style: italic;
+    color: #e5e5dc;
+    text-transform: lowercase;
+    font-size: 90%;
 }
 
 
