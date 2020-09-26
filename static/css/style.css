@@ -446,20 +446,26 @@ i {
     background-color: #408ec6;
     color: #e5e5dc;
     border: 0;
+    font-size: 120%;
+    letter-spacing: .2rem;
+    height: 3rem;
+    text-align: center;
 }
 
 .input_planet:focus {
     background-color: #408ec6;
     color: #e5e5dc;
+    text-align: center;
 }
 
 .input_planet::placeholder {
     color: #e5e5dc; 
     text-align: center;
+    
 }
 
-.type_input {
-    color: #e5e5dc!important;
+select {
+    text-align-last: center;
 }
 
 #planet_name {
@@ -467,9 +473,13 @@ i {
 }
 
 #add_button {
-    margin-top: 1.5rem;
-    width: 30rem;
+    margin-top: 0;
+    width: 29.9rem;
     height: 3.6rem;
+    border: 0;
+    border-radius: 0;
+    font-size: 130%;
+    letter-spacing: .2rem;
 }
 
 
