@@ -1,47 +1,54 @@
 {% extends 'base.html' %}
 {% block content %}
-<div style="margin-top:4.3rem;" class="container">
+<div style="margin-top:4.3rem;" class="container-fluid">
 	<div class="row">
 		<div id="exoplanet_page_title_container" class="col-12">
 			<h1 class="title_exoplanet_page">add exoplanet</h1>
 		</div>
 	</div>
-	<div style="margin-top:1.2rem;" class="row">
-		<div class="col-12">
+    <div class="row main-action">
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
+		</div>
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('favourite_list') }}"><button class="top_buttons buttons">favourites</button></a>
+		</div>
+	</div>
+	<div style="margin-top:3rem;" class="row">
+		<div class="col-6">
 			<div id="form_container">
 				<form action="{{ url_for('insert_exoplanet') }}" method="POST">
 					<div class="form-group">
-						<label for="planet_name">Exoplanet Name</label>
-						<input name="planet_name" type="text" class="form-control" id="planet_name">
-  </div>
+						<input name="planet_name" type="text" class="form-control input_planet" id="planet_name" placeholder="Exoplanet Name">
+  </div><hr class="separator">
 						<div class="form-group">
-							<label for="discovery_date">Discovery Date</label>
-							<input name="discovery_date" type="text" class="form-control" id="discovery_date">
-  </div>
+							<input name="discovery_date" type="text" class="form-control input_planet" id="discovery_date" placeholder="Discovery Date">
+  </div><hr class="separator">
 							<div class="form-group">
-								<label for="distance_from_earth">Distance From Earth</label>
-								<input name="distance_from_earth" type="text" class="form-control" id="distance_from_earth">
-  </div>
+								<input name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth">
+  </div><hr class="separator">
 								<div class="form-group">
-									<label for="exampleFormControlSelect1">Type</label>
-									<select name="type" class="form-control" id="exampleFormControlSelect1">
-      <option value="rocky">rocky</option>
-      <option value="gas">gas</option>
+									<select name="type" class="form-control input_planet" id="exampleFormControlSelect1" aria-placeholder="Type">
+      <option style="color:white" class="type_input" value="rocky">rocky</option>
+      <option class="type_input" value="gas">gas</option>
     </select>
-								</div>
+								</div><hr class="separator">
 								<div class="form-group">
-									<label for="star_system">Star System</label>
-									<input name="star_system" type="text" class="form-control" id="star_system">
-  </div>
+									<input name="star_system" type="text" class="form-control input_planet" id="star_system" placeholder="Star System">
+  </div><hr class="separator">
 									<div class="form-group">
-										<label for="mass">Mass</label>
-										<input name="mass" type="text" class="form-control" id="mass">
-  </div>
+										<input name="mass" type="text" class="form-control input_planet" id="mass" placeholder="Mass">
+  </div><hr class="separator">
 
 										<button id="add_button" type="submit" class="btn btn-primary buttons">add exoplanet</button>
 				</form>
 			</div>
 		</div>
+        <div class="col-6">
+        <div>
+        <p>guide to insert exoplanet</p>
+        </div>
+        </div>
 	</div>
 </div>
 {% endblock %}
