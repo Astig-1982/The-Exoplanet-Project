@@ -137,13 +137,13 @@ def insert_exoplanet():
         return render_template('wrong_data.html')
     else:
         new_planet={'planet_name': request.form.get('planet_name'),
-                'exoplanet_image': default_image,
-                'discovery_date': request.form.get('discovery_date'),
-                'distance_from_earth': request.form.get('distance_from_earth'),
-                'type': request.form.get('type'),
-                'star_system': request.form.get('star_system'),
-                'mass': request.form.get('mass'),
-                'thoughts': request.form.get('thoughts')}
+                    'exoplanet_image': default_image,
+                    'discovery_date': request.form.get('discovery_date'),
+                    'distance_from_earth': request.form.get('distance_from_earth'),
+                    'type': request.form.get('type'),
+                    'star_system': request.form.get('star_system'),
+                    'mass': request.form.get('mass'),
+                    'thoughts': request.form.get('thoughts')}
         favourites.insert_one(new_planet)
         return redirect(url_for('favourite_list'))
 
