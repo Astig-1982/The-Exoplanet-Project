@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+<div class="row">
+<div id="photo_action_button" class="col-12">
+<a href="{{ url_for('add_exoplanet') }}"><button class="top_buttons buttons">back</button></a>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div id="photo_container">
+<div id="mass_photo">
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
