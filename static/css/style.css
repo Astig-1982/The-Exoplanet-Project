@@ -216,7 +216,7 @@ body {
 .exoplanets_display_buttons {
     color: #e5e5dc;
     font-size: 84%;
-    width: 8rem;
+    width: 4.5rem;
     height: 2rem;
     text-align: center;
 }
@@ -339,6 +339,18 @@ body {
 
 #add_favourites_message p {
     padding: 2.5rem 1rem;
+}
+
+.exoplanets_display_buttons {
+    color: #e5e5dc;
+    font-size: 84%;
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.favourites_display_buttons {
+    width: 4.5rem;
 }
 
 /* detailed_exoplanet page starts here */
