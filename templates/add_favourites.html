@@ -56,10 +56,12 @@
 					</p>
 					<hr class="separator">
 					<div class="centered_buttons">
-						<a href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"
-							id="margin-left"><button class="exoplanets_display_buttons buttons">Delete</button></a>
-						<a href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}"
-							id="float_right"><button class="exoplanets_display_buttons buttons">Calculate Weight</button></a>
+						<a
+							href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Delete</button></a>
+						<a
+							href="{{ url_for('detailed_exoplanet', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Details</button></a>
+						<a
+							href="{{ url_for('calculate_weight', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">calculate</button></a>
 					</div>
 				</div>
 			</div>
