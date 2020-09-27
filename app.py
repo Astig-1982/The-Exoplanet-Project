@@ -158,6 +158,11 @@ def insert_exoplanet():
         return redirect(url_for('favourite_list'))
 
 
+@app.route('/mass_photo')
+def mass_photo():
+    return render_template('mass_photo.html')
+
+
 @app.route('/calculate_weight/<exoplanet_id>')
 def calculate_weight(exoplanet_id):
     detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
