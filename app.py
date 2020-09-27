@@ -38,30 +38,30 @@ def about():
 
 @app.route('/small_to_large')
 def small_to_large():
-    exoplanets=mongo.db.exoplanets.find()
-    sized_exoplanets=sorted(exoplanets, key = lambda i: float(i['mass'])) 
-    return render_template('small_to_large.html', sized_exoplanets=sized_exoplanets)
+    sized_exoplanets=mongo.db.exoplanets.find()
+    exoplanets=sorted(sized_exoplanets, key = lambda i: float(i['mass'])) 
+    return render_template('exoplanets.html', exoplanets=exoplanets)
 
 
 @app.route('/small_to_large_favourites')
 def small_to_large_favourites():
-    exoplanets=mongo.db.favourites.find()
-    sized_exoplanets=sorted(exoplanets, key = lambda i: float(i['mass'])) 
-    return render_template('small_to_large_favourites.html', sized_exoplanets=sized_exoplanets)
+    sized_exoplanets=mongo.db.favourites.find()
+    favourite_exoplanets=sorted(sized_exoplanets, key = lambda i: float(i['mass'])) 
+    return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets)
 
 
 @app.route('/large_to_small')
 def large_to_small():
-    exoplanets=mongo.db.exoplanets.find()
-    larged_sized=sorted(exoplanets, key = lambda i: float(i['mass']), reverse=True) 
-    return render_template('large_to_small.html', larged_sized=larged_sized)
+    larged_sized=mongo.db.exoplanets.find()
+    exoplanets=sorted(larged_sized, key = lambda i: float(i['mass']), reverse=True) 
+    return render_template('exoplanets.html', exoplanets=exoplanets)
 
 
 @app.route('/large_to_small_favourites')
 def large_to_small_favourites():
-    exoplanets=mongo.db.favourites.find()
-    larged_sized=sorted(exoplanets, key = lambda i: float(i['mass']), reverse=True) 
-    return render_template('large_to_small_favourites.html', larged_sized=larged_sized)
+    larged_sized=mongo.db.favourites.find()
+    favourite_exoplanets=sorted(larged_sized, key = lambda i: float(i['mass']), reverse=True) 
+    return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets)
 
  
 @app.route('/rocky_planets')
