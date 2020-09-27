@@ -103,6 +103,11 @@ def detailed_exoplanet(exoplanet_id):
     detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
     return render_template('detailed_exoplanet.html', detailed_exoplanet=detailed_exoplanet)
 
+@app.route('/favourite_detailed/<exoplanet_id>')
+def favourite_detailed(exoplanet_id):
+    detailed_exoplanet=mongo.db.favourites.find_one({"_id": ObjectId(exoplanet_id)})
+    return render_template('favourite_detailed.html', detailed_exoplanet=detailed_exoplanet)
+
 
 @app.route('/favourite_rocky_planets')
 def favourite_rocky_planets():
@@ -132,9 +137,14 @@ def insert_exoplanet():
     distance_from_earth=request.form.get('distance_from_earth')
     try:
         float(mass)
+    except:
+        wrong_data='the mass needs to be a digit'
+        return render_template('wrong_data.html', wrong_data=wrong_data)
+    try:
         float(distance_from_earth)
     except:
-        return render_template('wrong_data.html')
+        wrong_data='distance from earth needs to be a digit'
+        return render_template('wrong_data.html', wrong_data=wrong_data)
     else:
         new_planet={'planet_name': request.form.get('planet_name'),
                     'exoplanet_image': default_image,
