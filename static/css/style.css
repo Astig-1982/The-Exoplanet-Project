@@ -50,11 +50,7 @@ body {
     padding: .4rem 0 0 0;
 }
 
-#lower_base i {
-    margin-bottom: 1.4rem;
-}
-
-#lower_base i:hover {
+#icons_container i:hover {
     opacity: .6;
 }
 
