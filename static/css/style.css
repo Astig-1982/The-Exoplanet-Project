@@ -505,7 +505,7 @@ select {
     box-sizing: border-box;
     text-align: center;
     letter-spacing: .1rem;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #accordionExample {
@@ -545,6 +545,17 @@ select {
     color: #e5e5dc;
     text-transform: lowercase;
     font-size: 90%;
+}
+
+#inserting_the_mass a {
+    color: #e5e5dc;
+    font-size: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#inserting_the_mass a:hover {
+   opacity: .6;
 }
 
 /* mass_photo.html starts here */
