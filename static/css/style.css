@@ -120,7 +120,7 @@ body {
 
 #title_area {
     position: absolute;
-    bottom: 39%;
+    bottom: 34%;
     left: 30%;
 }
 
@@ -134,13 +134,14 @@ body {
 #title {
     text-transform: uppercase;
     letter-spacing: .5rem;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 900;
 }
 
 #sub_title {
     text-transform: capitalize;
     letter-spacing: .5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .home_action_button {
