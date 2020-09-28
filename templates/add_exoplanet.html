@@ -19,30 +19,30 @@
 			<div id="form_container">
 				<form action="{{ url_for('insert_exoplanet') }}" method="POST">
 					<div class="form-group">
-						<input name="planet_name" type="text" class="form-control input_planet" id="planet_name" placeholder="Exoplanet Name:">
+						<input name="planet_name" type="text" class="form-control input_planet" id="planet_name" placeholder="Exoplanet Name:" required>
   </div>
 						<hr class="separator">
 						<div class="form-group">
-							<input name="discovery_date" type="text" class="form-control input_planet" id="discovery_date" placeholder="Discovery Date:">
+							<input name="discovery_date" type="text" class="form-control input_planet" id="discovery_date" placeholder="Discovery Date:" required>
   </div>
 							<hr class="separator">
 							<div class="form-group">
-								<input name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth (Light Years):">
+								<input name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth (Light Years):" required>
   </div>
 								<hr class="separator">
 								<div class="form-group">
-									<select name="type" class="form-control input_planet" id="exampleFormControlSelect1" aria-placeholder="Type">
+									<select name="type" class="form-control input_planet" id="exampleFormControlSelect1" aria-placeholder="Type" required>
       <option value="rocky">rocky</option>
       <option value="gas">gas</option>
     </select>
 								</div>
 								<hr class="separator">
 								<div class="form-group">
-									<input name="star_system" type="text" class="form-control input_planet" id="star_system" placeholder="Star System:">
+									<input name="star_system" type="text" class="form-control input_planet" id="star_system" placeholder="Star System:" required>
   </div>
 									<hr class="separator">
 									<div class="form-group">
-										<input name="mass" type="text" class="form-control input_planet" id="mass" placeholder="Mass (Earth Mass):">
+										<input name="mass" type="text" class="form-control input_planet" id="mass" placeholder="Mass (Earth Mass):" required>
   </div>
 										<hr style="margin-bottom:0" class="separator">
 
@@ -89,7 +89,7 @@
 								will give you the planet's mass in relation to <a
 									href="https://en.wikipedia.org/wiki/Jupiter_mass" target="blank"
 									aria-label="Jupiter mass as unit of measure">Jupiter mass (Mj)</a>. Please convert
-								it into Earth
+								into Earth
 								mass before inserting. Jupiter mass is 318 times greater than Earth mass.
 								Please see <a href="{{ url_for('mass_photo') }}">here</a> the
 								location for planet's mass when searching on Wikipedia.
@@ -107,8 +107,7 @@
 						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
 							data-parent="#accordionExample">
 							<div class="card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-								squid. 3 wolf moon officia aute.
+								Please note that a default image will be added, depending on the type of exoplanet inserted - rocky or gas giant.
 							</div>
 						</div>
 					</div>
