@@ -184,9 +184,10 @@ body {
 }
 
 .exoplanets_holder {
-    border: 1px solid #1d1e1f;
+    border: 8px solid #408ec6;
     margin: 2rem 0;
     background-color: #408ec6;
+    box-sizing: border-box;
 }
 
 #exoplanet_name {
