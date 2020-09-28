@@ -54,12 +54,6 @@ body {
     opacity: .6;
 }
 
-#lower_text {
-    font-size: 80%;
-    letter-spacing: .1rem;
-    font-family: 'Roboto Slab', sans-serif;
-}
-
 .buttons {
     font-family: 'Roboto Slab', sans-serif;
     background-color: #7a2048;
