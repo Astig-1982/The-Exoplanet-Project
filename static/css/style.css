@@ -529,9 +529,10 @@ select {
    letter-spacing: .09rem;
 }
 
-#exoplanets_link {
+#wikipedia_link {
     text-align: center;
     margin-top: 24%;
+    margin-bottom: 0;
 }
 
 #exoplanets_anchor {
