@@ -38,3 +38,13 @@ The app is designed as a simple to use guide to exoplanets. The main goal is to 
 * Providing the user a default list of exoplanets to get things started and act as a guide on what type of data can be stored about the exoplanets.
 * Keeping the user entertained by allowing her/him to calculate its weight on each exoplanet from her/his list. This will encourage the user to insert more items in her/his list, thus the time spent on the app will increase.
 
+## Design Choices
+
+The theme of the app being celestial bodies, I've chosen a somewhat dark tone for the background and a simple design, letting the user focus more on the functionality of the app.
+
+## Fonts 
+
+I have chosen to use [KUFAM](https://fonts.google.com/specimen/Kufam?query=kufam) as main font as I believe it provides a readability. In the same time, having some curvy lines, can be warm and friendly for the user.
+
+I have chosen [ROBOTO SLAB](https://fonts.google.com/?query=roboto+slab) for all the action buttons as I believe it provides one of the best readability (which is always important for action buttons) and in the same time it can give the app a more futuristic aspect.
+
