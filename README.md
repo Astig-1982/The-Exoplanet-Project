@@ -15,3 +15,26 @@ The app is designed as a simple to use guide to exoplanets. The main goal is to 
 * Possibility to delete any new prefered exoplanet to her/his own list.
 * Possibility to see the planets arranged depending on different properties (eg. type, size).
 * Navbar availabe across and throughout all sections for a quick and easy navigation on the website.
+* A way to follow the developer on social media for the latest updated.
+* Responsive interaction with the website on desktop, table and mobile.
+
+### User Stories
+
+* As a user, I would like to be able to find out what's the app about and how to use its features.
+* As a user, I would like to have a clear and clean display of the items (exoplanets).
+* As a user, I would like a navbar that it's always available on all section, for me to easily navigate at any point at the app from eveywhere.
+* As a user, I would like clear action buttons on every section.
+* As a user, I would like my own section (list) where I am able to store my items (exoplanets).
+* As a user, I would like to possibility to remove at any point any item I wish from my list.
+* As a user, I would like a flexible app that would allow me to add any item that I want to my list.
+* As a user, I would like an intuitive and easy to complete section to add my items.
+* As a user, I am expecting guidance where necessary, especially working with exoplanets and precise data about them, that might require some research on interenet on where it can be found.
+* As a user, I would likt to be able to sort my items depending on some of its most important properties.
+* As a user, I am looking for an app that will also keep me on some level entertained while I'm using it.
+
+### App Owners Goals
+
+* Providing a dynamic app to act as a guide to exoplanets, where the user would be able to have its own section where she\he can add any exoplanet they wish, thus being a good tool to keep track of all the newly discovered exoplanets.
+* Providing the user a default list of exoplanets to get things started and act as a guide on what type of data can be stored about the exoplanets.
+* Keeping the user entertained by allowing her/him to calculate its weight on each exoplanet from her/his list. This will encourage the user to insert more items in her/his list, thus the time spent on the app will increase.
+
