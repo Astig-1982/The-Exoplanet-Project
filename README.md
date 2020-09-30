@@ -42,9 +42,24 @@ The app is designed as a simple to use guide to exoplanets. The main goal is to 
 
 The theme of the app being celestial bodies, I've chosen a somewhat dark tone for the background and a simple design, letting the user focus more on the functionality of the app.
 
-## Fonts 
+### Fonts: 
 
-I have chosen to use [KUFAM](https://fonts.google.com/specimen/Kufam?query=kufam) as main font as I believe it provides a readability. In the same time, having some curvy lines, can be warm and friendly for the user.
+I chose to use [KUFAM](https://fonts.google.com/specimen/Kufam?query=kufam) as main font as I believe it provides a readability. In the same time, having some curvy lines, can be warm and friendly for the user.
 
-I have chosen [ROBOTO SLAB](https://fonts.google.com/?query=roboto+slab) for all the action buttons as I believe it provides one of the best readability (which is always important for action buttons) and in the same time it can give the app a more futuristic aspect.
+I chose [ROBOTO SLAB](https://fonts.google.com/?query=roboto+slab) for all the action buttons as I believe it provides one of the best readability (which is always important for action buttons) and in the same time it can give the app a more futuristic aspect.
+
+### Colors: 
+
+I chose a dark, but in the same time lively theme for the project, as I believe it's it offers the user more focus on the exoplanets.
+
+* Primary: **Indigo**  #1e2761. As working with celestial bodies, I believe this color is somewhat similar to the color of the night sky and also provides a good contrast between the background and the planet's images which are mosttly dark.
+
+* Secondary: **Light Blue** #408ec6. I chose this color as I believe it's related to the primary color and in the same time offering a good enough contrast between them and also between the text, which is a light grey.
+
+* Tertiary: **Maroon** #7a2048. I chose this color for the action buttons as I believe it gives a very good contrast between them and the rest of the app and also makes them more visible. I chose this color as a background when displaying varies messages in the app as I believe it makes more readable, offering a very good contrast with the color of the text - light grey.
+
+* Text Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. 
+
+
+
 
