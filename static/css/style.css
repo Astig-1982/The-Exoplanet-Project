@@ -59,8 +59,6 @@ body {
     background-color: #7a2048;
     text-transform: capitalize;
     color: #e5e5dc;
-    letter-spacing: .05rem;
-    font-weight: 400;
 }
 
 .buttons:hover {
