@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-<div style="margin-top:5rem" class="container">
-	<div class="row">
+<div class="main_container container">
+	<div style="margin-top: 12rem" class="row">
 		<div id="exoplanet_page_title_container" class="col-12">
-			<h1 class="title_exoplanet_page">wrong data inserted</h1>
+        <div id="wrong_data">
+            <h2>Oops! Wrong data inserted.</h2>
+            <p id="wrong_data_info"><strong>{{ wrong_data }}</strong>.</p>
+            <p>Please revise your form and submit again.<br>
+            For guidance please check the guide on the right hand side of the form.</p>
+		</div>
 		</div>
 	</div>
-    <p>{{ wrong_data }}</p>
 </div>
 	{% endblock %}
