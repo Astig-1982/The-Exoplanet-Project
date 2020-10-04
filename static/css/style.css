@@ -19,8 +19,13 @@ body {
     color: #e5e5dc;
 }
 
+#navbarNav {
+    padding-bottom: 8px;
+}
+
 .nav_anchors {
     color: #e5e5dc;
+    font-size: 130%;
 }
 
 .nav_anchors:hover {
