@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;400;700;800&display=swap');
 
 body {
     margin: 0;
@@ -64,6 +64,9 @@ body {
     background-color: #7a2048;
     text-transform: capitalize;
     color: #e5e5dc;
+    transition-property: background-color, color;
+    transition-duration: .6s;
+    transition-timing-function: ease;
 }
 
 .buttons:hover {
@@ -161,20 +164,17 @@ body {
 }
 
 .home_buttons {
-   font-weight: 700;
-    width: 11rem;
-    height: 3rem;
+    width: 9.375rem;
+    height: 3.4375rem;
+    font-weight: 100;
     padding-top: .2rem;
     font-size: 150%;
-    letter-spacing: .2rem;
+    letter-spacing: .15rem;
     border-radius: .6rem;
     display: inline-block;
     border: 1px solid #e5e5dc;
     margin: 1.7rem .3rem;
-}
-
-.home_buttons:hover {
-    border: 1px solid #7a2048;
+    text-transform: uppercase;
 }
 
 #detailed {
@@ -625,6 +625,15 @@ select {
 #back_to_form {
     text-align: center;
     margin-top: 2rem;
+}
+
+/* media queries starts here */
+
+@media (max-width: 576px) {
+    .top_buttons {
+        width: 4.3rem;
+        font-size: 60%;
+    }
 }
 
 
