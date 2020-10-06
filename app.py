@@ -98,10 +98,23 @@ def delete_favourite(exoplanet_id):
     return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
 
 
+@app.route('/delete_rocky/<exoplanet_id>')
+def delete_rocky(exoplanet_id):
+    mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
+    return render_template('favourite_rocky_planets.html', rocky_planets=mongo.db.favourites.find({'type': 'rocky'}))
+
+
+@app.route('/delete_gas_giant/<exoplanet_id>')
+def delete_gas_giant(exoplanet_id):
+    mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
+    return render_template('favourite_gas_giants.html', gas_giants_planets=mongo.db.favourites.find({'type': 'gas giant'}))
+
+
 @app.route('/detailed_exoplanet/<exoplanet_id>')
 def detailed_exoplanet(exoplanet_id):
     detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
     return render_template('detailed_exoplanet.html', detailed_exoplanet=detailed_exoplanet)
+
 
 @app.route('/favourite_detailed/<exoplanet_id>')
 def favourite_detailed(exoplanet_id):
