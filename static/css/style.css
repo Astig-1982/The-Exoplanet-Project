@@ -641,6 +641,9 @@ select {
     #dropdownMenuButton {
         font-size: 52%;
     }
+    .top-titles {
+        font-size: 1.5rem;
+    }
 }
 
 
