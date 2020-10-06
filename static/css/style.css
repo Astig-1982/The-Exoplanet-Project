@@ -69,6 +69,10 @@ body {
     transition-timing-function: ease;
 }
 
+.long_text {
+    font-size: 60%;
+}
+
 .buttons:hover {
     background-color: #e5e5dc;
     color: #7a2048;
@@ -632,7 +636,10 @@ select {
 @media (max-width: 576px) {
     .top_buttons {
         width: 4.3rem;
-        font-size: 60%;
+        font-size: 65%;
+    }
+    #dropdownMenuButton {
+        font-size: 52%;
     }
 }
 
