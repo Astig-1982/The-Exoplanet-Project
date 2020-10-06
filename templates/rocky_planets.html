@@ -9,17 +9,17 @@
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
 			<a
-				href="{{ url_for('exoplanets_display') }}"><button style="font-size:105%" class="top_buttons buttons">main list</button></a>
+				href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
 		</div>
 		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('gas_giants_planets') }}">
-				<button style="font-size:105%" class="top_buttons buttons">gas giants</button>
+				<button class="top_buttons buttons">gas giants</button>
 			</a>
 		</div>
 	</div>
 	<div class="row">
 		{% for rocky_planet in rocky_planets %}
-		<div class="col-4">
+		<div class="col-12 col-md-6 col-lg-4">
 			<div class="exoplanets_holder">
 				<div class="image_holder">
 					<img class="zoom_image" src="{{ rocky_planet.exoplanet_image }}" width="100%" height="100%" alt="">
