@@ -9,7 +9,7 @@
 	<div class="row main-action">
 		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('favourite_rocky_planets') }}">
-				<button class="buttons top_buttons">rocky worlds</button>
+				<button class="buttons top_buttons">rocky</button>
 			</a>
 		</div>
 		<div class="col-3 main_action_buttons">
@@ -41,7 +41,7 @@
 	</div>
 	<div class="row">
 		{% for favourite_exoplanet in favourite_exoplanets %}
-		<div class="col-4">
+		<div class="col-12 col-md-6 col-lg-4">
 			<div class="exoplanets_holder">
 				<div class="image_holder">
 					<img class="zoom_image" src="{{favourite_exoplanet.exoplanet_image}}" width="100%" height="100%" alt="">

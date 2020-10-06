@@ -13,13 +13,13 @@
 		</div>
 		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('favourite_rocky_planets') }}">
-				<button class="top_buttons favourites_main_buttons buttons">rocky worlds</button>
+				<button class="top_buttons favourites_main_buttons buttons">rocky</button>
 			</a>
 		</div>
 	</div>
 	<div class="row">
 		{% for gas_giant in gas_giants_planets %}
-		<div class="col-4">
+		<div class="col-12 col-md-6 col-lg-4">
 			<div class="exoplanets_holder">
 				<div class="image_holder">
 					<img class="zoom_image" src="{{ gas_giant.exoplanet_image }}" width="100%" height="100%" alt="">
