@@ -679,6 +679,13 @@ select {
     }
     #name_paragraph {
         padding-top: 1rem;
+        background-color: #e5e5dc;
+        color: #408ec6;
+        margin-bottom: 0;
+        height: 3.2rem;
+    }
+    #top_separator {
+        margin-top: 0;
     }
     #detailed_buttons button {
         width: 80%;
