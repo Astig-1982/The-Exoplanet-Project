@@ -16,7 +16,7 @@
 		<div style="margin-top:1.5rem" class="row">
 			<div class="col-12 properties_container">
 				<div id="detailed_properties" class="detailed">
-					<p style="padding-top:2rem;">Name: {{ detailed_exoplanet.planet_name }}</p>
+					<p id="name_paragraph">Name: {{ detailed_exoplanet.planet_name }}</p>
 					<hr class="detailed_separator">
 					<p>Discovery date: {{ detailed_exoplanet.discovery_date }}</p>
 					<hr class="detailed_separator">
@@ -28,7 +28,7 @@
 					<hr class="detailed_separator">
 					<p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
 					<hr class="detailed_separator">
-					<div style="padding-bottom:1.5rem">
+					<div id="detailed_buttons">
 						<a style="margin-right:2rem;"
 							href="{{ url_for('add_favourites', exoplanet_id=detailed_exoplanet._id)}}"
 							id="margin-left"><button class="buttons">add favourites</button></a>
