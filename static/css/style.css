@@ -388,6 +388,10 @@ body {
     margin-top: 2rem;
 }
 
+#name_paragraph {
+    padding-top: 2rem;
+}
+
 .detailed {
     width: 80%;
     height: 100%;
@@ -407,6 +411,9 @@ body {
 
 .detailed_separator {
     margin: 1.5rem 2rem;
+}
+#detailed_buttons {
+    padding-bottom: 1.5rem;
 }
 
 /* calculate_weight.html page starts here */
@@ -660,6 +667,23 @@ select {
     }
     #add_exoplanet_message p {
         padding: 1.2rem;
+    }
+    .detailed {
+        width: 100%;
+    }
+    #detailed_properties {
+        font-size: 100%;
+    }
+    #detailed_properties hr {
+        margin: .6rem;
+    }
+    #name_paragraph {
+        padding-top: 1rem;
+    }
+    #detailed_buttons button {
+        width: 80%;
+        margin: .5rem 0 .2rem 2rem;
+
     }
 }
 
