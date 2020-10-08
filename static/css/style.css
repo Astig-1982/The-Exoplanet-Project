@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;300;400;700;800&display=swap');
 
 body {
     margin: 0;
@@ -245,6 +245,10 @@ body {
 .centered_buttons {
     text-align: center;
     height: 2.8rem;
+}
+
+#add_exoplanet_message_container {
+    margin:2rem 0 2.5rem 0;
 }
 
 #add_exoplanet_message {
@@ -643,6 +647,19 @@ select {
     }
     .top-titles {
         font-size: 1.5rem;
+    }
+    #add_exoplanet_message_container {
+        margin: 0 0 2rem 0;
+    }
+    #col_add_exoplanet_message {
+        padding: 0;
+    }
+    #add_exoplanet_message {
+        font-size: 90%;
+        width: 100%;
+    }
+    #add_exoplanet_message p {
+        padding: 1.2rem;
     }
 }
 
