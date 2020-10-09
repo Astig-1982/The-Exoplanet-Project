@@ -722,6 +722,14 @@ select {
     #inserting_the_mass_header {
         letter-spacing: .1rem;
     }
+    #quote {
+        letter-spacing: .1rem;
+    }
+    #about_text {
+        width: 100%;
+        font-size: 100%;
+        margin-bottom: 2rem;
+    }
 }
 
 
