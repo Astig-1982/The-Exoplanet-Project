@@ -447,6 +447,10 @@ body {
 	}
 }
 
+#your_weight_container {
+    margin-top: 20rem;
+}
+
 #weight_message {
     width: 30%;
     text-align: center;
@@ -617,6 +621,10 @@ select {
 
 /* wrong_data.html page starts here */
 
+#wrong_data_container {
+    margin-top: 12rem;
+}
+
 #wrong_data {
     width: 50%;
     min-height: 20rem;
@@ -729,6 +737,19 @@ select {
         width: 100%;
         font-size: 100%;
         margin-bottom: 2rem;
+    }
+    #weight_message {
+        width: 50%;
+    }
+    #your_weight_container {
+        margin-top: 15rem;
+    }
+    #wrong_data_container {
+        margin-top: 6.9rem;
+    }
+    #wrong_data {
+        width: 100%;
+        font-size: 95%;
     }
 }
 
