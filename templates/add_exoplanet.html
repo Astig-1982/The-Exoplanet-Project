@@ -14,8 +14,8 @@
 			<a href="{{ url_for('favourite_list') }}"><button class="top_buttons buttons">favourites</button></a>
 		</div>
 	</div>
-	<div style="margin-top:3rem;" class="row">
-		<div id="insert_form" class="col-6">
+	<div id="form_row" class="row">
+		<div id="insert_form" class="col-12 col-sm-6">
 			<div id="form_container">
 				<form action="{{ url_for('insert_exoplanet') }}" method="POST">
 					<div class="form-group">
@@ -27,7 +27,7 @@
   </div>
 							<hr class="separator">
 							<div class="form-group">
-								<input name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth (Light Years):" required>
+								<input id="distance_from_earth" name="distance_from_earth" type="text" class="form-control input_planet" id="distance_from_earth" placeholder="Distance From Earth (Light Years):" required>
   </div>
 								<hr class="separator">
 								<div class="form-group">
@@ -50,7 +50,7 @@
 				</form>
 			</div>
 		</div>
-		<div id="guide-container" class="col-6">
+		<div id="guide-container" class="col-12 col-sm-6">
 			<div id="guide">
 				<h5>Guide To Insert An Exoplanet</h5>
 				<div class="accordion" id="accordionExample">
@@ -74,7 +74,7 @@
 					<div class="card">
 						<div class="card-header" id="headingTwo">
 							<h2 class="mb-0">
-								<button class="guide_text btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<button id="inserting_the_mass_header" class="guide_text btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           inserting the mass
         </button>
 							</h2>
