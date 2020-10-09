@@ -479,6 +479,10 @@ body {
     background-color: #408ec6;
 }
 
+#form_row {
+    margin-top: 3rem;
+}
+
 #form_container div {
     margin-bottom: .5rem;
 }
@@ -690,7 +694,33 @@ select {
     #detailed_buttons button {
         width: 80%;
         margin: .5rem 0 .2rem 2rem;
-
+    }
+    .main-action {
+        margin-top: 1.2rem;
+    }
+    #form_row {
+        margin-top: 2rem;
+    }
+    #form_container {
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 90%;
+    }
+    #add_button {
+        width: 100%;
+    }
+    #guide {
+        width: 100%;
+        margin-bottom: 2.8rem;
+    }
+    #guide h5 {
+        margin: 1rem 0 2rem 0;
+    }
+    #distance_from_earth {
+        font-size: 96%;
+    }
+    #inserting_the_mass_header {
+        letter-spacing: .1rem;
     }
 }
 
