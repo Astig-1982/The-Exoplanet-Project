@@ -6,20 +6,44 @@
 			<h1 class="top-titles title_exoplanet_page">exoplanets</h1>
 		</div>
 	</div>
+	{% if rocky %}
+	<div class="row main-action">
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
+		</div>
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('gas_giants_planets') }}">
+				<button class="top_buttons buttons">gas giants</button>
+			</a>
+		</div>
+	</div>
+	{% elif gas %}
+	<div class="row main-action">
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
+		</div>
+		<div class="col-6 main_action_buttons">
+			<a href="{{ url_for('rocky_planets') }}">
+				<button class="top_buttons buttons">rocky</button>
+			</a>
+		</div>
+	</div>
+	{% else %}
 	<div class="row main-action">
 		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('rocky_planets') }}"><button class="top_buttons buttons">rocky</button></a>
 		</div>
 		<div class="col-3 main_action_buttons">
-			<a href="{{ url_for('favourite_list') }}"><button class="favourites top_buttons buttons">favourites</button></a>
+			<a
+				href="{{ url_for('favourite_list') }}"><button class="favourites top_buttons buttons">favourites</button></a>
 		</div>
 		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('gas_giants_planets') }}"><button class="top_buttons buttons">gas giants</button></a>
 		</div>
 		<div class="col-3 dropdown">
 			<button style="padding-top:.1rem" class="dropdown-toggle top_buttons buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    sort by size
-  </button>
+       sort by size
+      </button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				<a class="dropdown-item" href="{{ url_for('small_to_large') }}">Small To Large</a>
 				<a class="dropdown-item" href="{{ url_for('large_to_small') }}">Large To Small</a>
@@ -27,6 +51,7 @@
 			</div>
 		</div>
 	</div>
+	{% endif %}
 	<div class="row">
 		{% for exoplanet in exoplanets %}
 		<div class="col-12 col-md-6 col-lg-4">
