@@ -202,7 +202,7 @@ body {
     transform: scale(1.2);
 }
 
-#exoplanet_page_title_container {
+.exoplanet_page_title_container {
     text-align: center;
     margin-top: 1.5rem;
 }
