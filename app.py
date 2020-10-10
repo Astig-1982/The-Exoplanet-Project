@@ -101,13 +101,13 @@ def delete_favourite(exoplanet_id):
 @app.route('/delete_rocky/<exoplanet_id>')
 def delete_rocky(exoplanet_id):
     mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
-    return render_template('favourite_rocky_planets.html', rocky_planets=mongo.db.favourites.find({'type': 'rocky'}))
+    return redirect(url_for('favourite_rocky_planets'))
 
 
 @app.route('/delete_gas_giant/<exoplanet_id>')
 def delete_gas_giant(exoplanet_id):
     mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
-    return render_template('favourite_gas_giants.html', gas_giants_planets=mongo.db.favourites.find({'type': 'gas giant'}))
+    return redirect(url_for('favourite_gas_giants'))
 
 
 @app.route('/detailed_exoplanet/<exoplanet_id>')
