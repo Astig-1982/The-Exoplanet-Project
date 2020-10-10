@@ -66,14 +66,14 @@ def large_to_small_favourites():
  
 @app.route('/rocky_planets')
 def rocky_planets():
-    rocky_planets=mongo.db.exoplanets.find({'type': 'rocky'})
-    return render_template('rocky_planets.html', rocky_planets=rocky_planets)
+    exoplanets=mongo.db.exoplanets.find({'type': 'rocky'})
+    return render_template('exoplanets.html', exoplanets=exoplanets, rocky=True)
 
 
 @app.route('/gas_giants_planets')
 def gas_giants_planets():
-    gas_giants_planets=mongo.db.exoplanets.find({'type': 'gas giant'})
-    return render_template('gas_giants_planets.html', gas_giants_planets=gas_giants_planets)
+    exoplanets=mongo.db.exoplanets.find({'type': 'gas giant'})
+    return render_template('exoplanets.html', exoplanets=exoplanets, gas=True)
 
 
 @app.route('/add_favourites/<exoplanet_id>')
