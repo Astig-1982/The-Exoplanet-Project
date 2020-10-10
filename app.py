@@ -124,14 +124,14 @@ def favourite_detailed(exoplanet_id):
 
 @app.route('/favourite_rocky_planets')
 def favourite_rocky_planets():
-    rocky_planets=mongo.db.favourites.find({'type': 'rocky'})
-    return render_template('favourite_rocky_planets.html', rocky_planets=rocky_planets)
+    favourite_exoplanets=mongo.db.favourites.find({'type': 'rocky'})
+    return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets, rocky=True)
 
 
 @app.route('/favourite_gas_giants')
 def favourite_gas_giants():
-    gas_giants_planets=mongo.db.favourites.find({'type': 'gas giant'})
-    return render_template('favourite_gas_giants.html', gas_giants_planets=gas_giants_planets)
+    favourite_exoplanets=mongo.db.favourites.find({'type': 'gas giant'})
+    return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets, gas=True)
 
 
 @app.route('/add_exoplanet')
