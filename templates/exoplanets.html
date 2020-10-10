@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 <div style="margin-top:5rem" class="container">
-	<div class="row">
-		<div id="exoplanet_page_title_container" class="col-12">
-			<h1 class="top-titles title_exoplanet_page">exoplanets</h1>
+	{% if rocky %}
+    <div class="row">
+		<div class="col-12 exoplanet_page_title_container">
+			<h1 class="top-titles title_exoplanet_page">rocky worlds</h1>
 		</div>
 	</div>
-	{% if rocky %}
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
@@ -18,6 +18,11 @@
 		</div>
 	</div>
 	{% elif gas %}
+    <div class="row">
+		<div class="col-12 exoplanet_page_title_container">
+			<h1 class="top-titles title_exoplanet_page">gas giants</h1>
+		</div>
+	</div>
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
 			<a href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
@@ -29,6 +34,11 @@
 		</div>
 	</div>
 	{% else %}
+    <div class="row">
+		<div class="col-12 exoplanet_page_title_container">
+			<h1 class="top-titles title_exoplanet_page">exoplanets</h1>
+		</div>
+	</div>
 	<div class="row main-action">
 		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('rocky_planets') }}"><button class="top_buttons buttons">rocky</button></a>
