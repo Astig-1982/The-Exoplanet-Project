@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 <div style="margin-top:5rem" class="container">
+	{% if rocky %}
 	<div class="row">
-		<div id="exoplanet_page_title_container" class="col-12">
-			<h1 class="top-titles">favourites list</h1>
+		<div class="col-12 exoplanet_page_title_container">
+			<h1 class="top-titles">favourite rocky worlds</h1>
 		</div>
 	</div>
-	{% if rocky %}
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
 			<a
@@ -19,6 +19,11 @@
 		</div>
 	</div>
 	{% elif gas %}
+	<div class="row">
+		<div class="col-12 exoplanet_page_title_container">
+			<h1 class="top-titles">favourite gas giants</h1>
+		</div>
+	</div>
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
 			<a
@@ -31,6 +36,11 @@
 		</div>
 	</div>
 	{% else %}
+	<div class="row">
+		<div class="col-12 exoplanet_page_title_container">
+			<h1 class="top-titles">favourites list</h1>
+		</div>
+	</div>
 	<div class="row main-action">
 		<div class="col-3 main_action_buttons">
 			<a href="{{ url_for('favourite_rocky_planets') }}">
@@ -82,16 +92,16 @@
 					</p>
 					<hr class="separator">
 					<div class="centered_buttons">
-                        {% if rocky %}
-                          <a
+						{% if rocky %}
+						<a
 							href="{{ url_for('delete_rocky', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Delete</button></a>
-                        {% elif gas %}
-                          <a
+						{% elif gas %}
+						<a
 							href="{{ url_for('delete_gas_giant', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Delete</button></a>
-                        {% else %}
-						  <a
+						{% else %}
+						<a
 							href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Delete</button></a>
-                        {% endif %}
+						{% endif %}
 						<a
 							href="{{ url_for('favourite_detailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Details</button></a>
 						<a
