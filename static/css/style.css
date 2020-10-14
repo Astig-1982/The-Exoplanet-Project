@@ -388,6 +388,10 @@ body {
     margin-top: 2rem;
 }
 
+#properties-section {
+    margin: 1.5rem 0 4rem 0;
+}
+
 #name_paragraph {
     padding-top: 2rem;
 }
@@ -750,6 +754,27 @@ select {
     #wrong_data {
         width: 100%;
         font-size: 95%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .top_buttons {
+        width: 10rem;
+    }
+    #col_add_exoplanet_message {
+        padding: 0;
+    }
+    #add_exoplanet_message {
+        width: 100%;
+    }
+    #insert_form {
+        margin-bottom: 3.5rem;
+    }
+    #guide-container {
+        margin-bottom: 3.5rem;
+    }
+    .message {
+        width: 100%;
     }
 }
 
