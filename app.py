@@ -145,9 +145,9 @@ def add_exoplanet():
 def insert_exoplanet():
     favourites=mongo.db.favourites
     if request.form.get('type')=='rocky':
-        default_image='https://scitechdaily.com/images/Rocky-Exoplanet-Orbiting-Red-Dwarf-Star.jpg'
+        default_image='Default-rocky'
     else:
-        default_image='https://earthsky.org/upl/2014/05/planet-GU-Psc-b.jpg'
+        default_image='Default-gas'
     mass=request.form.get('mass')
     distance_from_earth=request.form.get('distance_from_earth')
     try:
