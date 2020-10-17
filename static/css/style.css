@@ -187,18 +187,70 @@ body {
 
 /* exoplanets.html page starts here */
 
-.image_holder {
-    height: 15rem;
+.image_zoom {
     overflow: hidden;
 }
 
-.zoom_image {
+.image_holder {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    overflow: hidden;
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 
-.zoom_image:hover {
+.Pegasi_51b {
+    background-image: url(../images/exoplanet_images/Pegasi_51b.jpg);
+}
+
+.Kepler-186f {
+    background-image: url(../images/exoplanet_images/Kepler-186f.jpg);
+}
+
+.Proxima-Centauri-b {
+    background-image: url(../images/exoplanet_images/Proxima-Centauri-b.jpg);
+}
+
+.HD-209458-b {
+    background-image: url(../images/exoplanet_images/HD-209458-b.jpg);
+}
+
+.Kepler-4b {
+    background-image: url(../images/exoplanet_images/Kepler-4b.jpg);
+}
+
+.K2-18b {
+    background-image: url(../images/exoplanet_images/K2-18b.jpeg);
+}
+
+.PH1b {
+    background-image: url(../images/exoplanet_images/PH1b.jpg);
+}
+
+.TRAPPIST-1d {
+    background-image: url(../images/exoplanet_images/TRAPPIST-1d.jpg);
+}
+
+.Gliese-581c {
+    background-image: url(../images/exoplanet_images/Gliese-581c.jpg);
+}
+
+.WASP-12b {
+    background-image: url(../images/exoplanet_images/WASP-12b.jpg);
+}
+
+.KELT-9b {
+    background-image: url(../images/exoplanet_images/KELT-9b.jpg);
+}
+
+.Kepler-10b {
+    background-image: url(../images/exoplanet_images/Kepler-10b.jpg);
+}
+
+.image_holder:hover {
     transform: scale(1.2);
 }
 
