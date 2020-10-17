@@ -66,8 +66,8 @@
 		{% for exoplanet in exoplanets %}
 		<div class="col-12 col-md-6 col-lg-4">
 			<div class="exoplanets_holder">
-				<div class="image_holder">
-					<img class="zoom_image" src="{{ exoplanet.exoplanet_image }}" width="100%" height="100%" alt="">
+				<div class="image_zoom">
+					<div class="image_holder {{ exoplanet.exoplanet_image }}"></div>
                 </div>
 					<p id="exoplanet_name" class="exoplanet_properties"><strong>{{exoplanet.planet_name}}</strong></p>
 					<hr class="separator">
