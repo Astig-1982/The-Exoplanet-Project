@@ -12,7 +12,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="margin-top:1.5rem" class="row">
+	<div id="detailed_container" class="row">
 		<div class="col-12 properties_container">
 			<div id="detailed_properties" class="detailed">
 				<p style="padding-top:2rem;">Name: {{ detailed_exoplanet.planet_name }}</p>
@@ -30,10 +30,10 @@
 				<div style="padding-bottom:1.5rem">
 					<a style="margin-right:2rem;"
 						href="{{ url_for('add_favourites', exoplanet_id=detailed_exoplanet._id)}}"
-						id="margin-left"><button class="buttons">add favourites</button></a>
+						id="margin-left"><button class="buttons detailed-action">add favourites</button></a>
 					<a style="margin-right:2rem;"
 						href="{{ url_for('calculate_weight', exoplanet_id=detailed_exoplanet._id) }}"
-						id="margin-left"><button class="buttons">calculate weight</button></a>
+						id="margin-left"><button class="buttons detailed-action">calculate weight</button></a>
 				</div>
 			</div>
 		</div>
