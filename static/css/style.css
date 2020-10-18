@@ -206,6 +206,12 @@ body {
 
 /* register.html page starts here */
 
+/* profile.html page starts here */
+
+#profile-container {
+    margin-top: 5rem;
+}
+
 /* exoplanets.html page starts here */
 
 .image_zoom {
