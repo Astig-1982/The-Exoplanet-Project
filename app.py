@@ -1,7 +1,8 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for, flash, session
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash, check_password_hash
 from os import path
 if path.exists("env.py"):
   import env 
@@ -11,6 +12,7 @@ app = Flask(__name__)
 
 app.config["MONGODB_NAME"] =  'other_worlds'
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 mongo = PyMongo(app)
@@ -27,7 +29,30 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/exoplanets_display')
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        #check if the username already exists in the database
+        existing_user = mongo.db.users.find_one({"username": request.form.get("username").lower()})
+
+        if existing_user:
+            flash("Username already exists.")
+            return redirect(url_for("register"))
+
+        else:
+            register = {
+                "username": request.form.get("username").lower(),
+                "password": generate_password_hash(request.form.get("password"))
+            }
+            mongo.db.users.insert_one(register)
+
+            # put the new user into 'session' cookie
+            session["user"] = request.form.get("username").lower()
+            flash("Registration succesful.")
+    return render_template('register.html')
+
+
+@app.route('/exoplanets_display') 
 def exoplanets_display():
     exoplanets=mongo.db.exoplanets.find()
     return render_template('exoplanets.html', exoplanets=exoplanets)
