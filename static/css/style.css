@@ -119,6 +119,11 @@ body {
     font-family: 'Abril Fatface', cursive;
 }
 
+#registration-message-container {
+    margin-top: 6rem;
+    text-align: center;
+}
+
 /* home page starts here */
 
 #home_container {
@@ -198,6 +203,8 @@ body {
 #detailed {
     text-align: center;
 }
+
+/* register.html page starts here */
 
 /* exoplanets.html page starts here */
 
