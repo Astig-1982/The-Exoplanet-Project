@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+	<div style="margin-top: 5rem;" class="row">
+		<div class="col-12">
+			<form method="POST" action="{{ url_for('login') }}">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Username</label>
+					<input
+            type="text"
+            class="form-control"
+            name="username"
+            pattern="^[a-zA-Z0-9]{5,15}$"
+            required
+          />
+					<small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="password"
+            pattern="^[a-zA-Z0-9]{5,15}$"
+            required
+          />
+        </div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<div class="div">
+				<p>Not registered? Please <a href="{{ url_for('register') }}">register</a> now.</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
