@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-color: #1e2761;
+    background-image: url(../images/exoplanet_images/visiting-exoplanet.jpg);
+    background-repeat: repeat;
+    background-position: center;
     color: #e5e5dc;
     font-family: 'Piazzolla', serif;
 }
@@ -15,7 +17,7 @@ body {
     z-index: 2;
     width: 100vw;
     height: 4rem;
-    background-color: rgba(122, 32, 73, .6);
+    background-color: rgba(54, 10, 125, .8);
     color: #e5e5dc;
 }
 
@@ -61,9 +63,11 @@ body {
 
 .buttons {
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #7a2048;
+    background-color: rgb(60, 10, 125);
     text-transform: capitalize;
+    font-weight: 100;
     color: #e5e5dc;
+    border: none;
     transition-property: background-color, color;
     transition-duration: .6s;
     transition-timing-function: ease;
@@ -75,7 +79,7 @@ body {
 
 .buttons:hover {
     background-color: #e5e5dc;
-    color: #7a2048;
+    color: rgb(60, 10, 125);
 }
 
 .dropdown-menu {
@@ -131,9 +135,10 @@ body {
 }
 
 #home {
-    background-image: url(../images/blue_universe.jpg);
+    background-image: url(../images/exoplanet_images/visiting-exoplanet.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 100vh;
     animation-name: photo-zoom;
 	animation-duration: 5s;
@@ -168,10 +173,11 @@ body {
 }
 
 .home_buttons {
+    background-color: rgba(112, 16, 3,.95);
     width: 9.375rem;
     height: 3.4375rem;
     font-weight: 100;
-    padding-top: .2rem;
+    padding-top: .4rem;
     font-size: 150%;
     letter-spacing: .15rem;
     border-radius: .6rem;
@@ -179,6 +185,14 @@ body {
     border: 1px solid #e5e5dc;
     margin: 1.7rem .3rem;
     text-transform: uppercase;
+}
+
+.home_buttons:hover {
+    color: rgb(112, 16, 3);
+}
+
+#main-list {
+    letter-spacing: 0;
 }
 
 #detailed {
@@ -272,9 +286,8 @@ body {
 }
 
 .exoplanets_holder {
-    border: 8px solid #408ec6;
     margin: 2rem 0;
-    background-color: #408ec6;
+    background-color: rgba(112, 16, 3,.8);
     box-sizing: border-box;
 }
 
@@ -317,8 +330,7 @@ body {
 
 #add_exoplanet_message {
     text-align: center;
-    border: 3px solid #408ec6;
-    background-color: #7a2048;
+    background-color: rgba(112, 16, 3,.8);
     color: #e5e5dc;
     width: 70%;
     margin: auto;
@@ -438,6 +450,11 @@ body {
 
 /* detailed_exoplanet page starts here */
 
+#detailed_container {
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+}
+
 #detailed_exoplanet_container {
     margin-top: 5rem;
     margin-bottom: 1.5rem;
@@ -475,7 +492,7 @@ body {
 }
 
 #detailed_properties {
-    background-color: #408ec6;
+    background-color: rgba(112, 16, 3,.8);
     font-size: 135%;
     letter-spacing: .2rem; 
 }
@@ -485,6 +502,12 @@ body {
 }
 #detailed_buttons {
     padding-bottom: 1.5rem;
+}
+
+.detailed-action {
+    width: 12rem;
+    height: 4rem;
+    font-weight: 100;
 }
 
 /* calculate_weight.html page starts here */
@@ -842,6 +865,13 @@ select {
     }
     .message {
         width: 100%;
+    }
+}
+
+@media (min-width: 1920px) {
+    #title_area {
+        bottom: 38%;
+        left: 35%;
     }
 }
 
