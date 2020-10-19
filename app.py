@@ -84,7 +84,7 @@ def profile(username):
           return render_template('profile.html', username=username)
         else:
             return redirect(url_for('login'))
-        
+
 
 @app.route('/logout')
 def logout():
@@ -208,8 +208,9 @@ def add_exoplanet():
     return render_template('add_exoplanet.html')  
 
 
-@app.route('/insert_exoplanet', methods=['POST'])
+@app.route('/insert_exoplanet', methods=['GET', 'POST'])
 def insert_exoplanet():
+ if request.method == "POST":
     favourites=mongo.db.favourites
     if request.form.get('type')=='rocky':
         default_image='Default-rocky'
@@ -238,6 +239,8 @@ def insert_exoplanet():
                     'thoughts': request.form.get('thoughts')}
         favourites.insert_one(new_planet)
         return redirect(url_for('favourite_list'))
+
+ return redirect(url_for('add_exoplanet'))
 
 
 @app.route('/mass_photo')
