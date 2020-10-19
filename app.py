@@ -88,9 +88,12 @@ def profile(username):
 
 @app.route('/logout')
 def logout():
-    flash('You have been logged out')
-    session.pop('user')
+    if session.get('user'):
+      if session['user'] == True:
+         flash('You have been logged out')
+         session.pop('user')
     return redirect(url_for('login'))
+
 
 
 
