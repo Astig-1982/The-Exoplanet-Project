@@ -94,6 +94,7 @@ def logout():
 
 
 
+
 @app.route('/exoplanets_display') 
 def exoplanets_display():
     exoplanets=mongo.db.exoplanets.find()
