@@ -86,13 +86,12 @@ def profile(username):
             return redirect(url_for('login'))
 
 
+
 @app.route('/logout')
 def logout():
-    if session.get('user'):
-      if session['user'] == True:
          flash('You have been logged out')
          session.pop('user')
-    return redirect(url_for('login'))
+         return redirect(url_for('login'))
 
 
 
@@ -149,9 +148,9 @@ def gas_giants_planets():
 
 @app.route('/favourite_list')
 def favourite_list():
-    username = mongo.db.users.find_one(
+         username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
-    return render_template('add_favourites.html', favourite_exoplanets=mongo.db[username].find())
+         return render_template('add_favourites.html', favourite_exoplanets=mongo.db[username].find())
 
 
 @app.route('/add_favourites/<exoplanet_id>')
