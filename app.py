@@ -29,20 +29,6 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/create_collection/<username>')
-def create_collection(username):
-    new_planet={'planet_name': 'venus',
-                    'discovery_date': 'June',
-                    'distance_from_earth': '9',
-                    'type': 'planet',
-                    'star_system': 'solar',
-                    'mass': 'big',}
-    username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-    mongo.db[username].insert_one(new_planet)
-    return redirect(url_for('exoplanets_display'))
-
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == "POST":
