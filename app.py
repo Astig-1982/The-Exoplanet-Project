@@ -29,6 +29,20 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/create_collection/<username>')
+def create_collection(username):
+    new_planet={'planet_name': 'venus',
+                    'discovery_date': 'June',
+                    'distance_from_earth': '9',
+                    'type': 'planet',
+                    'star_system': 'solar',
+                    'mass': 'big',}
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    mongo.db[username].insert_one(new_planet)
+    return redirect(url_for('exoplanets_display'))
+
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == "POST":
@@ -96,8 +110,6 @@ def logout():
 
 
 
-
-
 @app.route('/exoplanets_display') 
 def exoplanets_display():
     exoplanets=mongo.db.exoplanets.find()
@@ -149,26 +161,32 @@ def gas_giants_planets():
     return render_template('exoplanets.html', exoplanets=exoplanets, gas=True)
 
 
+@app.route('/favourite_list')
+def favourite_list():
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    return render_template('add_favourites.html', favourite_exoplanets=mongo.db[username].find())
+
+
 @app.route('/add_favourites/<exoplanet_id>')
 def add_favourites(exoplanet_id):
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
     favourite=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
-    already_favourite=mongo.db.favourites.find_one({"_id": ObjectId(exoplanet_id)})
+    already_favourite=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
     if already_favourite:
         return render_template('already_favourite.html', favourite=favourite)
     else:
-        mongo.db.favourites.insert(favourite)
-        return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
-
-
-@app.route('/favourite_list')
-def favourite_list():
-    return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
+        mongo.db[username].insert(favourite)
+        return redirect(url_for('favourite_list'))
 
 
 @app.route('/delete_favourite/<exoplanet_id>')
 def delete_favourite(exoplanet_id):
-    mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
-    return render_template('add_favourites.html', favourite_exoplanets=mongo.db.favourites.find())
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    mongo.db[username].remove({"_id": ObjectId(exoplanet_id)})
+    return redirect(url_for('favourite_list'))
 
 
 @app.route('/delete_rocky/<exoplanet_id>')
@@ -191,7 +209,9 @@ def detailed_exoplanet(exoplanet_id):
 
 @app.route('/favourite_detailed/<exoplanet_id>')
 def favourite_detailed(exoplanet_id):
-    detailed_exoplanet=mongo.db.favourites.find_one({"_id": ObjectId(exoplanet_id)})
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    detailed_exoplanet=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
     return render_template('favourite_detailed.html', detailed_exoplanet=detailed_exoplanet)
 
 
@@ -215,7 +235,9 @@ def add_exoplanet():
 @app.route('/insert_exoplanet', methods=['GET', 'POST'])
 def insert_exoplanet():
  if request.method == "POST":
-    favourites=mongo.db.favourites
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    favourites=mongo.db[username]
     if request.form.get('type')=='rocky':
         default_image='Default-rocky'
     else:
