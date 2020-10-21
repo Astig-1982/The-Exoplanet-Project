@@ -12,7 +12,7 @@
     <div style="margin-top:5rem" class="row">
     <div id="weight_buttons_container" class="col-12">
     <a
-				href="{{ url_for('calculate_weight', exoplanet_id=exoplanet_id) }}"><button class="weight_buttons buttons">again</button></a>
+				href="{{ url_for('calculate_weight', exoplanet_mass=exoplanet.mass, exoplanet_name=exoplanet.planet_name, exoplanet_id=exoplanet._id) }}"><button class="weight_buttons buttons">again</button></a>
     
     <a
 				href="{{ url_for('favourite_list') }}"><button class="weight_buttons buttons">favourites</button></a>
