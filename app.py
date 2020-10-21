@@ -239,8 +239,10 @@ def insert_exoplanet():
         default_image='Default-rocky'
     else:
         default_image='Default-gas'
+
     mass=request.form.get('mass')
     distance_from_earth=request.form.get('distance_from_earth')
+
     try:
         float(mass)
     except:
@@ -251,6 +253,7 @@ def insert_exoplanet():
     except:
         wrong_data='distance from earth needs to be a digit'
         return render_template('wrong_data.html', wrong_data=wrong_data)
+
     else:
         new_planet={'planet_name': request.form.get('planet_name'),
                     'exoplanet_image': default_image,
@@ -271,21 +274,23 @@ def mass_photo():
     return render_template('mass_photo.html')
 
 
-@app.route('/calculate_weight/<exoplanet_id>')
-def calculate_weight(exoplanet_id):
+@app.route('/calculate_weight/<exoplanet_mass>/<exoplanet_name>/<exoplanet_id>', methods=['GET', 'POST'])
+def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
+ username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+ if request.method == 'POST':
+    exoplanet=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
+    exoplanet_weight=int(request.form.get('your_weight'))
+    your_weightExoplanet = exoplanet_weight * float(exoplanet_mass)
+    return render_template(
+        'exoplanet_weight.html', exoplanet=exoplanet, your_weightExoplanet=your_weightExoplanet, exoplanet_name=exoplanet_name, exoplanet_id=exoplanet_id)
+ else:
     detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
-    exoplanet=mongo.db.favourites.find_one({"_id": ObjectId(exoplanet_id)})
+    exoplanet=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
     if exoplanet:
         return render_template('calculate_weight.html', exoplanet=exoplanet)
     else:
         return render_template('not_added.html', detailed_exoplanet=detailed_exoplanet)
-
-
-@app.route('/calculate/<exoplanet_mass>/<exoplanet_name>/<exoplanet_id>', methods=['POST'])
-def calculate(exoplanet_mass, exoplanet_name, exoplanet_id):
-    exoplanet_weight=int(request.form.get('your_weight'))
-    your_weightExoplanet = exoplanet_weight * float(exoplanet_mass)
-    return render_template('exoplanet_weight.html', your_weightExoplanet=your_weightExoplanet, exoplanet_name=exoplanet_name, exoplanet_id=exoplanet_id)
 
 
 if __name__ == '__main__':
