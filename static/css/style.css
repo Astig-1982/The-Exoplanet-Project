@@ -7,8 +7,15 @@ body {
     background-image: url(../images/exoplanet_images/visiting-exoplanet.jpg);
     background-repeat: repeat;
     background-position: center;
+    background-size: 110%;
+    background-attachment: fixed;
     color: #e5e5dc;
     font-family: 'Piazzolla', serif;
+}
+
+
+.margin {
+    margin-top: 5rem;
 }
 
 #nav {
