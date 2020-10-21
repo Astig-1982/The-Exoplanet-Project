@@ -115,7 +115,9 @@ def small_to_large():
 
 @app.route('/small_to_large_favourites')
 def small_to_large_favourites():
-    sized_exoplanets=mongo.db.favourites.find()
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    sized_exoplanets=mongo.db[username].find()
     favourite_exoplanets=sorted(sized_exoplanets, key = lambda i: float(i['mass'])) 
     return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets)
 
@@ -129,7 +131,9 @@ def large_to_small():
 
 @app.route('/large_to_small_favourites')
 def large_to_small_favourites():
-    larged_sized=mongo.db.favourites.find()
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    larged_sized=mongo.db[username].find()
     favourite_exoplanets=sorted(larged_sized, key = lambda i: float(i['mass']), reverse=True) 
     return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets)
 
@@ -176,13 +180,17 @@ def delete_favourite(exoplanet_id):
 
 @app.route('/delete_rocky/<exoplanet_id>')
 def delete_rocky(exoplanet_id):
-    mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    mongo.db[username].remove({"_id": ObjectId(exoplanet_id)})
     return redirect(url_for('favourite_rocky_planets'))
 
 
 @app.route('/delete_gas_giant/<exoplanet_id>')
 def delete_gas_giant(exoplanet_id):
-    mongo.db.favourites.remove({"_id": ObjectId(exoplanet_id)})
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    mongo.db[username].remove({"_id": ObjectId(exoplanet_id)})
     return redirect(url_for('favourite_gas_giants'))
 
 
@@ -202,13 +210,17 @@ def favourite_detailed(exoplanet_id):
 
 @app.route('/favourite_rocky_planets')
 def favourite_rocky_planets():
-    favourite_exoplanets=mongo.db.favourites.find({'type': 'rocky'})
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    favourite_exoplanets=mongo.db[username].find({'type': 'rocky'})
     return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets, rocky=True)
 
 
 @app.route('/favourite_gas_giants')
 def favourite_gas_giants():
-    favourite_exoplanets=mongo.db.favourites.find({'type': 'gas giant'})
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    favourite_exoplanets=mongo.db[username].find({'type': 'gas giant'})
     return render_template('add_favourites.html', favourite_exoplanets=favourite_exoplanets, gas=True)
 
 
