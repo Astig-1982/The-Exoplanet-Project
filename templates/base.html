@@ -17,7 +17,7 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<div style="width:100%;" class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
 					<a class="nav-link nav_anchors" href="{{ url_for('home') }}">Home
@@ -35,6 +35,7 @@
 				<li class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('insert_exoplanet') }}">Add Exoplanet</a>
 				</li>
+			</ul>
                 {% if session.user %}
                 <li class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
@@ -43,14 +44,15 @@
 					<a class="nav-link nav_anchors" href="{{ url_for('logout') }}">Log Out</a>
 				</li>
                 {% else %}
-				<li class="nav-item">
+                <ul class="nav navbar-nav navbar-right ml-auto">
+				<li id="register-nav" class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('register') }}">Register</a>
 				</li>
-                <li class="nav-item">
+                <li id="login-nav" class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('login') }}">Log In</a>
 				</li>
-                {% endif %}
                 </ul>
+                {% endif %}
 		</div>
 	</nav>
 
@@ -77,6 +79,7 @@
 	{% block content %}
 	{% endblock %}
 </body>
+
 {% include 'layout/scripts.html' %}
 
 </html>
