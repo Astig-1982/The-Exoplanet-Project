@@ -26,9 +26,6 @@
 				<li class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('about') }}">About</a>
 				</li>
-                <li class="nav-item">
-					<a class="nav-link nav_anchors" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
-				</li>
 				<li class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('exoplanets_display') }}">Main List</a>
 				</li>
@@ -39,6 +36,9 @@
 					<a class="nav-link nav_anchors" href="{{ url_for('insert_exoplanet') }}">Add Exoplanet</a>
 				</li>
                 {% if session.user %}
+                <li class="nav-item">
+					<a class="nav-link nav_anchors" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+				</li>
                 <li class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('logout') }}">Log Out</a>
 				</li>
@@ -57,9 +57,9 @@
 	{% with messages = get_flashed_messages() %}
 	{% if messages %}
 	{% for message in messages %}
-	<div class="row">
+	<div style="max-width: 100vw;" class="row">
 		<div id="registration-message-container" class="col-12">
-			<div id="registration-message" class="div">
+			<div>
 				{{ message }}
 			</div>
 		</div>
