@@ -57,6 +57,34 @@ body {
     opacity: 1;
 }
 
+#register-nav {
+    background-color: rgb(196, 23, 0);
+    padding-bottom: .2rem;
+    border-radius: .2rem;
+    transition-property: background-color;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    margin-top: .6rem;
+}
+
+#register-nav:hover a {
+    transition-property: color;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+#register-nav:hover {
+    background-color: #e5e5dc;
+}
+
+#login-nav {
+    padding-top: .6rem;
+}
+
+#register-nav a:hover {
+    color: rgb(196, 23, 0);
+}
+
 #icons_container {
     width: 4%;
     text-align: center;
