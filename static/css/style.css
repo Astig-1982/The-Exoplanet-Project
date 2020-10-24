@@ -18,6 +18,10 @@ body {
     margin-top: 5rem;
 }
 
+.smaller-margin {
+    margin-top: 0;
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -129,6 +133,21 @@ body {
 #registration-message-container {
     margin-top: 6rem;
     text-align: center;
+}
+
+/* flash message starts here */
+
+#registration-message-container {
+    margin-top: 5rem;
+    padding: 0;
+}
+
+#registration-message-container div {
+    background-color: rgb(112, 16, 3);
+    width: 45%;
+    display: inline-block;
+    letter-spacing: .2rem;
+    font-size: 120%;
 }
 
 /* home page starts here */
@@ -476,7 +495,6 @@ body {
 }
 
 #detailed_exoplanet_container {
-    margin-top: 5rem;
     margin-bottom: 1.5rem;
 }
 
