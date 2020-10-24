@@ -126,16 +126,19 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 105%;
     background-color: #e5e5dc;
-    color: #7a2048;
+    color: rgb(60, 10, 125);
     text-align: center;
 }
 
 .dropdown-menu a {
-    color: #7a2048;
+    color: rgb(60, 10, 125);
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 .dropdown-menu a:hover {
-    background-color: #7a2048;
+    background-color: rgb(60, 10, 125);
     color: #e5e5dc;
 }
 
@@ -146,10 +149,6 @@ body {
 
 .main-action {
     margin-top: 2rem;
-}
-
-.main_containerm {
-    max-height: 100vh;
 }
 
 .top-titles {
