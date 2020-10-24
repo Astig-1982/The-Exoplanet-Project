@@ -422,6 +422,10 @@ body {
 
 /* about.html page starts here */
 
+#exoplanet_page_title_container {
+    text-align: center;
+}
+
 #quote {
     margin-bottom: .1rem;
     letter-spacing: .2rem;
@@ -439,8 +443,7 @@ body {
 
 #about_text {
     width: 80%;
-    border: 3px solid #408ec6;
-    background-color: #7a2048;
+    background-color: rgba(112, 16, 3,.8);
     color: #e5e5dc;
     margin: 0 auto;
     font-size: 130%;
