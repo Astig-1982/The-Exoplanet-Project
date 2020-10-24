@@ -473,7 +473,7 @@ body {
     margin-top: .8rem;
 }
 
-#register-container {
+#register-text {
     width: 44%;
     margin: 0 auto;
     text-align: center;
@@ -483,8 +483,13 @@ body {
     background: rgba(54, 10, 125, .8);
 }
 
-#register-container p {
+#register-text p {
     padding: .1rem;
+}
+
+#register-text p a {
+    color: #e5e5dc;
+    font-style: italic;
 }
 
 .login-button {
