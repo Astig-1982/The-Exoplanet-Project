@@ -50,7 +50,7 @@ def register():
             session["user"] = request.form.get("username").lower()
             flash("Registration succesful!")
             return redirect(url_for('profile', username=session["user"])) 
-    return render_template('register.html')
+    return render_template('login.html', register=True)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -73,7 +73,7 @@ def login():
           #username doesn't exist
           flash("Incorrect Username and/or Password")
           return redirect(url_for('login'))
-    return render_template('login.html')
+    return render_template('login.html', login=True)
 
 
 @app.route('/profile/<username>', methods=['GET', 'POST'])
