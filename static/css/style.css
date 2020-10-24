@@ -453,6 +453,14 @@ body {
 
 /* login.html starts here */
 
+.register-form {
+    margin-top: 10rem;
+}
+
+.reduce-margin {
+    margin-top: 4rem;
+}
+
 .login-title {
     text-transform: capitalize;
 }
