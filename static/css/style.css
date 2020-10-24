@@ -104,7 +104,7 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     background-color: rgb(60, 10, 125);
     text-transform: capitalize;
-    font-weight: 100;
+    font-weight: 300;
     color: #e5e5dc;
     border: none;
     transition-property: background-color, color;
