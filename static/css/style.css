@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-image: url(../images/exoplanet_images/visiting-exoplanet.jpg);
+    background-image: url(../images/exoplanet_images/space-planets.jpg);
     background-repeat: repeat;
     background-position: center;
     background-size: 110%;
@@ -193,7 +193,7 @@ body {
 }
 
 #home {
-    background-image: url(../images/exoplanet_images/visiting-exoplanet.jpg);
+    background-image: url(../images/exoplanet_images/space-planets.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -390,7 +390,7 @@ body {
     height: 2.8rem;
 }
 
-#add_exoplanet_message_container {
+.add_exoplanet_message_container {
     margin:2rem 0 2.5rem 0;
 }
 
@@ -492,6 +492,11 @@ body {
 #register-text p a {
     color: #e5e5dc;
     font-style: italic;
+    text-decoration: underline;
+}
+
+#register-text p a:hover {
+    opacity: .6;
 }
 
 .login-button {
@@ -499,7 +504,6 @@ body {
     font-size: 130%;
     margin-top: .5rem;
     letter-spacing: .2rem;
-    font-weight: 400;
 }
 
 /* already_favourite messsage page starts here */
@@ -687,11 +691,25 @@ body {
 
 /* add_exoplanet.html page starts here */
 
+.form-container {
+    margin-top:4.3rem;
+    min-height: 100vh;
+}
+
+.guide-container {
+    padding-top: 5rem;
+    min-height: 100vh;
+}
+
 #form_container {
-    width: 30rem;
+    width: 60%;
     margin: 0 auto;
-    border: 1px solid #1d1e1f;
-    background-color: #408ec6;
+    background-color: rgba(112, 16, 3,.8);
+    padding: 2.2rem 6rem;
+}
+
+#form_container label {
+    letter-spacing: .1rem;
 }
 
 #form_row {
@@ -703,44 +721,52 @@ body {
 }
 
 .input_planet {
-    background-color: #408ec6;
-    color: #e5e5dc;
+    color: rgb(60, 10, 125);
     border: 0;
     font-size: 120%;
     letter-spacing: .2rem;
-    height: 3rem;
+    height: 2.5rem;
     text-align: center;
-    opacity: .8;
 }
 
 .input_planet:focus {
-    background-color: #408ec6;
-    color: #e5e5dc;
-    text-align: center;
-}
-
-.input_planet::placeholder {
-    color: #e5e5dc; 
-    text-align: center;
-    
+    color: rgb(60, 10, 125);
 }
 
 select {
     text-align-last: center;
 }
 
-#planet_name {
-    margin-top: .7rem;
-}
-
 #add_button {
-    margin-top: 0;
-    width: 29.9rem;
+    margin-top: .5rem;
+    width: 29.74rem;
+    border-radius: .4rem;
     height: 3.6rem;
     border: 0;
-    border-radius: 0;
     font-size: 130%;
     letter-spacing: .2rem;
+}
+
+#notes-message div {
+    background-color: rgba(54, 10, 125, .8);
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 60%;
+    color: #e5e5dc;
+    font-size: 105%;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+#notes-message div a {
+    color: #e5e5dc;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#notes-message div a:hover {
+    opacity: .6;
 }
 
 #guide {
@@ -977,7 +1003,7 @@ select {
     #insert_form {
         margin-bottom: 3.5rem;
     }
-    #guide-container {
+    #guide-column {
         margin-bottom: 3.5rem;
     }
     .message {
