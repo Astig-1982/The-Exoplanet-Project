@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;300;400;700;800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +16,6 @@ body {
     color: #e5e5dc;
     font-family: 'Piazzolla', serif;
 }
-
 
 .margin {
     margin-top: 5rem;
@@ -692,13 +695,8 @@ body {
 /* add_exoplanet.html page starts here */
 
 .form-container {
-    margin-top:4.3rem;
-    min-height: 100vh;
-}
-
-.guide-container {
-    padding-top: 5rem;
-    min-height: 100vh;
+    margin-top: 5rem;
+    max-height: 100vh;
 }
 
 #form_container {
@@ -710,10 +708,6 @@ body {
 
 #form_container label {
     letter-spacing: .1rem;
-}
-
-#form_row {
-    margin-top: 3rem;
 }
 
 #form_container div {
@@ -748,13 +742,13 @@ select {
 }
 
 #notes-message div {
-    background-color: rgba(54, 10, 125, .8);
+    background-color: rgba(112, 16, 3,.8);
     margin: 0 auto;
     margin-top: 1rem;
     width: 60%;
     color: #e5e5dc;
-    font-size: 105%;
-    padding: 1rem;
+    font-size: 90%;
+    padding: .3rem;
     letter-spacing: .1rem;
     text-align: center;
 }
@@ -769,69 +763,53 @@ select {
     opacity: .6;
 }
 
-#guide {
-    width: 30rem;
-    height: 28.175rem;
-    background-color: #7a2048;
+.guide-container {
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+#guide-row {
+    background-color: rgba(112, 16, 3,.8);
+}
+
+#guide-row .col-4 {
+    padding: 0 1.7rem;
+}
+
+.guide-holders {
     color: #e5e5dc;
-    border: 5px solid #408ec6;
-    margin: 0 auto; 
-    padding-top: 3.5%;
-    box-sizing: border-box;
-    text-align: center;
+    padding: 3rem 1rem;
+    letter-spacing: .05rem;
+}
+
+.guide-holders p {
+    line-height: 200%;
+    font-size: 105%;
     letter-spacing: .1rem;
-    overflow: scroll;
 }
 
-#accordionExample {
-    margin-top: 5%;
-}
-
-.card {
-    background-color: #408ec6;
+.guide-holders p a {
     color: #e5e5dc;
-    border-radius: 0; 
-    margin: 1rem;
-}
-
-.guide_text {
-    color: #e5e5dc;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-}
-
-.guide_text:hover {
-    text-decoration: none;
-    color: #e5e5dc;
-    opacity: .6;
-}
-
-.card-body {
-   letter-spacing: .09rem;
-}
-
-#wikipedia_link {
-    text-align: center;
-    margin-top: 24%;
-    margin-bottom: 0;
-}
-
-#exoplanets_anchor {
-    font-style: italic;
-    color: #e5e5dc;
-    text-transform: lowercase;
-    font-size: 90%;
-}
-
-#inserting_the_mass a {
-    color: #e5e5dc;
-    font-size: 700;
     font-style: italic;
     text-decoration: underline;
 }
 
-#inserting_the_mass a:hover {
-   opacity: .6;
+.guide-holders p a:hover {
+    opacity: .6;
+}
+
+
+.guide-holders h5 {
+    margin-bottom: .5rem;
+}
+
+.guide-separator {
+    background-color: #e5e5dc;
+    margin-top: 0;
+}
+
+#jupiter-mass {
+    font-weight: 700;
 }
 
 /* mass_photo.html starts here */
@@ -1011,10 +989,20 @@ select {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1500px) {
     #title_area {
         bottom: 38%;
         left: 35%;
+    }
+    #form_row {
+    margin-top: 3rem;
+    }
+    #notes-message div {
+    font-size: 105%;
+    padding: 1rem;
+    }
+    .form-container {
+        margin-top: 6.4rem;
     }
 }
 
