@@ -393,8 +393,8 @@ body {
     height: 2.8rem;
 }
 
-.add_exoplanet_message_container {
-    margin:2rem 0 2.5rem 0;
+#add_exoplanet_message_container {
+    margin-bottom: 4rem;
 }
 
 #add_exoplanet_message {
@@ -812,6 +812,12 @@ select {
     font-weight: 700;
 }
 
+#back-to-form a {
+    color: #e5e5dc;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 /* mass_photo.html starts here */
 
 #photo_container {
@@ -883,7 +889,7 @@ select {
         font-size: 1.5rem;
     }
     #add_exoplanet_message_container {
-        margin: 0 0 2rem 0;
+        margin-bottom: 2rem;
     }
     #col_add_exoplanet_message {
         padding: 0;
