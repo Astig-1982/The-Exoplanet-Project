@@ -158,7 +158,7 @@ def favourite_list():
             return render_template('add_favourites.html', favourite_exoplanets=mongo.db[username].find())
         except:
             flash('Please login in order to access your list of favourites.')
-            return redirect(url_for('exoplanets_display'))
+            return redirect(url_for('login'))
         
 
 @app.route('/add_favourites/<exoplanet_id>')
