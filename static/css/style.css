@@ -509,6 +509,12 @@ body {
     letter-spacing: .2rem;
 }
 
+/* profile.html starts here */
+
+#profile-title {
+    text-align: center;
+}
+
 /* already_favourite messsage page starts here */
 
 #message_container {
