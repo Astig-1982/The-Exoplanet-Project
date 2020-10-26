@@ -81,10 +81,13 @@ def profile(username):
         username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
         if session["user"]:
-          return render_template('profile.html', username=username)
+            users_list = mongo.db[username].find().count()
+            users_rocky = mongo.db[username].find({'type': 'rocky'}).count()
+            users_gas_giants = mongo.db[username].find({'type': 'gas giant'}).count()
+            user = username.capitalize()
+            return render_template('profile.html', user=user, users_list=users_list, users_rocky=users_rocky, users_gas_giants=users_gas_giants)
         else:
             return redirect(url_for('login'))
-
 
 
 @app.route('/logout')
@@ -92,7 +95,6 @@ def logout():
          flash('You have been logged out')
          session.pop('user')
          return redirect(url_for('login'))
-
 
 
 @app.route('/exoplanets_display') 
