@@ -196,7 +196,7 @@ body {
 }
 
 #home {
-    background-image: url(../images/exoplanet_images/space-planets.jpg);
+    background-color: blue;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
