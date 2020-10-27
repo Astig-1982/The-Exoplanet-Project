@@ -7,14 +7,27 @@
 	</div>
 	<div class="row">
 		<div id="user-info" class="col-12">
-        
+            {% set numberRocky = users_rocky | int %}
+            {% set numberGas = users_gas_giants | int %}
 			<div>
 				<p>{{ user }}, you currently have {{ users_list }} exoplanets in your list.</p>
-				<p>You have {{ users_rocky }} rocky  planets and {{ users_gas_giants }} gas giants.</p>
+				<p>You have {{ users_rocky }} rocky {% if numberRocky == 1 %} 
+                                                       planet 
+                                                    {% else %}
+                                                       planets
+                                                    {% endif %}
+                                                    and {{ users_gas_giants }} 
+                                                    {% if numberGas == 1 %}
+                                                       gas giant.
+                                                    {% else %}
+                                                       gas giants.
+                                                    {% endif %}   
+                                                    </p>
 				<p>You can add some more from our <a href="{{ url_for('exoplanets_display') }}">main list</a> or add
 					manually your favourite exoplanet discovered up to date.
 			</div>
 		</div>
 	</div>
+    
 </div>
 {% endblock %}
