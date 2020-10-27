@@ -1,263 +1,262 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;300;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;300;400;700;800&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    background-image: url(../images/exoplanet_images/space-planets.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: 110%;
-    background-attachment: fixed;
-    color: #e5e5dc;
-    font-family: 'Piazzolla', serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: url(../images/exoplanet_images/space-planets.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 110%;
+  background-attachment: fixed;
+  color: #e5e5dc;
+  font-family: "Piazzolla", serif;
 }
 
 .margin {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .smaller-margin {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #nav {
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    width: 100vw;
-    height: 4rem;
-    background-color: rgba(54, 10, 125, .8);
-    color: #e5e5dc;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 4rem;
+  background-color: rgba(54, 10, 125, 0.8);
+  color: #e5e5dc;
 }
 
 #navbarNav {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .nav_anchors {
-    color: #e5e5dc;
-    font-size: 130%;
+  color: #e5e5dc;
+  font-size: 130%;
 }
 
 .nav_anchors:hover {
-    color:  #e5e5dc;
-    opacity: .6;
+  color: #e5e5dc;
+  opacity: 0.6;
 }
 
 #navbar_title {
-    font-family: 'Abril Fatface', cursive;
-    padding-top: 0px;
-    padding-bottom: 6px;
-    font-weight: 700;
+  font-family: "Abril Fatface", cursive;
+  padding-top: 0px;
+  padding-bottom: 6px;
+  font-weight: 700;
 }
 
 #navbar_title:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 #register-nav {
-    background-color: rgb(196, 23, 0);
-    padding-bottom: .2rem;
-    border-radius: .2rem;
-    transition-property: background-color;
-    transition-duration: .6s;
-    transition-timing-function: ease;
-    margin-top: .6rem;
+  background-color: rgb(196, 23, 0);
+  padding-bottom: 0.2rem;
+  border-radius: 0.2rem;
+  transition-property: background-color;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  margin-top: 0.6rem;
 }
 
 #register-nav:hover a {
-    transition-property: color;
-    transition-duration: .6s;
-    transition-timing-function: ease;
+  transition-property: color;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 #register-nav:hover {
-    background-color: #e5e5dc;
+  background-color: #e5e5dc;
 }
 
 #login-nav {
-    padding-top: .6rem;
+  padding-top: 0.6rem;
 }
 
 #register-nav a:hover {
-    color: rgb(196, 23, 0);
+  color: rgb(196, 23, 0);
 }
 
 #icons_container {
-    width: 4%;
-    text-align: center;
-    opacity: .5;
-    position: fixed;
-    top: 41%;
-    left: 0;
-    font-size: 190%;
-    padding: .4rem 0 0 0;
+  width: 4%;
+  text-align: center;
+  opacity: 0.5;
+  position: fixed;
+  top: 41%;
+  left: 0;
+  font-size: 190%;
+  padding: 0.4rem 0 0 0;
 }
 
 #icons_container i:hover {
-    opacity: .6;
+  opacity: 0.6;
 }
 
 .buttons {
-    font-family: 'Roboto Slab', sans-serif;
-    background-color: rgb(60, 10, 125);
-    text-transform: capitalize;
-    font-weight: 300;
-    color: #e5e5dc;
-    border: none;
-    transition-property: background-color, color;
-    transition-duration: .6s;
-    transition-timing-function: ease;
+  font-family: "Roboto Slab", sans-serif;
+  background-color: rgb(60, 10, 125);
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #e5e5dc;
+  border: none;
+  transition-property: background-color, color;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 .long_text {
-    font-size: 60%;
+  font-size: 60%;
 }
 
 .buttons:hover {
-    background-color: #e5e5dc;
-    color: rgb(60, 10, 125);
+  background-color: #e5e5dc;
+  color: rgb(60, 10, 125);
 }
 
 .dropdown-menu {
-    width: 13.5rem;
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 105%;
-    background-color: #e5e5dc;
-    color: rgb(60, 10, 125);
-    text-align: center;
+  width: 13.5rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 105%;
+  background-color: #e5e5dc;
+  color: rgb(60, 10, 125);
+  text-align: center;
 }
 
 .dropdown-menu a {
-    color: rgb(60, 10, 125);
-    transition-property: background-color, color;
-    transition-duration: .3s;
-    transition-timing-function: ease;
+  color: rgb(60, 10, 125);
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .dropdown-menu a:hover {
-    background-color: rgb(60, 10, 125);
-    color: #e5e5dc;
+  background-color: rgb(60, 10, 125);
+  color: #e5e5dc;
 }
 
-
 .main_action_buttons {
-    text-align: center;
+  text-align: center;
 }
 
 .main-action {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .top-titles {
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-    font-family: 'Abril Fatface', cursive;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Abril Fatface", cursive;
 }
 
 #registration-message-container {
-    margin-top: 6rem;
-    text-align: center;
+  margin-top: 6rem;
+  text-align: center;
 }
 
 /* flash message starts here */
 
 #registration-message-container {
-    margin-top: 5rem;
-    padding: 0;
+  margin-top: 5rem;
+  padding: 0;
 }
 
 #registration-message-container div {
-    background-color: rgb(112, 16, 3);
-    width: 45%;
-    display: inline-block;
-    letter-spacing: .2rem;
-    font-size: 120%;
+  background-color: rgb(112, 16, 3);
+  width: 45%;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  font-size: 120%;
 }
 
 /* home page starts here */
 
 #home_container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 @keyframes photo-zoom {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.1);
-	}
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 #home {
-    background-image: url(../images/exoplanet_images/space-planets.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    animation-name: photo-zoom;
-	animation-duration: 5s;
-	animation-fill-mode: forwards;
-    overflow: hidden;
+  background-image: url(../images/exoplanet_images/space-planets.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  animation-name: photo-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 #title_area {
-    position: absolute;
-    bottom: 34%;
-    left: 30%;
+  position: absolute;
+  bottom: 34%;
+  left: 30%;
 }
 
 #title_container {
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
-    font-weight: 400;
-    color: #e5e5dc;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  color: #e5e5dc;
 }
 
 #title {
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    font-size: 4rem;
-    font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 #sub_title {
-    text-transform: capitalize;
-    letter-spacing: .5rem;
-    margin-top: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
 }
 
 .home_buttons {
-    background-color: rgba(112, 16, 3,.95);
-    width: 9.375rem;
-    height: 3.4375rem;
-    font-weight: 100;
-    padding-top: .4rem;
-    font-size: 150%;
-    letter-spacing: .15rem;
-    border-radius: .6rem;
-    display: inline-block;
-    border: 1px solid #e5e5dc;
-    margin: 1.7rem .3rem;
-    text-transform: uppercase;
+  background-color: rgba(112, 16, 3, 0.95);
+  width: 9.375rem;
+  height: 3.4375rem;
+  font-weight: 100;
+  padding-top: 0.4rem;
+  font-size: 150%;
+  letter-spacing: 0.15rem;
+  border-radius: 0.6rem;
+  display: inline-block;
+  border: 1px solid #e5e5dc;
+  margin: 1.7rem 0.3rem;
+  text-transform: uppercase;
 }
 
 .home_buttons:hover {
-    color: rgb(112, 16, 3);
+  color: rgb(112, 16, 3);
 }
 
 #main-list {
-    letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 #detailed {
-    text-align: center;
+  text-align: center;
 }
 
 /* register.html page starts here */
@@ -265,769 +264,754 @@ body {
 /* profile.html page starts here */
 
 #profile-container {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 /* exoplanets.html page starts here */
 
 .image_zoom {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .image_holder {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 15rem;
-    overflow: hidden;
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  overflow: hidden;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 /* exoplanets' images */
 
 .Pegasi_51b {
-    background-image: url(../images/exoplanet_images/Pegasi_51b.jpg);
+  background-image: url(../images/exoplanet_images/Pegasi_51b.jpg);
 }
 
 .Kepler-186f {
-    background-image: url(../images/exoplanet_images/Kepler-186f.jpg);
+  background-image: url(../images/exoplanet_images/Kepler-186f.jpg);
 }
 
 .Proxima-Centauri-b {
-    background-image: url(../images/exoplanet_images/Proxima-Centauri-b.jpg);
+  background-image: url(../images/exoplanet_images/Proxima-Centauri-b.jpg);
 }
 
 .HD-209458-b {
-    background-image: url(../images/exoplanet_images/HD-209458-b.jpg);
+  background-image: url(../images/exoplanet_images/HD-209458-b.jpg);
 }
 
 .Kepler-4b {
-    background-image: url(../images/exoplanet_images/Kepler-4b.jpg);
+  background-image: url(../images/exoplanet_images/Kepler-4b.jpg);
 }
 
 .K2-18b {
-    background-image: url(../images/exoplanet_images/K2-18b.jpeg);
+  background-image: url(../images/exoplanet_images/K2-18b.jpeg);
 }
 
 .PH1b {
-    background-image: url(../images/exoplanet_images/PH1b.jpg);
+  background-image: url(../images/exoplanet_images/PH1b.jpg);
 }
 
 .TRAPPIST-1d {
-    background-image: url(../images/exoplanet_images/TRAPPIST-1d.jpg);
+  background-image: url(../images/exoplanet_images/TRAPPIST-1d.jpg);
 }
 
 .Gliese-581c {
-    background-image: url(../images/exoplanet_images/Gliese-581c.jpg);
+  background-image: url(../images/exoplanet_images/Gliese-581c.jpg);
 }
 
 .WASP-12b {
-    background-image: url(../images/exoplanet_images/WASP-12b.jpg);
+  background-image: url(../images/exoplanet_images/WASP-12b.jpg);
 }
 
 .KELT-9b {
-    background-image: url(../images/exoplanet_images/KELT-9b.jpg);
+  background-image: url(../images/exoplanet_images/KELT-9b.jpg);
 }
 
 .Kepler-10b {
-    background-image: url(../images/exoplanet_images/Kepler-10b.jpg);
+  background-image: url(../images/exoplanet_images/Kepler-10b.jpg);
 }
 
 .Default-rocky {
-    background-image: url(../images/exoplanet_images/Default-rocky.jpg);
+  background-image: url(../images/exoplanet_images/Default-rocky.jpg);
 }
 
 .Default-gas {
-    background-image: url(../images/exoplanet_images/Default-gas.jpg);
+  background-image: url(../images/exoplanet_images/Default-gas.jpg);
 }
 
 /* end of exolanets' images */
 
 .image_holder:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .exoplanet_page_title_container {
-    text-align: center;
-    margin-top: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .exoplanets_holder {
-    margin: 2rem 0;
-    background-color: rgba(112, 16, 3,.8);
-    box-sizing: border-box;
+  margin: 2rem 0;
+  background-color: rgba(112, 16, 3, 0.8);
+  box-sizing: border-box;
 }
 
 #exoplanet_name {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 .separator {
-    margin: .5rem;
+  margin: 0.5rem;
 }
 
 .exoplanet_properties {
-    margin-top: 5%;
-    padding-left: .5rem;
-    letter-spacing: .2rem;
+  margin-top: 5%;
+  padding-left: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 
 .exoplanets_display_buttons {
-    color: #e5e5dc;
-    font-size: 84%;
-    width: 4.5rem;
-    height: 2rem;
-    text-align: center;
+  color: #e5e5dc;
+  font-size: 84%;
+  width: 4.5rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .top_buttons {
-    width: 13.5rem;
-    font-size: 105%;
-    height: 2rem;
+  width: 13.5rem;
+  font-size: 105%;
+  height: 2rem;
 }
 
 .centered_buttons {
-    text-align: center;
-    height: 2.8rem;
+  text-align: center;
+  height: 2.8rem;
 }
 
 #add_exoplanet_message_container {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 #add_exoplanet_message {
-    text-align: center;
-    background-color: rgba(112, 16, 3,.8);
-    color: #e5e5dc;
-    width: 70%;
-    margin: auto;
-    font-size: 120%;
-    letter-spacing: .2rem;
+  text-align: center;
+  background-color: rgba(112, 16, 3, 0.8);
+  color: #e5e5dc;
+  width: 70%;
+  margin: auto;
+  font-size: 120%;
+  letter-spacing: 0.2rem;
 }
 
 #add_exoplanet_message p {
-    padding: 1.8rem;
-    margin-bottom: 0;
+  padding: 1.8rem;
+  margin-bottom: 0;
 }
 
 #add_exoplanet_message a {
-    color: #e5e5dc;
-    font-weight: 700;
-    font-style: italic;
+  color: #e5e5dc;
+  font-weight: 700;
+  font-style: italic;
 }
 
 #add_exoplanet_message a:hover {
-    text-decoration: none;
-    opacity: .6;
+  text-decoration: none;
+  opacity: 0.6;
 }
 
 /* about.html page starts here */
 
 #exoplanet_page_title_container {
-    text-align: center;
+  text-align: center;
 }
 
 #quote {
-    margin-bottom: .1rem;
-    letter-spacing: .2rem;
+  margin-bottom: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 #quote_author {
-    font-weight: 700;
-    letter-spacing: .1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
 #about_text_container {
-    margin-top: 2rem;
-    margin-bottom: 8%;
+  margin-top: 2rem;
+  margin-bottom: 8%;
 }
 
 #about_text {
-    width: 80%;
-    background-color: rgba(112, 16, 3,.8);
-    color: #e5e5dc;
-    margin: 0 auto;
-    font-size: 130%;
+  width: 80%;
+  background-color: rgba(112, 16, 3, 0.8);
+  color: #e5e5dc;
+  margin: 0 auto;
+  font-size: 130%;
 }
 
 #about_text p {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 /* login.html starts here */
 
 .register-form {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 .reduce-margin {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .login-title {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #login-container {
-    background-color: rgba(112, 16, 3, .92);
-    width: 50%;
-    padding: 2rem;
-    margin: 0 auto;
-    margin-top: .8rem;
+  background-color: rgba(112, 16, 3, 0.92);
+  width: 50%;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 0.8rem;
 }
 
 #register-text {
-    width: 44%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 1.5rem;
-    letter-spacing: .1rem;
-    font-size: 85%;
-    background: rgba(54, 10, 125, .8);
+  width: 44%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 85%;
+  background: rgba(54, 10, 125, 0.8);
 }
 
 #register-text p {
-    padding: .1rem;
+  padding: 0.1rem;
 }
 
 #register-text p a {
-    color: #e5e5dc;
-    font-style: italic;
-    text-decoration: underline;
+  color: #e5e5dc;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 #register-text p a:hover {
-    opacity: .6;
+  opacity: 0.6;
 }
 
 .login-button {
-    width: 100%;
-    font-size: 130%;
-    margin-top: .5rem;
-    letter-spacing: .2rem;
+  width: 100%;
+  font-size: 130%;
+  margin-top: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 
 /* profile.html starts here */
 
 #profile-title {
-    text-align: center;
+  text-align: center;
 }
 
 /* already_favourite messsage page starts here */
 
 #message_container {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 .message {
-    background-color: #7a2048;
-    border: 2.5px solid #408ec6;
-    width: 51.5rem;
-    height: 5rem;
-    color: #e5e5dc;
-    padding-top: 1.5rem;
-    margin: auto;
-    text-transform: capitalize;
-    font-size: 120%;
-    letter-spacing: .1rem;
+  background-color: #7a2048;
+  border: 2.5px solid #408ec6;
+  width: 51.5rem;
+  height: 5rem;
+  color: #e5e5dc;
+  padding-top: 1.5rem;
+  margin: auto;
+  text-transform: capitalize;
+  font-size: 120%;
+  letter-spacing: 0.1rem;
 }
 
 .action_buttons {
-    font-size: 110%;
-    width: 10rem;
-    height: 2.5rem;
-    margin: 0 1rem;
+  font-size: 110%;
+  width: 10rem;
+  height: 2.5rem;
+  margin: 0 1rem;
 }
 
 /* not_added.html page starts here */
 
 #not_added_message {
-    height: 7.5rem;
-    text-transform: none;
+  height: 7.5rem;
+  text-transform: none;
 }
 
 /* add_favourites.html page starts here */
 
 #add_favourites_message {
-    width: 50%;
-    height: 10rem;
-    border: 3px solid #408ec6;
-    background-color: #7a2048;
-    color: #e5e5dc;
-    margin: 0 auto; 
-    margin-top: 5rem;
-    font-size: 150%;
-    text-align: center;
-    text-transform: uppercase;
+  width: 50%;
+  height: 10rem;
+  border: 3px solid #408ec6;
+  background-color: #7a2048;
+  color: #e5e5dc;
+  margin: 0 auto;
+  margin-top: 5rem;
+  font-size: 150%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #add_favourites_message p {
-    padding: 2.5rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
 .exoplanets_display_buttons {
-    color: #e5e5dc;
-    font-size: 84%;
-    width: 8rem;
-    height: 2rem;
-    text-align: center;
+  color: #e5e5dc;
+  font-size: 84%;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .favourites_display_buttons {
-    width: 4.5rem;
+  width: 4.5rem;
 }
 
 /* detailed_exoplanet page starts here */
 
 #detailed_container {
-    margin-top: 1.5rem;
-    margin-bottom: 8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 8rem;
 }
 
 #detailed_exoplanet_container {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #detailed_exoplanet_title {
-    text-align: center;
-    margin-top: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 #exoplanet_display {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 #properties-section {
-    margin: 1.5rem 0 4rem 0;
+  margin: 1.5rem 0 4rem 0;
 }
 
 #name_paragraph {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 .detailed {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 75%;
-    height: 60vh;
-    margin: 0 auto;
-    border: 1px solid #1d1e1f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 75%;
+  height: 60vh;
+  margin: 0 auto;
+  border: 1px solid #1d1e1f;
 }
 
 .properties_container {
-    text-align: center;
+  text-align: center;
 }
 
 #detailed_properties {
-    background-color: rgba(112, 16, 3,.8);
-    font-size: 135%;
-    letter-spacing: .2rem; 
+  background-color: rgba(112, 16, 3, 0.8);
+  font-size: 135%;
+  letter-spacing: 0.2rem;
 }
 
 .detailed_separator {
-    margin: 1.5rem 2rem;
+  margin: 1.5rem 2rem;
 }
 #detailed_buttons {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .detailed-action {
-    width: 12rem;
-    height: 4rem;
-    font-weight: 100;
+  width: 12rem;
+  height: 4rem;
+  font-weight: 100;
 }
 
 /* calculate_weight.html page starts here */
 
 #enter_weight_container {
-    margin-top: 15rem;
-    text-align: center;
+  margin-top: 15rem;
+  text-align: center;
 }
 
 #your_weight {
-    width: 15rem;
-    margin: 0 auto;
+  width: 15rem;
+  margin: 0 auto;
 }
 
 #calculate_action_button {
-    border: 0;
-    width: 15rem;
-    height: 2.5rem;
-    letter-spacing: .1rem;
-    font-size: 120%;
+  border: 0;
+  width: 15rem;
+  height: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 120%;
 }
 
 /* exoplanet_weight.html page starts here */
 
 @keyframes weight-zoom {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.8);
-	}
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.8);
+  }
 }
 
 #your_weight_container {
-    margin-top: 20rem;
+  margin-top: 20rem;
 }
 
 #weight_message {
-    width: 30%;
-    text-align: center;
-    font-size: 80%;
-    background-color:  #7a2048;
-    border: 5px solid #408ec6;
-    padding-top: 19px;
-    margin: 0 auto;
-    animation-name: weight-zoom;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+  width: 30%;
+  text-align: center;
+  font-size: 80%;
+  background-color: #7a2048;
+  border: 5px solid #408ec6;
+  padding-top: 19px;
+  margin: 0 auto;
+  animation-name: weight-zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 #weight_buttons_container {
-    text-align: center;
+  text-align: center;
 }
 
 .weight_buttons {
-    width: 10rem;
-    height: 2.6rem;
-    margin: 0 2.5%;
+  width: 10rem;
+  height: 2.6rem;
+  margin: 0 2.5%;
 }
 
 /* add_exoplanet.html page starts here */
 
 .form-container {
-    margin-top: 5rem;
-    max-height: 100vh;
+  margin-top: 5rem;
+  max-height: 100vh;
 }
 
 #form_container {
-    width: 60%;
-    margin: 0 auto;
-    background-color: rgba(112, 16, 3,.8);
-    padding: 2.2rem 6rem;
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(112, 16, 3, 0.8);
+  padding: 2.2rem 6rem;
 }
 
 #form_container label {
-    letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 #form_container div {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .input_planet {
-    color: rgb(60, 10, 125);
-    border: 0;
-    font-size: 120%;
-    letter-spacing: .2rem;
-    height: 2.5rem;
-    text-align: center;
+  color: rgb(60, 10, 125);
+  border: 0;
+  font-size: 120%;
+  letter-spacing: 0.2rem;
+  height: 2.5rem;
+  text-align: center;
 }
 
 .input_planet:focus {
-    color: rgb(60, 10, 125);
+  color: rgb(60, 10, 125);
 }
 
 select {
-    text-align-last: center;
+  text-align-last: center;
 }
 
 #add_button {
-    margin-top: .5rem;
-    width: 29.74rem;
-    border-radius: .4rem;
-    height: 3.6rem;
-    border: 0;
-    font-size: 130%;
-    letter-spacing: .2rem;
+  margin-top: 0.5rem;
+  width: 29.74rem;
+  border-radius: 0.4rem;
+  height: 3.6rem;
+  border: 0;
+  font-size: 130%;
+  letter-spacing: 0.2rem;
 }
 
 #notes-message div {
-    background-color: rgba(112, 16, 3,.8);
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 60%;
-    color: #e5e5dc;
-    font-size: 90%;
-    padding: .3rem;
-    letter-spacing: .1rem;
-    text-align: center;
+  background-color: rgba(112, 16, 3, 0.8);
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 60%;
+  color: #e5e5dc;
+  font-size: 90%;
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 #notes-message div a {
-    color: #e5e5dc;
-    font-style: italic;
-    text-decoration: underline;
+  color: #e5e5dc;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 #notes-message div a:hover {
-    opacity: .6;
+  opacity: 0.6;
 }
 
 .guide-container {
-    padding-top: 10%;
-    min-height: 100vh;
+  padding-top: 10%;
+  min-height: 100vh;
 }
 
 #guide-row {
-    background-color: rgba(112, 16, 3,.8);
+  background-color: rgba(112, 16, 3, 0.8);
 }
 
 #guide-row .col-4 {
-    padding: 0 1.7rem;
+  padding: 0 1.7rem;
 }
 
 .guide-holders {
-    color: #e5e5dc;
-    padding: 3rem 1rem;
-    letter-spacing: .05rem;
+  color: #e5e5dc;
+  padding: 3rem 1rem;
+  letter-spacing: 0.05rem;
 }
 
 .guide-holders p {
-    line-height: 200%;
-    font-size: 105%;
-    letter-spacing: .1rem;
+  line-height: 200%;
+  font-size: 105%;
+  letter-spacing: 0.1rem;
 }
 
 .guide-holders p a {
-    color: #e5e5dc;
-    font-style: italic;
-    text-decoration: underline;
+  color: #e5e5dc;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .guide-holders p a:hover {
-    opacity: .6;
+  opacity: 0.6;
 }
 
-
 .guide-holders h5 {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .guide-separator {
-    background-color: #e5e5dc;
-    margin-top: 0;
+  background-color: #e5e5dc;
+  margin-top: 0;
 }
 
 #jupiter-mass {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #back-to-form a {
-    color: #e5e5dc;
-    font-style: italic;
-    text-decoration: underline;
+  color: #e5e5dc;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 /* mass_photo.html starts here */
 
 #photo_container {
-    width: 90%;
-    height: 35rem;
-    margin: 0 auto;
+  width: 90%;
+  height: 35rem;
+  margin: 0 auto;
 }
 
 #mass_photo {
-    background-image: url(../images/mass_photo/mass_photo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+  background-image: url(../images/mass_photo/mass_photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 #photo_action_button {
-    margin: 6rem 0 2rem 0;
-    text-align: center;
+  margin: 6rem 0 2rem 0;
+  text-align: center;
 }
 
 /* wrong_data.html page starts here */
 
 #wrong_data_container {
-    margin-top: 12rem;
+  margin-top: 12rem;
 }
 
 #wrong_data {
-    width: 50%;
-    min-height: 20rem;
-    background-color: #7a2048;
-    border: 3px solid #408ec6;
-    padding: 1.5rem;
-    font-size: 105%;
-    letter-spacing: .1rem;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: capitalize;
+  width: 50%;
+  min-height: 20rem;
+  background-color: #7a2048;
+  border: 3px solid #408ec6;
+  padding: 1.5rem;
+  font-size: 105%;
+  letter-spacing: 0.1rem;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 #wrong_data p {
-    margin-top: 5%;
-    font-size: 130%;
+  margin-top: 5%;
+  font-size: 130%;
 }
 
 #wrong_data_info {
-    background-color: #e5e5dc;
-    color: #7a2048;
-    padding-top: 1.4%;
+  background-color: #e5e5dc;
+  color: #7a2048;
+  padding-top: 1.4%;
 }
 
 #back_to_form {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* media queries starts here */
 
 @media (max-width: 576px) {
-    .top_buttons {
-        width: 4.3rem;
-        font-size: 65%;
-    }
-    #dropdownMenuButton {
-        font-size: 52%;
-    }
-    .top-titles {
-        font-size: 1.5rem;
-    }
-    #add_exoplanet_message_container {
-        margin-bottom: 2rem;
-    }
-    #col_add_exoplanet_message {
-        padding: 0;
-    }
-    #add_exoplanet_message {
-        font-size: 90%;
-        width: 100%;
-    }
-    #add_exoplanet_message p {
-        padding: 1.2rem;
-    }
-    .detailed {
-        width: 100%;
-    }
-    #detailed_properties {
-        font-size: 100%;
-    }
-    #detailed_properties hr {
-        margin: .6rem;
-    }
-    #name_paragraph {
-        padding-top: 1rem;
-        background-color: #e5e5dc;
-        color: #408ec6;
-        margin-bottom: 0;
-        height: 3.2rem;
-    }
-    #top_separator {
-        margin-top: 0;
-    }
-    #detailed_buttons button {
-        width: 80%;
-        margin: .5rem 0 .2rem 2rem;
-    }
-    .main-action {
-        margin-top: 1.2rem;
-    }
-    #form_row {
-        margin-top: 2rem;
-    }
-    #form_container {
-        width: 100%;
-        margin-bottom: 2rem;
-        font-size: 90%;
-    }
-    #add_button {
-        width: 100%;
-    }
-    #guide {
-        width: 100%;
-        margin-bottom: 2.8rem;
-    }
-    #guide h5 {
-        margin: 1rem 0 2rem 0;
-    }
-    #distance_from_earth {
-        font-size: 96%;
-    }
-    #inserting_the_mass_header {
-        letter-spacing: .1rem;
-    }
-    #quote {
-        letter-spacing: .1rem;
-    }
-    #about_text {
-        width: 100%;
-        font-size: 100%;
-        margin-bottom: 2rem;
-    }
-    #weight_message {
-        width: 50%;
-    }
-    #your_weight_container {
-        margin-top: 15rem;
-    }
-    #wrong_data_container {
-        margin-top: 6.9rem;
-    }
-    #wrong_data {
-        width: 100%;
-        font-size: 95%;
-    }
+  .top_buttons {
+    width: 4.3rem;
+    font-size: 65%;
+  }
+  #dropdownMenuButton {
+    font-size: 52%;
+  }
+  .top-titles {
+    font-size: 1.5rem;
+  }
+  #add_exoplanet_message_container {
+    margin-bottom: 2rem;
+  }
+  #col_add_exoplanet_message {
+    padding: 0;
+  }
+  #add_exoplanet_message {
+    font-size: 90%;
+    width: 100%;
+  }
+  #add_exoplanet_message p {
+    padding: 1.2rem;
+  }
+  .detailed {
+    width: 100%;
+  }
+  #detailed_properties {
+    font-size: 100%;
+  }
+  #detailed_properties hr {
+    margin: 0.6rem;
+  }
+  #name_paragraph {
+    padding-top: 1rem;
+    background-color: #e5e5dc;
+    color: #408ec6;
+    margin-bottom: 0;
+    height: 3.2rem;
+  }
+  #top_separator {
+    margin-top: 0;
+  }
+  #detailed_buttons button {
+    width: 80%;
+    margin: 0.5rem 0 0.2rem 2rem;
+  }
+  .main-action {
+    margin-top: 1.2rem;
+  }
+  #form_row {
+    margin-top: 2rem;
+  }
+  #form_container {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 90%;
+  }
+  #add_button {
+    width: 100%;
+  }
+  #guide {
+    width: 100%;
+    margin-bottom: 2.8rem;
+  }
+  #guide h5 {
+    margin: 1rem 0 2rem 0;
+  }
+  #distance_from_earth {
+    font-size: 96%;
+  }
+  #inserting_the_mass_header {
+    letter-spacing: 0.1rem;
+  }
+  #quote {
+    letter-spacing: 0.1rem;
+  }
+  #about_text {
+    width: 100%;
+    font-size: 100%;
+    margin-bottom: 2rem;
+  }
+  #weight_message {
+    width: 50%;
+  }
+  #your_weight_container {
+    margin-top: 15rem;
+  }
+  #wrong_data_container {
+    margin-top: 6.9rem;
+  }
+  #wrong_data {
+    width: 100%;
+    font-size: 95%;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .top_buttons {
-        width: 10rem;
-    }
-    #col_add_exoplanet_message {
-        padding: 0;
-    }
-    #add_exoplanet_message {
-        width: 100%;
-    }
-    #insert_form {
-        margin-bottom: 3.5rem;
-    }
-    #guide-column {
-        margin-bottom: 3.5rem;
-    }
-    .message {
-        width: 100%;
-    }
+  .top_buttons {
+    width: 10rem;
+  }
+  #col_add_exoplanet_message {
+    padding: 0;
+  }
+  #add_exoplanet_message {
+    width: 100%;
+  }
+  #insert_form {
+    margin-bottom: 3.5rem;
+  }
+  #guide-column {
+    margin-bottom: 3.5rem;
+  }
+  .message {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1500px) {
-    #title_area {
-        bottom: 38%;
-        left: 35%;
-    }
-    #form_row {
+  #title_area {
+    bottom: 38%;
+    left: 35%;
+  }
+  #form_row {
     margin-top: 3rem;
-    }
-    #notes-message div {
+  }
+  #notes-message div {
     font-size: 105%;
     padding: 1rem;
-    }
-    .form-container {
-        margin-top: 6.4rem;
-    }
+  }
+  .form-container {
+    margin-top: 6.4rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
