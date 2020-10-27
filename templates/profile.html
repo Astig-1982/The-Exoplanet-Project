@@ -9,8 +9,14 @@
 		<div id="user-info" class="col-12">
             {% set numberRocky = users_rocky | int %}
             {% set numberGas = users_gas_giants | int %}
+             {% set numberList = users_list | int %}
 			<div>
-				<p>{{ user }}, you currently have {{ users_list }} exoplanets in your list.</p>
+				<p>{{ user }}, you currently have {{ users_list }} {% if numberList == 1 %}
+                                                                       exoplanet
+                                                                    {% else %}
+                                                                       explanets
+                                                                    {% endif %}
+                                                                     in your list.</p>
 				<p>You have {{ users_rocky }} rocky {% if numberRocky == 1 %} 
                                                        planet 
                                                     {% else %}
