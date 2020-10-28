@@ -1,11 +1,11 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
 	<div class="row">
-		<div id="user-info" class="col-12">
+		<div class="col-12 user-info">
             {% set numberRocky = users_rocky | int %}
             {% set numberGas = users_gas_giants | int %}
              {% set numberList = users_list | int %}
-			<div style="padding-bottom:1rem;" class="info">
+			<div id="info" class="info">
             <h4>{{ user }}'s Profile</h4>
              <hr class="guide-separator">
 				<p>{{ user }}, you currently have {{ users_list }} {% if numberList == 1 %}
@@ -26,15 +26,14 @@
                                                        gas giants.
                                                     {% endif %}   
                                                     </p>
-				<p>You can add some more from our <a href="{{ url_for('exoplanets_display') }}">main list</a> or add
-					manually your favourite exoplanet discovered up to date.
+				<p>You can add as many exoplanets as you'd like to your favourites list. You can also choose from our <a href="{{ url_for('exoplanets_display') }}">main list</a> any exoplanet that you'd like to be added into your own list.
 			</div>
-            <div style="margin-top:0; padding-top:0;" id="profile-button">
-            <a
-				href="{{ url_for('favourite_list', username=session['user']) }}"><button class="buttons">favourites</button></a>
+            <div id="profile-actions">
+               <a href="{{ url_for('favourite_list', username=session['user']) }}"><button class="buttons">favourites</button></a>
+               <a id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
             </div>
 		</div>
 	</div>
-     <a href="{{ url_for('deleteprofile') }}">DELETE</a>
+     
 </div>
 {% endblock %}
