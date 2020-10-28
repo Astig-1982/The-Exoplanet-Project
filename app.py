@@ -97,7 +97,7 @@ def deleteprofile():
     mongo.db[username].drop()
     mongo.db.users.remove({"username": session["user"]})
     session.pop('user')
-    return redirect(url_for('login'))
+    return redirect(url_for('register'))
 
 
 
