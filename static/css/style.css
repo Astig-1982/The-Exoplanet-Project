@@ -261,11 +261,6 @@ body {
 
 /* register.html page starts here */
 
-/* profile.html page starts here */
-
-#profile-container {
-  margin-top: 5rem;
-}
 
 /* exoplanets.html page starts here */
 
@@ -510,8 +505,55 @@ body {
 
 /* profile.html starts here */
 
-#profile-title {
-  text-align: center;
+.user-info div {
+    background-color: rgba(112, 16, 3, 0.8);
+    color: #e5e5dc;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 19%;
+    padding: 2rem 4rem;
+    font-size: 108%;
+    letter-spacing: .1rem;
+}
+
+#info {
+    padding-bottom: 1rem;
+}
+
+.user-info div a {
+    color: #e5e5dc;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.user-info div a:hover {
+    opacity: .6;
+}
+
+#profile-actions {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#profile-actions button {
+    width: 30%;
+    height: 2.15rem;
+    letter-spacing: .06rem;
+}
+
+#delete-profile {
+    float: right;
+    color: #e5e5dc;
+    text-transform: capitalize;
+    font-style: italic;
+    opacity: .8;
+    padding-top: 1rem;
+    font-size: 80%;
+}
+
+#delete-profile:hover {
+    text-decoration: none;
+    opacity: .6;
 }
 
 /* already_favourite messsage page starts here */
