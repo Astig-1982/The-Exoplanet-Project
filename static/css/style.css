@@ -21,7 +21,7 @@ body {
   margin-top: 5rem;
 }
 
-.smaller-margin {
+.no-margin {
   margin-top: 0;
 }
 
@@ -505,12 +505,19 @@ body {
 
 /* profile.html starts here */
 
+.user-info {
+    margin-top: 19%;
+}
+
+.smaller-margin {
+    margin-top: 10%;
+}
+
 .user-info div {
     background-color: rgba(112, 16, 3, 0.8);
     color: #e5e5dc;
     width: 60%;
     margin: 0 auto;
-    margin-top: 19%;
     padding: 2rem 4rem;
     font-size: 108%;
     letter-spacing: .1rem;
@@ -594,14 +601,14 @@ body {
 #add_favourites_message {
   width: 50%;
   height: 10rem;
-  border: 3px solid #408ec6;
-  background-color: #7a2048;
+  background-color: rgba(112, 16, 3, 0.8);
   color: #e5e5dc;
   margin: 0 auto;
   margin-top: 5rem;
   font-size: 150%;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 #add_favourites_message p {
@@ -718,10 +725,10 @@ body {
 
 #weight_message {
   width: 30%;
+  height: 5rem;
   text-align: center;
   font-size: 80%;
-  background-color: #7a2048;
-  border: 5px solid #408ec6;
+  background-color: rgba(112, 16, 3, 0.8);
   padding-top: 19px;
   margin: 0 auto;
   animation-name: weight-zoom;
