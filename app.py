@@ -90,11 +90,22 @@ def profile(username):
             return redirect(url_for('login'))
 
 
+@app.route('/deleteprofile')
+def deleteprofile():
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    mongo.db[username].drop()
+    mongo.db.users.remove({"username": session["user"]})
+    session.pop('user')
+    return redirect(url_for('login'))
+
+
+
 @app.route('/logout')
 def logout():
-         flash('You have been logged out')
-         session.pop('user')
-         return redirect(url_for('login'))
+    flash('You have been logged out')
+    session.pop('user')
+    return redirect(url_for('login'))
 
 
 @app.route('/exoplanets_display') 
