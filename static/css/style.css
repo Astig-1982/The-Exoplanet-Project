@@ -1075,6 +1075,29 @@ select {
   #general-guide {
       padding-top: 2rem;
   }
+  #title_area {
+      left: 0;
+  }
+  #title {
+      font-size: 250%;
+  }
+  #sub_title {
+      font-size: 1.6rem;
+  }
+  .home_buttons {
+      width: 8rem;
+      font-size: 140%;
+      padding-top: .5rem;
+  }
+  #title_container {
+      padding: 0;
+  }
+  #home_container {
+      padding: 0;
+  }
+  #home {
+      padding: 0;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
