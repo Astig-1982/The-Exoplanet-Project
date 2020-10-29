@@ -104,7 +104,7 @@ def deleteprofile():
     mongo.db[username].drop()
     mongo.db.users.remove({"username": session["user"]})
     session.pop('user')
-    flash("Profile deleted! Hope to see you back soon {}.".format(username.capitalize()))
+    flash("Profile deleted! Hope to see you back soon, {}.".format(username.capitalize()))
     return redirect(url_for('register'))
 
 
