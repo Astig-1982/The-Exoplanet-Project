@@ -1098,6 +1098,9 @@ select {
   #home {
       padding: 0;
   }
+  .navbar-nav {
+      background-color: rgba(112, 16, 3, 0.95); 
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
