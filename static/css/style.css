@@ -923,9 +923,12 @@ select {
   margin-top: 2rem;
 }
 
-/* media queries starts here */
+/* media queries start here */
 
 @media (max-width: 576px) {
+  body {
+      background-size: cover;
+  }  
   .top_buttons {
     width: 4.3rem;
     font-size: 65%;
@@ -1110,7 +1113,7 @@ select {
   }
   .navbar-toggler {
       border: 2px solid rgb(112, 16, 3);
-  }     
+  }    
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
