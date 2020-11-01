@@ -273,11 +273,6 @@ def favourite_gas_giants():
            favourite_exoplanets=favourite_exoplanets, gas=True)
 
 
-@app.route('/addExoplanet')
-def addExoplanet():
-    return render_template('addExoplanet.html')  
-
-
 @app.route('/insert_exoplanet', methods=['GET', 'POST'])
 def insert_exoplanet():
  if request.method == "POST":
@@ -315,7 +310,7 @@ def insert_exoplanet():
         favourites.insert_one(new_planet)
         return redirect(url_for('favourite_list'))
 
- return redirect(url_for('addExoplanet'))
+ return render_template('addExoplanet.html') 
 
 
 @app.route('/massPhoto')
