@@ -60,6 +60,14 @@ body {
   opacity: 1;
 }
 
+.navbar-toggler {
+      border: 1.5px solid #e5e5dc;
+      background-color: rgb(112, 16, 3);
+}
+.navbar-toggler-icon {       
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
 #register-nav {
   background-color: rgb(196, 23, 0);
   padding-bottom: 0.2rem;
@@ -926,6 +934,13 @@ select {
   text-align: center;
   margin-top: 2rem;
 }
+.navbar-toggler {
+      border: 1.5px solid #e5e5dc;
+      background-color: rgb(112, 16, 3);
+  }
+  .navbar-toggler-icon {       
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  }    
 
 /* media queries start here */
 
@@ -1115,13 +1130,6 @@ select {
   #navbarNav {
       margin-top: .88rem;
   }
-  .navbar-toggler {
-      border: 1.5px solid #e5e5dc;
-      background-color: rgb(112, 16, 3);
-  }
-  .navbar-toggler-icon {       
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-  }
   #weight_message {
       font-size: 50%;
       height: 4rem;
@@ -1197,13 +1205,7 @@ select {
   #navbarNav {
       margin-top: .88rem;
   }
-  .navbar-toggler {
-      border: 1.5px solid #e5e5dc;
-      background-color: rgb(112, 16, 3);
-  }
-  .navbar-toggler-icon {       
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-  }    
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1253,13 +1255,7 @@ select {
   #navbarNav {
       margin-top: .88rem;
   }
-  .navbar-toggler {
-      border: 1.5px solid #e5e5dc;
-      background-color: rgb(112, 16, 3);
-  }
-  .navbar-toggler-icon {       
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-  }
+  
   #weight_message {
       width: 45%;
   }
