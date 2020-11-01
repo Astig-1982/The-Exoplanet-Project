@@ -1112,10 +1112,21 @@ select {
   }
   .navbar-toggler {
       border: 2px solid rgb(112, 16, 3);
-  }    
+  }
+  #weight_message {
+      font-size: 50%;
+      height: 4rem;
+  }
+  .weight_buttons {
+      margin: .2rem;
+      width: 9.4rem;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+   body {
+    background-size: cover;
+  }
   .top_buttons {
     width: 10rem;
   }
@@ -1137,10 +1148,26 @@ select {
   #registration-message-container div {
     width: 90%;
   }
+  .navbar-nav {
+      background-color: rgb(112, 16, 3);
+      padding: 0 1rem;
+  }
+  .navbar-nav li {
+      padding-left: .5rem;
+  }
+  #navbarNav {
+      margin-top: .88rem;
+  }
+  .navbar-toggler {
+      border: 2px solid rgb(112, 16, 3);
+  }    
   
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-size: cover;
+  }
   .register-form {
     margin-top: 39%;
   }
@@ -1174,13 +1201,29 @@ select {
        margin-top: 0;
        width: 90%;
    }
+   .navbar-nav {
+      background-color: rgb(112, 16, 3);
+      padding: 0 1rem;
+  }
+  .navbar-nav li {
+      padding-left: .5rem;
+  }
+  #navbarNav {
+      margin-top: .88rem;
+  }
+  .navbar-toggler {
+      border: 2px solid rgb(112, 16, 3);
+  }    
  
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
+    body {
+       background-size: cover;
+    }
     .user-info {
-    margin-top: 39%;
-    font-size: 130%;
+       margin-top: 39%;
+       font-size: 130%;
     }
     #info {
         width: 80%;
