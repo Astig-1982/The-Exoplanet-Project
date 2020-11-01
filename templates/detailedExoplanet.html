@@ -28,7 +28,7 @@
 				<p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
 				<hr class="detailed_separator">
 				<div style="padding-bottom:1.5rem">
-					<a style="margin-right:2rem;"
+					<a id="detailed-anchor"
 						href="{{ url_for('favourites', exoplanet_id=detailed_exoplanet._id)}}"
 						id="margin-left"><button class="buttons detailed-action">add favourites</button></a>
 					<a style="margin-right:2rem;"
