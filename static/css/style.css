@@ -625,7 +625,7 @@ body {
 
 #detailed_container {
   margin-top: 1.5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 3.1rem;
 }
 
 #detailed_exoplanet_container {
@@ -667,6 +667,7 @@ body {
   background-color: rgba(112, 16, 3, 0.8);
   font-size: 135%;
   letter-spacing: 0.2rem;
+  border: 0;
 }
 
 .detailed_separator {
@@ -674,6 +675,10 @@ body {
 }
 #detailed_buttons {
   padding-bottom: 1.5rem;
+}
+
+#detailed-anchor {
+    margin-right: 2rem;
 }
 
 .detailed-action {
@@ -1121,7 +1126,28 @@ select {
       margin: .2rem;
       width: 9.4rem;
   }
-}
+  .message {
+      width: 100%;
+      font-size: 80%;
+  }
+  #message_container {
+      margin-top: 48%;
+  }
+  .action_buttons {
+      margin: .2rem;
+      font-size: 100%;
+      height: 2rem;
+      width: 8rem;
+  }
+  .detailed-action {
+      width: 8rem;
+      height: 2rem;
+      font-size: 85%;
+  }
+  #detailed-anchor {
+      margin-right: 0;
+      margin-left: 2rem;
+  }
 
 @media (min-width: 577px) and (max-width: 768px) {
    body {
@@ -1213,8 +1239,10 @@ select {
   }
   .navbar-toggler {
       border: 2px solid rgb(112, 16, 3);
+  }
+  #weight_message {
+      width: 45%;
   }    
- 
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -1246,6 +1274,9 @@ select {
    }
    .guide-container {
        min-height: 61vh;
+   }
+   #weight_message {
+       width: 35%;
    }
 }
 
