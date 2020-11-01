@@ -194,17 +194,21 @@ def favourite_list():
 
 @app.route('/favourites/<exoplanet_id>')
 def favourites(exoplanet_id):
-    username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-    favourite=mongo.db.exoplanets.find_one(
-        {"_id": ObjectId(exoplanet_id)})
-    already_favourite=mongo.db[username].find_one(
-        {"_id": ObjectId(exoplanet_id)})
-    if already_favourite:
-        return render_template('alreadyFavourite.html', favourite=favourite)
-    else:
-        mongo.db[username].insert(favourite)
-        return redirect(url_for('favourite_list'))
+       try:
+           username = mongo.db.users.find_one(
+                   {"username": session["user"]})["username"]
+           favourite=mongo.db.exoplanets.find_one(
+               {"_id": ObjectId(exoplanet_id)})
+           already_favourite=mongo.db[username].find_one(
+               {"_id": ObjectId(exoplanet_id)})
+           if already_favourite:
+               return render_template('alreadyFavourite.html', favourite=favourite)
+           else:
+               mongo.db[username].insert(favourite)
+               return redirect(url_for('favourite_list'))
+       except:
+            flash('Please log in to add any exoplanet to your list of favourites')
+            return redirect(url_for('login'))
 
         
 @app.route('/delete_favourite/<exoplanet_id>')
