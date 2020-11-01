@@ -141,7 +141,7 @@ def small_to_large_favourites():
     sized_exoplanets=mongo.db[username].find()
     favourite_exoplanets=sorted(sized_exoplanets, 
                          key = lambda i: float(i['mass'])) 
-    return render_template('add_favourites.html', 
+    return render_template('favourites.html', 
            favourite_exoplanets=favourite_exoplanets)
 
 
@@ -160,7 +160,7 @@ def large_to_small_favourites():
     larged_sized=mongo.db[username].find()
     favourite_exoplanets=sorted(larged_sized, 
                                 key = lambda i: float(i['mass']), reverse=True) 
-    return render_template('add_favourites.html', 
+    return render_template('favourites.html', 
            favourite_exoplanets=favourite_exoplanets)
 
  
@@ -185,15 +185,15 @@ def favourite_list():
         try:
             username = mongo.db.users.find_one(
              {"username": session["user"]})["username"]
-            return render_template('add_favourites.html', 
+            return render_template('favourites.html', 
                    favourite_exoplanets=mongo.db[username].find())
         except:
             flash('Please login in order to access your list of favourites.')
             return redirect(url_for('login'))
         
 
-@app.route('/add_favourites/<exoplanet_id>')
-def add_favourites(exoplanet_id):
+@app.route('/favourites/<exoplanet_id>')
+def favourites(exoplanet_id):
     username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
     favourite=mongo.db.exoplanets.find_one(
@@ -201,7 +201,7 @@ def add_favourites(exoplanet_id):
     already_favourite=mongo.db[username].find_one(
         {"_id": ObjectId(exoplanet_id)})
     if already_favourite:
-        return render_template('already_favourite.html', favourite=favourite)
+        return render_template('alreadyFavourite.html', favourite=favourite)
     else:
         mongo.db[username].insert(favourite)
         return redirect(url_for('favourite_list'))
@@ -231,21 +231,21 @@ def delete_gas_giant(exoplanet_id):
     return redirect(url_for('favourite_gas_giants'))
 
 
-@app.route('/detailed_exoplanet/<exoplanet_id>')
-def detailed_exoplanet(exoplanet_id):
+@app.route('/detailedExoplanet/<exoplanet_id>')
+def detailedExoplanet(exoplanet_id):
     detailed_exoplanet=mongo.db.exoplanets.find_one(
         {"_id": ObjectId(exoplanet_id)})
-    return render_template('detailed_exoplanet.html', 
+    return render_template('detailedExoplanet.html', 
            detailed_exoplanet=detailed_exoplanet)
 
 
-@app.route('/favourite_detailed/<exoplanet_id>')
-def favourite_detailed(exoplanet_id):
+@app.route('/favouriteDetailed/<exoplanet_id>')
+def favouriteDetailed(exoplanet_id):
     username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
     detailed_exoplanet=mongo.db[username].find_one(
         {"_id": ObjectId(exoplanet_id)})
-    return render_template('detailed_exoplanet.html', 
+    return render_template('detailedExoplanet.html', 
            detailed_exoplanet=detailed_exoplanet)
 
 
@@ -255,7 +255,7 @@ def favourite_rocky_planets():
             {"username": session["user"]})["username"]
     favourite_exoplanets=mongo.db[username].find(
         {'type': 'rocky'})
-    return render_template('add_favourites.html', 
+    return render_template('favourites.html', 
            favourite_exoplanets=favourite_exoplanets, rocky=True)
 
 
@@ -265,13 +265,13 @@ def favourite_gas_giants():
             {"username": session["user"]})["username"]
     favourite_exoplanets=mongo.db[username].find(
         {'type': 'gas giant'})
-    return render_template('add_favourites.html', 
+    return render_template('favourites.html', 
            favourite_exoplanets=favourite_exoplanets, gas=True)
 
 
-@app.route('/add_exoplanet')
-def add_exoplanet():
-    return render_template('add_exoplanet.html')  
+@app.route('/addExoplanet')
+def addExoplanet():
+    return render_template('addExoplanet.html')  
 
 
 @app.route('/insert_exoplanet', methods=['GET', 'POST'])
@@ -292,12 +292,12 @@ def insert_exoplanet():
         float(mass)
     except:
         wrong_data='the mass needs to be a digit'
-        return render_template('wrong_data.html', wrong_data=wrong_data)
+        return render_template('wrongData.html', wrong_data=wrong_data)
     try:
         float(distance_from_earth)
     except:
         wrong_data='distance from earth needs to be a digit'
-        return render_template('wrong_data.html', wrong_data=wrong_data)
+        return render_template('wrongData.html', wrong_data=wrong_data)
 
     else:
         new_planet={'planet_name': request.form.get('planet_name'),
@@ -311,16 +311,16 @@ def insert_exoplanet():
         favourites.insert_one(new_planet)
         return redirect(url_for('favourite_list'))
 
- return redirect(url_for('add_exoplanet'))
+ return redirect(url_for('addExoplanet'))
 
 
-@app.route('/mass_photo')
-def mass_photo():
-    return render_template('mass_photo.html')
+@app.route('/massPhoto')
+def massPhoto():
+    return render_template('massPhoto.html')
 
 
-@app.route('/calculate_weight/<exoplanet_mass>/<exoplanet_name>/<exoplanet_id>', methods=['GET', 'POST'])
-def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
+@app.route('/calculateWeight/<exoplanet_mass>/<exoplanet_name>/<exoplanet_id>', methods=['GET', 'POST'])
+def calculateWeight(exoplanet_mass, exoplanet_name, exoplanet_id):
  try:
    username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
@@ -331,7 +331,7 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
       exoplanet_weight=int(request.form.get('your_weight'))
       your_weightExoplanet = exoplanet_weight * float(exoplanet_mass)
       return render_template(
-        'exoplanet_weight.html', exoplanet=exoplanet, 
+        'exoplanetWeight.html', exoplanet=exoplanet, 
         your_weightExoplanet=your_weightExoplanet, 
         exoplanet_name=exoplanet_name, exoplanet_id=exoplanet_id)
         
@@ -339,15 +339,15 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
       detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
       exoplanet=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
       if exoplanet:
-          return render_template('calculate_weight.html', exoplanet=exoplanet)
+          return render_template('calculateWeight.html', exoplanet=exoplanet)
       else:
-          return render_template('not_added.html', detailed_exoplanet=detailed_exoplanet)
+          return render_template('notAdded.html', detailed_exoplanet=detailed_exoplanet)
 
  except:
      flash('Please login in order to use this feature.')
      detailed_exoplanet=mongo.db.exoplanets.find_one(
          {"_id": ObjectId(exoplanet_id)})
-     return render_template('detailed_exoplanet.html', 
+     return render_template('detailedExoplanet.html', 
             detailed_exoplanet=detailed_exoplanet)
 
 

@@ -77,9 +77,9 @@
 					<p class="exoplanet_properties"><strong>Star System:</strong> {{exoplanet.star_system}} </p>
 					<hr class="separator">
 					<div class="centered_buttons">
-						<a href="{{ url_for('add_favourites', exoplanet_id=exoplanet._id)}}"
+						<a href="{{ url_for('favourites', exoplanet_id=exoplanet._id)}}"
 							id="margin-left"><button id="favourite_button" class="exoplanets_display_buttons buttons">Add Favourites</button></a>
-						<a href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}"
+						<a href="{{ url_for('detailedExoplanet', exoplanet_id=exoplanet._id) }}"
 							id="float_right"><button class="exoplanets_display_buttons buttons">Details</button></a>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 			<div id="col_add_exoplanet_message" class="col-12">
 				<div id="add_exoplanet_message">
 					<p>Can't find your favourite exoplanet in the main list? Add any exoplanet to your Favourites List
-						by simply entering its details <a href="{{ url_for('add_exoplanet') }}">here</a>.</p>
+						by simply entering its details <a href="{{ url_for('addExoplanet') }}">here</a>.</p>
 				</div>
 			</div>
 		</div>

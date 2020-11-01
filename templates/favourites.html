@@ -103,9 +103,9 @@
 							href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Delete</button></a>
 						{% endif %}
 						<a
-							href="{{ url_for('favourite_detailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Details</button></a>
+							href="{{ url_for('favouriteDetailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">Details</button></a>
 						<a
-							href="{{ url_for('calculate_weight', exoplanet_mass=favourite_exoplanet.mass, exoplanet_name=favourite_exoplanet.planet_name, exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">calculate</button></a>
+							href="{{ url_for('calculateWeight', exoplanet_mass=favourite_exoplanet.mass, exoplanet_name=favourite_exoplanet.planet_name, exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites_display_buttons exoplanets_display_buttons buttons">calculate</button></a>
 					</div>
 				</div>
 			</div>
