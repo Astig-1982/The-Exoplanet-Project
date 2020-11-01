@@ -1118,6 +1118,9 @@ select {
   .navbar-toggler {
       border: 2px solid rgb(112, 16, 3);
   }
+  .navbar-toggler-icon {
+      background-color: rgb(112, 16, 3);
+  }
   #weight_message {
       font-size: 50%;
       height: 4rem;
@@ -1148,6 +1151,7 @@ select {
       margin-right: 0;
       margin-left: 2rem;
   }
+}
 
 @media (min-width: 577px) and (max-width: 768px) {
    body {
@@ -1186,14 +1190,16 @@ select {
   }
   .navbar-toggler {
       border: 2px solid rgb(112, 16, 3);
+  }
+  .navbar-toggler-icon {
+      background-color: rgb(112, 16, 3);
   }    
-  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
-    background-size: cover;
-  }
+      background-size: cover;
+  } 
   .register-form {
     margin-top: 39%;
   }
@@ -1240,9 +1246,15 @@ select {
   .navbar-toggler {
       border: 2px solid rgb(112, 16, 3);
   }
+  .navbar-toggler-icon {
+      background-color: rgb(112, 16, 3);
+  }
   #weight_message {
       width: 45%;
-  }    
+  }
+  body {
+      background-size: cover;
+  }  
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
