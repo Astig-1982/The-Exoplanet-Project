@@ -35,6 +35,10 @@ body {
   color: #e5e5dc;
 }
 
+.blue {
+    background-color: red;
+}
+
 #navbarNav {
   padding-bottom: 8px;
 }
