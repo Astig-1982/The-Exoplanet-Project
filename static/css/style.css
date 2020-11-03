@@ -1172,6 +1172,33 @@ select {
   #add_favourites_message p {
       padding: 1.75rem .2rem 0 .2rem;
   }
+  #info {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 90%;
+  }
+  .user-info {
+      margin-top: 40%;
+  }
+  #profile-actions {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+  #profile-actions button {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-sizing: content-box;
+      width: 30%;
+  }
+  .main-action {
+      margin-top: 0;
+  }
+  #about_text_container {
+      margin-top: 1rem;
+  }
+  #exoplanet_page_title_container {
+      font-size: 90%;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
