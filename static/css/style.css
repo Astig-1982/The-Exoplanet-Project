@@ -1201,7 +1201,7 @@ select {
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 767px) {
    body {
     background-size: cover;
   }
@@ -1255,13 +1255,16 @@ select {
   #info {
     width: 80%;
   }
+  #title_area {
+    bottom: 39%;
+    left: 12%;
+  }
   #profile-actions  {
       width: 80%;
   }
   #form_container {
       padding: 2rem 1rem;
   }
-  
    #form_container {
        width: 90%;
        margin-top: 5%;
@@ -1290,6 +1293,9 @@ select {
   #weight_message {
       width: 45%;
   }
+  .top_buttons {
+      width: 10rem;
+  }
   body {
       background-size: cover;
   }  
@@ -1298,6 +1304,10 @@ select {
 @media (min-width: 1024px) and (max-width: 1199px) {
     body {
        background-size: cover;
+    }
+    #title_area {
+        bottom: 43%;
+        left: 20%;
     }
     .user-info {
        margin-top: 39%;
