@@ -86,18 +86,15 @@ def login():
 def profile(username):
         username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
-        if session["user"]:
-            users_list = mongo.db[username].find().count()
-            users_rocky = mongo.db[username].find(
-                {'type': 'rocky'}).count()
-            users_gas_giants = mongo.db[username].find(
-                {'type': 'gas giant'}).count()
-            user = username.capitalize()
-            return render_template('profile.html', user=user, 
-                   users_list=users_list, users_rocky=users_rocky, 
-                   users_gas_giants=users_gas_giants)
-        else:
-            return redirect(url_for('login'))
+        users_list = mongo.db[username].find().count()
+        users_rocky = mongo.db[username].find(
+            {'type': 'rocky'}).count()
+        users_gas_giants = mongo.db[username].find(
+            {'type': 'gas giant'}).count()
+        user = username.capitalize()
+        return render_template('profile.html', user=user, 
+                users_list=users_list, users_rocky=users_rocky, 
+                users_gas_giants=users_gas_giants)
 
 
 #delete the user's profile
@@ -384,7 +381,7 @@ def calculateWeight(exoplanet_mass, exoplanet_name, exoplanet_id):
       exoplanet=mongo.db[username].find_one(
           {"_id": ObjectId(exoplanet_id)})
 
-      #parse into an integer the user's weight inserted 
+      #parse into an integer the user's weight 
       exoplanet_weight=int(request.form.get('your_weight'))
 
       #calculate the user's weight on the exoplanet by multiplying the user's weight with the exoplanet's mass
