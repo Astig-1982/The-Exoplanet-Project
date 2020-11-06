@@ -197,6 +197,7 @@ def gas_giants_planets():
            exoplanets=exoplanets, gas=True)
 
 
+#displaying the user's favourites list
 @app.route('/favourite_list')
 def favourite_list():
         #check if the user is logged in and render the favourites list
@@ -398,7 +399,7 @@ def calculateWeight(exoplanet_mass, exoplanet_name, exoplanet_id):
       else:
           return render_template('notAdded.html', detailed_exoplanet=detailed_exoplanet)
  
- #if the user is logged in
+ #if the user is not logged in
  except:
      flash('Please login in order to use this feature.')
 
