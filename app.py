@@ -18,13 +18,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route('/base')
-def base():
-    return render_template('base.html')
+
 
 
 @app.route('/')
-@app.route('/home')
 def home():
     return render_template('home.html')
 
@@ -417,4 +414,4 @@ def calculateWeight(exoplanet_mass, exoplanet_name, exoplanet_id):
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
-            debug=True)
+            debug=os.environ.get('DEBUG'))
