@@ -313,6 +313,9 @@ def favourite_gas_giants():
 @app.route('/insert_exoplanet', methods=['GET', 'POST'])
 def insert_exoplanet():
  if request.method == "POST":
+
+  #check if the user is logged in
+  try:   
     username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
     favourites=mongo.db[username]
@@ -356,6 +359,10 @@ def insert_exoplanet():
         favourites.insert_one(new_planet)
         return redirect(url_for('favourite_list'))
 
+  #if the user is logged in
+  except:
+      flash("Please log in in order to add an exoplanet to your favourites list")
+      render_template('addExoplanet.html') 
  return render_template('addExoplanet.html') 
 
 
