@@ -476,6 +476,10 @@ body {
 }
 
 #about_text p {
+    padding-bottom: 0;
+}
+
+#about_text p {
   padding: 1.5rem;
 }
 
