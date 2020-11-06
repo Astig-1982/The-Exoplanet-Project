@@ -115,6 +115,28 @@ body {
   opacity: 0.6;
 }
 
+#profile {
+    margin-bottom: .5rem;
+}
+
+#logout {
+    margin-top: .9rem;
+}
+
+#profile a {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 0;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    margin-top: 1rem;
+    box-sizing: content-box;
+    font-size: 130%;
+    padding-top: 5px;
+    background-color: rgba(112, 16, 3, 0.8);
+}
+
 .buttons {
   font-family: "Roboto Slab", sans-serif;
   background-color: rgb(60, 10, 125);
@@ -1193,6 +1215,16 @@ select {
   .main-action {
       margin-top: 0;
   }
+  #nav {
+      text-transform: uppercase;
+  }
+  #profile {
+      margin-bottom: 0;
+  }
+  #profile a {
+      width: 2.6rem;
+      background-color: rgb(196, 23, 0);
+  }
   #about_text_container {
       margin-top: 1rem;
   }
@@ -1220,6 +1252,16 @@ select {
   #guide-column {
     margin-bottom: 3.5rem;
   }
+  #nav {
+      text-transform: uppercase;
+  }
+  #profile {
+      margin-bottom: 0;
+  }
+  #profile a {
+      width: 2.6rem;
+      background-color: rgb(196, 23, 0);
+  }
   .message {
     width: 100%;
   }
@@ -1242,6 +1284,16 @@ select {
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
       background-size: cover;
+  }
+  #nav {
+      text-transform: uppercase;
+  }
+  #profile {
+      margin-bottom: 0;
+  }
+  #profile a {
+      width: 2.6rem;
+      background-color: rgb(196, 23, 0);
   } 
   .register-form {
     margin-top: 39%;

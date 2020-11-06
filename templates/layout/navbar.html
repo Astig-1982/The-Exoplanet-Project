@@ -20,10 +20,10 @@
 			</ul>
                 {% if session.user %}
                 <ul class="nav navbar-nav navbar-right ml-auto">
-                <li class="nav-item">
-					<a class="nav-link nav_anchors" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+                <li id="profile" class="nav-item">
+					<a class="nav-link nav_anchors" href="{{ url_for('profile', username=session['user']) }}">{{ session.user[0].capitalize() }}</a>
 				</li>
-                <li class="nav-item">
+                <li id="logout" class="nav-item">
 					<a class="nav-link nav_anchors" href="{{ url_for('logout') }}">Log Out</a>
 				</li>
                 </ul>
