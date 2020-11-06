@@ -405,11 +405,7 @@ def calculateWeight(exoplanet_mass, exoplanet_name, exoplanet_id):
      flash('Please login in order to use this feature.')
 
      #return user on the detailedExoplanet.html page as it's the only page that displays the 'calculate' action button if the usser is not logged in
-     detailed_exoplanet=mongo.db.exoplanets.find_one(
-         {"_id": ObjectId(exoplanet_id)})
-     return render_template('detailedExoplanet.html', 
-         detailed_exoplanet=detailed_exoplanet)
-
+     return redirect(url_for('login'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
