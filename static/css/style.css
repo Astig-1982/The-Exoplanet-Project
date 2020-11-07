@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kufam&family=Abril+Fatface&family=Piazzolla&family=Roboto+Slab:wght@100;300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&family=Roboto+Slab:wght@100;300;400;700;800&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -14,7 +14,7 @@ body {
   background-size: 110%;
   background-attachment: fixed;
   color: #e5e5dc;
-  font-family: "Piazzolla", serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .margin {
@@ -31,12 +31,8 @@ body {
   z-index: 2;
   width: 100vw;
   height: 4rem;
-  background-color: rgba(54, 10, 125, 0.8);
+  background-color: rgba(54, 10, 125, .8);
   color: #e5e5dc;
-}
-
-.blue {
-    background-color: red;
 }
 
 #navbarNav {
@@ -71,6 +67,8 @@ body {
 .navbar-toggler-icon {       
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
+
+
 
 #register-nav {
   background-color: rgb(196, 23, 0);
@@ -982,6 +980,9 @@ select {
     width: 4.3rem;
     font-size: 65%;
   }
+  .navbar-down {
+    background-color: rgb(54, 10, 125); 
+}
   #dropdownMenuButton {
     font-size: 52%;
   }
@@ -1151,7 +1152,7 @@ select {
       padding: 0;
   }
   .navbar-nav {
-      background-color: rgb(112, 16, 3);
+      background-color: rgb(54, 10, 125);
       padding: 0 1rem;
   }
   .navbar-nav li {

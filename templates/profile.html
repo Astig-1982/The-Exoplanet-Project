@@ -13,17 +13,17 @@
                                                                     {% else %}
                                                                        explanets
                                                                     {% endif %}
-                                                                     in your list.</p>
+                                                                     your list.</p>
 				<p>You have {{ users_rocky }} rocky {% if numberRocky == 1 %} 
                                                        planet 
                                                     {% else %}
                                                        planets
                                                     {% endif %}
-                                                    and {{ users_gas_giants }} 
+                                                      and  {{ users_gas_giants }} 
                                                     {% if numberGas == 1 %}
                                                        gas giant.
                                                     {% else %}
-                                                       gas giants.
+                                                       gas giants
                                                     {% endif %}   
                                                     </p>
 				<p>You can add as many exoplanets as you'd like to your favourites list. You can also choose from our <a href="{{ url_for('exoplanets_display') }}">main list</a> any exoplanet that you'd like to be added into your own list.
