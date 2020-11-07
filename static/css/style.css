@@ -25,7 +25,7 @@ body {
   margin-top: 0;
 }
 
-#nav {
+.navbar {
   position: fixed;
   top: 0;
   z-index: 2;
@@ -33,6 +33,13 @@ body {
   height: 4rem;
   background-color: rgba(54, 10, 125, .8);
   color: #e5e5dc;
+  transition-property: background-color, color;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+}
+
+.navbar-down {
+    background-color: rgb(54, 10, 125); 
 }
 
 #navbarNav {
@@ -67,8 +74,6 @@ body {
 .navbar-toggler-icon {       
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
-
-
 
 #register-nav {
   background-color: rgb(196, 23, 0);
@@ -871,6 +876,10 @@ select {
   letter-spacing: 0.05rem;
 }
 
+.guide-holders h4 {
+    text-transform: uppercase;
+}
+
 .guide-holders p {
   line-height: 200%;
   font-size: 105%;
@@ -980,9 +989,6 @@ select {
     width: 4.3rem;
     font-size: 65%;
   }
-  .navbar-down {
-    background-color: rgb(54, 10, 125); 
-}
   #dropdownMenuButton {
     font-size: 52%;
   }
@@ -1220,7 +1226,7 @@ select {
   .main-action {
       margin-top: 0;
   }
-  #nav {
+  .navbar {
       text-transform: uppercase;
   }
   #profile {
@@ -1257,7 +1263,7 @@ select {
   #guide-column {
     margin-bottom: 3.5rem;
   }
-  #nav {
+ .navbar  {
       text-transform: uppercase;
   }
   #profile {
@@ -1290,7 +1296,7 @@ select {
   body {
       background-size: cover;
   }
-  #nav {
+ .navbar {
       text-transform: uppercase;
   }
   #profile {
