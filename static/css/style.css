@@ -478,12 +478,9 @@ body {
   font-size: 130%;
 }
 
-#about_text p {
+.about-paragraphs {
     padding-bottom: 0;
-}
-
-#about_text p {
-  padding: 1.5rem;
+    padding: 1.5rem;
 }
 
 /* login.html starts here */
@@ -992,14 +989,38 @@ select {
   #dropdownMenuButton {
     font-size: 52%;
   }
+  .margin {
+      margin-top: 3.8rem;
+  }
+  #about-action {
+      margin-top: .7rem;
+  }
   .top-titles {
     font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  #about-second-paragraph {
+      padding-top: 1rem;
+  }
+  #about-third-paragraph {
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+  }
+  #quote {
+      margin-top: .2rem;
+  }
+.about-paragraphs {
+      margin-bottom: 0;
+      padding: 1.5rem 1.5rem 0 1.5rem;
   }
   #add_exoplanet_message_container {
     margin-bottom: 2rem;
   }
   #col_add_exoplanet_message {
     padding: 0;
+  }
+  #quote_author {
+      margin-bottom: 0;
   }
   #add_exoplanet_message {
     font-size: 90%;
@@ -1031,11 +1052,8 @@ select {
     width: 80%;
     margin: 0.5rem 0 0.2rem 2rem;
   }
-  .main-action {
-    margin-top: 1.2rem;
-  }
   #form_row {
-    margin-top: 2rem;
+    margin-top: 0;
   }
   #form_container {
     width: 100%;
@@ -1224,7 +1242,7 @@ select {
       width: 30%;
   }
   .main-action {
-      margin-top: 0;
+      margin-top: 1.2rem;
   }
   .navbar {
       text-transform: uppercase;
@@ -1280,7 +1298,7 @@ select {
     width: 90%;
   }
   .navbar-nav {
-      background-color: rgb(112, 16, 3);
+      background-color: rgb(54, 10, 125);;
       padding: 0 1rem;
   }
   .navbar-nav li {
@@ -1343,7 +1361,7 @@ select {
        width: 90%;
    }
    .navbar-nav {
-      background-color: rgb(112, 16, 3);
+      background-color: rgb(54, 10, 125);
       padding: 0 1rem;
   }
   .navbar-nav li {
