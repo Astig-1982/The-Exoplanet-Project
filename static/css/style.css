@@ -75,6 +75,11 @@ body {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
+.nav-separator {
+      width: 100%;
+      border-top: .1px solid #e5e5dc;
+}
+
 #register-nav {
   background-color: rgb(196, 23, 0);
   padding-bottom: 0.2rem;
@@ -1314,6 +1319,7 @@ select {
   body {
       background-size: cover;
   }
+  
  .navbar {
       text-transform: uppercase;
   }
