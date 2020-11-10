@@ -6,15 +6,15 @@ The Exoplanet Project, named Other Words, is a simple app that represents a quic
 
 ### Project Goals
 
-The app is designed as a simple to use guide to exoplanets. The main goal is to provide the user the possibiliy to have her/his own list where she/he can add their prefered exoplanets in order to keep track of them as they are confirmed, and also to add any exoplanets that have been confirmed so far. To kick things off, a list with 12 of the most relevant exoplanets confirmed up date will be provided. From there, the user is free to add any of the planets to her/his list. To make things a bit more interesting, the user will also have the possibility to check her/his weight on any of the exoplanets added, if ever, hypothetically, will have the chance to end up on one of them :)
+The app is designed as a simple to use guide to exoplanets. The main goal is to provide the user the possibiliy to have her/his own list where she/he can add their prefered exoplanets in order to keep track of them as they are officially confirmed by NASA, ESA, .. and many others authorized entities, and also to add any of these exoplanets to their favourites list. To kick things off, a list with 12 of the most relevant exoplanets confirmed up date will be provided. From there, the user is free to add any of the planets to her/his list. To make things a bit more interesting, the user will also have the possibility to check her/his weight on any of the exoplanets added, if ever, hypothetically (or not), will have the chance to end up on one of them.
 
 ### User Goals
 
 * An app that serves as a guide to relevant confirmed exolanets.
 * Possibility to add any new prefered exoplanet to her/his own list.
-* Possibility to delete any new prefered exoplanet to her/his own list.
-* Possibility to see the planets arranged depending on different properties (eg. type, size).
-* Navbar availabe across and throughout all sections for a quick and easy navigation on the website.
+* Possibility to delete any new prefered exoplanet from her/his own list.
+* Possibility to have the planets displayed in the list depending on some of their different properties (eg. type, size).
+* Navbar available across and throughout all sections for a quick and easy navigation on the website.
 * A way to follow the developer on social media for the latest updated.
 * Responsive interaction with the website on desktop, table and mobile.
 
@@ -22,14 +22,14 @@ The app is designed as a simple to use guide to exoplanets. The main goal is to 
 
 * As a user, I would like to be able to find out what's the app about and how to use its features.
 * As a user, I would like to have a clear and clean display of the items (exoplanets).
-* As a user, I would like a navbar that it's always available on all section, for me to easily navigate at any point at the app from eveywhere.
-* As a user, I would like clear action buttons on every section.
+* As a user, I would like a navbar that it's always available on all section, for me to easily navigate at any section of the app from everywhere.
+* As a user, I would like clean and visible action buttons at every section.
 * As a user, I would like my own section (list) where I am able to store my items (exoplanets).
-* As a user, I would like to possibility to remove at any point any item I wish from my list.
-* As a user, I would like a flexible app that would allow me to add any item that I want to my list.
-* As a user, I would like an intuitive and easy to complete section to add my items.
-* As a user, I am expecting guidance where necessary, especially working with exoplanets and precise data about them, that might require some research on interenet on where it can be found.
-* As a user, I would likt to be able to sort my items depending on some of its most important properties.
+* As a user, I would like the possibility to remove at any point any item I wish from my list.
+* As a user, I would like an intuitive and easy way to add items to my list.
+* As a user, I am expecting guidance where necessary; especially working with exoplanets and precise data about them, that might require some research on where the specific data can be found.
+* As a user, I would like to be notified (via clear messages displayed on the screen) when some specific action cannot be performed and the reasons why.
+* As a user, I would like to be able to sort my items depending on some of its most important properties.
 * As a user, I am looking for an app that will also keep me on some level entertained while I'm using it.
 
 ### App Owners Goals
@@ -40,25 +40,27 @@ The app is designed as a simple to use guide to exoplanets. The main goal is to 
 
 ## Design Choices
 
-The theme of the app being celestial bodies, I've chosen a somewhat dark tone for the background and a simple design, letting the user focus more on the functionality of the app.
+I have chosen dynamic fonts for the entire app, to keep the user entertained; also they might remind the user of the colors of space dust on some of the best known nebulae.
 
-### Fonts: 
+### Main Image: 
 
-I chose to use [KUFAM](https://fonts.google.com/specimen/Kufam?query=kufam) as main font as I believe it provides a readability. In the same time, having some curvy lines, can be warm and friendly for the user.
+The main image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their space ship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets on the app. 
 
-I chose [ROBOTO SLAB](https://fonts.google.com/?query=roboto+slab) for all the action buttons as I believe it provides one of the best readability (which is always important for action buttons) and in the same time it can give the app a more futuristic aspect.
+### Fonts:
+
+I chose to use [ABRIL FATFACE](https://fonts.google.com/specimen/Abril+Fatface?query=abril) as the font for all the main titles as I believe it's thickness and clean shape provide good readability and would be a good match for all of the app's sections.
+
+I chose to use [LATO](https://fonts.google.com/specimen/Lato?query=lato) as main font as I believe it provides a good readability and looks proffessional.
+
+I chose to use [ROBOTO SLAB](https://fonts.google.com/specimen/Roboto+Slab?query=roboto) for all action buttons as I believe it provides one of the best readability (which is always important for action buttons) and in the same time it can give the app a more futuristic aspect.
 
 ### Colors: 
 
-I chose a dark, but in the same time lively theme for the project, as I believe it's it offers the user more focus on the exoplanets.
+* Primary: **See Through Red** rgba(112, 16, 3, 0.8). I chose this color as background for all sections that contain text (including flash messages), as I believe it offers a not so strong contrast with the main image (in this case the main image will still be visible), but in the same time a good enough contrast for the text to be readable. 
 
-* Primary: **Indigo**  #1e2761. As working with celestial bodies, I believe this color is somewhat similar to the color of the night sky and also provides a good contrast between the background and the planet's images which are mosttly dark.
+* Secondary **Indigo** rgb(60, 10, 125). I chose this color for the action buttons and navbar as it matches some of the colors found in the main image, and also I believe it provides a very good contrast between them and the rest of the app making them more visible, which is very important in order to provide a good user experience. 
 
-* Secondary: **Light Blue** #408ec6. I chose this color as I believe it's related to the primary color and in the same time offering a good enough contrast between them and also between the text, which is a light grey.
-
-* Tertiary: **Maroon** #7a2048. I chose this color for the action buttons as I believe it gives a very good contrast between them and the rest of the app and also makes them more visible. I chose this color as a background when displaying varies messages in the app as I believe it makes more readable, offering a very good contrast with the color of the text - light grey.
-
-* Text Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. 
+* Text Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. I chose this rather then plain white as I believe it is also a bit warmer for the user.
 
 
 
