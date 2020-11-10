@@ -91,8 +91,6 @@ def profile(username):
         """
         displaying the user's profile
         """
-        username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
         users_list = mongo.db[username].find().count()
         users_rocky = mongo.db[username].find(
             {'type': 'rocky'}).count()
