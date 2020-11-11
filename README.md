@@ -151,7 +151,6 @@ I've created this function as the mass is one of the most important properties i
 
 By simply creating a function in app.py file that will find all exoplanets in a respective collection ('exoplanets' or user's collection) and applies sort() method to them before rendering them onto either the main list section or favourites list. 
 
-
 ### Possiblity to calculate the user's weight on each exoplanet:
 
 This feature was created in the spirit of keeping the user excited and also making the user adding more exoplanets to her/his favourites list - as only on the surface of the exoplanets added to favourites list can the weight be calculated. It also, in my opinion, contributes to app's dynamicity. 
@@ -167,6 +166,40 @@ I chose to use this feature as I believe it's good for the user to have a quick 
 #### Implementation:
 
 In the function created in app.py file for displaying the profile, I've used count() method on the items from the the user's collection.
+
+## Testing:
+
+Planning for this project took a significant amount of a time as this was my first time working with databases.
+
+### Testing Stories:
+
+#### W3C Validation Service:
+
+* I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). As expected, it has found errors related to the use of jinja (DOCTYPE not declared, head element missing the required instance of child element title). I have ingnored this errors as they were due of the use of jinja. I have used the W3 Markup Validation more to find any errors like unclosed divs or double use if id's. It has actually found a couple of unclosed divs and a double use of an id. I have corrected the respective errors. It has also found one more error not related to the use of jinja - 'The element button must not appear as a descendant of the anchor element'. As I was advanced on my project with little time left until my deadline, I have decided to treat this error as a bug (see my [Bugs](#bugs) section) as all the styling for almost each individual button have been already set in the style.css. In the very nearest future I will remove all buttons from the anchor tags and style the achors. 
+* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found no errors.
+
+#### Register with an account:
+
+* I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the users collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the username and hashed passwords will be inserted into the users collection in the database. Then the code initiates the ‘session’ for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored in the database. 
+
+#### Deleting and account:
+
+* The code will first delete entirely the user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removes. It works as intended. I did this several times with succesful outcomes.
+
+#### Sign out of an account:
+
+* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very strigh forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly base on the above criteria. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
