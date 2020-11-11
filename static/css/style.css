@@ -1158,7 +1158,7 @@ select {
       padding-top: 2rem;
   }
   #title_area {
-      bottom: 28%;
+      bottom: 30%;
       left: 0;
   }
   #title {
@@ -1166,6 +1166,7 @@ select {
   }
   #sub_title {
       font-size: 1.6rem;
+      letter-spacing: .05rem;
   }
   .home_buttons {
       width: 8rem;
