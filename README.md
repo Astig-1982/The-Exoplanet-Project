@@ -87,11 +87,11 @@ Please view my wireframes for this project [here](https://github.com/Astig-1982/
 * Register an account form, Log-in & Log-out functionality.
 * Adding manually any preferred exoplanet into the user's favourites list.
 * Adding a default image of a rocky or gas giant planet, depending on the type of planet inserted by the user. 
-* Adding to favourites feature any exoplanet from the main list provided in the app.
+* Adding to favourites list any exoplanet from the main list provided in the app.
 * Advanced item information, providing users with some of the exoplanet's most important properties.
 * Possibility to filter the exoplanets by type: rocky planets or gas giants.
 * Possibility to sort the exoplanets depending on their mass, from smallest to largest and other way around. 
-* Possiblity to calculate the user's weight on each exoplanet added to her/his favourites list, either from the main list or those manually added.
+* Possiblity to calculate the user's weight on each exoplanet added to her/his favourites list.
 * Profile section that will display the number of exoplanets the user has in her/his favourites list; also displays the number of rocky planets and number of gas giants in the favourites list.
 
 ### Register an account form, Log-in & Log-out functionality:
