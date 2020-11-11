@@ -48,19 +48,19 @@ The main background image of the app is a representation of the recently confirm
 
 ### Exoplanets' Images:
 
-I have used images representing each exoplanet from the main list in order for the user to have a better representation of the specific exoplanet. It also adds dynamicity to the app, also by zooming in the image upon hovering. Please see at [Credits](#credits) section the sources where the images have been taken from.
+I have used images representing each exoplanet from the main list in order for the user to have a better representation of the specific exoplanet. It also adds dynamicity to the app by zooming in the image upon hovering. Please see at [Credits](#credits) section the sources where the images have been taken from.
 
 ### Default Images Within The App:
 
-A default image will be added automatically when manually adding an exoplanet to your list. There are 2 images, each representing a common rocky planet and resepctively a common gas giant. 
+A default image will be added automatically when manually adding an exoplanet to your list. There are 2 images, each representing a common rocky planet and resepctively a common gas giant. Please see at [Credits](#credits) section the sources where these images have been taken from. 
 
 ### Fonts:
 
-I chose to use [ABRIL FATFACE](https://fonts.google.com/specimen/Abril+Fatface?query=abril) as the font for all the main titles as I believe it's thickness and clean shape provide good readability and would be a good match for all of the app's sections. Please see at [Credits](#credits) section the sources where the images have been taken from.
+I chose to use [ABRIL FATFACE](https://fonts.google.com/specimen/Abril+Fatface?query=abril) as the font for all the main titles as I believe it's thickness and clean shape provide good readability and would be a good match for all of the app's sections.
 
 I chose to use [LATO](https://fonts.google.com/specimen/Lato?query=lato) as main font as I believe it provides a good readability and looks proffessional.
 
-I chose to use [ROBOTO SLAB](https://fonts.google.com/specimen/Roboto+Slab?query=roboto) for all action buttons as I believe it provides one of the best readability (which is always important for action buttons) and in the same time it can give the app a more futuristic aspect.
+I chose to use [ROBOTO SLAB](https://fonts.google.com/specimen/Roboto+Slab?query=roboto) for all action buttons as I believe it provides one of the best readability, which is always important for action buttons.
 
 ### Icons:
 
@@ -78,9 +78,9 @@ No icons have been used for the app.
 
 ## Wireframes:
 
-I've built the wireframes for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the display of the items (exoplanets) and building on that afterwords. I have built wireframes for all multiple devices, which speeded up the process altogether.
+I've built the wireframes for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the display of the items (exoplanets) and building on that afterwords. I have built wireframes for all multiple devices, which speeded up the process altogether. Please note that very few features and design elements may vary slightly or a lot from the original wireframes, as while I was developing I had to either adapt or, due to esthetic reasons, I changed my mind completey in regards to some elements of design.
 
-Please view my wireframes for this project [here](https://github.com/Astig-1982/The-Exoplanet-Project/tree/master/wireframes). You can also see my wireframes on gitpod in the 'wireframes' directory.
+Please view my wireframes for this project [here](https://github.com/Astig-1982/The-Exoplanet-Project/tree/master/wireframes). You can also see my wireframes on gitpod in the **wireframes** directory.
 
 ## Features:
 
@@ -113,7 +113,7 @@ I've created a form with the fields representing the exoplanet's properties. The
 
 ### Guidance on inserting an exoplanet to favourites list:
 
-I have created this feature to provide the user a quick guidance on how the fields should be completed. It is crucial the user to understand where she/he can find the mass of an exoplanet on internet (or what's the easiest wat to find it). In order to further guide the user regarding the mass, I have provided a screenshot where the user can find the location of the mass on the wikipedia page. The mass property is very important to be inserted correctly, as based on this the app will calculate the user's weight on the exoplanet.
+I have created this feature to provide the user a quick guidance on how the fields should be completed. It is crucial for the user to understand where she/he can find the mass of an exoplanet on internet (or what's the easiest way to find it). In order to further guide the user regarding the mass, I have provided a screenshot where the user can find the location of the mass on the wikipedia page. The mass property is very important to be inserted correctly, as based on this the app will calculate the user's weight on the exoplanet.
 
 #### Implementation:
 
@@ -196,7 +196,7 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### Sign out of an account:
 
-* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very strigh forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria. 
+* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria. 
 
 ### Inserting an exoplanet:
 
@@ -205,6 +205,7 @@ Planning for this project took a significant amount of a time as this was my fir
 ### Calculating the user's weight on each exoplanet:
 
 * I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the user's weight on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
+
 
 
 
