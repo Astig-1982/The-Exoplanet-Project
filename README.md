@@ -175,6 +175,28 @@ I chose to use this feature as I believe it's good for the user to have a quick 
 
 In the function created in app.py file for displaying the profile, I've used count() method on the items from the the user's collection.
 
+## Technologies used:
+
+### Languages:
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
+
+### Tools & Libraries:
+
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [TinyPng](https://tinypng.com/)
+* [PyMongo](https://pypi.org/project/pymongo/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+
 ## Testing:
 
 Planning for this project took a significant amount of a time as this was my first time working with databases.
@@ -196,7 +218,7 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### Sign out of an account:
 
-* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria. 
+* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev-tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria. 
 
 ### Inserting an exoplanet:
 
@@ -205,6 +227,16 @@ Planning for this project took a significant amount of a time as this was my fir
 ### Calculating the user's weight on each exoplanet:
 
 * I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the user's weight on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
+
+## Overall:
+
+### Responsivness:
+
+I knew that the project needed to be fully responsive on all types of screen, especially mobile friendly. In order to accomplish this requirement I used Bootstrap as HTML framework. I've carried the testing using dev-tools throughout and a final test after the completion.
+
+### Result:
+
+The app is fully responsive as expected, all elements and content fit within their boundaries and are easy to see on any device.
 
 
 
