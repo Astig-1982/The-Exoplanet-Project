@@ -1158,10 +1158,11 @@ select {
       padding-top: 2rem;
   }
   #title_area {
+      bottom: 28%;
       left: 0;
   }
   #title {
-      font-size: 250%;
+      font-size: 320%;
   }
   #sub_title {
       font-size: 1.6rem;
