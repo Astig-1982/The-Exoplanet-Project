@@ -10,15 +10,12 @@ if path.exists("env.py"):
 app = Flask(__name__)
 
 
-app.config["MONGODB_NAME"] =  'other_worlds'
+app.config["MONGODB_NAME"] = 'other_worlds'
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 app.secret_key = os.environ.get("SECRET_KEY")
 
 
 mongo = PyMongo(app)
-
-
-
 
 
 @app.route('/')
@@ -45,7 +42,8 @@ def register():
         else:
             register = {
                 "username": request.form.get("username").lower(),
-                "password": generate_password_hash(request.form.get("password"))
+                "password": generate_password_hash(
+                    request.form.get("password"))
             }
             mongo.db.users.insert_one(register)
             
@@ -129,7 +127,6 @@ def logout():
     flash('You have been logged out')
     session.pop('user')
     return redirect(url_for('login'))
-
 
 
 @app.route('/display/exoplanets') 
