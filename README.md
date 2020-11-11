@@ -86,6 +86,7 @@ Please view my wireframes for this project [here](https://github.com/Astig-1982/
 
 * Register an account form, Log-in & Log-out functionality.
 * Adding manually any preferred exoplanet into the user's favourites list.
+* Guidance on inserting an exoplanet to favourites list.
 * Adding a default image of a rocky or gas giant planet, depending on the type of planet inserted by the user. 
 * Adding to favourites list any exoplanet from the main list provided in the app.
 * Advanced item information, providing users with some of the exoplanet's most important properties.
@@ -110,6 +111,14 @@ I chose to use this feature because, similar to the first feature, it is one of 
 
 I've created a form with the fields representing the exoplanet's properties. The function created in app.py file will take the user's input and added into a variable 'new_planet' that will be inserted into the user's collection in the data base.
 
+### Guidance on inserting an exoplanet to favourites list:
+
+I have created this feature to provide the user a quick guidance on how the fields should be completed. It is crucial the user to understand where she/he can find the mass of an exoplanet on internet (or what's the easiest wat to find it). In order to further guide the user regarding the mass, I have provided a screenshot where the user can find the location of the mass on the wikipedia page. The mass property is very important to be inserted correctly, as based on this the app will calculate the user's weight on the exoplanet.
+
+#### Implementation:
+
+I have simply created a section in the html file where the form for inserting the exoplanet is located, in which I have explained how some of the properties would need to be inserted. I have also provided a link to another newly created html page that contains the screenshot with the location of the mass.
+
 ### Adding a default image of a rocky or gas giant planet:
 
 I chose to use this feature as I believe it is good and useful for the user to have some sort of representation of the exoplanet inserted. In the nearest future I will develop this feature in order to give the possibility to the user to upload her/his own image of the exoplanet.
@@ -125,7 +134,6 @@ As mentioned above, this feature is on of the core features that defines the pur
 #### Implementation:
 
 I've created a function in app.py file, that based on its id, will find the respective exoplanet in the 'exoplanets' collection in the data base and insert the same exoplanet in the user's collection (favourites list).
-
 
 ### Advanced exoplanet information:
 
@@ -176,7 +184,7 @@ Planning for this project took a significant amount of a time as this was my fir
 #### W3C Validation Service:
 
 * I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). As expected, it has found errors related to the use of jinja (DOCTYPE not declared, head element missing the required instance of child element title). I have ingnored this errors as they were due of the use of jinja. I have used the W3 Markup Validation more to find any errors like unclosed divs or double use if id's. It has actually found a couple of unclosed divs and a double use of an id. I have corrected the respective errors. It has also found one more error not related to the use of jinja - 'The element button must not appear as a descendant of the anchor element'. As I was advanced on my project with little time left until my deadline, I have decided to treat this error as a bug (see my [Bugs](#bugs) section) as all the styling for almost each individual button have been already set in the style.css. In the very nearest future I will remove all buttons from the anchor tags and style the achors. 
-* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found no errors.
+* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found NO errors.
 
 #### Register with an account:
 
@@ -184,11 +192,19 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### Deleting and account:
 
-* The code will first delete entirely the user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removes. It works as intended. I did this several times with succesful outcomes.
+* The code will first delete entirely the user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removed. It works as intended. I did this several times with succesful outcomes everytime.
 
 #### Sign out of an account:
 
-* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very strigh forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly base on the above criteria. 
+* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very strigh forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria. 
+
+### Inserting an exoplanet:
+
+* I have tested multiple times this feature by inserting items (exoplanets) and checking the favourites list in the app and the users collection in the database to see if all details entered in the respective fields were correctly inserted. I've added pattern attributes to the html form in order to catch all the unwanted inputs - Ex: the 'distance from earth' and 'mass' fields need to be only digits. I have also checked multiple times to see if the default image was inserted in the database, coresponding with the value of the input inserted by the user at the 'type' field (either 'rocky' or 'gas'). All the tests have passed succesfuly and the function works as intended.
+
+### Calculating the user's weight on each exoplanet:
+
+* I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the user's weight on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
 
 
 
