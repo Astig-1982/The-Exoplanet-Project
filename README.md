@@ -44,7 +44,7 @@ I have chosen dynamic fonts for the entire app, to keep the user entertained; al
 
 ### Main Background Image:
 
-The main background image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their space ship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets in the app.
+The main background image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their space ship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets in the app, a brief virtual trip through outer space.
 
 ### Exoplanets' Images:
 
