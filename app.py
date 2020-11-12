@@ -414,8 +414,11 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
  try:
    username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
+ except Exception:
+     flash('Please login in order to use this feature.')
+     return redirect(url_for('login'))
 
-   if request.method == 'POST':
+ if request.method == 'POST':
       exoplanet=mongo.db[username].find_one(
           {"_id": ObjectId(exoplanet_id)})
 
@@ -427,7 +430,7 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
         your_weightExoplanet=your_weightExoplanet, 
         exoplanet_name=exoplanet_name, exoplanet_id=exoplanet_id)
         
-   else:
+ else:
       detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
       exoplanet=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
       if exoplanet:
@@ -439,9 +442,7 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
       else:
           return render_template('notAdded.html', detailed_exoplanet=detailed_exoplanet)
  
- except Exception:
-     flash('Please login in order to use this feature.')
-     return redirect(url_for('login'))
+ 
 
 
 if __name__ == '__main__':
