@@ -248,12 +248,12 @@ During the development I was lucky enough to encounter little to no significant 
 
 - **Bug**:
 
-'The element button must not appear as a descendant of the anchor element' - this is not an actualy bug, but rather an error found by W3C Markup Validator. I have decided to treat it as one, as being very close to my deadline removing all buttons from anchors and styling again the anchors was not time permitted. 100% in the very nearest future this error will be corrected.
+  'The element button must not appear as a descendant of the anchor element' - this is not an actualy bug, but rather an error found by W3C Markup Validator. I have decided to treat it as one, as being very close to my deadline removing all buttons from anchors and styling again the anchors was not time permitted. 100% in the very nearest future this error will be corrected.
 
 - **Bug**:
 
-The home page for mobile screens has a very small lateral margin/padding that I struggled to find out where is coming from. I have encountered similar issues to at least half of the pages on all screens and succesfuly I got rid of them mainly with the help of [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB). However I cannot seem to be as succesful in regards to the home section (only for mobile screens). Hopefully by the end of this project I will figure it out. If not, I am very confident this small, but annoying bug will be crushed in the very nearest future.
+  The home page for mobile screens has a very small lateral margin/padding that I struggled to find out where is coming from. I have encountered similar issues to at least half of the pages on all screens and succesfuly I got rid of them mainly with the help of [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB). However I cannot seem to be as succesful in regards to the home section (only for mobile screens). Hopefully by the end of this project I will figure it out. If not, I am very confident this small, but annoying bug will be crushed in the very nearest future.
 
 - **Bug**:
 
-When doung all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fix very soon. As mentioned, when testing with dev-tools it works as expected.
+  When doung all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fix very soon. As mentioned, when testing with dev-tools it works as expected.
