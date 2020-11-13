@@ -10,33 +10,33 @@ The app is designed as a simple to use guide to exoplanets. The main goal is to 
 
 ### User Goals
 
-* An app that serves as a guide to relevant confirmed exolanets.
-* Possibility to add any new prefered exoplanet to her/his own list.
-* Possibility to delete any new prefered exoplanet from her/his own list.
-* Possibility to have the planets displayed in the list depending on some of their different properties (eg. type, size).
-* Navbar available across and throughout all sections for a quick and easy navigation on the website.
-* A way to follow the developer on social media for the latest updated.
-* Responsive interaction with the website on desktop, table and mobile.
+- An app that serves as a guide to relevant confirmed exolanets.
+- Possibility to add any new prefered exoplanet to her/his own list.
+- Possibility to delete any new prefered exoplanet from her/his own list.
+- Possibility to have the planets displayed in the list depending on some of their different properties (eg. type, size).
+- Navbar available across and throughout all sections for a quick and easy navigation on the website.
+- A way to follow the developer on social media for the latest updated.
+- Responsive interaction with the website on desktop, table and mobile.
 
 ### User Stories
 
-* As a user, I would like to be able to find out what's the app about and how to use its features.
-* As a user, I would like to have a clear and clean display of the items (exoplanets).
-* As a user, I would like a navbar that it's always available on all section, for me to easily navigate at any section of the app from everywhere.
-* As a user, I would like clean and visible action buttons at every section.
-* As a user, I would like my own section (list) where I am able to store my items (exoplanets).
-* As a user, I would like the possibility to remove at any point any item I wish from my list.
-* As a user, I would like an intuitive and easy way to add items to my list.
-* As a user, I am expecting guidance where necessary; especially working with exoplanets and precise data about them, that might require some research on where the specific data can be found.
-* As a user, I would like to be notified (via clear messages displayed on the screen) when some specific action cannot be performed and the reasons why.
-* As a user, I would like to be able to sort my items depending on some of its most important properties.
-* As a user, I am looking for an app that will also keep me on some level entertained while I'm using it.
+- As a user, I would like to be able to find out what's the app about and how to use its features.
+- As a user, I would like to have a clear and clean display of the items (exoplanets).
+- As a user, I would like a navbar that it's always available on all section, for me to easily navigate at any section of the app from everywhere.
+- As a user, I would like clean and visible action buttons at every section.
+- As a user, I would like my own section (list) where I am able to store my items (exoplanets).
+- As a user, I would like the possibility to remove at any point any item I wish from my list.
+- As a user, I would like an intuitive and easy way to add items to my list.
+- As a user, I am expecting guidance where necessary; especially working with exoplanets and precise data about them, that might require some research on where the specific data can be found.
+- As a user, I would like to be notified (via clear messages displayed on the screen) when some specific action cannot be performed and the reasons why.
+- As a user, I would like to be able to sort my items depending on some of its most important properties.
+- As a user, I am looking for an app that will also keep me on some level entertained while I'm using it.
 
 ### App Owners Goals
 
-* Providing a dynamic app to act as a guide to exoplanets, where the user would be able to have its own section where she\he can add any exoplanet they wish, thus being a good tool to keep track of all the newly discovered exoplanets.
-* Providing the user a default list of exoplanets to get things started and act as a guide on what type of data can be stored about the exoplanets.
-* Keeping the user entertained by allowing her/him to calculate its weight on each exoplanet from her/his list. This will encourage the user to insert more items in her/his list, thus the time spent on the app will increase.
+- Providing a dynamic app to act as a guide to exoplanets, where the user would be able to have its own section where she\he can add any exoplanet they wish, thus being a good tool to keep track of all the newly discovered exoplanets.
+- Providing the user a default list of exoplanets to get things started and act as a guide on what type of data can be stored about the exoplanets.
+- Keeping the user entertained by allowing her/him to calculate its weight on each exoplanet from her/his list. This will encourage the user to insert more items in her/his list, thus the time spent on the app will increase.
 
 ## Design Choices
 
@@ -52,7 +52,7 @@ I have used images representing each exoplanet from the main list in order for t
 
 ### Default Images Within The App:
 
-A default image will be added automatically when manually adding an exoplanet to your list. There are 2 images, each representing a common rocky planet and resepctively a common gas giant. Please see at [Credits](#credits) section the sources where these images have been taken from. 
+A default image will be added automatically when manually adding an exoplanet to your list. There are 2 images, each representing a common rocky planet and resepctively a common gas giant. Please see at [Credits](#credits) section the sources where these images have been taken from.
 
 ### Fonts:
 
@@ -66,15 +66,15 @@ I chose to use [ROBOTO SLAB](https://fonts.google.com/specimen/Roboto+Slab?query
 
 No icons have been used for the app.
 
-### Colors: 
+### Colors:
 
-* Primary: **See Through Red** rgba(112, 16, 3, 0.8). I chose this color as background for all sections that contain text (including flash messages), as I believe it offers a not so strong contrast with the main image (in this case the main image will still be visible), but in the same time a good enough contrast for the text to be readable. 
+- Primary: **See Through Red** rgba(112, 16, 3, 0.8). I chose this color as background for all sections that contain text (including flash messages), as I believe it offers a not so strong contrast with the main image (in this case the main image will still be visible), but in the same time a good enough contrast for the text to be readable.
 
-* Secondary **Indigo** rgb(60, 10, 125). I chose this color for the action buttons and navbar as it matches some of the colors found in the main background image, and also I believe it provides a very good contrast between them and the rest of the app making them more visible, which is very important in order to provide a good user experience. 
+- Secondary **Indigo** rgb(60, 10, 125). I chose this color for the action buttons and navbar as it matches some of the colors found in the main background image, and also I believe it provides a very good contrast between them and the rest of the app making them more visible, which is very important in order to provide a good user experience.
 
-* Tertiary Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. I chose this in the detriment of plain white as I believe it is also a bit warmer color, being a better fit for the overall design choices used throughout the app.
+- Tertiary Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. I chose this in the detriment of plain white as I believe it is also a bit warmer color, being a better fit for the overall design choices used throughout the app.
 
-* Register Button: **Candy Apple Red** rgb(196, 23, 0). I chose this color for the Register button as it stands out on the navbar, urging the user to register if she/he hasn't done it so far. Also it is similar to the overall colors in the main background image. This color is not used anywhere else in the app.
+- Register Button: **Candy Apple Red** rgb(196, 23, 0). I chose this color for the Register button as it stands out on the navbar, urging the user to register if she/he hasn't done it so far. Also it is similar to the overall colors in the main background image. This color is not used anywhere else in the app.
 
 ## Wireframes:
 
@@ -84,16 +84,16 @@ Please view my wireframes for this project [here](https://github.com/Astig-1982/
 
 ## Features:
 
-* Register an account form, Log-in & Log-out functionality.
-* Adding manually any preferred exoplanet into the user's favourites list.
-* Guidance on inserting an exoplanet to favourites list.
-* Adding a default image of a rocky or gas giant planet, depending on the type of planet inserted by the user. 
-* Adding to favourites list any exoplanet from the main list provided in the app.
-* Advanced item information, providing users with some of the exoplanet's most important properties.
-* Possibility to filter the exoplanets by type: rocky planets or gas giants.
-* Possibility to sort the exoplanets depending on their mass, from smallest to largest and other way around. 
-* Possiblity to calculate the user's weight on each exoplanet added to her/his favourites list.
-* Profile section that will display the number of exoplanets the user has in her/his favourites list; also displays the number of rocky planets and number of gas giants in the favourites list.
+- Register an account form, Log-in & Log-out functionality.
+- Adding manually any preferred exoplanet into the user's favourites list.
+- Guidance on inserting an exoplanet to favourites list.
+- Adding a default image of a rocky or gas giant planet, depending on the type of planet inserted by the user.
+- Adding to favourites list any exoplanet from the main list provided in the app.
+- Advanced item information, providing users with some of the exoplanet's most important properties.
+- Possibility to filter the exoplanets by type: rocky planets or gas giants.
+- Possibility to sort the exoplanets depending on their mass, from smallest to largest and other way around.
+- Possiblity to calculate the user's weight on each exoplanet added to her/his favourites list.
+- Profile section that will display the number of exoplanets the user has in her/his favourites list; also displays the number of rocky planets and number of gas giants in the favourites list.
 
 ### Register an account form, Log-in & Log-out functionality:
 
@@ -149,7 +149,7 @@ I chose to use this feature as I believe any exoplanet enthusiast will be intere
 
 #### Implementation:
 
-I've created functions in app.py file that will find in the respective collection ('exoplanets' or user's collection) only items (exoplanets) with the value of either 'rocky' or 'gas' for the key 'type'. 
+I've created functions in app.py file that will find in the respective collection ('exoplanets' or user's collection) only items (exoplanets) with the value of either 'rocky' or 'gas' for the key 'type'.
 
 ### Possibility to sort the exoplanets depending on their mass:
 
@@ -157,11 +157,11 @@ I've created this function as the mass is one of the most important properties i
 
 #### Implementation:
 
-By simply creating a function in app.py file that will find all exoplanets in a respective collection ('exoplanets' or user's collection) and applies sort() method to them before rendering them onto either the main list section or favourites list. 
+By simply creating a function in app.py file that will find all exoplanets in a respective collection ('exoplanets' or user's collection) and applies sort() method to them before rendering them onto either the main list section or favourites list.
 
 ### Possiblity to calculate the user's weight on each exoplanet:
 
-This feature was created in the spirit of keeping the user excited and also making the user adding more exoplanets to her/his favourites list - as only on the surface of the exoplanets added to favourites list can the weight be calculated. It also, in my opinion, contributes to app's dynamicity. 
+This feature was created in the spirit of keeping the user excited and also making the user adding more exoplanets to her/his favourites list - as only on the surface of the exoplanets added to favourites list can the weight be calculated. It also, in my opinion, contributes to app's dynamicity.
 
 #### Implementation:
 
@@ -169,7 +169,7 @@ I've created a function in app.py file that will take the user's input (her/his 
 
 ### Profile section that will display the number of exoplanets in the favourites list:
 
-I chose to use this feature as I believe it's good for the user to have a quick reminder of the items in her/his favourites list everytime when she/he logs in. 
+I chose to use this feature as I believe it's good for the user to have a quick reminder of the items in her/his favourites list everytime when she/he logs in.
 
 #### Implementation:
 
@@ -179,23 +179,23 @@ In the function created in app.py file for displaying the profile, I've used cou
 
 ### Languages:
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-* [JavaScript](https://www.javascript.com/)
-* [Python](https://www.python.org/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [JavaScript](https://www.javascript.com/)
+- [Python](https://www.python.org/)
 
 ### Tools & Libraries:
 
-* [jQuery](https://jquery.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Font Awesome](https://fontawesome.com/)
-* [Google Fonts](https://fonts.google.com/)
-* [MongoDB](https://www.mongodb.com/)
-* [TinyPng](https://tinypng.com/)
-* [PyMongo](https://pypi.org/project/pymongo/)
-* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+- [jQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [TinyPng](https://tinypng.com/)
+- [PyMongo](https://pypi.org/project/pymongo/)
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
 
 ## Testing:
 
@@ -205,32 +205,32 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### W3C Validation Service:
 
-* I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). As expected, it has found errors related to the use of jinja (DOCTYPE not declared, head element missing the required instance of child element title). I have ingnored this errors as they were due to the use of jinja. I have used the W3 Markup Validation more to find any errors like unclosed divs or other basic html errors. It has actually found a couple of unclosed divs and a double use of an id. I have corrected the respective errors. It has also found one more error not related to the use of jinja - 'The element button must not appear as a descendant of the anchor element'. As I was advanced on my project with little time left until my deadline, I have decided to treat this error as a bug (see my [Bugs](#bugs) section) as all the styling for almost each individual button has been already set in the style.css. In the very nearest future I will remove all buttons from the anchor tags and style the achors. 
-* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found NO errors.
+- I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). As expected, it has found errors related to the use of jinja (DOCTYPE not declared, head element missing the required instance of child element title). I have ingnored this errors as they were due to the use of jinja. I have used the W3 Markup Validation more to find any errors like unclosed divs or other basic html errors. It has actually found a couple of unclosed divs and a double use of an id. I have corrected the respective errors. It has also found one more error not related to the use of jinja - 'The element button must not appear as a descendant of the anchor element'. As I was advanced on my project with little time left until my deadline, I have decided to treat this error as a bug (see my [Bugs](#bugs) section) as all the styling for almost each individual button has been already set in the style.css. In the very nearest future I will remove all buttons from the anchor tags and style the achors.
+- I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found NO errors.
 
 #### Register with an account:
 
-* I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the users collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the username and hashed passwords will be inserted into the users collection in the database. Then the code initiates the ‘session’ for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored in the database. 
+- I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the users collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the username and hashed passwords will be inserted into the users collection in the database. Then the code initiates the ‘session’ for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored in the database.
 
 #### Deleting and account:
 
-* The code will first delete entirely the user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removed. It works as intended. I did this several times with succesful outcomes everytime.
+- The code will first delete entirely the user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removed. It works as intended. I did this several times with succesful outcomes everytime.
 
 #### Sign out of an account:
 
-* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev-tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria. 
+- I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev-tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria.
 
 #### Inserting an exoplanet:
 
-* I have tested multiple times this feature by inserting items (exoplanets) and checking the favourites list in the app and the users collection in the database to see if all details entered in the respective fields were correctly inserted. I've added pattern attributes to the html form in order to catch all the unwanted inputs - Ex: the 'distance from earth' and 'mass' fields need to be only digits. I have also checked multiple times to see if the default image was inserted in the database, coresponding with the value of the input inserted by the user at the 'type' field (either 'rocky' or 'gas'). All the tests have passed succesfuly and the function works as intended.
+- I have tested multiple times this feature by inserting items (exoplanets) and checking the favourites list in the app and the users collection in the database to see if all details entered in the respective fields were correctly inserted. I've added pattern attributes to the html form in order to catch all the unwanted inputs - Ex: the 'distance from earth' and 'mass' fields need to be only digits. I have also checked multiple times to see if the default image was inserted in the database, coresponding with the value of the input inserted by the user at the 'type' field (either 'rocky' or 'gas'). All the tests have passed succesfuly and the function works as intended.
 
 #### Calculating the user's weight on each exoplanet:
 
-* I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the user's weight on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
+- I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the user's weight on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
 
 #### Try/Except:
 
- * I've added try/except statement everywhere a function needs to be activated only if the user is logged in. The try block is looking in the users collection for the object with the key 'username' matching the session variable defined at the login function, and sets it as value for a variable named 'username'. If this is not possible (because the session variable hasn't been defined as yet), the except block will be executed. This redirects the user to the login page and displays a flash message - "Please login in order to use this feauture" (or similar message depending on the action the user is trying to perform). I have tested the code numerous times, being logged in and logged out. I was encountering one error at 'calculate_weight' function. Within this function I also had an if statement that will check if the respective exopalanet was first added to the favourites list, and if not, the notAdded.html page would be rendered. Unfortunately, even though I was logged in, the function was redirecting me to the login page everytime the I was trying to calculate the weight on an exoplanet that was not yet added to my favourites list. Luckily I have found the error: I have enclosed in the try block almost the entire 'calculate_weight' function - basically the try block was trying first to find the session variable and also was executing the whole function. Because of this, the except block was handling the else block from the if statement (that checks if the respective exoplanet was first added to the favourites list) as an error. I have modified the function and now the try block ckecks only if the session variable exists and if it does, it executes the rest of the function. If the respective exoplanet is not added to the favourites list, the user will now be taken to notAdded.html page, as expected, and NOT redirected to the login page. I have again tested numerous times and everytime it now works as expected.
+- I've added try/except statement everywhere a function needs to be activated only if the user is logged in. The try block is looking in the users collection for the object with the key 'username' matching the session variable defined at the login function, and sets it as value for a variable named 'username'. If this is not possible (because the session variable hasn't been defined as yet), the except block will be executed. This redirects the user to the login page and displays a flash message - "Please login in order to use this feauture" (or similar message depending on the action the user is trying to perform). I have tested the code numerous times, being logged in and logged out. I was encountering one error at 'calculate_weight' function. Within this function I also had an if statement that will check if the respective exopalanet was first added to the favourites list, and if not, the notAdded.html page would be rendered. Unfortunately, even though I was logged in, the function was redirecting me to the login page everytime the I was trying to calculate the weight on an exoplanet that was not yet added to my favourites list. Luckily I have found the error: I have enclosed in the try block almost the entire 'calculate_weight' function - basically the try block was trying first to find the session variable and also was executing the whole function. Because of this, the except block was handling the else block from the if statement (that checks if the respective exoplanet was first added to the favourites list) as an error. I have modified the function and now the try block ckecks only if the session variable exists and if it does, it executes the rest of the function. If the respective exoplanet is not added to the favourites list, the user will now be taken to notAdded.html page, as expected, and NOT redirected to the login page. I have again tested numerous times and everytime it now works as expected.
 
 ## Overall:
 
@@ -242,26 +242,18 @@ I knew that the project needed to be fully responsive on all types of screen, es
 
 The app is fully responsive as expected, all elements and content fit within their boundaries and are easy to see on any device.
 
+## Bugs
 
+During the development I was lucky enough to encounter little to no significant bugs. Below are a few that unfotunately I couldn't get rid of.
 
+- **Bug**:
 
+'The element button must not appear as a descendant of the anchor element' - this is not an actualy bug, but rather an error found by W3C Markup Validator. I have decided to treat it as one, as being very close to my deadline removing all buttons from anchors and styling again the anchors was not time permitted. 100% in the very nearest future this error will be corrected.
 
+- **Bug**:
 
+The home page for mobile screens has a very small lateral margin/padding that I struggled to find out where is coming from. I have encountered similar issues to at least half of the pages on all screens and succesfuly I got rid of them mainly with the help of [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB). However I cannot seem to be as succesful in regards to the home section (only for mobile screens). Hopefully by the end of this project I will figure it out. If not, I am very confident this small, but annoying bug will be crushed in the very nearest future.
 
+- **Bug**:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+When doung all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fix very soon. As mentioned, when testing with dev-tools it works as expected.
