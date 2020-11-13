@@ -440,11 +440,10 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
           """
           return render_template('calculateWeight.html', exoplanet=exoplanet)
       else:
-          return render_template('notAdded.html', detailed_exoplanet=detailed_exoplanet)
+          return render_template(
+              'notAdded.html', detailed_exoplanet=detailed_exoplanet)
  
  
-
-
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
