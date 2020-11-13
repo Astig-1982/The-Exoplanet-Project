@@ -264,7 +264,7 @@ The Exoplanet Project was developed on GitPod using git and GitHub to host the r
 
 ### Deploying The Exoplanet Project to Heroku:
 
-* 1: <strong>Create</strong> a requirements.txt file using the following command.
+* 1: **Create** a requirements.txt file using the following command.
 ```bash
 pip3 freeze > requirements.txt
 ```
@@ -280,7 +280,7 @@ echo web: python3 app.py > Procfile
 **Key**|**Value**
 :-----:|:-----:
 IP|0.0.0.0
-PORT|5000
+PORT|8080
 MONGO\_URI|mongodb+srv://<username>:<password>@<cluster\_name>-qtxun.mongodb.net/<database\_name>?retryWrites=true&w=majority
 SECRET\_KEY|"your\_secret\_key"
 * 7: Click the deploy button on the Heroku dashboard.
