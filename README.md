@@ -244,7 +244,7 @@ The app is fully responsive as expected, all elements and content fit within the
 
 ## Bugs
 
-During the development I was lucky enough to encounter little to no significant bugs. Below are a few that unfotunately I couldn't get rid of.
+During the development I was lucky enough to encounter little to no significant bugs. Below are a few that unfotunately I couldn't get rid of:
 
 - **Bug**:
 
@@ -256,4 +256,33 @@ During the development I was lucky enough to encounter little to no significant 
 
 - **Bug**:
 
-  When running all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fix very soon. As mentioned, when testing with dev-tools it works as expected.
+  When running all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fixed very soon. As mentioned, when testing with dev-tools it works as expected.
+
+## Deployment:
+
+The Exoplanet Project was developed on GitPod using git and GitHub to host the repository.
+
+### Deploying The Exoplanet Project to Heroku:
+
+* 1: <strong>Create</strong> a requirements.txt file using the following command.
+```bash
+pip3 freeze > requirements.txt
+```
+* 2: <strong>Create</strong> a Procfile with the following command.
+```bash
+echo web: python3 app.py > Procfile
+```
+* 3: <strong>Push</strong> these newly created files to your repository.
+* 4: <strong>Create</strong> a new app for this project on the Heroku Dashboard.
+* 5: <strong>Select</strong> your <strong>deployment</strong> method by clicking on the <strong>deployment</strong> method button and select GitHub.
+* 6: On the dashboard, <strong>set</strong> the following config variables:
+
+**Key**|**Value**
+:-----:|:-----:
+IP|0.0.0.0
+PORT|5000
+MONGO\_URI|mongodb+srv://<username>:<password>@<cluster\_name>-qtxun.mongodb.net/<database\_name>?retryWrites=true&w=majority
+SECRET\_KEY|"your\_secret\_key"
+* 7: Click the deploy button on the Heroku dashboard.
+* 8: The site has been deployed the Heroku.
+
