@@ -210,11 +210,11 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### Register with an account:
 
-- I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the users collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the username and hashed passwords will be inserted into the users collection in the database. Then the code initiates the ‘session’ for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored in the database.
+- I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the users collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the username and hashed passwords will be inserted into the users collection in the database. Then the code initiates the ‘session’ for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored into the database.
 
 #### Deleting and account:
 
-- The code will first delete entirely the user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removed. It works as intended. I did this several times with succesful outcomes everytime.
+- The code will first delete the entire user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removed. It works as intended. I did this several times with succesful outcomes everytime.
 
 #### Sign out of an account:
 
@@ -230,7 +230,7 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### Try/Except:
 
-- I've added try/except statement everywhere a function needs to be activated only if the user is logged in. The try block is looking in the users collection for the object with the key 'username' matching the session variable defined at the login function, and sets it as value for a variable named 'username'. If this is not possible (because the session variable hasn't been defined as yet), the except block will be executed. This redirects the user to the login page and displays a flash message - "Please login in order to use this feauture" (or similar message depending on the action the user is trying to perform). I have tested the code numerous times, being logged in and logged out. I was encountering one error at 'calculate_weight' function. Within this function I also had an if statement that will check if the respective exopalanet was first added to the favourites list, and if not, the notAdded.html page would be rendered. Unfortunately, even though I was logged in, the function was redirecting me to the login page everytime the I was trying to calculate the weight on an exoplanet that was not yet added to my favourites list. Luckily I have found the error: I have enclosed in the try block almost the entire 'calculate_weight' function - basically the try block was trying first to find the session variable and also was executing the whole function. Because of this, the except block was handling the else block from the if statement (that checks if the respective exoplanet was first added to the favourites list) as an error. I have modified the function and now the try block ckecks only if the session variable exists and if it does, it executes the rest of the function. If the respective exoplanet is not added to the favourites list, the user will now be taken to notAdded.html page, as expected, and NOT redirected to the login page. I have again tested numerous times and everytime it now works as expected.
+- I've added try/except statement everywhere a function will activate only if the user is logged in. The try block is looking in the users collection for the object with the key 'username' matching the session variable defined at the login function, and sets it as value for a variable named 'username'. If this is not possible (because the session variable hasn't been defined as yet), the except block will be executed. This redirects the user to the login page and displays a flash message - "Please login in order to use this feauture" (or similar message depending on the action the user is trying to perform). I have tested the code numerous times, being logged in and logged out. I was encountering one error at 'calculate_weight' function. Within this function I also had an if statement that will check if the respective exopalanet was first added to the favourites list, and if not, the notAdded.html page would be rendered. Unfortunately, even though I was logged in, the function was redirecting me to the login page everytime the I was trying to calculate the weight on an exoplanet that was not yet added to my favourites list. Luckily I have found the error: I have enclosed in the try block almost the entire 'calculate_weight' function - basically the try block was trying first to find the session variable and also was executing the whole function. Because of this, the except block was handling the else block from the if statement (that checks if the respective exoplanet was first added to the favourites list) as an error. I have modified the function and now the try block ckecks only if the session variable exists and if it does, it executes the rest of the function. If the respective exoplanet is not added to the favourites list, the user will now be taken to notAdded.html page, as expected, and NOT redirected to the login page. I have again tested numerous times and everytime it now works as expected.
 
 ## Overall:
 
@@ -268,14 +268,14 @@ The Exoplanet Project was developed on GitPod using git and GitHub to host the r
 ```bash
 pip3 freeze > requirements.txt
 ```
-* 2: <strong>Create</strong> a Procfile with the following command.
+* 2: **Create<** a Procfile with the following command.
 ```bash
 echo web: python3 app.py > Procfile
 ```
-* 3: <strong>Push</strong> these newly created files to your repository.
-* 4: <strong>Create</strong> a new app for this project on the Heroku Dashboard.
-* 5: <strong>Select</strong> your <strong>deployment</strong> method by clicking on the <strong>deployment</strong> method button and select GitHub.
-* 6: On the dashboard, <strong>set</strong> the following config variables:
+* 3: **Push** these newly created files to your repository.
+* 4: **Create** a new app for this project on the Heroku Dashboard.
+* 5: **Select** your deployment method by clicking on the **deployment** method button and select **GitHub**.
+* 6: On the dashboard, **set** the following config variables:
 
 **Key**|**Value**
 :-----:|:-----:
@@ -284,5 +284,5 @@ PORT|8080
 MONGO\_URI|mongodb+srv://<username>:<password>@<cluster\_name>-qtxun.mongodb.net/<database\_name>?retryWrites=true&w=majority
 SECRET\_KEY|"your\_secret\_key"
 * 7: Click the deploy button on the Heroku dashboard.
-* 8: The site has been deployed the Heroku.
+* 8: The app has been deployed the Heroku.
 
