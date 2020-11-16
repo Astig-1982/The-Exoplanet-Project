@@ -465,10 +465,6 @@ body {
   margin-top: 5rem;
 }
 
-#about-container {
-    margin-top:5rem
-}
-
 #quote {
   margin-bottom: 0.1rem;
   letter-spacing: 0.2rem;
@@ -479,9 +475,13 @@ body {
   letter-spacing: 0.1rem;
 }
 
+#about-action {
+    margin-top: 0;
+}
+
 #about-text-container {
   margin-top: 2rem;
-  margin-bottom: 8%;
+  margin-bottom: 3%;
 }
 
 #about_text {
@@ -493,8 +493,17 @@ body {
 }
 
 .about-paragraphs {
+    padding: .5rem 1.8rem;
     padding-bottom: 0;
-    padding: 1.5rem;
+    margin-bottom: 0;   
+}
+
+#about-first-paragraph {
+    padding-top: 1.8rem;
+}
+
+#about-third-paragraph {
+    padding-bottom: 1.8rem;
 }
 
 /* login.html starts here */
@@ -837,6 +846,11 @@ body {
   max-height: 100vh;
 }
 
+#add-container {
+    text-align: center;
+    margin-top: 0;
+}
+
 #form_container {
   width: 60%;
   margin: 0 auto;
@@ -1046,6 +1060,7 @@ select {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
+
   #about-second-paragraph {
       padding-top: 1rem;
   }
@@ -1242,9 +1257,7 @@ select {
       margin: .2rem;
       width: 9.4rem;
   }
-  #exoplanet_page_title_container {
-      margin-top: 1rem;
-  }
+
   .message {
       width: 100%;
       font-size: 80%;
@@ -1311,6 +1324,7 @@ select {
   }
   #exoplanet_page_title_container {
       font-size: 90%;
+      
   }
 }
 
@@ -1319,7 +1333,7 @@ select {
     background-size: cover;
   }
   #exoplanet_page_title_container {
-      margin-top: 1rem;
+      margin-top: 5rem;
   }
   .top_buttons {
     width: 10rem;
@@ -1396,7 +1410,7 @@ select {
     width: 80%;
   }
   #exoplanet_page_title_container {
-      margin-top: 1rem;
+      margin-top: 5rem;
   }
   #about-action {
       margin-top: .5rem;
@@ -1497,6 +1511,14 @@ select {
    #weight_message {
        width: 35%;
    }
+   #about_text {
+       font-size: 150%;
+   }
+     #exoplanet_page_title_container {
+      margin-top: 9rem;
+      font-size: 130%;
+  }
+ 
 }
 
 @media (min-width: 1500px) {
@@ -1507,12 +1529,22 @@ select {
   #form_row {
     margin-top: 3rem;
   }
+  
   .detailed {
       height: 51vh;
   }
   #notes-message div {
     font-size: 105%;
     padding: 1rem;
+  }
+  #about-container {
+      margin-top: 2.5rem;
+  }
+  #about-action {
+      margin-top: 2.5rem;
+  }
+  #about-text-container {
+      margin-bottom: 8%;
   }
   .form-container {
     margin-top: 6.4rem;
