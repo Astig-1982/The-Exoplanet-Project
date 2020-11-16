@@ -3,8 +3,8 @@
 <div id="message_container" class="container">
 	<div id="exoplanets_title" class="row">
 		<div class="col-12">
-			<div style="text-align:center">
-				<p id="not_added_message" class="message">{{ detailed_exoplanet.planet_name }} is not added to your Favourites list.<br>Please add it to your list and then calculate your weight on the surface of this {{ detailed_exoplanet.type }} planet.</p>
+			<div id="not-added-container">
+				<p class="message">{{ detailed_exoplanet.planet_name }} is not added to your Favourites list.<br>Please add it to your list and then calculate your weight on the surface of this {{ detailed_exoplanet.type }} planet.</p>
                 <div style="margin-top: 4rem;">
                 <a href="{{ url_for('detailed_exoplanet', exoplanet_id=detailed_exoplanet._id) }}"><button class="action_buttons buttons">back</button></a>
                 <a href="{{ url_for('favourite', exoplanet_id=detailed_exoplanet._id)}}"><button class="action_buttons buttons">add favourites</button></a>

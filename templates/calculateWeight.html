@@ -10,7 +10,7 @@
 		<div class="col-12">
 			<form action="{{ url_for('calculate_weight', exoplanet_mass=exoplanet.mass, exoplanet_name=exoplanet.planet_name, exoplanet_id=exoplanet._id) }}" method="POST">
 				<div class="form-group">
-					<label style="text-transform:capitalize" for="your_weight">please enter your weight in kg</label>
+					<label for="your_weight">PLEASE ENTER YOUR WEIGHT IN KG</label>
 					<input name="your_weight" type="text" class="form-control" id="your_weight" pattern="[0-9]{1,5}" required>
                 </div>
 					<button id="calculate_action_button" type="submit" class="btn btn-primary buttons">calculate</button>
