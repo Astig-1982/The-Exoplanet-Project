@@ -286,3 +286,27 @@ SECRET\_KEY|"your\_secret\_key"
 * 7: Click the deploy button on the Heroku dashboard.
 * 8: The app has been deployed the Heroku.
 
+##Credits:
+
+* [NASA](https://exoplanets.nasa.gov/resources/2159/planet-hop-from-trappist-1e/)
+* [Wikipedia](https://en.wikipedia.org/wiki/Lists_of_exoplanets)
+
+###Content:
+
+The first paragraph from **About** page, starting: "Exoplanets are planets that orbit a star other than our sun. The prefix exo comes from the Greek...  " has been taken from the webiste [Earthsky.org](https://earthsky.org/astronomy-essentials/what-are-exoplanets#:~:text=Exoplanets%20are%20planets%20that%20orbit,1%2C000%20more%20more%20awaiting%20confirmation.). 
+
+###Media:
+
+* The **main background image** was sourced from [wallup.net](https://wallup.net/trappist-1e-nasa-space-space-travel/)
+* The image representing exoplanet **51 Pegasi b** was sourced from [commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_Impression_of_a_Jupiter_twin_orbiting_HIP_11915_Image.jpg)
+* The image representing exoplanet **Kepler-186f** was sourced from [sci-news.com](http://www.sci-news.com/astronomy/science-kepler186f-potentially-habitable-earth-like-exoplanet-01864.html)
+* The image representing exoplanet **Proxima Centauri b** was sourced from [theusbport.com](https://theusbport.com/proxima-centauri-b-may-be-a-candidate-for-human-colonization/18550)
+* The image representing exoplanet **HD 209458 b** was sourced from [NASA](https://www.nasa.gov/press/2014/july/hubble-finds-three-surprisingly-dry-exoplanets/)
+* The image representing exoplanet **Kepler-4b** was sourced from [wired.com](https://www.wired.com/story/neptune-is-a-windy-chilly-and-baffling-planet-lets-go/)
+* The image representing exoplanet **K2-18b** was sourced from [khabarhub.com](https://english.khabarhub.com/2019/23/45787/)
+* The image representing exoplanet **PH1b** was sourced from [theverge.com](https://www.theverge.com/2015/8/13/9149549/young-jupiter-like-exoplanet-directly-imaged-by-earth-based-telescope)
+* The image representing exoplanet **TRAPPIST-1d** was sourced from [reddit.com](https://www.reddit.com/r/KerbalSpaceProgram/comments/ca7i2w/trappist1d_in_ksp/)
+* The image representing exoplanet **Gliese 581c** was sourced from [spiegel.de](https://www.spiegel.de/international/zeitgeist/the-twin-earths-of-gliese-581-two-exoplanets-may-support-life-a-721840.html)
+* The image representing exoplanet **WASP-12b** was sourced from [princeton.edu](https://www.princeton.edu/news/2020/01/07/planet-wasp-12b-death-spiral-say-scientists)
+* The image representing exoplanet **KELT-9b** was sourced from [irishnews.com](https://www.irishnews.com/magazine/science/2017/06/06/news/everything-you-need-to-know-about-kelt-9b---the-newly-discovered-planet-that-is-hotter-than-most-stars-1047146/)
+* The image representing exoplanet **Kepler-10b** was sourced from [NASA](https://www.nasa.gov/mission_pages/kepler/multimedia/images/kepler10b_images.html)
