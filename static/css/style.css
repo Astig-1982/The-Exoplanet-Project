@@ -1063,6 +1063,11 @@ select {
     margin-top: 3.8rem;
   }
 
+  #detailed-anchor-container {
+      font-size: 100%;
+      width: 100%;
+  }
+
   #about-action {
     margin-top: .7rem;
   }
@@ -1372,6 +1377,11 @@ select {
     margin-top: 40%;
   }
 
+  .detailed {
+    width: 100%;
+    height: 51vh;
+  }
+
   #profile-actions {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1421,6 +1431,11 @@ select {
 
   .top_buttons {
     width: 10rem;
+  }
+
+  .detailed {
+    width: 100%; 
+    height: 51vh;  
   }
 
   #col_add_exoplanet_message {
@@ -1486,6 +1501,15 @@ select {
 
   #profile {
     margin-bottom: 0;
+  }
+
+  .detailed {
+    width: 100%;  
+    height: 51vh;
+  }
+
+  #detailed-anchor-container {
+    width: 100%;
   }
 
   #profile a {
@@ -1601,6 +1625,15 @@ select {
   #title_area {
     bottom: 43%;
     left: 20%;
+  }
+
+  #detailed-anchor-container {
+    width: 90%;  
+  }
+
+  .detailed {
+    width: 90%;
+    height: 36vh;  
   }
 
   .user-info {
