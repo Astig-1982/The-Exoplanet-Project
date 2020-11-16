@@ -286,16 +286,16 @@ SECRET\_KEY|"your\_secret\_key"
 * 7: Click the deploy button on the Heroku dashboard.
 * 8: The app has been deployed the Heroku.
 
-##Credits:
+## Credits:
 
 * [NASA](https://exoplanets.nasa.gov/resources/2159/planet-hop-from-trappist-1e/)
 * [Wikipedia](https://en.wikipedia.org/wiki/Lists_of_exoplanets)
 
-###Content:
+### Content:
 
 The first paragraph from **About** page, starting: "Exoplanets are planets that orbit a star other than our sun. The prefix exo comes from the Greek...  " has been taken from the webiste [Earthsky.org](https://earthsky.org/astronomy-essentials/what-are-exoplanets#:~:text=Exoplanets%20are%20planets%20that%20orbit,1%2C000%20more%20more%20awaiting%20confirmation.). 
 
-###Media:
+### Media:
 
 * The **main background image** was sourced from [wallup.net](https://wallup.net/trappist-1e-nasa-space-space-travel/)
 * The image representing exoplanet **51 Pegasi b** was sourced from [commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_Impression_of_a_Jupiter_twin_orbiting_HIP_11915_Image.jpg)
@@ -310,3 +310,4 @@ The first paragraph from **About** page, starting: "Exoplanets are planets that 
 * The image representing exoplanet **WASP-12b** was sourced from [princeton.edu](https://www.princeton.edu/news/2020/01/07/planet-wasp-12b-death-spiral-say-scientists)
 * The image representing exoplanet **KELT-9b** was sourced from [irishnews.com](https://www.irishnews.com/magazine/science/2017/06/06/news/everything-you-need-to-know-about-kelt-9b---the-newly-discovered-planet-that-is-hotter-than-most-stars-1047146/)
 * The image representing exoplanet **Kepler-10b** was sourced from [NASA](https://www.nasa.gov/mission_pages/kepler/multimedia/images/kepler10b_images.html)
+
