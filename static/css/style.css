@@ -768,6 +768,7 @@ body {
 
 #first-a-detailed {
   margin-right: 2rem;
+  margin-left: 2.5rem;
 }
 
 #second-a-detailed {
@@ -1041,7 +1042,7 @@ select {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}    
+}  
 
 /* media queries start here */
 
@@ -1354,7 +1355,6 @@ select {
 
   #first-a-detailed {
     margin-right: 0;
-    margin-left: 2rem;
   }
 
   #add_favourites_message {
@@ -1404,6 +1404,10 @@ select {
 
   #profile {
     margin-bottom: 0;
+  }
+
+  #detailed_properties {
+      height: 45vh;
   }
 
   #profile a {
