@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-down {
-    background-color: rgb(54, 10, 125); 
+  background-color: rgb(54, 10, 125);
 }
 
 #navbarNav {
@@ -68,16 +68,17 @@ body {
 }
 
 .navbar-toggler {
-      border: 1.5px solid #e5e5dc;
-      background-color: rgb(112, 16, 3);
+  border: 1.5px solid #e5e5dc;
+  background-color: rgb(112, 16, 3);
 }
-.navbar-toggler-icon {       
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-separator {
-      width: 100%;
-      border-top: .1px solid #e5e5dc;
+  width: 100%;
+  border-top: .1px solid #e5e5dc;
 }
 
 #register-nav {
@@ -124,25 +125,25 @@ body {
 }
 
 #profile {
-    margin-bottom: .5rem;
+  margin-bottom: .5rem;
 }
 
 #logout {
-    margin-top: .9rem;
+  margin-top: .9rem;
 }
 
 #profile a {
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 1.8rem;
-    height: 0;
-    text-align: center;
-    padding-bottom: 2.5rem;
-    margin-top: 1rem;
-    box-sizing: content-box;
-    font-size: 130%;
-    padding-top: 5px;
-    background-color: rgba(112, 16, 3, 0.8);
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 1.8rem;
+  height: 0;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  margin-top: 1rem;
+  box-sizing: content-box;
+  font-size: 130%;
+  padding-top: 5px;
+  background-color: rgba(112, 16, 3, 0.8);
 }
 
 .buttons {
@@ -204,7 +205,7 @@ body {
 /* flash message starts here */
 
 #registration {
-    max-width: 100vw;
+  max-width: 100vw;
 }
 
 #registration-message-container {
@@ -231,6 +232,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.1);
   }
@@ -476,7 +478,7 @@ body {
 }
 
 #about-action {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #about-text-container {
@@ -493,17 +495,17 @@ body {
 }
 
 .about-paragraphs {
-    padding: .5rem 1.8rem;
-    padding-bottom: 0;
-    margin-bottom: 0;   
+  padding: .5rem 1.8rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 #about-first-paragraph {
-    padding-top: 1.8rem;
+  padding-top: 1.8rem;
 }
 
 #about-third-paragraph {
-    padding-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
 }
 
 /* login.html starts here */
@@ -517,7 +519,7 @@ body {
 }
 
 #login-center {
-    text-align: center;
+  text-align: center;
 }
 
 .login-title {
@@ -626,12 +628,12 @@ body {
 }
 
 #already-fav {
-      text-align: center;
-  }
+  text-align: center;
+}
 
-  #message-buttons {
-      margin-top: 4rem;
-  }
+#message-buttons {
+  margin-top: 4rem;
+}
 
 .message {
   background-color: rgba(112, 16, 3, 0.8);
@@ -655,7 +657,7 @@ body {
 /* not_added.html page starts here */
 
 #not-added-container {
-    text-align: center;
+  text-align: center;
 }
 
 #not-added-container p {
@@ -719,7 +721,7 @@ body {
 }
 
 #first-p-detailed {
-    padding-top: 2rem
+  padding-top: 2rem;
 }
 
 #name_paragraph {
@@ -750,25 +752,26 @@ body {
 .detailed_separator {
   margin: 1.5rem 2rem;
 }
+
 #detailed_buttons {
   padding-bottom: 1.5rem;
 }
 
 #detailed-anchor-container {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    background-color: rgba(112, 16, 3, 0.8);
-    font-size: 130%;
-    width: 75%;
-    margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: rgba(112, 16, 3, 0.8);
+  font-size: 130%;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #first-a-detailed {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 #second-a-detailed {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .detailed-action {
@@ -803,6 +806,7 @@ body {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.8);
   }
@@ -826,7 +830,7 @@ body {
 }
 
 #row-weight-buttons {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 #weight-buttons-container {
@@ -847,8 +851,8 @@ body {
 }
 
 #add-container {
-    text-align: center;
-    margin-top: 0;
+  text-align: center;
+  margin-top: 0;
 }
 
 #form_container {
@@ -935,7 +939,7 @@ select {
 }
 
 .guide-holders h4 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .guide-holders p {
@@ -1029,77 +1033,96 @@ select {
   text-align: center;
   margin-top: 2rem;
 }
+
 .navbar-toggler {
-      border: 1.5px solid #e5e5dc;
-      background-color: rgb(112, 16, 3);
-  }
-  .navbar-toggler-icon {       
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-  }    
+  border: 1.5px solid #e5e5dc;
+  background-color: rgb(112, 16, 3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 229, 220,1), 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}    
 
 /* media queries start here */
 
 @media (max-width: 576px) {
   body {
-      background-size: cover;
-  }  
+    background-size: cover;
+  }
+
   .top_buttons {
     width: 4.3rem;
     font-size: 65%;
   }
+
   #dropdownMenuButton {
     font-size: 52%;
   }
+
   .margin {
-      margin-top: 3.8rem;
+    margin-top: 3.8rem;
   }
+
   #about-action {
-      margin-top: .7rem;
+    margin-top: .7rem;
   }
+
   .top-titles {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
 
   #about-second-paragraph {
-      padding-top: 1rem;
+    padding-top: 1rem;
   }
+
   #about-third-paragraph {
-      padding-top: 1rem;
-      padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
   }
+
   #quote {
-      margin-top: .2rem;
+    margin-top: .2rem;
   }
-.about-paragraphs {
-      margin-bottom: 0;
-      padding: 1.5rem 1.5rem 0 1.5rem;
+
+  .about-paragraphs {
+    margin-bottom: 0;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
+
   #add_exoplanet_message_container {
     margin-bottom: 2rem;
   }
+
   #col_add_exoplanet_message {
     padding: 0;
   }
+
   #quote_author {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   #add_exoplanet_message {
     font-size: 90%;
     width: 100%;
   }
+
   #add_exoplanet_message p {
     padding: 1.2rem;
   }
+
   .detailed {
     width: 100%;
   }
+
   #detailed_properties {
     font-size: 100%;
   }
+
   #detailed_properties hr {
     margin: 0.6rem;
   }
+
   #name_paragraph {
     padding-top: 1rem;
     background-color: #e5e5dc;
@@ -1107,418 +1130,525 @@ select {
     margin-bottom: 0;
     height: 3.2rem;
   }
+
   #top_separator {
     margin-top: 0;
   }
+
   #detailed_buttons button {
     width: 80%;
     margin: 0.5rem 0 0.2rem 2rem;
   }
+
   #form_row {
     margin-top: 0;
   }
+
   #form_container {
     width: 100%;
     margin-bottom: 2rem;
     font-size: 90%;
   }
+
   #add_button {
     width: 100%;
   }
+
   #guide {
     width: 100%;
     margin-bottom: 2.8rem;
   }
+
   #guide h5 {
     margin: 1rem 0 2rem 0;
   }
+
   #distance_from_earth {
     font-size: 96%;
   }
+
   #inserting_the_mass_header {
     letter-spacing: 0.1rem;
   }
+
   #quote {
     letter-spacing: 0.1rem;
   }
+
   #about_text {
     width: 100%;
     font-size: 100%;
     margin-bottom: 2rem;
   }
+
   #weight_message {
     width: 50%;
   }
+
   #your_weight_container {
     margin-top: 15rem;
   }
+
   #wrong_data_container {
     margin-top: 6.9rem;
   }
+
   #wrong_data {
     width: 100%;
     font-size: 95%;
   }
+
   #registration-message-container div {
     width: 90%;
     font-size: 90%;
     margin-left: 6%;
   }
+
   #login-container {
     width: 100%;
   }
+
   #register-text {
     width: 100%;
   }
+
   .user-info {
-      margin-top: 30%;
+    margin-top: 30%;
   }
+
   #info {
     width: 100%;
   }
-  #profile-actions  {
-      width: 100%;
+
+  #profile-actions {
+    width: 100%;
   }
+
   #profile-actions button {
-      width: 47%;
+    width: 47%;
   }
+
   .user-info div {
-      font-size: 100%;
+    font-size: 100%;
   }
+
   #delete-profile {
-      padding-top: .9rem;
+    padding-top: .9rem;
   }
+
   #form_container {
-      padding: 2rem 1rem;
-      font-size: 80%;
+    padding: 2rem 1rem;
+    font-size: 80%;
   }
+
   #notes-message div {
-      margin-top: 0;
-      width: 100%;
+    margin-top: 0;
+    width: 100%;
   }
+
   #notes {
-      margin-top: 5%;
+    margin-top: 5%;
   }
+
   .input_planet {
-      height: 2rem;
+    height: 2rem;
   }
+
   #form_row {
-      margin-top: 1.2rem;
+    margin-top: 1.2rem;
   }
+
   #add_button {
-      height: 3rem;
+    height: 3rem;
   }
+
   .guide-holders {
-      padding: 1rem .5rem;
+    padding: 1rem .5rem;
   }
+
   #general-guide {
-      padding-top: 2rem;
+    padding-top: 2rem;
   }
+
   #title_area {
-      bottom: 30%;
-      left: 0;
+    bottom: 30%;
+    left: 0;
   }
+
   #title {
-      font-size: 320%;
+    font-size: 320%;
   }
+
   #sub_title {
-      font-size: 1.6rem;
-      letter-spacing: .05rem;
+    font-size: 1.6rem;
+    letter-spacing: .05rem;
   }
+
   .home_buttons {
-      width: 8rem;
-      font-size: 140%;
-      padding-top: .5rem;
+    width: 8rem;
+    font-size: 140%;
+    padding-top: .5rem;
   }
+
   #title_container {
-      padding: 0;
+    padding: 0;
   }
+
   #home_container {
-      padding: 0;
+    padding: 0;
   }
+
   #home {
-      padding: 0;
+    padding: 0;
   }
+
   .navbar-nav {
-      background-color: rgb(54, 10, 125);
-      padding: 0 1rem;
+    background-color: rgb(54, 10, 125);
+    padding: 0 1rem;
   }
+
   .navbar-nav li {
-      padding-left: .5rem;
+    padding-left: .5rem;
   }
+
   #navbarNav {
-      margin-top: .88rem;
+    margin-top: .88rem;
   }
+
   #weight_message {
-      font-size: 50%;
-      height: 4rem;
+    font-size: 50%;
+    height: 4rem;
   }
+
   .weight_buttons {
-      margin: .2rem;
-      width: 9.4rem;
+    margin: .2rem;
+    width: 9.4rem;
   }
 
   .message {
-      width: 100%;
-      font-size: 80%;
+    width: 100%;
+    font-size: 80%;
   }
+
   #message_container {
-      margin-top: 48%;
+    margin-top: 48%;
   }
+
   .action_buttons {
-      margin: .2rem;
-      font-size: 100%;
-      height: 2rem;
-      width: 8rem;
+    margin: .2rem;
+    font-size: 100%;
+    height: 2rem;
+    width: 8rem;
   }
+
   .detailed-action {
-      width: 8rem;
-      height: 2rem;
-      font-size: 85%;
+    width: 8rem;
+    height: 2rem;
+    font-size: 85%;
   }
+
   #first-a-detailed {
-      margin-right: 0;
-      margin-left: 2rem;
+    margin-right: 0;
+    margin-left: 2rem;
   }
+
   #add_favourites_message {
-      width: 100%;
-      font-size: 100%;
-      height: 5.5rem;
+    width: 100%;
+    font-size: 100%;
+    height: 5.5rem;
   }
+
   #add_favourites_message p {
-      padding: 1.75rem .2rem 0 .2rem;
+    padding: 1.75rem .2rem 0 .2rem;
   }
+
   #info {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      font-size: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 90%;
   }
+
   .user-info {
-      margin-top: 40%;
+    margin-top: 40%;
   }
+
   #profile-actions {
-      padding-left: 1rem;
-      padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+
   #profile-actions button {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      box-sizing: content-box;
-      width: 30%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: content-box;
+    width: 30%;
   }
+
   .main-action {
-      margin-top: 1.2rem;
+    margin-top: 1.2rem;
   }
+
   .navbar {
-      text-transform: uppercase;
+    text-transform: uppercase;
   }
+
   #profile {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   #profile a {
-      width: 2.6rem;
-      background-color: rgb(196, 23, 0);
+    width: 2.6rem;
+    background-color: rgb(196, 23, 0);
   }
+
   #about_text_container {
-      margin-top: 1rem;
+    margin-top: 1rem;
   }
+
   #exoplanet_page_title_container {
-      font-size: 90%;
-      
+    font-size: 90%;
   }
 }
 
 @media (min-width: 577px) and (max-width: 767px) {
-   body {
+  body {
     background-size: cover;
   }
+
   #exoplanet_page_title_container {
-      margin-top: 5rem;
+    margin-top: 5rem;
   }
+
   .top_buttons {
     width: 10rem;
   }
+
   #col_add_exoplanet_message {
     padding: 0;
   }
+
   #add_exoplanet_message {
     width: 100%;
   }
+
   #insert_form {
     margin-bottom: 3.5rem;
   }
+
   #guide-column {
     margin-bottom: 3.5rem;
   }
- .navbar  {
-      text-transform: uppercase;
+
+  .navbar {
+    text-transform: uppercase;
   }
+
   #profile {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   #profile a {
-      width: 2.6rem;
-      background-color: rgb(196, 23, 0);
+    width: 2.6rem;
+    background-color: rgb(196, 23, 0);
   }
+
   .message {
     width: 100%;
   }
+
   #registration-message-container div {
     width: 90%;
   }
+
   .navbar-nav {
-      background-color: rgb(54, 10, 125);;
+    background-color: rgb(54, 10, 125);
+    ;
       padding: 0 1rem;
   }
+
   .navbar-nav li {
-      padding-left: .5rem;
+    padding-left: .5rem;
   }
+
   #navbarNav {
-      margin-top: .88rem;
+    margin-top: .88rem;
   }
-  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
-      background-size: cover;
+    background-size: cover;
   }
-  
- .navbar {
-      text-transform: uppercase;
+
+  .navbar {
+    text-transform: uppercase;
   }
+
   #profile {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   #profile a {
-      width: 2.6rem;
-      background-color: rgb(196, 23, 0);
-  } 
+    width: 2.6rem;
+    background-color: rgb(196, 23, 0);
+  }
+
   .register-form {
     margin-top: 39%;
   }
+
   #login-container {
     width: 70%;
   }
+
   .message {
-      width: auto;
+    width: auto;
   }
+
   .user-info {
     margin-top: 39%;
   }
+
   #info {
     width: 80%;
   }
+
   #exoplanet_page_title_container {
-      margin-top: 5rem;
+    margin-top: 5rem;
   }
+
   #about-action {
-      margin-top: .5rem;
+    margin-top: .5rem;
   }
+
   #about-text-container {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   #about_text {
-      width: 90%;
+    width: 90%;
   }
+
   .about-paragraphs {
-      margin-bottom: 0;
-      padding: 1.8rem;
-      padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 1.8rem;
+    padding-bottom: 0;
   }
+
   #about-third-paragraph {
-      padding-bottom: 1.5rem
+    padding-bottom: 1.5rem;
   }
+
   #title_area {
     bottom: 39%;
     left: 12%;
   }
-  #profile-actions  {
-      width: 80%;
+
+  #profile-actions {
+    width: 80%;
   }
-   #form_container {
-       width: 90%;
-       margin-top: 5%;
-       padding: 2rem 1rem;
-   }
-   .form-container {
-       margin-top: 15%;
-   }
-   #add_button {
-       width: 100%;
-   }
-   #notes-message div {
-       margin-top: 0;
-       width: 90%;
-   }
-   .navbar-nav {
-      background-color: rgb(54, 10, 125);
-      padding: 0 1rem;
+
+  #form_container {
+    width: 90%;
+    margin-top: 5%;
+    padding: 2rem 1rem;
   }
+
+  .form-container {
+    margin-top: 15%;
+  }
+
+  #add_button {
+    width: 100%;
+  }
+
+  #notes-message div {
+    margin-top: 0;
+    width: 90%;
+  }
+
+  .navbar-nav {
+    background-color: rgb(54, 10, 125);
+    padding: 0 1rem;
+  }
+
   .navbar-nav li {
-      padding-left: .5rem;
+    padding-left: .5rem;
   }
+
   #navbarNav {
-      margin-top: .88rem;
+    margin-top: .88rem;
   }
-  
-  
+
   #weight_message {
-      width: 45%;
+    width: 45%;
   }
+
   .top_buttons {
-      width: 10rem;
+    width: 10rem;
   }
+
   body {
-      background-size: cover;
-  }  
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-    body {
-       background-size: cover;
-    }
-    #title_area {
-        bottom: 43%;
-        left: 20%;
-    }
-    .user-info {
-       margin-top: 39%;
-       font-size: 130%;
-    }
-    #info {
-        width: 80%;
-    }
-    #profile-actions  {
-      width: 80%;
+  body {
+    background-size: cover;
   }
+
+  #title_area {
+    bottom: 43%;
+    left: 20%;
+  }
+
+  .user-info {
+    margin-top: 39%;
+    font-size: 130%;
+  }
+
+  #info {
+    width: 80%;
+  }
+
+  #profile-actions {
+    width: 80%;
+  }
+
   #form_container {
-       width: 90%;
-       margin-top: 5%;
-   }
-   .form-container {
-       margin-top: 15%;
-   }
-   #add_button {
-       width: 100%;
-   }
-   #notes-message div {
-       width: 90%;
-   }
-   .guide-container {
-       min-height: 61vh;
-   }
-   #weight_message {
-       width: 35%;
-   }
-   #about_text {
-       font-size: 150%;
-   }
-     #exoplanet_page_title_container {
-      margin-top: 9rem;
-      font-size: 130%;
+    width: 90%;
+    margin-top: 5%;
   }
- 
+
+  .form-container {
+    margin-top: 15%;
+  }
+
+  #add_button {
+    width: 100%;
+  }
+
+  #notes-message div {
+    width: 90%;
+  }
+
+  .guide-container {
+    min-height: 61vh;
+  }
+
+  #weight_message {
+    width: 35%;
+  }
+
+  #about_text {
+    font-size: 150%;
+  }
+
+  #exoplanet_page_title_container {
+    margin-top: 9rem;
+    font-size: 130%;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -1526,26 +1656,32 @@ select {
     bottom: 38%;
     left: 35%;
   }
+
   #form_row {
     margin-top: 3rem;
   }
-  
+
   .detailed {
-      height: 51vh;
+    height: 51vh;
   }
+
   #notes-message div {
     font-size: 105%;
     padding: 1rem;
   }
+
   #about-container {
-      margin-top: 2.5rem;
+    margin-top: 2.5rem;
   }
+
   #about-action {
-      margin-top: 2.5rem;
+    margin-top: 2.5rem;
   }
+
   #about-text-container {
-      margin-bottom: 8%;
+    margin-bottom: 8%;
   }
+
   .form-container {
     margin-top: 6.4rem;
   }
