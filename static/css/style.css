@@ -1720,6 +1720,10 @@ select {
     margin-bottom: 8%;
   }
 
+  #photo_container {
+      height: 48rem;
+  }
+
   .form-container {
     margin-top: 6.4rem;
   }
