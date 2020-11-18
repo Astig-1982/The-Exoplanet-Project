@@ -26,7 +26,7 @@ def home():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     """
-    displaying the regiter page
+    displaying the register page
     """
     if request.method == "POST":
         """
@@ -46,10 +46,6 @@ def register():
                     request.form.get("password"))
             }
             mongo.db.users.insert_one(register)
-            
-            """
-            put the new user into 'session' cookie
-            """
             session["user"] = request.form.get("username").lower()
             flash("Registration succesful!")
             return redirect(url_for('profile', username=session["user"])) 
@@ -234,39 +230,37 @@ def favourite_list():
         try:
             username = mongo.db.users.find_one(
              {"username": session["user"]})["username"]
-            return render_template('favourites.html', 
-                favourite_exoplanets=mongo.db[username].find())
         except Exception:
             flash('Please login in order to access your list of favourites.')
             return redirect(url_for('login'))
-        
+        return render_template('favourites.html', 
+                favourite_exoplanets=mongo.db[username].find())
+
 
 @app.route('/favourite/<exoplanet_id>')
 def favourite(exoplanet_id):
-       """
-       add an exoplanet from the main list
-       to the user's list of favourites
-       """
-       try:
-           username = mongo.db.users.find_one(
-                   {"username": session["user"]})["username"]       
-           favourite=mongo.db.exoplanets.find_one(
-               {"_id": ObjectId(exoplanet_id)})
-
-           """
-           check if the exoplanet is already in the user's favourites list
-           """
-           already_favourite=mongo.db[username].find_one(
-               {"_id": ObjectId(exoplanet_id)})
-           if already_favourite:
-               return render_template('alreadyFavourite.html', favourite=favourite)
-           else:
-               mongo.db[username].insert(favourite)
-               return redirect(url_for('favourite_list'))
-               
-       except Exception:
+        """
+        add an exoplanet from the main list
+        to the user's list of favourites
+        """
+        try:
+            username = mongo.db.users.find_one(
+                {"username": session["user"]})["username"]       
+            favourite=mongo.db.exoplanets.find_one(
+                {"_id": ObjectId(exoplanet_id)})
+        except Exception:
             flash('Please log in in order to add any exoplanet to your list of favourites')
             return redirect(url_for('login'))
+        """
+        check if the exoplanet is already in the user's favourites list
+        """
+        already_favourite=mongo.db[username].find_one(
+            {"_id": ObjectId(exoplanet_id)})
+        if already_favourite:
+            return render_template('alreadyFavourite.html', favourite=favourite)
+        else:
+            mongo.db[username].insert(favourite)
+            return redirect(url_for('favourite_list'))
 
 
 @app.route('/delete/favourite/<exoplanet_id>')
@@ -364,9 +358,13 @@ def insert_exoplanet():
  inserting an exoplanet into user's favourites list
  """   
  if request.method == "POST":
-  try:   
-    username = mongo.db.users.find_one(
+    try:   
+        username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
+    except Exception:
+        flash("Please log in in order to add an exoplanet to your favourites list")
+        return redirect(url_for('login'))
+
     favourites=mongo.db[username]
 
     if request.form.get('type')=='rocky':
@@ -382,17 +380,14 @@ def insert_exoplanet():
     new_planet={'planet_name': request.form.get('planet_name'),
                     'exoplanet_image': default_image,
                     'discovery_date': request.form.get('discovery_date'),
-                    'distance_from_earth': request.form.get('distance_from_earth'),
+                    'distance_from_earth': request.form.get(
+                        'distance_from_earth'),
                     'type': request.form.get('type'),
                     'star_system': request.form.get('star_system'),
                     'mass': request.form.get('mass'),
                     'thoughts': request.form.get('thoughts')}
     favourites.insert_one(new_planet)
     return redirect(url_for('favourite_list'))
-
-  except Exception:
-      flash("Please log in in order to add an exoplanet to your favourites list")
-      return redirect(url_for('login')) 
  return render_template('addExoplanet.html') 
 
 
@@ -443,7 +438,7 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
           return render_template(
               'notAdded.html', detailed_exoplanet=detailed_exoplanet)
  
- 
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
