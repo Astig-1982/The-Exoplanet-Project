@@ -9,11 +9,12 @@
 	</div>
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
-			<a
-				href="{{ url_for('favourite_list') }}"><button class="top_buttons favourites_main_buttons buttons">favourites</button></a>
+			<a aria-label="your favourites list" href="{{ url_for('favourite_list') }}">
+                <button class="top_buttons favourites_main_buttons buttons">favourites</button>
+            </a>
 		</div>
 		<div class="col-6 main_action_buttons">
-			<a href="{{ url_for('favourite_gas_giants') }}">
+			<a aria-label="gas giants" href="{{ url_for('favourite_gas_giants') }}">
 				<button class="top_buttons favourites_main_buttons buttons">gas giants</button>
 			</a>
 		</div>
@@ -26,11 +27,12 @@
 	</div>
 	<div class="row main-action">
 		<div class="col-6 main_action_buttons">
-			<a
-				href="{{ url_for('favourite_list') }}"><button class="top_buttons favourites_main_buttons buttons">favourites</button></a>
+			<a aria-label="your favourites list" href="{{ url_for('favourite_list') }}">
+                <button class="top_buttons favourites_main_buttons buttons">favourites</button>
+            </a>
 		</div>
 		<div class="col-6 main_action_buttons">
-			<a href="{{ url_for('favourite_rocky_planets') }}">
+			<a aria-label="rocky exoplanets" href="{{ url_for('favourite_rocky_planets') }}">
 				<button class="top_buttons favourites_main_buttons buttons">rocky</button>
 			</a>
 		</div>
@@ -43,17 +45,17 @@
 	</div>
 	<div class="row main-action">
 		<div class="col-3 main_action_buttons">
-			<a href="{{ url_for('favourite_rocky_planets') }}">
+			<a aria-label="your favourites list" href="{{ url_for('favourite_rocky_planets') }}">
 				<button class="buttons top_buttons">rocky</button>
 			</a>
 		</div>
 		<div class="col-3 main_action_buttons">
-			<a href="{{ url_for('exoplanets_display') }}">
+			<a aria-label="our main list" href="{{ url_for('exoplanets_display') }}">
 				<button class="buttons top_buttons">main list</button>
 			</a>
 		</div>
 		<div class="col-3 main_action_buttons">
-			<a href="{{ url_for('favourite_gas_giants') }}">
+			<a aria-label="gas giants" href="{{ url_for('favourite_gas_giants') }}">
 				<button class="buttons top_buttons">gas giants</button>
 			</a>
 		</div>
@@ -93,19 +95,14 @@
 					<hr class="separator">
 					<div class="centered_buttons">
 						{% if rocky %}
-						<a
-							href="{{ url_for('delete_rocky', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
+						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('delete_rocky', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
 						{% elif gas %}
-						<a
-							href="{{ url_for('delete_gas_exoplanet', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
+						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('delete_gas_exoplanet', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
 						{% else %}
-						<a
-							href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
+						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
 						{% endif %}
-						<a
-							href="{{ url_for('favourite_detailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Details</button></a>
-						<a
-							href="{{ url_for('calculate_weight', exoplanet_mass=favourite_exoplanet.mass, exoplanet_name=favourite_exoplanet.planet_name, exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">calculate</button></a>
+						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('favourite_detailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Details</button></a>
+						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('calculate_weight', exoplanet_mass=favourite_exoplanet.mass, exoplanet_name=favourite_exoplanet.planet_name, exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">calculate</button></a>
 					</div>
 				</div>
 			</div>

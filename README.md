@@ -246,15 +246,15 @@ The app is fully responsive as expected, all elements and content fit within the
 
 During the development I was lucky enough to encounter little to no significant bugs. Below are a few that unfotunately I couldn't get rid of:
 
-- **Bug**:
+* **Bug**:
 
   'The element button must not appear as a descendant of the anchor element' - this is not an actualy bug, but rather an error found by W3C Markup Validator. I have decided to treat it as one, as being very close to my deadline removing all buttons from anchors and styling again the anchors was not time permitted. 100% in the very nearest future this error will be corrected.
 
-- **Bug**:
+* **Bug**:
 
   The home page for mobile screens has a very small lateral margin/padding that I struggled to find out where it is coming from. I have encountered similar issues to at least half of the pages on all screens and succesfuly I got rid of them mainly with the help of [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB). However I cannot seem to be as succesful in regards to the home section (only for mobile screens). Hopefully by the end of this project I will figure it out. If not, I am very confident this small, but annoying bug will be crushed in the very nearest future.
 
-- **Bug**:
+* **Bug**:
 
   When running all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fixed very soon. As mentioned, when testing with dev-tools it works as expected.
 
@@ -310,4 +310,5 @@ The first paragraph from **About** page, starting: "Exoplanets are planets that 
 * The image representing exoplanet **WASP-12b** was sourced from [princeton.edu](https://www.princeton.edu/news/2020/01/07/planet-wasp-12b-death-spiral-say-scientists)
 * The image representing exoplanet **KELT-9b** was sourced from [irishnews.com](https://www.irishnews.com/magazine/science/2017/06/06/news/everything-you-need-to-know-about-kelt-9b---the-newly-discovered-planet-that-is-hotter-than-most-stars-1047146/)
 * The image representing exoplanet **Kepler-10b** was sourced from [NASA](https://www.nasa.gov/mission_pages/kepler/multimedia/images/kepler10b_images.html)
+* The **photo representing the location of exoplanet's mass** on wikipedia was sourced from [wikipedia.org](https://en.wikipedia.org/wiki/Kepler-186f)
 

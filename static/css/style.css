@@ -109,6 +109,10 @@ body {
   color: rgb(196, 23, 0);
 }
 
+i {
+    color: #e5e5dc;
+}
+
 #icons_container {
   width: 4%;
   text-align: center;

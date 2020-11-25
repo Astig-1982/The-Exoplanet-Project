@@ -52,9 +52,9 @@
 		<div class="col-12">
 			<div id="register-text">
                 {% if login %}
-				<p>Not registered yet? Please <a href="{{ url_for('register') }}">register</a> now.</p>
+				<p>Not registered yet? Please <a aria-label="register" href="{{ url_for('register') }}">register</a> now.</p>
                 {% else %}
-                <p>If you are already registered, please <a href="{{ url_for('login') }}">login</a>.</p>
+                <p>If you are already registered, please <a aria-label="login" href="{{ url_for('login') }}">login</a>.</p>
                 {% endif %}
 			</div>
 		</div>

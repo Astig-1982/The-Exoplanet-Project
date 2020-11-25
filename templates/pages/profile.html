@@ -29,8 +29,8 @@
 				<p>You can add as many exoplanets as you'd like to your favourites list. You can also choose from our <a href="{{ url_for('exoplanets_display') }}">main list</a> any exoplanet that you'd like to be added into your own list.
 			</div>
             <div id="profile-actions">
-               <a href="{{ url_for('favourite_list', username=session['user']) }}"><button class="buttons">favourites</button></a>
-               <a id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
+               <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button class="buttons">favourites</button></a>
+               <a aria-label="delete your profile" id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
             </div>
 		</div>
 	</div>
