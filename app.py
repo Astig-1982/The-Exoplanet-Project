@@ -438,6 +438,11 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
       else:
           return render_template(
               'pages/notAdded.html', detailed_exoplanet=detailed_exoplanet)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('pages/404NotFound.html'), 404
  
 
 if __name__ == '__main__':
