@@ -206,7 +206,51 @@ i {
   font-family: "Abril Fatface", cursive;
 }
 
-/* flash message starts here */
+/* 404NotFound.html starts here */
+
+#NotFound {
+  background-image: url(../images/404NotFound/404NotFound.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#NotFound a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#NotFound-row {
+    position: fixed;
+    bottom: 8%;
+}
+
+#messageBlackHole {
+    margin-left: 18rem;
+    margin-top: 25rem;
+    float: right;
+}
+
+#oops-message {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+#home-message {
+    font-size: 115%;
+}
+
+#message404 {
+    font-family: none;
+    font-weight: 900;
+    font-size: 27rem;
+    width: 50%;
+    margin-left: 5rem;
+    letter-spacing: .5rem;
+}
+
+/* flash messages start here */
 
 #registration {
   max-width: 100vw;
