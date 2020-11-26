@@ -357,6 +357,8 @@ def favourite_gas_giants():
 def insert_exoplanet():
  """
  inserting an exoplanet into user's favourites list
+ with different default image, depending on the type
+ of exoplanet inserted
  """
  if request.method == "POST":
     try:
@@ -369,11 +371,6 @@ def insert_exoplanet():
     favourites = mongo.db[username]
 
     if request.form.get('type') == 'rocky':
-        """
-        check wether the type of exoplanet inserted
-        is 'rocky' or 'gas', and a default image
-        with a rocky or gas exoplanet will be inserted
-        """
         default_image = 'Default-rocky'
     else:
         default_image = 'Default-gas'
@@ -381,12 +378,11 @@ def insert_exoplanet():
     new_planet = {'planet_name': request.form.get('planet_name'),
                     'exoplanet_image': default_image,
                     'discovery_date': request.form.get('discovery_date'),
-                    'distance_from_earth': request.form.get(
-                        'distance_from_earth'),
+                    'distance_from_earth': float(request.form.get(
+                        'distance_from_earth')),
                     'type': request.form.get('type'),
                     'star_system': request.form.get('star_system'),
-                    'mass': request.form.get('mass'),
-                    'thoughts': request.form.get('thoughts')}
+                    'mass': float(request.form.get('mass'))}
     favourites.insert_one(new_planet)
     return redirect(url_for('favourite_list'))
  return render_template('pages/addExoplanet.html')
@@ -419,7 +415,7 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
           {"_id": ObjectId(exoplanet_id)})
 
       your_weight = int(request.form.get('your_weight'))
-      your_weightExoplanet = your_weight * float(exoplanet_mass)
+      your_weightExoplanet = round(your_weight * float(exoplanet_mass), 2)
 
       return render_template(
         'pages/exoplanetWeight.html', exoplanet=exoplanet,
@@ -443,7 +439,7 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('pages/404NotFound.html'), 404
- 
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
