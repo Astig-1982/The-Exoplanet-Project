@@ -2,6 +2,8 @@
 
 The Exoplanet Project, named Other Words, is a simple app that represents a quick guide to exoplanets - planets outside our solar system.
 
+## Table Of Contents:
+
   * [UX](#ux)
     + [Project Goals](#project-goals)
     + [User Goals](#user-goals)
@@ -11,7 +13,7 @@ The Exoplanet Project, named Other Words, is a simple app that represents a quic
     + [Main Background Image:](#main-background-image-)
     + [Exoplanets' Images:](#exoplanets--images-)
     + [Default Images Within The App:](#default-images-within-the-app-)
-    + [Fonts:](#fonts-)
+    + [Fonts:](#fonts)
     + [Icons:](#icons-)
     + [Colors:](#colors-)
   * [Wireframes:](#wireframes-)
@@ -121,10 +123,6 @@ I chose to use [ABRIL FATFACE](https://fonts.google.com/specimen/Abril+Fatface?q
 I chose to use [LATO](https://fonts.google.com/specimen/Lato?query=lato) as main font as I believe it provides a good readability and looks proffessional.
 
 I chose to use [ROBOTO SLAB](https://fonts.google.com/specimen/Roboto+Slab?query=roboto) for all action buttons as I believe it provides one of the best readability, which is always important for action buttons.
-
-### Icons:
-
-No icons have been used for the app.
 
 ### Colors:
 
