@@ -68,13 +68,13 @@ No icons have been used for the app.
 
 ### Colors:
 
-- Primary: **See Through Red** rgba(112, 16, 3, 0.8). I chose this color as background for all sections that contain text (including flash messages), as I believe it offers a not so strong contrast with the main image (in this case the main image will still be visible), but in the same time a good enough contrast for the text to be readable.
+* Primary: **See Through Red** rgba(112, 16, 3, 0.8). I chose this color as background for all sections that contain text (including flash messages), as I believe it offers a not so strong contrast with the main image (in this case the main image will still be visible), but in the same time a good enough contrast for the text to be readable.
 
-- Secondary **Indigo** rgb(60, 10, 125). I chose this color for the action buttons and navbar as it matches some of the colors found in the main background image, and also I believe it provides a very good contrast between them and the rest of the app making them more visible, which is very important in order to provide a good user experience.
+* Secondary **Indigo** rgb(60, 10, 125). I chose this color for the action buttons and navbar as it matches some of the colors found in the main background image, and also I believe it provides a very good contrast between them and the rest of the app making them more visible, which is very important in order to provide a good user experience.
 
-- Tertiary Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. I chose this in the detriment of plain white as I believe it is also a bit warmer color, being a better fit for the overall design choices used throughout the app.
+* Tertiary Color: **Light Grey** #e5e5dc. I chose this color for the text as overall it gives a good contrast with all backgrounds used in the app. I chose this in the detriment of plain white as I believe it is also a bit warmer color, being a better fit for the overall design choices used throughout the app.
 
-- Register Button: **Candy Apple Red** rgb(196, 23, 0). I chose this color for the Register button as it stands out on the navbar, urging the user to register if she/he hasn't done it so far. Also it is similar to the overall colors in the main background image. This color is not used anywhere else in the app.
+* Register Button: **Candy Apple Red** rgb(196, 23, 0). I chose this color for the Register button as it stands out on the navbar, urging the user to register if she/he hasn't done it so far. Also it is similar to the overall colors in the main background image. This color is not used anywhere else in the app.
 
 ## Wireframes:
 
@@ -82,18 +82,56 @@ I've built the wireframes for this project using [BALSAMIQ](https://balsamiq.com
 
 Please view my wireframes for this project [here](https://github.com/Astig-1982/The-Exoplanet-Project/tree/master/wireframes). You can also see my wireframes on gitpod in the **wireframes** directory.
 
+## Database Structure:
+
+I have used MondoDB to set up the database. The project contains the following collections:
+
+#### **Users:**
+
+Key      | Value
+---------|-----------
+_id      | ObjectId
+username | String
+password | String
+
+#### **Exoplanets**
+
+Key                 | Value
+--------------------|-----------
+_id                 | ObjectId
+exoplanet_image     | String
+planet_name         | String
+discovery_date      | Date
+distance_from_earth | Decimal
+type                | String
+star_system         | String
+mass                | Decimal
+
+#### Individual users' collection
+
+Key                 | Value
+--------------------|-----------
+_id                 | ObjectId
+exoplanet_image     | String
+planet_name         | String
+discovery_date      | Date
+distance_from_earth | Decimal
+type                | String
+star_system         | String
+mass                | Decimal
+
 ## Features:
 
-- Register an account form, Log-in & Log-out functionality.
-- Adding manually any preferred exoplanet into the user's favourites list.
-- Guidance on inserting an exoplanet to favourites list.
-- Adding a default image of a rocky or gas giant planet, depending on the type of planet inserted by the user.
-- Adding to favourites list any exoplanet from the main list provided in the app.
-- Advanced item information, providing users with some of the exoplanet's most important properties.
-- Possibility to filter the exoplanets by type: rocky planets or gas giants.
-- Possibility to sort the exoplanets depending on their mass, from smallest to largest and other way around.
-- Possiblity to calculate the user's weight on each exoplanet added to her/his favourites list.
-- Profile section that will display the number of exoplanets the user has in her/his favourites list; also displays the number of rocky planets and number of gas giants in the favourites list.
+* Register an account form, Log-in & Log-out functionality.
+* Adding manually any preferred exoplanet into the user's favourites list.
+* Guidance on inserting an exoplanet to favourites list.
+* Adding a default image of a rocky or gas giant planet, depending on the type of planet inserted by the user.
+* Adding to favourites list any exoplanet from the main list provided in the app.
+* Advanced item information, providing users with some of the exoplanet's most important properties.
+* Possibility to filter the exoplanets by type: rocky planets or gas giants.
+* Possibility to sort the exoplanets depending on their mass, from smallest to largest and other way around.
+* Possiblity to calculate the user's weight on each exoplanet added to her/his favourites list.
+* Profile section that will display the number of exoplanets the user has in her/his favourites list; also displays the number of rocky planets and number of gas giants in the favourites list.
 
 ### Register an account form, Log-in & Log-out functionality:
 
