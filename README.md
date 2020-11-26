@@ -20,31 +20,31 @@ The Exoplanet Project, named Other Words, is a simple app that represents a quic
   * [Database Structure:](#database-structure)
       - [**Users:**](#users)
       - [**Exoplanets**](#exoplanets)
-      - [Individual users' collection](#individual-users--collection)
+      - [Individual users' collection](#individual-users-collection)
   * [Features:](#features-)
-    + [Register an account form, Log-in & Log-out functionality:](#register-an-account-form--log-in---log-out-functionality)
+    + [Register an account form, Log-in & Log-out functionality:](#register-an-account-form-log-in-log-out-functionality)
       - [Implementation:](#implementation-)
     + [Adding manually any preferred exoplanet:](#adding-manually-any-preferred-exoplanet)
-      - [Implementation:](#implementation--1)
+      - [Implementation:](#implementation-1)
     + [Guidance on inserting an exoplanet to favourites list:](#guidance-on-inserting-an-exoplanet-to-favourites-list)
-      - [Implementation:](#implementation--2)
+      - [Implementation:](#implementation-2)
     + [Adding a default image of a rocky or gas giant planet:](#adding-a-default-image-of-a-rocky-or-gas-giant-planet)
-      - [Implementation:](#implementation--3)
+      - [Implementation:](#implementation-3)
     + [Adding to favourites list:](#adding-to-favourites-list)
-      - [Implementation:](#implementation--4)
+      - [Implementation:](#implementation-4)
     + [Advanced exoplanet information:](#advanced-exoplanet-information)
-      - [Implementation:](#implementation--5)
+      - [Implementation:](#implementation-5)
     + [Possibility to filter the exoplanets by their type:](#possibility-to-filter-the-exoplanets-by-their-type)
-      - [Implementation:](#implementation--6)
+      - [Implementation:](#implementation-6)
     + [Possibility to sort the exoplanets depending on their mass:](#possibility-to-sort-the-exoplanets-depending-on-their-mass)
-      - [Implementation:](#implementation--7)
+      - [Implementation:](#implementation-7)
     + [Possiblity to calculate the user's weight on each exoplanet:](#possiblity-to-calculate-the-user-s-weight-on-each-exoplanet)
-      - [Implementation:](#implementation--8)
+      - [Implementation:](#implementation-8)
     + [Profile section that will display the number of exoplanets in the favourites list:](#profile-section-that-will-display-the-number-of-exoplanets-in-the-favourites-list)
-      - [Implementation:](#implementation--9)
+      - [Implementation:](#implementation-9)
   * [Technologies used:](#technologies-used)
     + [Languages:](#languages)
-    + [Tools & Libraries:](#tools---libraries)
+    + [Tools & Libraries:](#tools-libraries)
   * [Testing:](#testing)
     + [Testing Stories:](#testing-stories)
       - [W3C Validation Service:](#w3c-validation-service)
@@ -134,6 +134,8 @@ I chose to use [ROBOTO SLAB](https://fonts.google.com/specimen/Roboto+Slab?query
 
 * Register Button: **Candy Apple Red** rgb(196, 23, 0). I chose this color for the Register button as it stands out on the navbar, urging the user to register if she/he hasn't done it so far. Also it is similar to the overall colors in the main background image. This color is not used anywhere else in the app.
 
+[Back to Top](#table-of-contents)
+
 ## Wireframes:
 
 I've built the wireframes for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the display of the items (exoplanets) and building on that afterwords. I have built wireframes for all multiple devices, which speeded up the process altogether. Please note that very few features and design elements may vary slightly or a lot from the original wireframes, as while I was developing I had to either adapt or, due to esthetic reasons, I changed my mind completey in regards to some elements of design.
@@ -177,6 +179,8 @@ distance_from_earth | Decimal
 type                | String
 star_system         | String
 mass                | Decimal
+
+[Back to Top](#table-of-contents)
 
 ## Features:
 
@@ -271,27 +275,31 @@ I chose to use this feature as I believe it's good for the user to have a quick 
 
 In the function created in app.py file for displaying the profile, I've used count() method on the items from the the user's collection.
 
+[Back to Top](#table-of-contents)
+
 ## Technologies used:
 
 ### Languages:
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-- [JavaScript](https://www.javascript.com/)
-- [Python](https://www.python.org/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 
 ### Tools & Libraries:
 
-- [jQuery](https://jquery.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Google Fonts](https://fonts.google.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [TinyPng](https://tinypng.com/)
-- [PyMongo](https://pypi.org/project/pymongo/)
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [TinyPng](https://tinypng.com/)
+* [PyMongo](https://pypi.org/project/pymongo/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+
+[Back to Top](#table-of-contents)
 
 ## Testing:
 
@@ -338,6 +346,8 @@ I knew that the project needed to be fully responsive on all types of screen, es
 
 The app is fully responsive as expected, all elements and content fit within their boundaries and are easy to see on any device.
 
+[Back to Top](#table-of-contents)
+
 ## Bugs
 
 During the development I was lucky enough to encounter little to no significant bugs. Below are a few that unfotunately I couldn't get rid of:
@@ -353,6 +363,8 @@ During the development I was lucky enough to encounter little to no significant 
 * **Bug**:
 
   When running all simulations on dev-tools for iPad Pro screens, the app works exactly as expected. However, when actually running the app on my personal iPad Pro, the main background image is NOT fixed, as if the background-attachment property set for the 'body' element is not working. I am still trying to wrap my head around this issue and I am confident it will be fixed very soon. As mentioned, when testing with dev-tools it works as expected.
+
+[Back to Top](#table-of-contents)
 
 ## Deployment:
 
@@ -381,6 +393,8 @@ MONGO\_URI|mongodb+srv://<username>:<password>@<cluster\_name>-qtxun.mongodb.net
 SECRET\_KEY|"your\_secret\_key"
 * 7: Click the deploy button on the Heroku dashboard.
 * 8: The app has been deployed the Heroku.
+
+[Back to Top](#table-of-contents)
 
 ## Credits:
 
