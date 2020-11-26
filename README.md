@@ -314,23 +314,23 @@ Planning for this project took a significant amount of a time as this was my fir
 
 #### Register with an account:
 
-* I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the users collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the username and hashed passwords will be inserted into the users collection in the database. Then the code initiates the ‘session’ for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored into the database.
+* I have tested this feature multiple times as it was my first time ever working both with session variables and databases. The code checks if the user exists in the **users** collection and if it does a flash message will appear displaying the username already exists. If it doesn't, the **username** and **hashed passwords** will be inserted into the **users** collection in the database. Then the code initiates the **session** for the user signing them in. To test this feature I've created a few temporary accounts in order to test that the registration worked as intended, checking what values were passed and stored into the database.
 
 #### Deleting and account:
 
-* The code will first delete the entire user's collection from the database. Then it removes the user object from the 'users' collection and logs the user out. To test this feature I've created a few temporary accounts, created the user's collection by adding to favourites list and deleted the profile. Afterwords I was checking the database to check if both the user object and the collection have been removed. It works as intended. I did this several times with succesful outcomes everytime.
+* The code will first delete the entire **user**'s collection from the database. Then it removes the **user** object from the **users** collection and logs the user out. To test this feature I've created a few temporary accounts, created the **user**'s collection by adding to **favourites** list and deleted the profile. Afterwords I was checking the database to check if both the **user** object and the **collection** have been removed. It works as intended. I did this several times with succesful outcomes everytime.
 
 #### Sign out of an account:
 
-* I've simply created a function using session.pop and redirecting the user to the login page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev-tools to check if the session was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria.
+* I've simply created a function using **session.pop** and redirecting the user to the **login** page once she/he's logged out. Testing this feature was very straight forward, all I had to do was log into a previously created account and click the log out button in the navigation. I have used google dev-tools to check if the **session** was cleared and the user was no longer logged in. The test has passed succesfuly based on the above criteria.
 
 #### Inserting an exoplanet:
 
-* I have tested multiple times this feature by inserting items (exoplanets) and checking the favourites list in the app and the users collection in the database to see if all details entered in the respective fields were correctly inserted. I've added pattern attributes to the html form in order to catch all the unwanted inputs - Ex: the 'distance from earth' and 'mass' fields need to be only digits. I have also checked multiple times to see if the default image was inserted in the database, coresponding with the value of the input inserted by the user at the 'type' field (either 'rocky' or 'gas'). All the tests have passed succesfuly and the function works as intended.
+* I have tested multiple times this feature by inserting items **(exoplanets)** and checking the **favourites list** in the app and the **users** collection in the database to see if all details entered in the respective fields were correctly inserted. I've added **pattern attributes** to the html form in order to catch all the unwanted inputs - Ex: the ***distance from earth*** and ***mass*** fields need to be only digits. I have also checked multiple times to see if the **default image** was inserted in the database, coresponding with the value of the input inserted by the user at the ***type*** field *(either ***rocky*** or ***gas***). All the tests have passed succesfuly and the function works as intended.
 
 #### Calculating the user's weight on each exoplanet:
 
-* I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the user's weight on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
+* I have tested multiple times this function by entering different values and manually checking the outcome with a calculator. I have also tested this function when calculating the **user's weight** on the exoplanets inserted manually by her/him. All the tests have passed succesfuly and the function works as intended.
 
 #### Try/Except: 
             
