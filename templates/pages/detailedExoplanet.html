@@ -32,7 +32,7 @@
 					<a aria-label="add this exoplanet to your favourites list" id="first-a-detailed"
 						href="{{ url_for('favourite', exoplanet_id=detailed_exoplanet._id)}}"
 						><button class="buttons detailed-action">add favourites</button></a>
-					<a aria-label="calculate your weight on this exoplanets" id="second-a-detailed"
+					<a aria-label="calculate your weight on this exoplanets" title="calculate your weight on {{ detailed_exoplanet.planet_name }}" id="second-a-detailed"
 						href="{{ url_for('calculate_weight', exoplanet_mass=detailed_exoplanet.mass, exoplanet_name=detailed_exoplanet.planet_name, exoplanet_id=detailed_exoplanet._id) }}"
 						><button class="buttons detailed-action">calculate weight</button></a>
 				</div>

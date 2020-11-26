@@ -101,8 +101,8 @@
 						{% else %}
 						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('delete_favourite', exoplanet_id=favourite_exoplanet._id)}}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Delete</button></a>
 						{% endif %}
-						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('favourite_detailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Details</button></a>
-						<a aria-label="delete this exoplanet from favourites list" href="{{ url_for('calculate_weight', exoplanet_mass=favourite_exoplanet.mass, exoplanet_name=favourite_exoplanet.planet_name, exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">calculate</button></a>
+						<a aria-label="details" href="{{ url_for('favourite_detailed', exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">Details</button></a>
+						<a aria-label="calculate your weight on this planet" title="calculate your weight on {{favourite_exoplanet.planet_name}} " href="{{ url_for('calculate_weight', exoplanet_mass=favourite_exoplanet.mass, exoplanet_name=favourite_exoplanet.planet_name, exoplanet_id=favourite_exoplanet._id) }}"><button class="favourites-display-buttons exoplanets_display_buttons buttons">calculate</button></a>
 					</div>
 				</div>
 			</div>

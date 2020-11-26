@@ -744,11 +744,16 @@ i {
   width: 4.5rem;
 }
 
-/* detailed_exoplanet page starts here */
+/* detailedExoplanet page starts here */
 
 #detailed_container {
   margin-top: 1.5rem;
   margin-bottom: 3.1rem;
+}
+
+#second-a-detailed[title] {
+    background-color: aquamarine;
+    font-size: 200%;
 }
 
 #detailed_exoplanet_container {
