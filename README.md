@@ -404,7 +404,7 @@ SECRET\_KEY|"your\_secret\_key"
 
 ### Content:
 
-The first paragraph from **About** page, starting: *Exoplanets are planets that orbit a star other than our sun. The prefix exo comes from the Greek*...   has been taken from the webiste [Earthsky.org](https://earthsky.org/astronomy-essentials/what-are-exoplanets#:~:text=Exoplanets%20are%20planets%20that%20orbit,1%2C000%20more%20more%20awaiting%20confirmation.). 
+The first paragraph from **About** page, starting: *Exoplanets are planets that orbit a star other than our sun. The prefix exo comes from the Greek*...   has been taken from the webiste [earthsky.org](https://earthsky.org/astronomy-essentials/what-are-exoplanets#:~:text=Exoplanets%20are%20planets%20that%20orbit,1%2C000%20more%20more%20awaiting%20confirmation.). 
 
 ### Media:
 

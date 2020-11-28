@@ -1,21 +1,21 @@
 {% extends 'base.html' %} {% block content %}
 <div id="profile-row" class="row">
-    <div id="profile-col" class="col-12">
-        <div id="profile-table">
-            <ul class="list-group">
-                <li id="profile-name" class="list-group-item">{{ user }}'s Profile</li>
-                <li class="list-group-item">Exoplanets: <span>{{ users_list }}</span></li>
-                    <div class="profile-separators"></div>
-                <li class="list-group-item">Rocky Planets: <span>{{ users_rocky }}</span></li>
-                    <div class="profile-separators"></div>
-                <li class="list-group-item">Gas Giants: <span>{{ users_gas_giants }}</span></li>
-                    <div class="profile-separators"></div>
-                <li class="list-group-item">
-                    <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button id="profile-favourites" class="buttons">favourites</button></a>
-                    <a aria-label="delete your profile" id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+   <div id="profile-col" class="col-12">
+      <div id="profile-table">
+         <ul class="list-group">
+            <li id="profile-name" class="list-group-item">{{ user }}'s Profile</li>
+            <li class="list-group-item">Exoplanets: <span>{{ users_list }}</span></li>
+            <div class="profile-separators"></div>
+            <li class="list-group-item">Rocky Planets: <span>{{ users_rocky }}</span></li>
+            <div class="profile-separators"></div>
+            <li class="list-group-item">Gas Giants: <span>{{ users_gas_giants }}</span></li>
+            <div class="profile-separators"></div>
+            <li class="list-group-item">
+               <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button id="profile-favourites" class="buttons">favourites</button></a>
+               <a aria-label="delete your profile" id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
+            </li>
+         </ul>
+      </div>
+   </div>
 </div>
 {% endblock %}

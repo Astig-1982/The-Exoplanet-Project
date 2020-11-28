@@ -1,43 +1,42 @@
 {% extends 'base.html' %}
 {% block content %}
 <div id="detailed_exoplanet_container" class="container margin">
-	<div class="row">
-		<div id="detailed_exoplanet_title" class="col-12">
-			<h1 class="top-titles">{{ detailed_exoplanet.planet_name }}</h1>
-		</div>
-	</div>
-	<div id="exoplanet_display" class="row">
-		<div class="col-12">
-			<div class="detailed {{ detailed_exoplanet.exoplanet_image }}">
-			</div>
-		</div>
-	</div>
-	<div id="detailed_container" class="row">
-		<div class="col-12 properties_container">
-			<div id="detailed_properties" class="detailed">
-				<p id="first-p-detailed">Name: {{ detailed_exoplanet.planet_name }}</p>
-				<hr class="detailed_separator">
-				<p>Discovery date: {{ detailed_exoplanet.discovery_date }}</p>
-				<hr class="detailed_separator">
-				<p>Distance From Earth: {{ detailed_exoplanet.distance_from_earth }} light years</p>
-				<hr class="detailed_separator">
-				<p>Type: {{ detailed_exoplanet.type }}</p>
-				<hr class="detailed_separator">
-				<p>Star System: {{ detailed_exoplanet.star_system }}</p>
-				<hr class="detailed_separator">
-				<p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
-				<hr class="detailed_separator">
-                </div>
-				<div id="detailed-anchor-container">
-					<a aria-label="add this exoplanet to your favourites list" id="first-a-detailed"
-						href="{{ url_for('favourite', exoplanet_id=detailed_exoplanet._id)}}"
-						><button class="buttons detailed-action">add favourites</button></a>
-					<a aria-label="calculate your weight on this exoplanets" title="calculate your weight on {{ detailed_exoplanet.planet_name }}" id="second-a-detailed"
-						href="{{ url_for('calculate_weight', exoplanet_mass=detailed_exoplanet.mass, exoplanet_name=detailed_exoplanet.planet_name, exoplanet_id=detailed_exoplanet._id) }}"
-						><button class="buttons detailed-action">calculate weight</button></a>
-				</div>
-			
-		</div>
-	</div>
+   <div class="row">
+      <div id="detailed_exoplanet_title" class="col-12">
+         <h1 class="top-titles">{{ detailed_exoplanet.planet_name }}</h1>
+      </div>
+   </div>
+   <div id="exoplanet_display" class="row">
+      <div class="col-12">
+         <div class="detailed {{ detailed_exoplanet.exoplanet_image }}">
+         </div>
+      </div>
+   </div>
+   <div id="detailed_container" class="row">
+      <div class="col-12 properties_container">
+         <div id="detailed_properties" class="detailed">
+            <p id="first-p-detailed">Name: {{ detailed_exoplanet.planet_name }}</p>
+            <hr class="detailed_separator">
+            <p>Discovery date: {{ detailed_exoplanet.discovery_date }}</p>
+            <hr class="detailed_separator">
+            <p>Distance From Earth: {{ detailed_exoplanet.distance_from_earth }} light years</p>
+            <hr class="detailed_separator">
+            <p>Type: {{ detailed_exoplanet.type }}</p>
+            <hr class="detailed_separator">
+            <p>Star System: {{ detailed_exoplanet.star_system }}</p>
+            <hr class="detailed_separator">
+            <p>Mass: {{ detailed_exoplanet.mass }} Earth mass</p>
+            <hr class="detailed_separator">
+         </div>
+         <div id="detailed-anchor-container">
+            <a aria-label="add this exoplanet to your favourites list" id="first-a-detailed"
+               href="{{ url_for('favourite', exoplanet_id=detailed_exoplanet._id)}}"
+               ><button class="buttons detailed-action">add favourites</button></a>
+            <a aria-label="calculate your weight on this exoplanets" title="calculate your weight on {{ detailed_exoplanet.planet_name }}" id="second-a-detailed"
+               href="{{ url_for('calculate_weight', exoplanet_mass=detailed_exoplanet.mass, exoplanet_name=detailed_exoplanet.planet_name, exoplanet_id=detailed_exoplanet._id) }}"
+               ><button class="buttons detailed-action">calculate weight</button></a>
+         </div>
+      </div>
+   </div>
 </div>
 {% endblock %}

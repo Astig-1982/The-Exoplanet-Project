@@ -1,63 +1,62 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
-<div class="row register-form">
-<div id="login-center" class="col-12">
-{% if login %}
-<h1 class="top-titles login-title">Log In</h1>
-{% else %}
-<h1 class="top-titles login-title">Register</h1>
-{% endif %}
-</div>
-</div>
-	<div class="row">
-		<div class="col-12">
-          <div id="login-container">
+   <div class="row register-form">
+      <div id="login-center" class="col-12">
+         {% if login %}
+         <h1 class="top-titles login-title">Log In</h1>
+         {% else %}
+         <h1 class="top-titles login-title">Register</h1>
+         {% endif %}
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-12">
+         <div id="login-container">
             {% if login %}
-			<form method="POST" action="{{ url_for('login') }}">
-            {% else %}
+            <form method="POST" action="{{ url_for('login') }}">
+               {% else %}
             <form method="POST" action="{{ url_for('register') }}">
+               {% endif %}
+               <div class="form-group">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input
+                     type="text"
+                     class="form-control"
+                     name="username"
+                     pattern="^[a-zA-Z0-9]{5,15}$"
+                     required
+                     />
+               </div>
+               <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                     type="password"
+                     class="form-control"
+                     id="exampleInputPassword1"
+                     name="password"
+                     pattern="^[a-zA-Z0-9]{5,15}$"
+                     required
+                     />
+               </div>
+               {% if login %}
+               <button type="submit" class="btn btn-primary buttons login-button">log in</button>
+               {% else %}
+               <button type="submit" class="btn btn-primary buttons login-button">register</button>
+               {% endif %}
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-12">
+         <div id="register-text">
+            {% if login %}
+            <p>Not registered yet? Please <a aria-label="register" href="{{ url_for('register') }}">register</a> now.</p>
+            {% else %}
+            <p>If you are already registered, please <a aria-label="login" href="{{ url_for('login') }}">login</a>.</p>
             {% endif %}
-				<div class="form-group">
-					<label for="exampleInputEmail1">Username</label>
-					<input
-            type="text"
-            class="form-control"
-            name="username"
-            pattern="^[a-zA-Z0-9]{5,15}$"
-            required
-          />
-				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            name="password"
-            pattern="^[a-zA-Z0-9]{5,15}$"
-            required
-          />
-        </div>
-                    {% if login %}
-					<button type="submit" class="btn btn-primary buttons login-button">log in</button>
-                    {% else %}
-                    <button type="submit" class="btn btn-primary buttons login-button">register</button>
-                    {% endif %}
-			</form>
-            </div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-12">
-			<div id="register-text">
-                {% if login %}
-				<p>Not registered yet? Please <a aria-label="register" href="{{ url_for('register') }}">register</a> now.</p>
-                {% else %}
-                <p>If you are already registered, please <a aria-label="login" href="{{ url_for('login') }}">login</a>.</p>
-                {% endif %}
-			</div>
-		</div>
-	</div>
+         </div>
+      </div>
+   </div>
 </div>
 {% endblock %}

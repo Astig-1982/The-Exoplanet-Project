@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    {% include 'layout/head.html' %}
-
-<body>
-	{% include 'layout/navbar.html' %}
-
-	{% with messages = get_flashed_messages() %}
-	{% if messages %}
-	{% for message in messages %}
-	<div id="registration" class="row">
-		<div id="registration-message-container" class="col-12">
-			<div>
-				{{ message }}
-			</div>
-		</div>
-	</div>
-	{% endfor %}
-	{% endif %}
-	{% endwith %}
-
-	<div id="icons_container" class="col-12 d-none d-sm-block">
-		<a href="https://www.facebook.com/" aria-label="connect with us on facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-square"></i></a><br>
-		<a href="https://www.instagram.com/" aria-label="follow us on instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><br>
-		<a href="https://www.youtube.com/" aria-label="check our youtube channel" target="_blank" rel="noopener"><i class="fab fa-youtube-square"></i></a><br>
-		<a href="https://twitter.com/?lang=en-gb" aria-label="interact with us on twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-	</div>
-	{% block content %}
-	{% endblock %}
-</body>
-
-{% include 'layout/scripts.html' %}
-
+   {% include 'layout/head.html' %}
+   <body>
+      {% include 'layout/navbar.html' %}
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <div id="registration" class="row">
+         <div id="registration-message-container" class="col-12">
+            <div>
+               {{ message }}
+            </div>
+         </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+      <div id="icons_container" class="col-12 d-none d-sm-block">
+         <a href="https://www.facebook.com/" aria-label="connect with us on facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-square"></i></a><br>
+         <a href="https://www.instagram.com/" aria-label="follow us on instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><br>
+         <a href="https://www.youtube.com/" aria-label="check our youtube channel" target="_blank" rel="noopener"><i class="fab fa-youtube-square"></i></a><br>
+         <a href="https://twitter.com/?lang=en-gb" aria-label="interact with us on twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+      </div>
+      {% block content %}
+      {% endblock %}
+   </body>
+   {% include 'layout/scripts.html' %}
 </html>

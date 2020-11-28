@@ -3,95 +3,96 @@
 <div class="main"></div>
 <div class="container">
    {% if rocky %}
-    <div class="row margin">
-		<div class="col-12 exoplanet_page_title_container">
-			<h1 class="top-titles title_exoplanet_page">rocky worlds</h1>
-		</div>
-	</div>
-	<div class="row main-action">
-		<div class="col-6 main_action_buttons">
-			<a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
-		</div>
-		<div class="col-6 main_action_buttons">
-			<a aria-label="gas giants" href="{{ url_for('gas_giants_planets') }}">
-				<button class="top_buttons buttons">gas giants</button>
-			</a>
-		</div>
-	</div>
-	{% elif gas %}
-    <div class="row margin">
-		<div class="col-12 exoplanet_page_title_container">
-			<h1 class="top-titles title_exoplanet_page">gas giants</h1>
-		</div>
-	</div>
-	<div class="row main-action">
-		<div class="col-6 main_action_buttons">
-			<a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
-		</div>
-		<div class="col-6 main_action_buttons">
-			<a aria-label="rocky exoplanets" href="{{ url_for('rocky_planets') }}">
-				<button class="top_buttons buttons">rocky</button>
-			</a>
-		</div>
-	</div>
-	{% else %}
-    <div class="row margin">
-		<div class="col-12 exoplanet_page_title_container">
-			<h1 class="top-titles title_exoplanet_page">exoplanets</h1>
-		</div>
-	</div>
-	<div class="row main-action">
-		<div class="col-3 main_action_buttons">
-			<a aria-label="rocky exoplanets" href="{{ url_for('rocky_planets') }}"><button class="top_buttons buttons">rocky</button></a>
-		</div>
-		<div class="col-3 main_action_buttons">
-			<a aria-label="your favourites list" href="{{ url_for('favourite_list', username=session['user']) }}"><button class="favourites top_buttons buttons">favourites</button></a>
-		</div>
-		<div class="col-3 main_action_buttons">
-			<a aria-label="gas giants" href="{{ url_for('gas_giants_planets') }}"><button class="top_buttons buttons">gas giants</button></a>
-		</div>
-		<div class="col-3 dropdown">
-			<button style="padding-top:.1rem" class="dropdown-toggle top_buttons buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       sort by size
-      </button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="{{ url_for('small_to_large') }}">Small To Large</a>
-				<a class="dropdown-item" href="{{ url_for('large_to_small') }}">Large To Small</a>
-				<a class="dropdown-item" href="{{ url_for('exoplanets_display') }}">Default Display</a>
-			</div>
-		</div>
-	</div>
-	{% endif %}
-	<div class="row">
-		{% for exoplanet in exoplanets %}
-		<div class="col-12 col-md-6 col-lg-4">
-			<div class="exoplanets_holder">
-				<div class="image_zoom">
-					<div class="image_holder {{ exoplanet.exoplanet_image }}"></div>
-                </div>
-					<p id="exoplanet_name" class="exoplanet_properties"><strong>{{exoplanet.planet_name}}</strong></p>
-					<hr class="separator">
-					<p class="exoplanet_properties"><strong>Type:</strong> {{exoplanet.type}}</p>
-					<hr class="separator">
-					<p class="exoplanet_properties"><strong>Star System:</strong> {{exoplanet.star_system}} </p>
-					<hr class="separator">
-					<div class="centered_buttons">
-						<a aria-label="add this exoplanet to your favourites list" href="{{ url_for('favourite', exoplanet_id=exoplanet._id)}}"
-							id="margin-left"><button id="favourite_button" class="exoplanets_display_buttons buttons">Add Favourites</button></a>
-						<a aria-label="details" href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}"
-							id="float_right"><button class="exoplanets_display_buttons buttons">Details</button></a>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-		<div id="add_exoplanet_message_container" class="row">
-			<div id="col_add_exoplanet_message" class="col-12">
-				<div id="add_exoplanet_message">
-					<p>Can't find your favourite exoplanet in the main list? Add any exoplanet to your Favourites List
-						by simply entering its details <a aria-label="insert an exoplanet" href="{{ url_for('insert_exoplanet') }}">here</a>.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	{% endblock %}
+   <div class="row margin">
+      <div class="col-12 exoplanet_page_title_container">
+         <h1 class="top-titles title_exoplanet_page">rocky worlds</h1>
+      </div>
+   </div>
+   <div class="row main-action">
+      <div class="col-6 main_action_buttons">
+         <a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
+      </div>
+      <div class="col-6 main_action_buttons">
+         <a aria-label="gas giants" href="{{ url_for('gas_giants_planets') }}">
+         <button class="top_buttons buttons">gas giants</button>
+         </a>
+      </div>
+   </div>
+   {% elif gas %}
+   <div class="row margin">
+      <div class="col-12 exoplanet_page_title_container">
+         <h1 class="top-titles title_exoplanet_page">gas giants</h1>
+      </div>
+   </div>
+   <div class="row main-action">
+      <div class="col-6 main_action_buttons">
+         <a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
+      </div>
+      <div class="col-6 main_action_buttons">
+         <a aria-label="rocky exoplanets" href="{{ url_for('rocky_planets') }}">
+         <button class="top_buttons buttons">rocky</button>
+         </a>
+      </div>
+   </div>
+   {% else %}
+   <div class="row margin">
+      <div class="col-12 exoplanet_page_title_container">
+         <h1 class="top-titles title_exoplanet_page">exoplanets</h1>
+      </div>
+   </div>
+   <div class="row main-action">
+      <div class="col-3 main_action_buttons">
+         <a aria-label="rocky exoplanets" href="{{ url_for('rocky_planets') }}"><button class="top_buttons buttons">rocky</button></a>
+      </div>
+      <div class="col-3 main_action_buttons">
+         <a aria-label="your favourites list" href="{{ url_for('favourite_list', username=session['user']) }}"><button class="favourites top_buttons buttons">favourites</button></a>
+      </div>
+      <div class="col-3 main_action_buttons">
+         <a aria-label="gas giants" href="{{ url_for('gas_giants_planets') }}"><button class="top_buttons buttons">gas giants</button></a>
+      </div>
+      <div class="col-3 dropdown">
+         <button style="padding-top:.1rem" class="dropdown-toggle top_buttons buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         sort by size
+         </button>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{{ url_for('small_to_large') }}">Small To Large</a>
+            <a class="dropdown-item" href="{{ url_for('large_to_small') }}">Large To Small</a>
+            <a class="dropdown-item" href="{{ url_for('exoplanets_display') }}">Default Display</a>
+         </div>
+      </div>
+   </div>
+   {% endif %}
+   <div class="row">
+      {% for exoplanet in exoplanets %}
+      <div class="col-12 col-md-6 col-lg-4">
+         <div class="exoplanets_holder">
+            <div class="image_zoom">
+               <div class="image_holder {{ exoplanet.exoplanet_image }}"></div>
+            </div>
+            <p id="exoplanet_name" class="exoplanet_properties"><strong>{{exoplanet.planet_name}}</strong></p>
+            <hr class="separator">
+            <p class="exoplanet_properties"><strong>Type:</strong> {{exoplanet.type}}</p>
+            <hr class="separator">
+            <p class="exoplanet_properties"><strong>Star System:</strong> {{exoplanet.star_system}} </p>
+            <hr class="separator">
+            <div class="centered_buttons">
+               <a aria-label="add this exoplanet to your favourites list" href="{{ url_for('favourite', exoplanet_id=exoplanet._id)}}"
+                  id="margin-left"><button id="favourite_button" class="exoplanets_display_buttons buttons">Add Favourites</button></a>
+               <a aria-label="details" href="{{ url_for('detailed_exoplanet', exoplanet_id=exoplanet._id) }}"
+                  id="float_right"><button class="exoplanets_display_buttons buttons">Details</button></a>
+            </div>
+         </div>
+      </div>
+      {% endfor %}
+   </div>
+   <div id="add_exoplanet_message_container" class="row">
+      <div id="col_add_exoplanet_message" class="col-12">
+         <div id="add_exoplanet_message">
+            <p>Can't find your favourite exoplanet in the main list? Add any exoplanet to your Favourites List
+               by simply entering its details <a aria-label="insert an exoplanet" href="{{ url_for('insert_exoplanet') }}">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}

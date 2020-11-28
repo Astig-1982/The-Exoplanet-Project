@@ -26,7 +26,7 @@ def home():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     """
-    displaying the register page
+    register an user and displaying the register page
     """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
@@ -52,7 +52,7 @@ def register():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     """
-    displaying the login page
+    loggin in an user and displaying the login page
     """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(

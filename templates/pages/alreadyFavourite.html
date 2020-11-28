@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 <div id="message_container" class="container">
-	<div id="exoplanets_title" class="row">
-		<div class="col-12">
-			<div id="already-fav">
-				<p class="message">you have already added {{ favourite.planet_name }} to your favourites list.</p>
-                <div id="message-buttons">
-                <a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="action_buttons buttons">back</button></a>
-                <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button class="action_buttons buttons">favourites</button></a>
-                </div>
-			</div>
-		</div>
-	</div>
+   <div id="exoplanets_title" class="row">
+      <div class="col-12">
+         <div id="already-fav">
+            <p class="message">you have already added {{ favourite.planet_name }} to your favourites list.</p>
+            <div id="message-buttons">
+               <a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="action_buttons buttons">back</button></a>
+               <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button class="action_buttons buttons">favourites</button></a>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
 {% endblock %}
