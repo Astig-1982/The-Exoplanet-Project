@@ -872,7 +872,7 @@ i {
   padding-top: 19px;
   margin: 0 auto;
   animation-name: weight-zoom;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-fill-mode: forwards;
 }
 
