@@ -4,12 +4,12 @@
       <div id="profile-table">
          <ul class="list-group">
             <li id="profile-name" class="list-group-item">{{ user }}'s Profile</li>
-            <li class="list-group-item">Exoplanets: <span>{{ users_list }}</span></li>
-            <div class="profile-separators"></div>
-            <li class="list-group-item">Rocky Planets: <span>{{ users_rocky }}</span></li>
-            <div class="profile-separators"></div>
-            <li class="list-group-item">Gas Giants: <span>{{ users_gas_giants }}</span></li>
-            <div class="profile-separators"></div>
+            <li id="profile-exoplanets" class="list-group-item">Exoplanets: <span>{{ users_list }}</span><div class="profile-separators"></div></li>
+            
+            <li class="list-group-item">Rocky Planets: <span>{{ users_rocky }}</span><div class="profile-separators"></div></li>
+            
+            <li class="list-group-item">Gas Giants: <span>{{ users_gas_giants }}</span><div class="profile-separators"></div></li>
+            
             <li class="list-group-item">
                <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button id="profile-favourites" class="buttons">favourites</button></a>
                <a aria-label="delete your profile" id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
