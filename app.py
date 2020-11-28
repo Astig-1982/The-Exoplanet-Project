@@ -59,8 +59,9 @@ def login():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            if check_password_hash( 
-                            existing_user["password"], request.form.get("password")):
+            if check_password_hash(
+                            existing_user["password"],
+                            request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
                 return redirect(url_for('profile', username=session["user"]))
@@ -71,7 +72,7 @@ def login():
         else:
             flash('Incorrect Username and/or Password')
             return redirect(url_for('login'))
-        return render_template('pages/login.html', login=True)
+    return render_template('pages/login.html', login=True)
 
 
 @app.route('/profile/<username>', methods=['GET', 'POST'])
@@ -85,7 +86,7 @@ def profile(username):
     users_gas_giants = mongo.db[username].find(
         {'type': 'gas giant'}).count()
     user = username.capitalize()
-    return render_template('pages/profile.html', 
+    return render_template('pages/profile.html',
                            user=user,
                            users_list=users_list,
                            users_rocky=users_rocky,
@@ -142,7 +143,7 @@ def small_to_large():
     displaying exoplanets from smallest mass to largest mass
     """
     sized_exoplanets = mongo.db.exoplanets.find()
-    exoplanets = sorted(sized_exoplanets, key = lambda i: float(i['mass']))
+    exoplanets = sorted(sized_exoplanets, key=lambda i: float(i['mass']))
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
 
 
@@ -157,9 +158,9 @@ def small_to_large_favourites():
             {"username": session["user"]})["username"]
     sized_exoplanets = mongo.db[username].find()
     favourite_exoplanets = sorted(sized_exoplanets,
-                                  key = lambda i: float(i['mass']))
+                                  key=lambda i: float(i['mass']))
     return render_template('pages/favourites.html',
-                            favourite_exoplanets=favourite_exoplanets)
+                           favourite_exoplanets=favourite_exoplanets)
 
 
 @app.route('/large/to/small')
@@ -169,7 +170,7 @@ def large_to_small():
     """
     larged_sized = mongo.db.exoplanets.find()
     exoplanets = sorted(larged_sized,
-                        key = lambda i: float(i['mass']), reverse=True)
+                        key=lambda i: float(i['mass']), reverse=True)
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
 
 
@@ -182,7 +183,7 @@ def large_to_small_favourites():
             {"username": session["user"]})["username"]
     larged_sized = mongo.db[username].find()
     favourite_exoplanets = sorted(larged_sized,
-                                key = lambda i: float(
+                                  key=lambda i: float(
                                     i['mass']), reverse=True)
     return render_template('pages/favourites.html',
                            favourite_exoplanets=favourite_exoplanets)
@@ -197,7 +198,7 @@ def rocky_planets():
     exoplanets = mongo.db.exoplanets.find(
         {'type': 'rocky'})
     return render_template('pages/exoplanets.html',
-                           exoplanets = exoplanets, rocky=True)
+                           exoplanets=exoplanets, rocky=True)
 
 
 @app.route('/gas/planets')
@@ -296,7 +297,7 @@ def detailed_exoplanet(exoplanet_id):
     """
     detailed_exoplanet = mongo.db.exoplanets.find_one(
         {"_id": ObjectId(exoplanet_id)})
-    return render_template('pages/detailedExoplanet.html', 
+    return render_template('pages/detailedExoplanet.html',
                            detailed_exoplanet=detailed_exoplanet)
 
 
@@ -325,7 +326,8 @@ def favourite_rocky_planets():
     favourite_exoplanets = mongo.db[username].find(
         {'type': 'rocky'})
     return render_template('pages/favourites.html',
-                           favourite_exoplanets=favourite_exoplanets, rocky=True)
+                           favourite_exoplanets=favourite_exoplanets,
+                           rocky=True)
 
 
 @app.route('/favourite/gas/giants')
@@ -339,7 +341,8 @@ def favourite_gas_giants():
     favourite_exoplanets = mongo.db[username].find(
         {'type': 'gas giant'})
     return render_template('pages/favourites.html',
-                           favourite_exoplanets=favourite_exoplanets, gas=True)
+                           favourite_exoplanets=favourite_exoplanets,
+                           gas=True)
 
 
 @app.route('/insert/exoplanet', methods=['GET', 'POST'])
@@ -365,12 +368,13 @@ def insert_exoplanet():
             default_image = 'Default-gas'
 
         new_planet = {'planet_name': request.form.get('planet_name'),
-                        'discovery_date': request.form.get('discovery_date'),
-                        'distance_from_earth': float(request.form.get(
+                      'exoplanet_image': default_image,
+                      'discovery_date': request.form.get('discovery_date'),
+                      'distance_from_earth': float(request.form.get(
                             'distance_from_earth')),
-                        'type': request.form.get('type'),
-                        'star_system': request.form.get('star_system'),
-                        'mass': float(request.form.get('mass'))}
+                      'type': request.form.get('type'),
+                      'star_system': request.form.get('star_system'),
+                      'mass': float(request.form.get('mass'))}
         favourites.insert_one(new_planet)
         return redirect(url_for('favourite_list'))
     return render_template('pages/addExoplanet.html')
@@ -410,8 +414,10 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
             exoplanet_name=exoplanet_name, exoplanet_id=exoplanet_id)
 
     else:
-        detailed_exoplanet = mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
-        exoplanet = mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
+        detailed_exoplanet = mongo.db.exoplanets.find_one(
+            {"_id": ObjectId(exoplanet_id)})
+        exoplanet = mongo.db[username].find_one(
+            {"_id": ObjectId(exoplanet_id)})
         if exoplanet:
             return render_template(
                 'pages/calculateWeight.html', exoplanet=exoplanet)
