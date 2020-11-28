@@ -68,11 +68,11 @@ The Exoplanet Project, named Other Words, is a simple app that represents a quic
 
 ### Project Goals
 
-The app is designed as a simple to use guide to exoplanets. The main goal is to provide the user the possibiliy to have her/his own list where she/he can add their prefered exoplanets in order to keep track of them as they are officially confirmed by NASA, ESA, .. and many others authorized entities, and also to add any of these exoplanets to their favourites list. To kick things off, a list with 12 of the most relevant exoplanets confirmed up date will be provided. From there, the user is free to add any of the planets to her/his list. To make things a bit more interesting, the user will also have the possibility to check her/his weight on any of the exoplanets added, if ever, hypothetically (or not), will have the chance to end up on one of them.
+The app is designed as a simple to use guide to exoplanets. The main goal is to provide the user the possibiliy to have her/his own list where she/he can add their prefered exoplanets in order to keep track of them as they are officially confirmed by NASA, ESA .. and others authorized entities, and also to add any of these exoplanets to their favourites list. To kick things off, a list with 12 of the most relevant exoplanets confirmed up to date will be provided. From there, the user is free to add any of the planets to her/his list. To make things a bit more interesting, the user will also have the possibility to check her/his weight on any of the exoplanets added, if ever, hypothetically (or not), will have the chance to end up on one of them.
 
 ### User Goals
 
-- An app that serves as a guide to relevant confirmed exolanets.
+- An app that serves as a guide to relevant confirmed exoplanets.
 - Possibility to add any new prefered exoplanet to her/his own list.
 - Possibility to delete any new prefered exoplanet from her/his own list.
 - Possibility to have the planets displayed in the list depending on some of their different properties (eg. type, size).
@@ -106,7 +106,7 @@ I have chosen dynamic fonts for the entire app, to keep the user entertained; al
 
 ### Main Background Image:
 
-The main background image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their space ship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets in the app, a brief virtual trip through outer space.
+The main background image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their spaceship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets in the app, a brief virtual trip through outer space.
 
 ### Exoplanets' Images:
 
@@ -400,6 +400,7 @@ SECRET\_KEY|"your\_secret\_key"
 
 * [NASA-JPL/Caltech](https://exoplanets.nasa.gov/resources/2159/planet-hop-from-trappist-1e/)
 * [Wikipedia](https://en.wikipedia.org/wiki/Lists_of_exoplanets)
+* Special thanks to my mentor Simen [Eventyret_mentor](https://github.com/Eventyret), who so far has done an excelent job in supporting and guiding me throughout the course. 
 
 ### Content:
 
