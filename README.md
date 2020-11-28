@@ -165,7 +165,7 @@ discovery_date      | Date
 distance_from_earth | Decimal
 type                | String
 star_system         | String
-mass                | Decimal
+mass                | String
 
 #### Individual users' collection
 
@@ -178,7 +178,7 @@ discovery_date      | Date
 distance_from_earth | Decimal
 type                | String
 star_system         | String
-mass                | Decimal
+mass                | String
 
 [Back to Top](#table-of-contents)
 
