@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    {% include 'layout/head.html' %}
-
-<body id="NotFound">
-    <div id="NotFound-row" class="row">
-        <div class="col-sm-8">
+   {% include 'layout/head.html' %}
+   <body id="NotFound">
+      <div id="NotFound-row" class="row">
+         <div class="col-sm-8">
             <div id="messageBlackHole" class="NotFound-messages">
-                <p id="oops-message">Oops! You're entering a Black Hole.</p>
-                <p id="home-message">Page Not Found - Set coordinates immediatedly for back <a href="{{ url_for('home') }}">HOME</a></p>
+               <p id="oops-message">OMG, you are heading towards a Black Hole!</p>
+               <p id="home-message">Page Not Found - Set coordinates immediatedly for back <a href="{{ url_for('home') }}">HOME</a></p>
             </div>
-        </div>
-        <div class="col-sm-4">
+         </div>
+         <div class="col-sm-4">
             <div id="message404" class="NotFound-messages">
-                404
-            </div>  
-        </div>
-    </div>
-</body>
+               404
+            </div>
+         </div>
+      </div>
+   </body>
 </html>

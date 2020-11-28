@@ -2,96 +2,98 @@
 {% block content %}
 <div id="main" class="div"></div>
 <div class="container form-container">
-	<div class="row">
-		<div id="add-container" class="col-12">
-			<h1 class="top-titles">add exoplanet</h1>
-		</div>
-	</div>
-	<div id="form_row" class="row">
-		<div id="insert_form" class="col-12">
-			<div id="form_container">
-				<form action="{{ url_for('insert_exoplanet') }}" method="POST">
-					<div class="form-group">
-                    <label for="planet_name">Exoplanet Name:</label>
-						<input name="planet_name" type="text" class="form-control input_planet" id="planet_name" required>
-  </div>
-						<div class="form-group">
-                        <label for="discovery_date">Discovery Date:</label>
-							<input name="discovery_date" type="date" class="form-control input_planet" id="discovery_date" required>
-  </div>
-							<div class="form-group">
-                            <label for="distance_from_earth">Distance From Earth (Light Years):</label>
-								<input id="distance_from_earth" name="distance_from_earth" type="text" class="form-control input_planet" pattern="[0-9.]{1,9}" required>
-  </div>
-								<div class="form-group">
-                                <label for="exampleFormControlSelect1">Type:</label>
-									<select name="type" class="form-control input_planet" id="exampleFormControlSelect1" required>
-      <option value="rocky">rocky</option>
-      <option value="gas giant">gas giant</option>
-    </select>
-								</div>
-								<div class="form-group">
-                                <label for="star_system">Star System:</label>
-									<input name="star_system" type="text" class="form-control input_planet" id="star_system" required>
-  </div>
-									<div class="form-group">
-                                    <label for="mass">Mass (Earth Mass):</label>
-										<input name="mass" type="text" class="form-control input_planet" id="mass" pattern="[0-9.]{1,9}" required>
-  </div>
-										<button id="add_button" type="submit" class="btn btn-primary buttons">add exoplanet</button>
-				</form>
-			</div>
-		</div>
-	</div>
-    <div class="row">
-			<div id="notes-message" class="col-12">
-				<div>
-					<p>Please check <a href="#notes">below</a> some quick notes on how to insert an exoplanet.</p>
-				</div>
-			</div>
-		</div>
+   <div class="row">
+      <div id="add-container" class="col-12">
+         <h1 class="top-titles">add exoplanet</h1>
+      </div>
+   </div>
+   <div id="form_row" class="row">
+      <div id="insert_form" class="col-12">
+         <div id="form_container">
+            <form action="{{ url_for('insert_exoplanet') }}" method="POST">
+               <div class="form-group">
+                  <label for="planet_name">Exoplanet Name:</label>
+                  <input name="planet_name" type="text" class="form-control input_planet" id="planet_name" required>
+               </div>
+               <div class="form-group">
+                  <label for="discovery_date">Discovery Date:</label>
+                  <input name="discovery_date" type="date" class="form-control input_planet" id="discovery_date" required>
+               </div>
+               <div class="form-group">
+                  <label for="distance_from_earth">Distance From Earth (Light Years):</label>
+                  <input id="distance_from_earth" name="distance_from_earth" type="text" class="form-control input_planet" pattern="[0-9.]{1,9}" required>
+               </div>
+               <div class="form-group">
+                  <label for="exampleFormControlSelect1">Type:</label>
+                  <select name="type" class="form-control input_planet" id="exampleFormControlSelect1" required>
+                     <option value="rocky">rocky</option>
+                     <option value="gas giant">gas giant</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                  <label for="star_system">Star System:</label>
+                  <input name="star_system" type="text" class="form-control input_planet" id="star_system" required>
+               </div>
+               <div class="form-group">
+                  <label for="mass">Mass (Earth Mass):</label>
+                  <input name="mass" type="text" class="form-control input_planet" id="mass" pattern="[0-9.]{1,9}" required>
+               </div>
+               <button id="add_button" type="submit" class="btn btn-primary buttons">add exoplanet</button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div id="notes-message" class="col-12">
+         <div>
+            <p>Please check <a href="#notes">below</a> some quick notes on how to insert an exoplanet.</p>
+         </div>
+      </div>
+   </div>
 </div>
-    <div id="notes" class="container guide-container">
-    <div id="guide-row" class="row">
-    <div class="col-12 col-md-4">
-    <div id="general-guide" class="guide-holders">
-    <h4>General</h4>
-    <hr class="guide-separator">
-    <p>Please note that all fields are required. For documentation of exoplanets we suggest 
-                                <a href="https://en.wikipedia.org/wiki/Lists_of_exoplanets" target="blank" aria-label="List of exoplanets on Wikipedia">Wikipedia</a> 
-                                as a source. However there are plenty of other relevant sources out there for
-								inspiration.</p>
-    </div>
-    </div>
-    <div class="col-12 col-md-4">
-    <div class="guide-holders">
-    <h4>Inserting The Mass</h4>
-    <hr class="guide-separator">
-    <p>The planet's mass must be in relation to that of Earth's and expressed in <a
-									href="https://en.wikipedia.org/wiki/Earth_mass" target="blank"
-									aria-label="Earth mass as unit of measure">Earth mass (M⊕)</a>. At gas giants, all
-								internet sources
-								will give you the planet's mass in relation to <a
-									href="https://en.wikipedia.org/wiki/Jupiter_mass" target="blank"
-									aria-label="Jupiter mass as unit of measure">Jupiter mass (Mj)</a>. Please convert
-								into Earth
-								mass before inserting. Jupiter mass is <span id="jupiter-mass">318</span> times greater than Earth mass.
-								Please see <a aria-label="location of the exoplanet's mass on wikipedia" href="{{ url_for('mass_photo') }}">here</a> the
-								location for planet's mass when searching on Wikipedia.</p>
-    </div>
-    </div>
-    <div class="col-12 col-md-4">
-    <div class="guide-holders">
-    <h4>Planet's Image</h4>
-    <hr class="guide-separator">
-    <p>Please note that a default image will be added, depending on the type of exoplanet inserted - rocky or gas giant.</p>
-    </div>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-12 d-none d-sm-block">
-    <p id="back-to-form"><a href="#">Back</a></p>
-    </div>
-    </div>
+<div id="notes" class="container guide-container">
+   <div id="guide-row" class="row">
+      <div class="col-12 col-md-4">
+         <div id="general-guide" class="guide-holders">
+            <h4>General</h4>
+            <hr class="guide-separator">
+            <p>Please note that all fields are required. For documentation of exoplanets we suggest 
+               <a href="https://en.wikipedia.org/wiki/Lists_of_exoplanets" target="blank" aria-label="List of exoplanets on Wikipedia">Wikipedia</a> 
+               as a source. However there are plenty of other relevant sources out there for
+               inspiration.
+            </p>
+         </div>
+      </div>
+      <div class="col-12 col-md-4">
+         <div class="guide-holders">
+            <h4>Inserting The Mass</h4>
+            <hr class="guide-separator">
+            <p>The planet's mass must be in relation to that of Earth's and expressed in <a
+               href="https://en.wikipedia.org/wiki/Earth_mass" target="blank"
+               aria-label="Earth mass as unit of measure">Earth mass (M⊕)</a>. At gas giants, all
+               internet sources
+               will give you the planet's mass in relation to <a
+                  href="https://en.wikipedia.org/wiki/Jupiter_mass" target="blank"
+                  aria-label="Jupiter mass as unit of measure">Jupiter mass (Mj)</a>. Please convert
+               into Earth
+               mass before inserting. Jupiter mass is <span id="jupiter-mass">318</span> times greater than Earth mass.
+               Please see <a aria-label="location of the exoplanet's mass on wikipedia" href="{{ url_for('mass_photo') }}">here</a> the
+               location for planet's mass when searching on Wikipedia.
+            </p>
+         </div>
+      </div>
+      <div class="col-12 col-md-4">
+         <div class="guide-holders">
+            <h4>Planet's Image</h4>
+            <hr class="guide-separator">
+            <p>Please note that a default image will be added, depending on the type of exoplanet inserted - rocky or gas giant.</p>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-12 d-none d-sm-block">
+         <p id="back-to-form"><a href="#">Back</a></p>
+      </div>
+   </div>
 </div>
 {% endblock %}
