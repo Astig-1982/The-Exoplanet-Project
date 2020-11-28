@@ -120,7 +120,7 @@ def logout():
     return redirect(url_for('login'))
 
 
-@app.route('/display/exoplanets')
+@app.route('/exoplanets/mainlist')
 def exoplanets_display():
     """
     display the main list of exoplanets
@@ -147,7 +147,7 @@ def small_to_large():
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
 
 
-@app.route('/favourites/exoplanets/small/to/large')
+@app.route('/favourites//small/to/large')
 def small_to_large_favourites():
     """
     displaying exoplanets from user's
@@ -174,7 +174,7 @@ def large_to_small():
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
 
 
-@app.route('/favourites/exoplanets/large/to/small')
+@app.route('/favourites/large/to/small')
 def large_to_small_favourites():
     """
     displaying exoplanets from user's list from largest mass to smallest mass
@@ -301,7 +301,7 @@ def detailed_exoplanet(exoplanet_id):
                            detailed_exoplanet=detailed_exoplanet)
 
 
-@app.route('/detailed/favourite/exoplanet/<exoplanet_id>')
+@app.route('/favourite/detailed/exoplanet/<exoplanet_id>')
 def favourite_detailed(exoplanet_id):
     """
     displaying exoplanet from user's
@@ -345,7 +345,7 @@ def favourite_gas_giants():
                            gas=True)
 
 
-@app.route('/insert/exoplanet', methods=['GET', 'POST'])
+@app.route('/add/exoplanet', methods=['GET', 'POST'])
 def insert_exoplanet():
     """
     inserting an exoplanet into user's favourites list
