@@ -1,43 +1,45 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="main_container container">
-	<div id="about-container" class="row">
-		<div id="exoplanet_page_title_container" class="col-12">
-			<h1 class="top-titles">about</h1>
-            <div>
+   <div id="about-container" class="row">
+      <div id="exoplanet_page_title_container" class="col-12">
+         <h1 class="top-titles">about</h1>
+         <div>
             <p id="quote">"The Earth is a very small stage in a vast cosmic arena."</p>
             <p id="quote_author">Carl Sagan</p>
-            </div>
-		</div>
-	</div>
-	<div id="about-action" class="row main-action">
-		<div class="col-6 main_action_buttons">
-			<a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
-		</div>
-		<div class="col-6 main_action_buttons">
-			<a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button class="top_buttons buttons">favourites</button></a>
-		</div>
-	</div>
-	<div id="about-text-container" class="row">
-		<div class="col-12">
-			<div id="about_text">
-				<p id="about-first-paragraph" class="about-paragraphs">Exoplanets are planets that orbit a star other than our sun. The prefix exo
-					comes from the Greek and means outside; these worlds are far, far outside our own solar system.
-					Astronomers have confirmed more than 4,000 exoplanets orbiting distant stars, with at least 1,000
-					more more awaiting confirmation.</p>
-				<p id="about-second-paragraph" class="about-paragraphs">
-					Welcome to OTHER WORLDS - a site that offers you a biref guide to some of the most relevant
-					exoplanets discovered up to date. You will have your own list of favourite exoplanets
-					in which you can add any of the planets from our main list. If you can't find in our main list an
-					exoplanet that you would like to add to your Favourites List, not a problem. You can add any
-					exoplanet
-					that you prefer to your Favourites List by simply entering its details into the form provided.</p>
-				<p id="about-third-paragraph" class="about-paragraphs">Contrary to what's depicting in most SCI FI movies, a fun fact about going to other planets is that
-					your weight differs from that of on Earth due to their different gravity attraction. This site also
-					gives you the opportunity to quickly find out your weight on each of your favourite exoplanet.
-					Enjoy your trip to other worlds!</p>
-			</div>
-		</div>
-	</div>
+         </div>
+      </div>
+   </div>
+   <div id="about-action" class="row main-action">
+      <div class="col-6 main_action_buttons">
+         <a aria-label="our main list" href="{{ url_for('exoplanets_display') }}"><button class="top_buttons buttons">main list</button></a>
+      </div>
+      <div class="col-6 main_action_buttons">
+         <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button class="top_buttons buttons">favourites</button></a>
+      </div>
+   </div>
+   <div id="about-text-container" class="row">
+      <div class="col-12">
+         <div id="about_text">
+            <p id="about-first-paragraph" class="about-paragraphs">Exoplanets are planets that orbit a star other than our sun. The prefix exo
+               comes from the Greek and means outside; these worlds are far, far outside our own solar system.
+               Astronomers have confirmed more than 4,000 exoplanets orbiting distant stars, with at least 1,000
+               more awaiting confirmation.
+            </p>
+            <p id="about-second-paragraph" class="about-paragraphs">
+               Welcome to OTHER WORLDS - a site that offers you a way to keep track of your favourite exoplanets
+               discovered up to date. You will have your own list of Favourites
+               in which you can add any exoplanet that you wish as soon as it is discovered, by simply entering its details in the form provided. 
+               To kick things off you will also be provided with a <a id="about-main" href="{{ url_for('exoplanets_display') }}">Main List</a> containing some 
+               of the most relevant exoplanets discovered up to date, from which you can add to your Favourites list.
+            </p>
+            <p id="about-third-paragraph" class="about-paragraphs">Contrary to what's depicting in most SCI FI movies, a fun fact about going to other celestial bodies is that
+               your weight differs from that of on Earth due to their different gravity attraction. This site also
+               gives you the opportunity to quickly find out your weight on each of your favourite exoplanet.
+               Enjoy your trip to other worlds!
+            </p>
+         </div>
+      </div>
+   </div>
 </div>
 {% endblock %}
