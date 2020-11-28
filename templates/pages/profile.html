@@ -1,39 +1,21 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container">
-	<div class="row">
-		<div class="col-12 user-info">
-            {% set numberRocky = users_rocky | int %}
-            {% set numberGas = users_gas_giants | int %}
-             {% set numberList = users_list | int %}
-			<div id="info">
-            <h4>{{ user }}'s Profile</h4>
-             <hr class="guide-separator">
-				<p>{{ user }}, you currently have {{ users_list }} {% if numberList == 1 %}
-                                                                       exoplanet
-                                                                    {% else %}
-                                                                       explanets
-                                                                    {% endif %}
-                                                                     your list.</p>
-				<p>You have {{ users_rocky }} rocky {% if numberRocky == 1 %} 
-                                                       planet 
-                                                    {% else %}
-                                                       planets
-                                                    {% endif %}
-                                                      and  {{ users_gas_giants }} 
-                                                    {% if numberGas == 1 %}
-                                                       gas giant.
-                                                    {% else %}
-                                                       gas giants
-                                                    {% endif %}   
-                                                    </p>
-				<p>You can add as many exoplanets as you'd like to your favourites list. You can also choose from our <a href="{{ url_for('exoplanets_display') }}">main list</a> any exoplanet that you'd like to be added into your own list.
-			</div>
-            <div id="profile-actions">
-               <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button class="buttons">favourites</button></a>
-               <a aria-label="delete your profile" id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
-            </div>
-		</div>
-	</div>
-     
+<div id="profile-row" class="row">
+    <div id="profile-col" class="col-12">
+        <div id="profile-table">
+            <ul class="list-group">
+                <li id="profile-name" class="list-group-item">{{ user }}'s Profile</li>
+                <li class="list-group-item">Exoplanets: <span>{{ users_list }}</span></li>
+                    <div class="profile-separators"></div>
+                <li class="list-group-item">Rocky Planets: <span>{{ users_rocky }}</span></li>
+                    <div class="profile-separators"></div>
+                <li class="list-group-item">Gas Giants: <span>{{ users_gas_giants }}</span></li>
+                    <div class="profile-separators"></div>
+                <li class="list-group-item">
+                    <a aria-label="your favourites list" href="{{ url_for('favourite_list') }}"><button id="profile-favourites" class="buttons">favourites</button></a>
+                    <a aria-label="delete your profile" id="delete-profile" href="{{ url_for('deleteprofile') }}">delete profile</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 {% endblock %}
