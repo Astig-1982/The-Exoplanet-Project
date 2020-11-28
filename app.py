@@ -29,9 +29,6 @@ def register():
     displaying the register page
     """
     if request.method == "POST":
-        """
-        check if the username already exists in the database
-        """
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -62,9 +59,6 @@ def login():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-          """
-          if the user exists
-          """
           if check_password_hash(
                   existing_user["password"], request.form.get("password")):
               session["user"] = request.form.get("username").lower()
@@ -75,9 +69,6 @@ def login():
               return redirect(url_for('login'))
 
         else:
-          """
-          if the user doesn't exists
-          """
           flash('Incorrect Username and/or Password')
           return redirect(url_for('login'))
     return render_template('pages/login.html', login=True)
@@ -103,13 +94,11 @@ def profile(username):
 def deleteprofile():
     """
     delete the user's profile
+    including its favourites list
     """
     username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
 
-    """
-    delete the users favourites list
-    """
     mongo.db[username].drop()
 
     mongo.db.users.remove({"username": session["user"]})
@@ -251,9 +240,8 @@ def favourite(exoplanet_id):
         except Exception:
             flash('Please log in in order to add any exoplanet to your list of favourites')
             return redirect(url_for('login'))
-        """
-        check if the exoplanet is already in the user's favourites list
-        """
+
+        # check if the exoplanet is already in the favourites list
         already_favourite = mongo.db[username].find_one(
             {"_id": ObjectId(exoplanet_id)})
         if already_favourite:
@@ -423,13 +411,9 @@ def calculate_weight(exoplanet_mass, exoplanet_name, exoplanet_id):
         exoplanet_name=exoplanet_name, exoplanet_id=exoplanet_id)
 
  else:
-      detailed_exoplanet=mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
-      exoplanet=mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
+      detailed_exoplanet = mongo.db.exoplanets.find_one({"_id": ObjectId(exoplanet_id)})
+      exoplanet = mongo.db[username].find_one({"_id": ObjectId(exoplanet_id)})
       if exoplanet:
-          """
-          check if the exoplanet is added to the user's 
-          favourites list
-          """
           return render_template('pages/calculateWeight.html', exoplanet=exoplanet)
       else:
           return render_template(

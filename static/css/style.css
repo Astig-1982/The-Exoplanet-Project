@@ -270,7 +270,7 @@ i {
   font-size: 120%;
 }
 
-/* home page starts here */
+/* home.html starts here */
 
 #home_container {
   overflow: hidden;
@@ -350,8 +350,6 @@ i {
 #detailed {
   text-align: center;
 }
-
-/* register.html page starts here */
 
 /* exoplanets.html page starts here */
 
@@ -669,7 +667,7 @@ i {
   opacity: 0.6;
 }
 
-/* already_favourite messsage page starts here */
+/* alreadyFavourite.html page starts here */
 
 #message_container {
   margin-top: 20%;
@@ -702,7 +700,7 @@ i {
   margin: 0 1rem;
 }
 
-/* not_added.html page starts here */
+/* notAdded.html page starts here */
 
 #not-added-container {
   text-align: center;
@@ -713,7 +711,7 @@ i {
   text-transform: none;
 }
 
-/* add_favourites.html page starts here */
+/* favourites.html page starts here */
 
 #add_favourites_message {
   width: 50%;
@@ -829,7 +827,7 @@ i {
   font-weight: 100;
 }
 
-/* calculate_weight.html page starts here */
+/* calculateWeight.html page starts here */
 
 #enter_weight_container {
   margin-top: 15rem;
@@ -849,7 +847,7 @@ i {
   font-size: 120%;
 }
 
-/* exoplanet_weight.html page starts here */
+/* exoplanetWeight.html page starts here */
 
 @keyframes weight-zoom {
   from {
@@ -892,7 +890,7 @@ i {
   margin: 0 2.5%;
 }
 
-/* add_exoplanet.html page starts here */
+/* addExoplanet.html page starts here */
 
 .form-container {
   margin-top: 5rem;
@@ -1026,7 +1024,7 @@ select {
   text-decoration: underline;
 }
 
-/* mass_photo.html starts here */
+/* massPhoto.html starts here */
 
 #photo_container {
   width: 90%;
@@ -1046,41 +1044,6 @@ select {
 #photo_action_button {
   margin: 6rem 0 2rem 0;
   text-align: center;
-}
-
-/* wrong_data.html page starts here */
-
-#wrong_data_container {
-  margin-top: 12rem;
-}
-
-#wrong_data {
-  width: 50%;
-  min-height: 20rem;
-  background-color: #7a2048;
-  border: 3px solid #408ec6;
-  padding: 1.5rem;
-  font-size: 105%;
-  letter-spacing: 0.1rem;
-  margin: 0 auto;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-#wrong_data p {
-  margin-top: 5%;
-  font-size: 130%;
-}
-
-#wrong_data_info {
-  background-color: #e5e5dc;
-  color: #7a2048;
-  padding-top: 1.4%;
-}
-
-#back_to_form {
-  text-align: center;
-  margin-top: 2rem;
 }
 
 .navbar-toggler {
