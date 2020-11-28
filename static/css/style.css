@@ -613,58 +613,58 @@ i {
 
 /* profile.html starts here */
 
-.user-info {
-  margin-top: 19%;
+#profile-row {
+    max-width: 100vw;
 }
 
-.user-info div {
-  background-color: rgba(112, 16, 3, 0.8);
-  color: #e5e5dc;
-  width: 60%;
-  margin: 0 auto;
-  padding: 2rem 4rem;
-  font-size: 108%;
-  letter-spacing: 0.1rem;
+#profile-col {
+    margin-top: 15%;
 }
 
-#info {
-  padding-bottom: 1rem;
+#profile-table {
+    width: 25%;
+    margin: 0 auto;
 }
 
-.user-info div a {
-  color: #e5e5dc;
-  font-weight: 900;
-  text-transform: capitalize;
+.list-group li {
+    color: #e5e5dc;
+    border: none;
+    font-size: 110%;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    background-color: rgba(112, 16, 3, 0.8);
 }
 
-.user-info div a:hover {
-  opacity: 0.6;
+.list-group li span {
+   float: right;
 }
 
-#profile-actions {
-  padding-top: 0;
-  margin-top: 0;
+.profile-separators {
+    height: .2px;
+    background-color: #e5e5dc;
+    width: 90%;
+    margin: 0 auto;
 }
 
-#profile-actions button {
-  width: 30%;
-  height: 2.15rem;
-  letter-spacing: 0.06rem;
+#profile-name {
+    text-align: center;
+    font-size: 120%;
+    background-color: rgb(196, 23, 0);
+    text-transform: uppercase;
+}
+
+#profile-favourites {
+    font-size: 100%;
+    padding: 5px 17px;
 }
 
 #delete-profile {
-  float: right;
-  color: #e5e5dc;
-  text-transform: capitalize;
-  font-style: italic;
-  opacity: 0.8;
-  padding-top: 1rem;
-  font-size: 80%;
-}
-
-#delete-profile:hover {
-  text-decoration: none;
-  opacity: 0.6;
+    float: right;
+    font-size: 70%;
+    padding-top: 18px;
+    color: #e5e5dc;
+    font-style: italic;
+    opacity: .8;   
 }
 
 /* alreadyFavourite.html page starts here */
@@ -1180,6 +1180,15 @@ select {
     margin: 1rem 0 2rem 0;
   }
 
+  #profile-col {
+      margin-top: 43%;
+  }
+
+  #profile-table {
+      width: 95%;
+      margin-left: 6.5%;
+  }
+
   #photo_action_button {
       margin-bottom: 1rem;
       margin-top: 5rem;
@@ -1251,20 +1260,8 @@ select {
     width: 100%;
   }
 
-  #profile-actions {
-    width: 100%;
-  }
-
-  #profile-actions button {
-    width: 47%;
-  }
-
   .user-info div {
     font-size: 100%;
-  }
-
-  #delete-profile {
-    padding-top: .9rem;
   }
 
   #form_container {
@@ -1408,18 +1405,6 @@ select {
     height: 51vh;
   }
 
-  #profile-actions {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  #profile-actions button {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: content-box;
-    width: 30%;
-  }
-
   .main-action {
     margin-top: 1.2rem;
   }
@@ -1511,6 +1496,15 @@ select {
     background-color: rgb(196, 23, 0);
   }
 
+  #profile-col {
+      margin-top: 43%;
+  }
+
+  #profile-table {
+      width: 95%;
+      margin-left: 6.5%;
+  }
+
   .message {
     width: 100%;
   }
@@ -1545,6 +1539,15 @@ select {
 
   #profile {
     margin-bottom: 0;
+  }
+
+  #profile-col {
+      margin-top: 30%;
+  }
+
+  #profile-table {
+      width: 74%;
+      margin-left: 14%;
   }
 
   .detailed {
@@ -1610,10 +1613,6 @@ select {
   #title_area {
     bottom: 39%;
     left: 12%;
-  }
-
-  #profile-actions {
-    width: 80%;
   }
 
   #form_container {
@@ -1693,11 +1692,15 @@ select {
     font-size: 130%;
   }
 
-  #info {
-    width: 80%;
+  #profile-col {
+      margin-top: 32%;
   }
 
-  #profile-actions {
+  #profile-table {
+      width: 60%;
+  }
+
+  #info {
     width: 80%;
   }
 
