@@ -550,6 +550,15 @@ i {
   padding-top: 1.8rem;
 }
 
+#about-second-paragraph a {
+    color: #e5e5dc;
+    text-decoration: underline;
+}
+
+#about-second-paragraph a:hover {
+    opacity: .6;
+}
+
 #about-third-paragraph {
   padding-bottom: 1.8rem;
 }
@@ -642,8 +651,10 @@ i {
 .profile-separators {
     height: .2px;
     background-color: #e5e5dc;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 5px;
+    opacity: .3;
 }
 
 #profile-name {
@@ -651,6 +662,10 @@ i {
     font-size: 120%;
     background-color: rgb(196, 23, 0);
     text-transform: uppercase;
+}
+
+#profile-exoplanets {
+    padding-top: 20px;
 }
 
 #profile-favourites {
