@@ -106,7 +106,7 @@ I have chosen dynamic fonts for the entire app, to keep the user entertained; al
 
 ### Main Background Image:
 
-The main background image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their spaceship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets in the app, a brief virtual trip through outer space.
+The main background image of the app is a representation of the recently confirmed exoplanet **Trappist 1 e** and it has been designed by [NASA/Jet Propulsion Laboratory-Caltech](https://www.nasa.gov/) within their [SPACE TOURISM](https://solarsystem.nasa.gov/resources/682/space-tourism-posters/) program. Please see at the [Credits](#credits) section the source where the image in the app was taken from. I have chosen this image because it represents the travelers' excitement upon arrival on a foreign planet, with them browsing through the window of their spaceship. In my opinion, this can as well represent the users' excitement when browsing through exoplanets in the app, a brief virtual trip through outer space.
 
 ### Exoplanets' Images:
 
@@ -161,7 +161,7 @@ Key                 | Value
 _id                 | ObjectId
 exoplanet_image     | String
 planet_name         | String
-discovery_date      | Date
+discovery_date      | String
 distance_from_earth | Decimal
 type                | String
 star_system         | String
@@ -174,7 +174,7 @@ Key                 | Value
 _id                 | ObjectId
 exoplanet_image     | String
 planet_name         | String
-discovery_date      | Date
+discovery_date      | String
 distance_from_earth | Decimal
 type                | String
 star_system         | String
