@@ -244,7 +244,7 @@ i {
 #message404 {
     font-family: none;
     font-weight: 900;
-    font-size: 27rem;
+    font-size: 15rem;
     width: 50%;
     margin-left: 5rem;
     letter-spacing: .5rem;
@@ -1448,6 +1448,14 @@ select {
   #exoplanet_page_title_container {
     font-size: 90%;
   }
+
+  #message404 {
+      font-size: 10rem;
+  }
+
+  #messageBlackHole {
+      font-size: .5rem;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 767px) {
@@ -1540,6 +1548,14 @@ select {
 
   #navbarNav {
     margin-top: .88rem;
+  }
+
+  #message404 {
+      font-size: 10rem;
+  }
+
+  #messageBlackHole {
+      font-size: .5rem;
   }
 }
 
@@ -1787,6 +1803,10 @@ select {
 
   #photo_container {
       height: 48rem;
+  }
+
+  #message404 {
+      font-size: 27rem;
   }
 
   .form-container {
