@@ -120,6 +120,14 @@ def logout():
     return redirect(url_for('login'))
 
 
+@app.route('/about')
+def about():
+    """
+    displaying the about page
+    """
+    return render_template('pages/about.html')
+
+
 @app.route('/exoplanets/mainlist')
 def exoplanets_display():
     """
@@ -127,14 +135,6 @@ def exoplanets_display():
     """
     exoplanets = mongo.db.exoplanets.find()
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
-
-
-@app.route('/about')
-def about():
-    """
-    displaying the about page
-    """
-    return render_template('pages/about.html')
 
 
 @app.route('/small/to/large')
@@ -147,22 +147,6 @@ def small_to_large():
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
 
 
-@app.route('/favourites//small/to/large')
-def small_to_large_favourites():
-    """
-    displaying exoplanets from user's
-    favourits list from
-    smallest mass to largest mass
-    """
-    username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-    sized_exoplanets = mongo.db[username].find()
-    favourite_exoplanets = sorted(sized_exoplanets,
-                                  key=lambda i: float(i['mass']))
-    return render_template('pages/favourites.html',
-                           favourite_exoplanets=favourite_exoplanets)
-
-
 @app.route('/large/to/small')
 def large_to_small():
     """
@@ -172,21 +156,6 @@ def large_to_small():
     exoplanets = sorted(larged_sized,
                         key=lambda i: float(i['mass']), reverse=True)
     return render_template('pages/exoplanets.html', exoplanets=exoplanets)
-
-
-@app.route('/favourites/large/to/small')
-def large_to_small_favourites():
-    """
-    displaying exoplanets from user's list from largest mass to smallest mass
-    """
-    username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-    larged_sized = mongo.db[username].find()
-    favourite_exoplanets = sorted(larged_sized,
-                                  key=lambda i: float(
-                                    i['mass']), reverse=True)
-    return render_template('pages/favourites.html',
-                           favourite_exoplanets=favourite_exoplanets)
 
 
 @app.route('/rocky/planets')
@@ -213,21 +182,6 @@ def gas_giants_planets():
                            exoplanets=exoplanets, gas=True)
 
 
-@app.route('/favourites/list')
-def favourite_list():
-    """
-    displaying the user's favourites list
-    """
-    try:
-        username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-    except Exception:
-        flash('Please login in order to access your list of favourites.')
-        return redirect(url_for('login'))
-    return render_template('pages/favourites.html',
-                           favourite_exoplanets=mongo.db[username].find())
-
-
 @app.route('/favourite/<exoplanet_id>')
 def favourite(exoplanet_id):
     """
@@ -252,6 +206,82 @@ def favourite(exoplanet_id):
     else:
         mongo.db[username].insert(favourite)
         return redirect(url_for('favourite_list'))
+
+
+@app.route('/favourites/list')
+def favourite_list():
+    """
+    displaying the user's favourites list
+    """
+    try:
+        username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    except Exception:
+        flash('Please login in order to access your list of favourites.')
+        return redirect(url_for('login'))
+    return render_template('pages/favourites.html',
+                           favourite_exoplanets=mongo.db[username].find())
+
+
+@app.route('/favourites//small/to/large')
+def small_to_large_favourites():
+    """
+    displaying exoplanets from user's
+    favourits list from
+    smallest mass to largest mass
+    """
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    sized_exoplanets = mongo.db[username].find()
+    favourite_exoplanets = sorted(sized_exoplanets,
+                                  key=lambda i: float(i['mass']))
+    return render_template('pages/favourites.html',
+                           favourite_exoplanets=favourite_exoplanets)
+
+
+@app.route('/favourites/large/to/small')
+def large_to_small_favourites():
+    """
+    displaying exoplanets from user's list from largest mass to smallest mass
+    """
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+    larged_sized = mongo.db[username].find()
+    favourite_exoplanets = sorted(larged_sized,
+                                  key=lambda i: float(
+                                    i['mass']), reverse=True)
+    return render_template('pages/favourites.html',
+                           favourite_exoplanets=favourite_exoplanets)
+
+
+@app.route('/favourite/rocky/planets')
+def favourite_rocky_planets():
+    """
+    displaying only the rocky planets from user's favourites list
+    """
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+
+    favourite_exoplanets = mongo.db[username].find(
+        {'type': 'rocky'})
+    return render_template('pages/favourites.html',
+                           favourite_exoplanets=favourite_exoplanets,
+                           rocky=True)
+
+
+@app.route('/favourite/gas/giants')
+def favourite_gas_giants():
+    """
+    displaying only the gas giants from user's favourites list
+    """
+    username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+
+    favourite_exoplanets = mongo.db[username].find(
+        {'type': 'gas giant'})
+    return render_template('pages/favourites.html',
+                           favourite_exoplanets=favourite_exoplanets,
+                           gas=True)
 
 
 @app.route('/delete/favourite/<exoplanet_id>')
@@ -313,36 +343,6 @@ def favourite_detailed(exoplanet_id):
         {"_id": ObjectId(exoplanet_id)})
     return render_template('pages/detailedExoplanet.html',
                            detailed_exoplanet=detailed_exoplanet)
-
-
-@app.route('/favourite/rocky/planets')
-def favourite_rocky_planets():
-    """
-    displaying only the rocky planets from user's favourites list
-    """
-    username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-
-    favourite_exoplanets = mongo.db[username].find(
-        {'type': 'rocky'})
-    return render_template('pages/favourites.html',
-                           favourite_exoplanets=favourite_exoplanets,
-                           rocky=True)
-
-
-@app.route('/favourite/gas/giants')
-def favourite_gas_giants():
-    """
-    displaying only the gas giants from user's favourites list
-    """
-    username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-
-    favourite_exoplanets = mongo.db[username].find(
-        {'type': 'gas giant'})
-    return render_template('pages/favourites.html',
-                           favourite_exoplanets=favourite_exoplanets,
-                           gas=True)
 
 
 @app.route('/add/exoplanet', methods=['GET', 'POST'])
